@@ -1,0 +1,2146 @@
+{
+ "series": "From Colombo to Almora",
+ "slug": "colombo-to-almora",
+ "status": "proposal",
+ "note": "One film per lecture, in the order of the contents page. No time cap: every section of each lecture gets a chapter. Every film opens on the shared journey chart, marking where this lecture sits on the route. Chapter rows: [id, style, title, what it covers].",
+ "films": [
+  {
+   "n": 1,
+   "title": "The Land of the Light Spiritual",
+   "lecture": "First Public Lecture in the East (Colombo)",
+   "where": "Floral Hall, Colombo · 16 Jan 1897",
+   "min": 10,
+   "home": "kalighat",
+   "chapters": [
+    [
+     "arrive",
+     "chart",
+     "Landfall at Colombo",
+     "The ship reaches Ceylon on 15 January 1897; the whole route of the tour ahead is laid out."
+    ],
+    [
+     "welcome",
+     "kalighat",
+     "The welcome",
+     "The Hindus of Colombo present their address; the Swami credits India's support for his Western work."
+    ],
+    [
+     "punya",
+     "kalighat",
+     "Punya Bhumi",
+     "India as the land of introspection and spirituality, the blessed land of Karma."
+    ],
+    [
+     "sword",
+     "papercut",
+     "Blood or blessing",
+     "Ideas carried by Greek battalions and the Roman Eagle, against ideas carried by blessing: never fire and sword."
+    ],
+    [
+     "capitol",
+     "lantern",
+     "A spider's web on the Capitol",
+     "Empires come and go; the Capitoline ruins under a spider's web. Political greatness is never the mission of this race."
+    ],
+    [
+     "plough",
+     "kalighat",
+     "The ploughman's mark",
+     "Religion is the centre of Indian life, down to the labourer with a mark on his forehead."
+    ],
+    [
+     "dynamo",
+     "papercut",
+     "Storing the light",
+     "India stores spiritual energy and releases it; her gift to the world is the light spiritual."
+    ],
+    [
+     "dew",
+     "papercut",
+     "Like the gentle dew",
+     "Indian thought wins by fascination, slow and silent as the morning dew, not by force."
+    ],
+    [
+     "porcelain",
+     "lantern",
+     "Porcelain cracks",
+     "Modern learning shatters crude theologies; Vedanta offers a broader view of God and the soul."
+    ],
+    [
+     "yugas",
+     "palmleaf",
+     "Shruti and Smriti",
+     "Eternal principles stand while customs rightly change from Yuga to Yuga; Manu and the Smritis."
+    ],
+    [
+     "tribes",
+     "papercut",
+     "Gods of the tribes",
+     "Baal, Moloch and Yahveh fight for their tribes; the Vedic Rishis go another way."
+    ],
+    [
+     "ekam",
+     "palmleaf",
+     "Ekam sat",
+     "\"That which exists is One; sages call It by various names.\""
+    ],
+    [
+     "rivers",
+     "papercut",
+     "Rivers to one ocean",
+     "The Mahimnah-stotra: many rivers, one sea. India builds temples for Mohammedans and Christians."
+    ],
+    [
+     "mission",
+     "kalighat",
+     "Not toleration, sympathy",
+     "India's mission: mildness, forbearance and brotherhood, taught to every race and creed."
+    ]
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Vaidika: The Common Ground",
+   "lecture": "Vedantism",
+   "where": "Jaffna, Ceylon",
+   "min": 13,
+   "home": "palmleaf",
+   "chapters": [
+    [
+     "jaffna",
+     "chart",
+     "Jaffna",
+     "The chief centre of Hinduism in Ceylon; the evening after the address of welcome."
+    ],
+    [
+     "name",
+     "palmleaf",
+     "A name that lost its meaning",
+     "\"Hindu\" comes from Sindhu; he prefers Vaidika or Vedantist."
+    ],
+    [
+     "vedas",
+     "palmleaf",
+     "Seers, not authors",
+     "The Vedas are eternal knowledge; the Rishis are Mantra-drashtas, discoverers of what already is."
+    ],
+    [
+     "kandas",
+     "palmleaf",
+     "Two parts of the Veda",
+     "Karma Kanda and Jnana Kanda; the Upanishads are what every sect must accept."
+    ],
+    [
+     "smritis",
+     "palmleaf",
+     "Smritis, Puranas, Tantras",
+     "Human books that change with society; the Puranas teach philosophy through stories."
+    ],
+    [
+     "projection",
+     "plate",
+     "Creation as projection",
+     "Nature has no beginning; cycles of projection and Pralaya. Parallel: Lavoisier's conservation of mass, 1789."
+    ],
+    [
+     "cloud",
+     "papercut",
+     "Rain on every field",
+     "God is not partial: the rain falls on all fields, and the cultivated one bears fruit."
+    ],
+    [
+     "karma",
+     "kalighat",
+     "We and none else",
+     "Souls are eternal and Karma shapes each life: we alone are responsible for what we suffer."
+    ],
+    [
+     "atman",
+     "lantern",
+     "The Atman behind the mind",
+     "The Self is not the mind, and is the same in all beings: the basis of brotherhood."
+    ],
+    [
+     "heavens",
+     "lantern",
+     "Heavens that end",
+     "Heavens are temporary, as Nahusha's fall from Indra's throne shows; Mukti is the goal."
+    ],
+    [
+     "impersonal",
+     "palmleaf",
+     "Personal and Impersonal",
+     "The Personal God, and the Impersonal Absolute of the Advaita."
+    ],
+    [
+     "think",
+     "kalighat",
+     "Whatever you think",
+     "Ethics from oneness; strength: \"Whatever you think, that you will be.\""
+    ],
+    [
+     "ishta",
+     "papercut",
+     "Variety is the soul of life",
+     "Every Ishta is a path; the moment you quarrel you are going back towards the brutes."
+    ],
+    [
+     "custom",
+     "kalighat",
+     "Let customs fade",
+     "Castes and institutions have protected the nation; keep them until they die a natural death."
+    ],
+    [
+     "obey",
+     "kalighat",
+     "Learn to obey",
+     "Dana is the duty of the Kali Yuga; first learn to obey, and command will come by itself."
+    ]
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Never Passive",
+   "lecture": "Reply to the Address of Welcome at Pamban",
+   "where": "Pamban",
+   "min": 6,
+   "home": "kalighat",
+   "chapters": [
+    [
+     "wharf",
+     "chart",
+     "The wharf at Pamban",
+     "First landing in India; the Raja of Ramnad greets him; the address under a decorated pandal."
+    ],
+    [
+     "land",
+     "kalighat",
+     "Land of religion",
+     "The sacred motherland of philosophy, of Rishis and of renunciation."
+    ],
+    [
+     "passive",
+     "kalighat",
+     "Never passive",
+     "\"I discard the idea that India was ever passive\": her activity is in religion."
+    ],
+    [
+     "trades",
+     "papercut",
+     "The shoemaker's eye",
+     "A shoemaker and a bricklayer each see only their own trade; outsiders misjudge India the same way."
+    ],
+    [
+     "vibrations",
+     "plate",
+     "Light too fine to see",
+     "Vibrations too intense to be seen; the yogi sees past the material veil. Parallel: Ritter's ultraviolet, 1801."
+    ],
+    [
+     "barons",
+     "papercut",
+     "Barons and Rishis",
+     "Others trace their descent from robber-barons in fortresses; Hindus from Rishis in caves."
+    ],
+    [
+     "lord",
+     "palmleaf",
+     "Lord of all religions",
+     "Krishna's teaching: the Lord is the Lord of all religions, an idea that belongs to India."
+    ],
+    [
+     "desire",
+     "kalighat",
+     "The bondage of matter",
+     "No salvation except by conquering desire; no one is free who is bound to matter."
+    ],
+    [
+     "raja",
+     "kalighat",
+     "We can become great",
+     "Degraded now, yet we can become great; thanks to the Raja who first sent him to Chicago."
+    ]
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Real Worship",
+   "lecture": "Address at the Rameswaram Temple on Real Worship",
+   "where": "Rameswaram Temple",
+   "min": 5,
+   "home": "kalighat",
+   "chapters": [
+    [
+     "temple",
+     "kalighat",
+     "At Rameswaram",
+     "The people gathered at the temple ask the Swami to speak."
+    ],
+    [
+     "love",
+     "lantern",
+     "Love, not ceremony",
+     "Religion is in love, not ceremony; outer worship is only a symbol of the inner."
+    ],
+    [
+     "tirtha",
+     "kalighat",
+     "What makes a tirtha",
+     "Holy places do not cancel sin; a place is holy because of holy people."
+    ],
+    [
+     "poor",
+     "kalighat",
+     "Shiva in the poor",
+     "He who sees Shiva in the poor, the weak and the diseased really worships Shiva."
+    ],
+    [
+     "gardeners",
+     "papercut",
+     "The two gardeners",
+     "One praises the master's face and dances; the other tends the garden and the master's children."
+    ],
+    [
+     "mirror",
+     "lantern",
+     "Dust on the mirror",
+     "Service brings chitta-shuddhi; on a clean mirror the Shiva within shows."
+    ],
+    [
+     "selfish",
+     "kalighat",
+     "I will be last",
+     "Selfishness is the chief sin; \"I will even go to hell if by doing so I can help my brothers.\""
+    ]
+   ]
+  },
+  {
+   "n": 5,
+   "title": "The Giant Rising",
+   "lecture": "Reply to the Address of Welcome at Ramnad",
+   "where": "Ramnad · 25 Jan 1897",
+   "min": 10,
+   "home": "kalighat",
+   "chapters": [
+    [
+     "ramnad",
+     "chart",
+     "Ramnad",
+     "25 January 1897: the first Indian territory reached on his return."
+    ],
+    [
+     "giant",
+     "papercut",
+     "The infinite giant",
+     "The long night ends; a breeze from the Himalayas; the giant rises to her feet."
+    ],
+    [
+     "raja",
+     "kalighat",
+     "The Raja's part",
+     "The Raja of Ramnad first inspired the mission to Chicago."
+    ],
+    [
+     "core",
+     "kalighat",
+     "Religion at the core",
+     "Not politics or wealth: spirituality is the foundation of Indian life."
+    ],
+    [
+     "giveup",
+     "palmleaf",
+     "Give up!",
+     "Pravritti and Nivritti; renunciation is the watchword of the Indian religions."
+    ],
+    [
+     "ditch",
+     "papercut",
+     "Water from the ditch",
+     "A thirsty man drinks from a ditch beside a fountain; the universe as a mud-puddle."
+    ],
+    [
+     "handsoff",
+     "kalighat",
+     "Hands off!",
+     "Let the poor enjoy a little first; renunciation comes by degrees, not by rules forced on all."
+    ],
+    [
+     "duck",
+     "papercut",
+     "Stand on your own feet",
+     "Rooted orthodoxy over shallow imitation; learn from every nation, assimilate what is of use."
+    ],
+    [
+     "weakness",
+     "kalighat",
+     "The only sin",
+     "\"If there is any sin in the world, it is weakness.\""
+    ],
+    [
+     "harmony",
+     "papercut",
+     "Theme and variations",
+     "Each life has a mission from its past Karma; other pursuits are harmony around one theme."
+    ],
+    [
+     "threegen",
+     "lantern",
+     "Three generations",
+     "Mushroom nations rise and melt; a nation that drops its spiritual core dies within three generations."
+    ],
+    [
+     "god",
+     "palmleaf",
+     "The idea of God",
+     "Nowhere else was the idea of God so fully developed: the prayer of many names."
+    ],
+    [
+     "sleep",
+     "kalighat",
+     "No time for sleep",
+     "\"Let us all work hard, my brethren; this is no time for sleep.\""
+    ]
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Strength Is Goodness",
+   "lecture": "Reply to the Address of Welcome at Paramakudi",
+   "where": "Paramakudi",
+   "min": 8,
+   "home": "papercut",
+   "chapters": [
+    [
+     "paramakudi",
+     "chart",
+     "Paramakudi",
+     "The first stop after Ramnad; a public demonstration; his Western disciples with him."
+    ],
+    [
+     "duty",
+     "kalighat",
+     "Love that asks nothing",
+     "His love for his countrymen does not depend on how they receive him."
+    ],
+    [
+     "tides",
+     "papercut",
+     "Spiritual and material tides",
+     "Civilisations swing between spirit and matter, and each swing brings its own excess."
+    ],
+    [
+     "shylocks",
+     "lantern",
+     "Under the Shylocks",
+     "Western political systems failing; wealth gathered by a few."
+    ],
+    [
+     "correct",
+     "papercut",
+     "Each checks the other",
+     "East and West correct each other's excesses; no single people saves the world."
+    ],
+    [
+     "fifty",
+     "lantern",
+     "Fifty years",
+     "Without a spiritual foundation, Western civilisation will crumble within fifty years."
+    ],
+    [
+     "atman",
+     "palmleaf",
+     "Only ignorance",
+     "The Atman shared by Hindus, Jains and Buddhists; only Avidya separates man from God."
+    ],
+    [
+     "fearless",
+     "kalighat",
+     "The religion of fearlessness",
+     "\"Strength is goodness, weakness is sin.\""
+    ],
+    [
+     "play",
+     "lantern",
+     "Only a play",
+     "Seen as one, the world becomes a play, however terrible it appears."
+    ],
+    [
+     "undo",
+     "kalighat",
+     "What I have done, I can undo",
+     "Karma made this body; each of us is heir-apparent to the Emperor of emperors."
+    ],
+    [
+     "advaita",
+     "palmleaf",
+     "For every temperament",
+     "Advaita meets the devotee and the rationalist alike, and must underlie the new society."
+    ]
+   ]
+  },
+  {
+   "n": 7,
+   "title": "Bring It Out",
+   "lecture": "Reply to the Address of Welcome at Shivaganga and Manamadura",
+   "where": "Manamadura",
+   "min": 6,
+   "home": "kalighat",
+   "chapters": [
+    [
+     "arrive",
+     "chart",
+     "Shivaganga and Manamadura",
+     "The zemindars and citizens present their address."
+    ],
+    [
+     "tired",
+     "kalighat",
+     "The body tires",
+     "He is not up to a long speech; the mountain and Mohammed."
+    ],
+    [
+     "empire",
+     "papercut",
+     "An empire of the mind",
+     "An empire on which the sun never sets, against rule over the mind. India is still living."
+    ],
+    [
+     "germs",
+     "plate",
+     "Injured only by ourselves",
+     "Nothing can injure us unless we first injure ourselves. Parallel: germ theory and the healthy host (Koch, 1882)."
+    ],
+    [
+     "blame",
+     "kalighat",
+     "We did not help them",
+     "Those who left for other faiths: it was a good deal our own fault."
+    ],
+    [
+     "pot",
+     "kalighat",
+     "The cooking-pot",
+     "\"Our God is the cooking-pot, and our religion is, Don't touch me, I am holy.\""
+    ],
+    [
+     "vyasa",
+     "palmleaf",
+     "Vyasa's order of gifts",
+     "Spiritual life first, then secular knowledge, then life, then food."
+    ],
+    [
+     "distribute",
+     "kalighat",
+     "Distribute it broadcast",
+     "Bring the treasure out; twenty-five years of work; life subordinated to one high ideal."
+    ]
+   ]
+  },
+  {
+   "n": 8,
+   "title": "Essentials and Non-essentials",
+   "lecture": "Reply to the Address of Welcome at Madura",
+   "where": "Madura",
+   "min": 6,
+   "home": "palmleaf",
+   "chapters": [
+    [
+     "madura",
+     "chart",
+     "Madura",
+     "Three weeks of travel; the city of Sundareshwara; the Hindu public's address."
+    ],
+    [
+     "raja",
+     "kalighat",
+     "Credit to the Raja",
+     "A short reply; the Raja of Ramnad's part in Chicago."
+    ],
+    [
+     "exchange",
+     "chart",
+     "The exchange of nations",
+     "Persia, Greece, England: each age India gave spirituality to the rising power."
+    ],
+    [
+     "scylla",
+     "papercut",
+     "Scylla and Charybdis",
+     "Revival can turn into fanaticism; materialism waits on the other side. We cannot become Western."
+    ],
+    [
+     "custom",
+     "kalighat",
+     "Local custom",
+     "The Southern Brahmin's horror of meat; the Northern goat sacrifice; bullocks once killed for guests."
+    ],
+    [
+     "essentials",
+     "palmleaf",
+     "What is eternal",
+     "The Vedas are eternal; Smritis and Puranas belong to their time."
+    ],
+    [
+     "revile",
+     "kalighat",
+     "Revile none",
+     "Reform by blessing and replacing, not by cursing."
+    ],
+    [
+     "rishi",
+     "lantern",
+     "See it face to face",
+     "Rishihood: religion experienced directly; a heart deep as the ocean, broad as the skies."
+    ]
+   ]
+  },
+  {
+   "n": 9,
+   "title": "The Mission of the Vedanta",
+   "lecture": "The Mission of the Vedanta",
+   "where": "Kumbakonam",
+   "min": 13,
+   "home": "palmleaf",
+   "chapters": [
+    [
+     "kumbakonam",
+     "chart",
+     "Kumbakonam",
+     "Two addresses, from the Hindu community and the students."
+    ],
+    [
+     "interest",
+     "kalighat",
+     "The one and sole interest",
+     "Even peasants followed news of the Parliament of Religions."
+    ],
+    [
+     "current",
+     "papercut",
+     "The river's channel",
+     "From the Ganga's icy bed, the current runs where it must; a great tree cannot be transplanted."
+    ],
+    [
+     "vase",
+     "lantern",
+     "A Japanese vase",
+     "Western religion as an ornament; here, God alone is true and the world is fleeting."
+    ],
+    [
+     "vitality",
+     "chart",
+     "Vitality, not muscle",
+     "India has endured for millennia without conquering anyone."
+    ],
+    [
+     "barrows",
+     "kalighat",
+     "Fit for the world",
+     "Dr Barrows' claim for Christianity; why Vedanta can be the universal religion."
+    ],
+    [
+     "principles",
+     "palmleaf",
+     "Principles, not persons",
+     "Avatars and the Ishta illustrate the principles; they are not the foundation."
+    ],
+    [
+     "science",
+     "plate",
+     "Two roads, one end",
+     "Vedanta inward, science outward, reach the same unity. Parallel: conservation of energy (Helmholtz, 1847)."
+    ],
+    [
+     "tribes",
+     "papercut",
+     "Tribal gods",
+     "Babylonian and Jewish tribal gods bred bloodshed; one truth, many names bred toleration."
+    ],
+    [
+     "onesoul",
+     "lantern",
+     "One Soul",
+     "One Existence throughout the universe: the rational basis of ethics."
+    ],
+    [
+     "faith",
+     "kalighat",
+     "Faith, faith, faith",
+     "Faith in ourselves and in God is the secret of greatness; dualist and Advaitist alike."
+    ],
+    [
+     "poor",
+     "kalighat",
+     "Hard truths",
+     "Our own responsibility for the oppression of the poor; arguments from heredity rejected."
+    ],
+    [
+     "ship",
+     "papercut",
+     "Not denunciation",
+     "Cursing and imitation have failed; grow along national lines with love."
+    ],
+    [
+     "brahmin",
+     "palmleaf",
+     "The ideal Brahmin",
+     "Spiritual wisdom and renunciation as the goal for all: the Vedantic answer to caste."
+    ],
+    [
+     "arise",
+     "palmleaf",
+     "Uttishthata",
+     "\"Arise, awake\": carry Vedanta to every door."
+    ]
+   ]
+  },
+  {
+   "n": 10,
+   "title": "From the Carriage Box",
+   "lecture": "Reply to the Address of Welcome at Madras",
+   "where": "Madras",
+   "min": 5,
+   "home": "kalighat",
+   "chapters": [
+    [
+     "madras",
+     "chart",
+     "Madras",
+     "The reception committee's address; the Maharaja of Khetri's address read aloud."
+    ],
+    [
+     "addresses",
+     "kalighat",
+     "Two addresses",
+     "Harmony among religions; hope for an end to bigotry."
+    ],
+    [
+     "carriage",
+     "kalighat",
+     "An open-air speech",
+     "The hall gives way to a crowd; he speaks from a carriage. Man proposes, God disposes."
+    ],
+    [
+     "backbone",
+     "lantern",
+     "The backbone",
+     "Religion is the bed-rock here; elsewhere a minor occupation."
+    ],
+    [
+     "ceylon",
+     "chart",
+     "What the villagers knew",
+     "Ceylon villagers knew nothing of European politics, yet knew of Chicago."
+    ],
+    [
+     "contest",
+     "papercut",
+     "Which will survive",
+     "Renunciation, fearlessness and love against competition, cruel, cold and heartless."
+    ],
+    [
+     "caste",
+     "kalighat",
+     "Checking competition",
+     "Caste as the breaking of competition and the mitigation of its cruelties."
+    ],
+    [
+     "fire",
+     "kalighat",
+     "Let not the fire die",
+     "The crowd surges; he asks them to keep the fire burning."
+    ]
+   ]
+  },
+  {
+   "n": 11,
+   "title": "My Plan of Campaign",
+   "lecture": "My Plan of Campaign",
+   "where": "Victoria Hall, Madras",
+   "min": 13,
+   "home": "kalighat",
+   "chapters": [
+    [
+     "hall",
+     "chart",
+     "Victoria Hall",
+     "Four years since he left from here; three years of silence abroad."
+    ],
+    [
+     "silence",
+     "kalighat",
+     "Breaking silence",
+     "Ready now to answer the misunderstandings, caring little for the reaction."
+    ],
+    [
+     "theosophy",
+     "kalighat",
+     "The Theosophists",
+     "Honour to Mrs Besant's work, but no help in America, and why he will not join."
+    ],
+    [
+     "starve",
+     "kalighat",
+     "Starved out",
+     "Missionaries, and a countryman leading a reform party, worked against him."
+    ],
+    [
+     "shudra",
+     "palmleaf",
+     "Shudra?",
+     "His caste answered; any of the twice-born may take Sannyasa."
+    ],
+    [
+     "growth",
+     "papercut",
+     "Growth, not reform",
+     "Madras's steady growth against Bengal's reactions; \"I believe in growth.\""
+    ],
+    [
+     "rheumatism",
+     "papercut",
+     "Chronic rheumatism",
+     "Evil moves from limb to limb; a wave needs a hollow; fanatical reform defeats itself."
+    ],
+    [
+     "drowning",
+     "papercut",
+     "Pull me out first",
+     "The drowning boy who asks to be pulled out before the lecture."
+    ],
+    [
+     "opinion",
+     "kalighat",
+     "Public opinion",
+     "Without an educated public, law changes nothing; the tyranny of a minority."
+    ],
+    [
+     "reformers",
+     "chart",
+     "Blessing, not cursing",
+     "Buddhism's decline; Shankara, Ramanuja, Nanak, Chaitanya, Kabir, Dadu built on tradition."
+    ],
+    [
+     "deluge",
+     "lantern",
+     "Deluge the land",
+     "Each nation has its vital centre; India's is religion. Spiritual ideas first."
+    ],
+    [
+     "charity",
+     "chart",
+     "Spiritual charity",
+     "The highest gift; India's thought once reached China, Asia Minor, the Malay archipelago."
+    ],
+    [
+     "plan",
+     "kalighat",
+     "The plan",
+     "Train young men as preachers; a man-making religion; no weakening mysticism."
+    ],
+    [
+     "squirrel",
+     "papercut",
+     "Rama's bridge",
+     "Patriotism: feel, find the way, and will; the squirrel's sand on Rama's bridge."
+    ],
+    [
+     "sink",
+     "papercut",
+     "Plug the leaks",
+     "Society is a leaking ship; never let curses rise to our lips."
+    ]
+   ]
+  },
+  {
+   "n": 12,
+   "title": "Strength from Every Page",
+   "lecture": "Vedanta in its Application to Indian Life",
+   "where": "Madras",
+   "min": 12,
+   "home": "palmleaf",
+   "chapters": [
+    [
+     "sindhu",
+     "chart",
+     "From Sindhu to Hindu",
+     "The name and the river; Vedanta as the name for all Indian religious life."
+    ],
+    [
+     "shruti",
+     "palmleaf",
+     "Shruti and custom",
+     "Shruti over Smriti; local practice is mostly Puranic; the Sama-Veda's lost thousand branches."
+    ],
+    [
+     "commentators",
+     "palmleaf",
+     "Twisting texts",
+     "Commentators bend texts to their school; Ajā as unborn, or as she-goat."
+    ],
+    [
+     "stages",
+     "palmleaf",
+     "Stages, not rivals",
+     "Dvaita, Vishishtadvaita, Advaita are steps on one road."
+    ],
+    [
+     "sublime",
+     "lantern",
+     "Beyond the senses",
+     "The Upanishads seek the infinite within, where other poetry seeks it in muscle and storm."
+    ],
+    [
+     "birds",
+     "papercut",
+     "Two birds",
+     "Two birds on one tree: one eats the fruit, one looks on in glory."
+    ],
+    [
+     "alexander",
+     "kalighat",
+     "Alexander on the Indus",
+     "Strength on every page: the sannyasin who would not go to Greece."
+    ],
+    [
+     "madalasa",
+     "kalighat",
+     "Madalasa's lullaby",
+     "The queen sings to her baby: thou art the pure, the stainless."
+    ],
+    [
+     "screen",
+     "lantern",
+     "The hole in the screen",
+     "The soul is already perfect; evolution is the widening of the hole, not change in what is behind."
+    ],
+    [
+     "solidarity",
+     "plate",
+     "The solidarity of the universe",
+     "The world moving towards unity. Parallel: Maxwell unites electricity, magnetism and light, 1865."
+    ],
+    [
+     "strong",
+     "kalighat",
+     "Be strong",
+     "Physical weakness is the cause; strength before scripture."
+    ],
+    [
+     "caste",
+     "kalighat",
+     "Privilege must go",
+     "Caste as natural grouping may stay; privilege must end."
+    ],
+    [
+     "serve",
+     "kalighat",
+     "Only serve",
+     "Look upon everyone as God; you cannot help anyone, you can only serve."
+    ]
+   ]
+  },
+  {
+   "n": 13,
+   "title": "The Sages of India",
+   "lecture": "The Sages of India",
+   "where": "Madras",
+   "min": 13,
+   "home": "kalighat",
+   "chapters": [
+    [
+     "sages",
+     "kalighat",
+     "Epoch-makers",
+     "Countless sages; a few who made epochs."
+    ],
+    [
+     "shruti",
+     "palmleaf",
+     "The order of books",
+     "Shrutis eternal; Smritis and Puranas yield when they conflict."
+    ],
+    [
+     "principles",
+     "palmleaf",
+     "No founder",
+     "Religions built on one person rise and fall with that person's history."
+    ],
+    [
+     "table",
+     "lantern",
+     "Like this table",
+     "The Rishi perceives spiritual truth as directly as we perceive a table."
+    ],
+    [
+     "becoming",
+     "kalighat",
+     "Being and becoming",
+     "Religion is not in books or talk; the son whose face shines with Brahman."
+    ],
+    [
+     "rama",
+     "kalighat",
+     "Rama",
+     "The ideal king, son and husband."
+    ],
+    [
+     "sita",
+     "kalighat",
+     "Sita",
+     "Unique, depicted once and for all; she is in the vitals of the race."
+    ],
+    [
+     "krishna",
+     "kalighat",
+     "Krishna and the Gopis",
+     "Work for its own sake; the love of the Gopis, defended."
+    ],
+    [
+     "gita",
+     "palmleaf",
+     "Pearls on a thread",
+     "The Gita harmonises every school."
+    ],
+    [
+     "buddha",
+     "kalighat",
+     "Buddha",
+     "Teacher of the poor; later decline; the Jagannath temple."
+    ],
+    [
+     "acharyas",
+     "chart",
+     "Shankara, Ramanuja, Chaitanya",
+     "Intellect, breadth and heart, across the map of India."
+    ],
+    [
+     "ramakrishna",
+     "kalighat",
+     "Ramakrishna",
+     "Head and heart joined; any truth here is his, any error mine."
+    ]
+   ]
+  },
+  {
+   "n": 14,
+   "title": "The Work Before Us",
+   "lecture": "The Work Before Us",
+   "where": "Triplicane Literary Society, Madras",
+   "min": 10,
+   "home": "chart",
+   "chapters": [
+    [
+     "triplicane",
+     "kalighat",
+     "Young men of Madras",
+     "Fourteen years of wandering; the problem must be seen whole."
+    ],
+    [
+     "linked",
+     "papercut",
+     "All life is linked",
+     "Ideas must widen to cover humanity."
+    ],
+    [
+     "minds",
+     "papercut",
+     "Inward and outward",
+     "Environment turned the Indian mind within and the Greek mind outward."
+    ],
+    [
+     "decline",
+     "kalighat",
+     "Decline",
+     "Art, music and religion lost originality; scholars argued over touch and ritual."
+    ],
+    [
+     "rule",
+     "chart",
+     "Mohammedan and British rule",
+     "Benefits without new vigour; the link with Greek-derived Europe."
+    ],
+    [
+     "expand",
+     "chart",
+     "Expand to live",
+     "Each nation must give in order to live; wisdom does not march upon bleeding bodies."
+    ],
+    [
+     "dew",
+     "papercut",
+     "The silent influence",
+     "Anonymous authors; thought spreading like dew."
+    ],
+    [
+     "roads",
+     "chart",
+     "Roads of thought",
+     "Roman and English roads carry ideas; a spiritual conquest of the world."
+    ],
+    [
+     "extremes",
+     "papercut",
+     "Atheists, not fools",
+     "Materialism and superstition; avoid all mystery."
+    ],
+    [
+     "persons",
+     "palmleaf",
+     "Allegiance to principles",
+     "Principles over persons; texts for every stage."
+    ],
+    [
+     "sufi",
+     "papercut",
+     "\"I am Thyself\"",
+     "The Sufi at the closed door; the Gopis who became Krishna."
+    ],
+    [
+     "power",
+     "kalighat",
+     "All power is there",
+     "Stand up and express the divinity within you."
+    ]
+   ]
+  },
+  {
+   "n": 15,
+   "title": "The Future of India",
+   "lecture": "The Future of India",
+   "where": "Madras",
+   "min": 13,
+   "home": "kalighat",
+   "chapters": [
+    [
+     "glory",
+     "chart",
+     "The ancient land",
+     "Tidal waves of spirituality flowing outward from India."
+    ],
+    [
+     "seed",
+     "papercut",
+     "Out of the past",
+     "The fallen fruit decays and feeds the new tree."
+    ],
+    [
+     "complex",
+     "chart",
+     "India's knot",
+     "Race, religion, language and government: a harder problem than any nation's."
+    ],
+    [
+     "common",
+     "palmleaf",
+     "Common ground",
+     "Religion is the only unifying base; make it known everywhere."
+    ],
+    [
+     "somnath",
+     "lantern",
+     "Somnath",
+     "Temples destroyed and rebuilt; culture withstands shocks, not mere knowledge."
+    ],
+    [
+     "vernacular",
+     "kalighat",
+     "In every tongue",
+     "Teach through the vernaculars; spread Sanskrit learning too."
+    ],
+    [
+     "races",
+     "chart",
+     "North and South",
+     "Theories of separate races and of Aryans from outside, disputed."
+    ],
+    [
+     "cobra",
+     "kalighat",
+     "Raise, don't lower",
+     "Raise the lower castes; the Brahmin like the cobra drawing out its own poison."
+    ],
+    [
+     "sandalwood",
+     "papercut",
+     "Sandalwood",
+     "The ass that knows its load's weight, not its worth; acquire Sanskrit culture."
+    ],
+    [
+     "organize",
+     "papercut",
+     "Co-ordination of wills",
+     "A handful of Japanese, a few English: the secret is organisation."
+    ],
+    [
+     "onemind",
+     "palmleaf",
+     "Be of one mind",
+     "The Vedic verse: the gods, being of one mind, received the oblations."
+    ],
+    [
+     "virat",
+     "lantern",
+     "The Virat",
+     "Worship your countrymen as the living God."
+    ],
+    [
+     "om",
+     "palmleaf",
+     "A temple of Om",
+     "A non-sectarian temple, and training for teachers."
+    ],
+    [
+     "education",
+     "kalighat",
+     "Not negative education",
+     "Information without character produces nothing original."
+    ],
+    [
+     "youth",
+     "kalighat",
+     "Young men",
+     "Give your energy to the nation and to one great ideal."
+    ]
+   ]
+  },
+  {
+   "n": 16,
+   "title": "On Charity",
+   "lecture": "On Charity",
+   "where": "Annadana Samajam, Madras",
+   "min": 3,
+   "home": "kalighat",
+   "chapters": [
+    [
+     "samajam",
+     "kalighat",
+     "The Annadana Samajam",
+     "At the annual meeting he answers a speaker who objected to alms for Brahmins."
+    ],
+    [
+     "thinkers",
+     "kalighat",
+     "The nation's thinkers",
+     "Take away the means that let them think, and the whole nation suffers."
+    ],
+    [
+     "poorlaw",
+     "lantern",
+     "Poor-house and jail",
+     "Western discriminate charity: police, courts and prisons; beggars turned into criminals."
+    ],
+    [
+     "civilisation",
+     "papercut",
+     "A disease called civilisation",
+     "Poverty lasts as long as civilisation does; Indian giving has its good side as well as its bad."
+    ]
+   ]
+  },
+  {
+   "n": 17,
+   "title": "I Am Your Brother",
+   "lecture": "Address of Welcome Presented at Calcutta and Reply",
+   "where": "Sobha Bazar, Calcutta",
+   "min": 12,
+   "home": "kalighat",
+   "chapters": [
+    [
+     "calcutta",
+     "chart",
+     "Calcutta",
+     "A week after arrival; Raja Radha Kanta Deb's house; Raja Benoy Krishna presides."
+    ],
+    [
+     "address",
+     "kalighat",
+     "The address",
+     "Chicago, London, the simple life, and Ramakrishna."
+    ],
+    [
+     "brother",
+     "kalighat",
+     "A Calcutta boy",
+     "He returns not as a sannyasin but as a brother."
+    ],
+    [
+     "parliament",
+     "kalighat",
+     "A horse to ride",
+     "The Parliament was an opening, not the purpose."
+    ],
+    [
+     "england",
+     "chart",
+     "America and England",
+     "American hospitality; his love for the English; work in England that will last."
+    ],
+    [
+     "poverty",
+     "kalighat",
+     "Poverty is not sin",
+     "Here alone poverty does not mean crime."
+    ],
+    [
+     "master",
+     "kalighat",
+     "My Master",
+     "All good is his; the faults are mine."
+    ],
+    [
+     "gita",
+     "palmleaf",
+     "Whenever Dharma declines",
+     "The Gita's promise; the upheaval now under way."
+    ],
+    [
+     "theme",
+     "lantern",
+     "Theme and variations",
+     "Every part of national life must rest on religion."
+    ],
+    [
+     "expand",
+     "chart",
+     "Expand or die",
+     "Give spirituality, take science; Raja Rammohan Roy began it."
+    ],
+    [
+     "oyster",
+     "papercut",
+     "Out of the shell",
+     "The oyster in its shell will not do."
+    ],
+    [
+     "nachiketa",
+     "kalighat",
+     "Nachiketa",
+     "Three days at the house of Death: Shraddha, faith in oneself."
+    ],
+    [
+     "arise",
+     "kalighat",
+     "Arise, awake",
+     "Young men of Calcutta: be fearless and carry the work."
+    ]
+   ]
+  },
+  {
+   "n": 18,
+   "title": "The Vedanta in All Its Phases",
+   "lecture": "The Vedanta in all its phases",
+   "where": "Calcutta",
+   "min": 14,
+   "home": "palmleaf",
+   "chapters": [
+    [
+     "breathe",
+     "palmleaf",
+     "We breathe the Vedanta",
+     "The oldest teaching, and the last word."
+    ],
+    [
+     "waves",
+     "chart",
+     "Waves westward",
+     "To Athens, Alexandria and Antioch; Sankhya and the other systems."
+    ],
+    [
+     "sects",
+     "palmleaf",
+     "All are Vedantists",
+     "Every sect, dualist or monist, appeals to the Upanishads."
+    ],
+    [
+     "two",
+     "kalighat",
+     "Ramanuja and Shankara",
+     "Two commentators, Bodhayana before them, Vyasa's Sutras above."
+    ],
+    [
+     "allo",
+     "palmleaf",
+     "An Allopanishad",
+     "The Gita next in authority; spurious texts like the Allopanishad."
+    ],
+    [
+     "poetry",
+     "lantern",
+     "Inward infinity",
+     "The poetry of the Upanishads turns from the outer sky to the Atman."
+    ],
+    [
+     "bengal",
+     "kalighat",
+     "Custom in Bengal",
+     "Village custom and Vamachara have displaced the Upanishads."
+    ],
+    [
+     "farmer",
+     "papercut",
+     "Breaching the wall",
+     "Power is already within; the farmer breaks the mud-wall and the water flows."
+    ],
+    [
+     "neti",
+     "palmleaf",
+     "Neti, neti",
+     "The Personal God; Sat-Chit-Ananda; not this, not this."
+    ],
+    [
+     "contract",
+     "papercut",
+     "Contraction and expansion",
+     "Ramanuja: the soul contracts and expands with Karma."
+    ],
+    [
+     "kitchen",
+     "kalighat",
+     "Religion in the kitchen",
+     "Ahara-shuddhi: purity of food and purity of thought."
+    ],
+    [
+     "kant",
+     "percept",
+     "Maya and Kant",
+     "Time, space and causation as the forms through which we see."
+    ],
+    [
+     "banner",
+     "papercut",
+     "The banner of India",
+     "Renunciation, floating over the world."
+    ],
+    [
+     "guru",
+     "kalighat",
+     "The true Guru",
+     "Not one who twists texts; the Kula-Guru custom rejected."
+    ],
+    [
+     "copernicus",
+     "plate",
+     "Earth or sun at the centre",
+     "Dualism and monism as geocentric and heliocentric views of one sky (Copernicus, 1543)."
+    ],
+    [
+     "one",
+     "palmleaf",
+     "That which exists is One",
+     "Ramakrishna the living reconciler; the closing verses."
+    ]
+   ]
+  },
+  {
+   "n": 19,
+   "title": "Father of Mountains",
+   "lecture": "Address of Welcome at Almora and Reply",
+   "where": "Almora",
+   "min": 5,
+   "home": "papercut",
+   "chapters": [
+    [
+     "almora",
+     "chart",
+     "Up to Almora",
+     "The road to Kumaon and the Himalayas."
+    ],
+    [
+     "address",
+     "kalighat",
+     "The moon among stars",
+     "The Hindi address: one virtuous son, the moon outshining the stars; hope for a Math."
+    ],
+    [
+     "dream",
+     "papercut",
+     "Land of my forefathers",
+     "The Himalayas as the dream of his ancestors; the wish to end his days here."
+    ],
+    [
+     "fear",
+     "palmleaf",
+     "Renunciation alone",
+     "Everything is fraught with fear; renunciation alone makes fearless."
+    ],
+    [
+     "centre",
+     "papercut",
+     "A centre in the hills",
+     "A place of calm for one eternal religion: the perception of the divine within."
+    ]
+   ]
+  },
+  {
+   "n": 20,
+   "title": "Theory and Practice",
+   "lecture": "Vedic Teaching in Theory and Practice",
+   "where": "English Club, Almora",
+   "min": 3,
+   "home": "lantern",
+   "chapters": [
+    [
+     "club",
+     "kalighat",
+     "Two lectures at Almora",
+     "A Hindi lecture, then the English Club and its critical hearers."
+    ],
+    [
+     "tribal",
+     "papercut",
+     "The tribal god",
+     "How one tribe's god grew by conquering others."
+    ],
+    [
+     "within",
+     "papercut",
+     "The inquiry turns within",
+     "Finding no answer outside, India discovered the introspective method."
+    ],
+    [
+     "merge",
+     "lantern",
+     "Names and forms disappear",
+     "Soul and God at one; the reporter's account of the hall merging into Spirit."
+    ]
+   ]
+  },
+  {
+   "n": 21,
+   "title": "Bhakti at Sialkot",
+   "lecture": "Bhakti (Sialkot)",
+   "where": "Sialkot, Punjab",
+   "min": 8,
+   "home": "kalighat",
+   "chapters": [
+    [
+     "tour",
+     "chart",
+     "Kashmir to Sialkot",
+     "Kashmir, Murree, Rawalpindi, Jammu; a lecture in Hindi."
+    ],
+    [
+     "unity",
+     "papercut",
+     "One love in all",
+     "Religions differ in form; Bhakti runs through them all."
+    ],
+    [
+     "define",
+     "palmleaf",
+     "What Bhakti is",
+     "Shandilya's intense love for God; easier than Jnana or Yoga; Manushya as the being with Manas."
+    ],
+    [
+     "river",
+     "papercut",
+     "A river divided",
+     "Hatred saps the current; faces differ, and one religion cannot suit all."
+    ],
+    [
+     "morality",
+     "kalighat",
+     "Morality first",
+     "Food and caste rules that lost their spirit."
+    ],
+    [
+     "inner",
+     "kalighat",
+     "Inner purity",
+     "Truthfulness, charity and service."
+    ],
+    [
+     "stages",
+     "lantern",
+     "From form to the formless",
+     "The Ark, the images: steps, not sins."
+    ],
+    [
+     "false",
+     "kalighat",
+     "Not fear, not greed",
+     "Worship for wealth, sons or heaven is not Bhakti; the sadhu who makes gold."
+    ],
+    [
+     "relation",
+     "kalighat",
+     "Father, Mother, Beloved",
+     "Radha and Krishna: love without fear."
+    ],
+    [
+     "love",
+     "papercut",
+     "The propeller is love",
+     "The tigress hunting for her cubs; God is love personified; every man the perfect temple."
+    ]
+   ]
+  },
+  {
+   "n": 22,
+   "title": "The Common Bases of Hinduism",
+   "lecture": "The Common Bases of Hinduism",
+   "where": "Lahore",
+   "min": 13,
+   "home": "kalighat",
+   "chapters": [
+    [
+     "lahore",
+     "chart",
+     "Lahore",
+     "The land of five rivers; the Arya Samaj and the Sanatana Dharma Sabha receive him."
+    ],
+    [
+     "agree",
+     "kalighat",
+     "Where we agree",
+     "Not to find differences, but common ground."
+    ],
+    [
+     "hindu",
+     "palmleaf",
+     "Hindu, with pride",
+     "The name should stand for spirituality and dignity."
+    ],
+    [
+     "jewel",
+     "papercut",
+     "The serpent's jewel",
+     "A giant whose life is in a bird: a nation's life is in its religion."
+    ],
+    [
+     "eternal",
+     "lantern",
+     "The eternal over the changing",
+     "India's contribution is the search for what does not change."
+    ],
+    [
+     "sects",
+     "papercut",
+     "Sects, not sectarianism",
+     "\"Sects must be but sectarianism need not.\""
+    ],
+    [
+     "bases",
+     "palmleaf",
+     "The common bases",
+     "The Vedas, God in many forms, cycles, eternal souls, rebirth."
+    ],
+    [
+     "purity",
+     "kalighat",
+     "The soul's purity",
+     "Dualist and monist both affirm the soul's perfection."
+    ],
+    [
+     "lionskin",
+     "papercut",
+     "Nothing he becomes",
+     "Think yourself nothing and nothing you become."
+    ],
+    [
+     "realise",
+     "lantern",
+     "Not like a parrot",
+     "Religion is Anubhuti, realisation."
+    ],
+    [
+     "govind",
+     "kalighat",
+     "Guru Govind Singh",
+     "Love your own people, even when they wrong you."
+    ],
+    [
+     "imitation",
+     "kalighat",
+     "Imitation is not civilisation",
+     "Absorb the good without imitating."
+    ],
+    [
+     "air",
+     "papercut",
+     "Free as God's air",
+     "Light the dark room; believe in man first."
+    ]
+   ]
+  },
+  {
+   "n": 23,
+   "title": "Bhakti at Lahore",
+   "lecture": "Bhakti (Lahore)",
+   "where": "Lahore · 9 Nov 1897",
+   "min": 7,
+   "home": "palmleaf",
+   "chapters": [
+    [
+     "roots",
+     "palmleaf",
+     "Roots of Bhakti",
+     "Seeds in the Samhitas and Upanishads, full growth in the Puranas."
+    ],
+    [
+     "puranas",
+     "kalighat",
+     "Dhruva and Prahlada",
+     "The worth of the Puranas lies in lives of devotion."
+    ],
+    [
+     "gentle",
+     "kalighat",
+     "A gentler path",
+     "Vedanta asks for a fearlessness few have."
+    ],
+    [
+     "personal",
+     "lantern",
+     "A personal God",
+     "The ordinary man needs one; the body is the greatest temple."
+    ],
+    [
+     "images",
+     "lantern",
+     "Through matter",
+     "Images and temples as steps, lower but not wrong."
+    ],
+    [
+     "ishta",
+     "palmleaf",
+     "The Ishta Devata",
+     "Keep your own chosen form; respect others'."
+    ],
+    [
+     "guruism",
+     "kalighat",
+     "Not a trade",
+     "Guruism must stop being hereditary; a true Guru transmits."
+    ],
+    [
+     "food",
+     "kalighat",
+     "Eating rules",
+     "Mostly superficial; for the one who has renounced."
+    ],
+    [
+     "narayana",
+     "kalighat",
+     "Feed Narayana",
+     "Serve the poor as God; the receiver is God for that moment."
+    ],
+    [
+     "triangle",
+     "papercut",
+     "The triangle of love",
+     "Love asks nothing, fears nothing, and is God; the mother who faces the lion."
+    ]
+   ]
+  },
+  {
+   "n": 24,
+   "title": "The Vedanta",
+   "lecture": "The Vedanta",
+   "where": "Lahore · 12 Nov 1897",
+   "min": 18,
+   "home": "plate",
+   "chapters": [
+    [
+     "twoworlds",
+     "papercut",
+     "Two worlds",
+     "The search turns from the outer world to the inner; the Upanishads mark the turn."
+    ],
+    [
+     "prasthanas",
+     "palmleaf",
+     "Three Prasthanas",
+     "Upanishads, Vyasa's Sutras and the Gita under every school."
+    ],
+    [
+     "arundhati",
+     "percept",
+     "Arundhati Nyaya",
+     "The faint star found by way of a bright one: from dualist worship to Tattvamasi."
+    ],
+    [
+     "prana",
+     "plate",
+     "Prana and Akasha",
+     "One energy, one primal matter, projection and dissolution. Parallel: conservation of energy (Joule, Helmholtz)."
+    ],
+    [
+     "stone",
+     "plate",
+     "A stone in the lake",
+     "Perception as the reaction of Chitta. Parallel: Helmholtz measures nerve conduction, 1850."
+    ],
+    [
+     "pearl",
+     "papercut",
+     "The pearl",
+     "The oyster coats the grain of sand: the mind's reaction."
+    ],
+    [
+     "witness",
+     "lantern",
+     "The witness",
+     "The river keeps its name while its water changes; the Atman does not change."
+    ],
+    [
+     "infinite",
+     "plate",
+     "Infinite power within",
+     "Every being holds infinite power, only partly shown."
+    ],
+    [
+     "contract",
+     "papercut",
+     "Contracted or never changed",
+     "Dualist and Advaitin on the Atman."
+    ],
+    [
+     "buddhist",
+     "kalighat",
+     "The Buddhist challenge",
+     "No substance, no Creator; the potter and the pot; Advaita's answer."
+    ],
+    [
+     "brahman",
+     "palmleaf",
+     "Individual in being universal",
+     "The knower cannot become an object of knowledge."
+    ],
+    [
+     "rope",
+     "percept",
+     "Rope and snake",
+     "Maya as name and form."
+    ],
+    [
+     "mirror",
+     "lantern",
+     "The mirror",
+     "The Infinite sees its own face; three stages of understanding."
+    ],
+    [
+     "hurt",
+     "kalighat",
+     "Whom you hurt",
+     "\"Whomsoever you hurt, you hurt yourself.\" Weakness is the root of evil."
+    ],
+    [
+     "bread",
+     "kalighat",
+     "First bread",
+     "Serve the starving masses; renounce selfishness."
+    ],
+    [
+     "believe",
+     "palmleaf",
+     "Believe in yourselves",
+     "The secret of Advaita; arise, awake."
+    ]
+   ]
+  },
+  {
+   "n": 25,
+   "title": "Vedantism at Khetri",
+   "lecture": "Vedantism (Khetri)",
+   "where": "Khetri · 20 Dec 1897",
+   "min": 8,
+   "home": "palmleaf",
+   "chapters": [
+    [
+     "khetri",
+     "chart",
+     "Khetri",
+     "The Raja presides; a summary from notes, with no shorthand writer present."
+    ],
+    [
+     "ideals",
+     "chart",
+     "Greek and Aryan",
+     "Two environments, two ideals: the outer infinite and the inner."
+    ],
+    [
+     "europe",
+     "chart",
+     "Into Europe",
+     "Dara Shukoh's Persian Upanishads; Schopenhauer, Kant, Deussen, Max Müller."
+    ],
+    [
+     "kandas",
+     "palmleaf",
+     "How the Vedas grew",
+     "Ideas fixed in books; the metres; Karma Kanda and Jnana Kanda."
+    ],
+    [
+     "double",
+     "papercut",
+     "The double and the laughing gods",
+     "Egypt and Babylon kept the body's double; the Rig-Veda's gods were friendly."
+    ],
+    [
+     "nasadiya",
+     "palmleaf",
+     "Nasadiya",
+     "The hymn of creation; That which exists is One."
+    ],
+    [
+     "whatami",
+     "papercut",
+     "What am I?",
+     "Greece put heaven outside; India turned within. Neti, neti."
+    ],
+    [
+     "bible",
+     "palmleaf",
+     "The Bible of India",
+     "The Upanishads; Dvaita and Vishishtadvaita as steps to Tattvamasi."
+    ],
+    [
+     "kitchen",
+     "kalighat",
+     "The kitchen as temple",
+     "The spirit lost, the externals kept."
+    ],
+    [
+     "unity",
+     "plate",
+     "Unity in diversity",
+     "Knowledge is finding unity in diversity. Parallel: Mendeleev's periodic table, 1869."
+    ]
+   ]
+  },
+  {
+   "n": 26,
+   "title": "Teachers, Not Beggars",
+   "lecture": "The Influence of Indian Spiritual Thought in England",
+   "where": "Star Theatre, Calcutta · 11 Mar 1898",
+   "min": 6,
+   "home": "kalighat",
+   "chapters": [
+    [
+     "star",
+     "chart",
+     "Mantras on far walls",
+     "Old Bengali script on temple walls in China and Japan; the Star Theatre meeting."
+    ],
+    [
+     "nivedita",
+     "kalighat",
+     "Introducing Nivedita",
+     "Miss Noble, Miss Müller, Mrs Besant and others who gave themselves to India."
+    ],
+    [
+     "faith",
+     "kalighat",
+     "Faith in oneself",
+     "Faith in oneself before faith in God."
+    ],
+    [
+     "equals",
+     "kalighat",
+     "As equals",
+     "Friendship only between equals: go to England and America as teachers."
+    ],
+    [
+     "shraddha",
+     "palmleaf",
+     "Shraddha",
+     "The Katha Upanishad; the conversation in a Kashmir village."
+    ],
+    [
+     "ocean",
+     "papercut",
+     "Bubble and wave",
+     "Behind both, the infinite ocean."
+    ],
+    [
+     "hope",
+     "lantern",
+     "India dies not",
+     "Infinite hope begets infinite aspiration."
+    ],
+    [
+     "bengal",
+     "kalighat",
+     "Poor men of Bengal",
+     "Because you have nothing, you will be sincere."
+    ]
+   ]
+  },
+  {
+   "n": 27,
+   "title": "The Sannyasin Loves Death",
+   "lecture": "Sannyasa: Its Ideal and Practice",
+   "where": "Belur Math · 19 Jun 1899",
+   "min": 5,
+   "home": "kalighat",
+   "chapters": [
+    [
+     "belur",
+     "chart",
+     "Belur, 1899",
+     "The junior Sannyasins' farewell on the eve of his second voyage west."
+    ],
+    [
+     "death",
+     "papercut",
+     "A gradual death",
+     "Not seeking death, but offering every act in sacrifice."
+    ],
+    [
+     "gita",
+     "palmleaf",
+     "Hands and feet everywhere",
+     "Gita XIII.13: the whole world is one."
+    ],
+    [
+     "ideal",
+     "papercut",
+     "Too high, too low",
+     "Immense idealism with immense practicality."
+    ],
+    [
+     "men",
+     "kalighat",
+     "To make men",
+     "Be Rishis yourselves, standing on your own feet."
+    ],
+    [
+     "obey",
+     "papercut",
+     "Free as air",
+     "Catch the crocodile first; obedient as this plant and this dog."
+    ]
+   ]
+  },
+  {
+   "n": 28,
+   "title": "What Have I Learnt?",
+   "lecture": "What have I learnt?",
+   "where": "Dacca · 30 Mar 1901",
+   "min": 7,
+   "home": "papercut",
+   "chapters": [
+    [
+     "rivers",
+     "chart",
+     "Rivers of Eastern Bengal",
+     "The beauty of the land on the journey to Dacca."
+    ],
+    [
+     "return",
+     "kalighat",
+     "Back to the old faith",
+     "Searching foreign sects, he found the religion he was born in."
+    ],
+    [
+     "critics",
+     "kalighat",
+     "Two kinds of critics",
+     "Those who attack idolatry unseen, and those who explain rites with science."
+    ],
+    [
+     "kama",
+     "palmleaf",
+     "Rama or Kama",
+     "Where Rama is, there is no Kama."
+    ],
+    [
+     "gifts",
+     "palmleaf",
+     "Three rare things",
+     "Human birth, longing for freedom, the company of the great."
+    ],
+    [
+     "parrots",
+     "papercut",
+     "Parrots, not Pandits",
+     "Scripture recited, never realised; the Amalaka fruit in the palm."
+    ],
+    [
+     "guru",
+     "kalighat",
+     "The Guru",
+     "Learned, sinless, unselfish: an ocean of mercy without reason."
+    ],
+    [
+     "abhyasa",
+     "lantern",
+     "Practice",
+     "Without practice, no realisation; beyond heaven itself."
+    ]
+   ]
+  },
+  {
+   "n": 29,
+   "title": "The Religion We Are Born In",
+   "lecture": "The Religion we are born in",
+   "where": "Dacca · 31 Mar 1901",
+   "min": 9,
+   "home": "kalighat",
+   "chapters": [
+    [
+     "dacca",
+     "chart",
+     "The whole road",
+     "An open-air meeting in Dacca; the journey from Colombo seen end to end."
+    ],
+    [
+     "seed",
+     "papercut",
+     "The seed",
+     "It seems to rot before it becomes a tree."
+    ],
+    [
+     "unity",
+     "kalighat",
+     "Common ground",
+     "Sects and customs differ; much is shared."
+    ],
+    [
+     "books",
+     "palmleaf",
+     "Religions with books",
+     "They survive persecution; the Vedas and the Upanishads."
+    ],
+    [
+     "laws",
+     "plate",
+     "Eternal laws",
+     "The Rishis discovered, they did not compose. Parallel: gravitation existed before Newton, 1687."
+    ],
+    [
+     "open",
+     "palmleaf",
+     "Open to all",
+     "Everyone has the right to the Veda: be a Rishi."
+    ],
+    [
+     "bases",
+     "palmleaf",
+     "Ishvara, Atman, Jagat",
+     "The Atman known as separate from Manas."
+    ],
+    [
+     "man",
+     "kalighat",
+     "Through Man",
+     "To the God of man through Man; image-worship, lowest but not wrong."
+    ],
+    [
+     "repair",
+     "papercut",
+     "Repair, don't demolish",
+     "The old edifice; the leaking ship we sail together."
+    ],
+    [
+     "hearts",
+     "kalighat",
+     "Hearts' blood",
+     "Brahmins give up pride of birth; open knowledge to all."
+    ]
+   ]
+  }
+ ]
+}

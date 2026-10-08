@@ -1,0 +1,135 @@
+<title>From Colombo to Almora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Hind:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a storyboard ledger — summary and route strip on top, then one sheet per film down the route, each with its style-coloured timeline. */
+:root{
+  --paper:#eef0f4; --sheet:#fbfbfd; --ink:#1d2340; --muted:#5a6079; --rule:#d5d9e4; --accent:#34477e;
+  --display:"Rozha One","Hind",Georgia,serif; --body:"Hind",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --kalighat:#c94a32; --papercut:#2f9488; --lantern:#c99a2e; --percept:#9b937f; --plate:#5384c0; --palmleaf:#b06c2e; --chart:#7f6fc4;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#12152a; --sheet:#1a1e36; --ink:#e6e8f2; --muted:#a2a7c0; --rule:#2c3150; --accent:#9fb0ec;
+  --kalighat:#e2705a; --papercut:#4fc0b2; --lantern:#e8be5c; --percept:#cfc6b0; --plate:#7fa8dc; --palmleaf:#d8955a; --chart:#a99be6; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#12152a; --sheet:#1a1e36; --ink:#e6e8f2; --muted:#a2a7c0; --rule:#2c3150; --accent:#9fb0ec;
+  --kalighat:#e2705a; --papercut:#4fc0b2; --lantern:#e8be5c; --percept:#cfc6b0; --plate:#7fa8dc; --palmleaf:#d8955a; --chart:#a99be6; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:400 16px/1.55 var(--body);margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:20px;padding-block:40px 80px;display:grid;gap:36px}
+h1,h2{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0;line-height:1.1}
+h1{font-size:clamp(2.2rem,6vw,3.6rem)}
+h2{font-size:1.7rem}
+.eyebrow{font:500 .72rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.lede{max-width:65ch;color:var(--muted);margin:10px 0 0}
+.stats{display:flex;flex-wrap:wrap;gap:28px;margin-top:20px;font-variant-numeric:tabular-nums}
+.stats b{display:block;font:400 1.9rem/1 var(--display);color:var(--accent)}
+.stats span{font-size:.85rem;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:6px;font:500 .74rem/1 var(--mono);letter-spacing:.04em;padding:6px 9px;border:1px solid var(--rule);border-radius:3px;background:var(--sheet);color:var(--ink);cursor:pointer}
+.chip i{width:10px;height:10px;border-radius:2px;background:var(--c)}
+.chip[aria-pressed="true"]{border-color:var(--c);box-shadow:inset 0 0 0 1px var(--c)}
+.chip:focus-visible,.stop:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.legend-note{font-size:.85rem;color:var(--muted);margin-top:8px;max-width:70ch}
+.route{overflow-x:auto;padding-bottom:6px}
+.route ol{list-style:none;margin:0;padding:0;display:flex;gap:0;min-width:max-content;position:relative}
+.route ol::before{content:"";position:absolute;left:12px;right:12px;top:11px;border-top:1px dashed var(--muted)}
+.stop{position:relative;display:grid;justify-items:center;gap:6px;width:76px;text-decoration:none;color:var(--ink)}
+.stop .dot{width:22px;height:22px;border-radius:50%;background:var(--sheet);border:2px solid var(--accent);display:grid;place-items:center;font:500 .64rem/1 var(--mono);font-variant-numeric:tabular-nums}
+.stop small{font-size:.7rem;color:var(--muted);text-align:center;line-height:1.2}
+.film{background:var(--sheet);border:1px solid var(--rule);border-radius:4px;padding:22px 22px 10px;display:grid;gap:14px;scroll-margin-top:16px}
+.film.dim{opacity:.35}
+.fhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;align-items:end}
+.fhead .meta{font-size:.88rem;color:var(--muted)}
+.fhead .meta em{font-style:normal;color:var(--ink)}
+.dur{font:500 .8rem/1 var(--mono);color:var(--muted);text-align:right;font-variant-numeric:tabular-nums;display:grid;gap:6px}
+.dur b{font-weight:500;color:var(--ink);font-size:1.05rem}
+.bar{display:flex;height:8px;border-radius:2px;overflow:hidden;gap:2px}
+.bar span{background:var(--c);flex:1}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+td{padding:9px 10px 9px 0;border-top:1px solid var(--rule);vertical-align:top}
+td.n{font:400 .74rem/1.9 var(--mono);color:var(--muted);width:2.4em;font-variant-numeric:tabular-nums}
+td.s{width:8.6em;white-space:nowrap}
+td.s .chip{cursor:default;padding:4px 7px;font-size:.66rem}
+td.t{font-weight:600;width:30%;min-width:9em}
+td.g{color:var(--muted);min-width:14em}
+tr.hit td{background:color-mix(in srgb,var(--c) 10%,transparent)}
+.homebadge{font:500 .7rem/1 var(--mono);color:var(--muted)}
+.foot{font-size:.85rem;color:var(--muted);max-width:70ch}
+@media (max-width:560px){.wrap{padding-inline:16px}.film{padding:16px 14px 6px}td.t{width:auto}}
+@media (prefers-reduced-motion:no-preference){.film{transition:opacity .2s}}
+</style>
+
+<main class="wrap">
+  <header>
+    <div class="eyebrow">Film plan · proposal for review</div>
+    <h1>From Colombo to Almora</h1>
+    <p class="lede">One animated film for each of the 29 lectures in Volume 3 of the Complete Works, in contents-page order. No time cap: every section of each lecture gets its own chapter, so film length follows the lecture. Each film opens on the same journey chart, marking where this lecture stands on the road from Colombo.</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <section>
+    <div class="eyebrow" style="margin-bottom:10px">Styles · tap one to highlight its chapters</div>
+    <div class="legend" id="legend"></div>
+    <p class="legend-note">Colours match the timeline in the film player. Scientific plates carry a cited parallel on the plate itself; the narration stays with Swamiji's words.</p>
+  </section>
+
+  <section class="route" aria-label="Films along the route"><ol id="route"></ol></section>
+
+  <div id="films" style="display:grid;gap:22px"></div>
+
+  <p class="foot">Estimated running times assume about forty-five seconds per chapter at the narrator's pace. Dates appear only where the source page gives them.</p>
+</main>
+
+<script>
+const PLAN = __PLAN__;
+const STY = {kalighat:'Kalighat pat',papercut:'Paper-cut',lantern:'Magic lantern',percept:'Perception lab',plate:'Scientific plate',palmleaf:'Palm leaf',chart:"Ship's chart"};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const chip = (k, tag='span', extra='') => `<${tag} class="chip" style="--c:var(--${k})" ${extra}><i></i>${STY[k]}</${tag}>`;
+const fmt = m => m >= 60 ? `${Math.floor(m/60)} h ${m%60} min` : `${m} min`;
+
+const nCh = PLAN.films.reduce((a,f)=>a+f.chapters.length,0);
+const mins = PLAN.films.reduce((a,f)=>a+f.min,0);
+document.getElementById('stats').innerHTML =
+  [[PLAN.films.length,'films'],[nCh,'chapters'],[fmt(mins),'estimated in all'],['3–18 min','per film']]
+  .map(([b,s])=>`<div><b>${b}</b><span>${s}</span></div>`).join('');
+
+const counts = {}; PLAN.films.forEach(f=>f.chapters.forEach(c=>counts[c[1]]=(counts[c[1]]||0)+1));
+document.getElementById('legend').innerHTML = Object.keys(STY)
+  .map(k=>chip(k,'button',`type="button" id="sty-${k}" data-k="${k}" aria-pressed="false"`).replace('</button>',` · ${counts[k]||0}</button>`)).join('');
+
+document.getElementById('route').innerHTML = PLAN.films.map(f=>
+  `<li><a class="stop" href="#film${f.n}"><span class="dot">${f.n}</span><small>${esc(f.where.split(' · ')[0].split(',')[0])}</small></a></li>`).join('');
+
+document.getElementById('films').innerHTML = PLAN.films.map(f=>`
+<article class="film" id="film${f.n}">
+  <div class="fhead">
+    <div style="min-width:0">
+      <div class="eyebrow">Film ${f.n} · ${esc(f.where)}</div>
+      <h2>${esc(f.title)}</h2>
+      <div class="meta">Lecture: <em>${esc(f.lecture)}</em> · <span class="homebadge">home style</span> ${chip(f.home)}</div>
+    </div>
+    <div class="dur"><b>≈ ${f.min} min</b>${f.chapters.length} chapters</div>
+  </div>
+  <div class="bar" aria-hidden="true">${f.chapters.map(c=>`<span style="--c:var(--${c[1]})"></span>`).join('')}</div>
+  <div class="tbl"><table><tbody>${f.chapters.map((c,i)=>`
+    <tr data-k="${c[1]}" style="--c:var(--${c[1]})"><td class="n">${String(i+1).padStart(2,'0')}</td><td class="s">${chip(c[1])}</td><td class="t">${esc(c[2])}</td><td class="g">${esc(c[3])}</td></tr>`).join('')}
+  </tbody></table></div>
+</article>`).join('');
+
+let active = null;
+try { active = localStorage.getItem('cta-style'); } catch(e) {}
+function apply(){
+  document.querySelectorAll('#legend .chip').forEach(b=>b.setAttribute('aria-pressed', String(b.dataset.k===active)));
+  document.querySelectorAll('tr[data-k]').forEach(r=>r.classList.toggle('hit', r.dataset.k===active));
+  document.querySelectorAll('.film').forEach(f=>f.classList.toggle('dim', !!active && !f.querySelector(`tr[data-k="${active}"]`)));
+}
+document.getElementById('legend').addEventListener('click', e=>{
+  const b = e.target.closest('.chip'); if(!b) return;
+  active = active===b.dataset.k ? null : b.dataset.k;
+  try { active ? localStorage.setItem('cta-style', active) : localStorage.removeItem('cta-style'); } catch(e) {}
+  apply();
+});
+apply();
+</script>
