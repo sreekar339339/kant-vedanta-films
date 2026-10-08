@@ -1,0 +1,66 @@
+<title>{{TITLE}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Tiro+Devanagari+Sanskrit&family=Amiri:wght@400;700&display=swap">
+<style>
+/* Layout: a screening room. Film stage on top, caption bar, style-coloured chapter timeline, chapter list. Single dark theme by choice. */
+:root{
+  --ground:#101219;--panel:#181b24;--line:#2a2f3c;--paper:#efe6d2;--muted:#9a9db0;--gerua:#e0904a;
+  --display:"Cormorant Garamond",Georgia,serif;--body:"Atkinson Hyperlegible",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;
+  color-scheme:dark;
+}
+body{background:var(--ground);color:var(--paper);font-family:var(--body);line-height:1.5}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:16px;padding-block:28px 64px;display:grid;gap:18px}
+header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(30px,5vw,48px);margin:0;line-height:1.05;text-wrap:balance}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gerua)}
+.stage{position:relative;background:#000;border-radius:6px;overflow:hidden;box-shadow:0 24px 60px -24px #000}
+.stage canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;max-width:100%;cursor:pointer}
+.big{position:absolute;inset:0;margin:auto;width:84px;height:84px;border-radius:50%;border:0;background:rgba(224,144,74,.92);color:#1a1006;font-size:30px;cursor:pointer;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.big:focus-visible,button:focus-visible{outline:2px solid #f0c56a;outline-offset:3px}
+.caption{min-height:3.2em;font-size:clamp(16px,2.2vw,20px);text-align:center;color:#f4ecdc;padding:4px 8px;text-wrap:balance}
+.caption.off{visibility:hidden}
+.ctrl{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;color:var(--muted);flex-wrap:wrap}
+button{font:inherit;color:var(--paper);background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:6px 12px;cursor:pointer}
+button:hover{border-color:var(--gerua)}
+.tl{position:relative;height:30px;display:flex;border-radius:4px;overflow:hidden;cursor:pointer;background:var(--panel)}
+.tl div{height:100%;border-right:1px solid var(--ground);opacity:.55;transition:opacity .2s}
+.tl div.on{opacity:1}
+.ph{position:absolute;top:-3px;bottom:-3px;width:2px;background:#fff;pointer-events:none;box-shadow:0 0 6px #fff}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--muted)}
+.legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;background:var(--c);vertical-align:-1px}
+.chapters{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px;margin:8px 0 0;padding:0;list-style:none}
+.chapters li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:4px;padding:8px 12px;cursor:pointer;display:grid;gap:2px}
+.chapters li:hover{border-color:var(--gerua)}
+.chapters b{font-family:var(--display);font-size:19px;font-weight:600}
+.chapters small{font-size:12px;color:var(--muted)}
+.chapters em{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--c)}
+.series{display:flex;gap:8px 18px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.series a{color:var(--paper);text-decoration-color:var(--gerua)}
+.series b{color:var(--gerua);font-weight:600}
+.note{font-size:13px;color:var(--muted);max-width:70ch}
+</style>
+
+<div class="wrap">
+  <header>
+    <div><div class="eyebrow">Kant &amp; Vedanta · Film {{NUM}} of 3</div><h1>{{TITLE}}</h1></div>
+    <div class="eyebrow" style="color:var(--muted)">From the works of Swami Vivekananda</div>
+  </header>
+  <div class="stage"><canvas id="cv" width="960" height="540" aria-label="Film: {{TITLE}}"></canvas><button class="big" id="big" type="button" aria-label="Play">▶</button></div>
+  <div class="caption" id="cap"></div>
+  <div class="ctrl"><button id="pp" type="button">Play</button><button id="cc" type="button">Captions on</button><span id="tc">0:00 / 0:00</span><span id="chn"></span></div>
+  <div class="tl" id="tl"><span class="ph" id="ph"></span></div>
+  <div class="legend" id="lg"></div>
+  <nav class="series">{{NAV}}</nav>
+  <ol class="chapters" id="chs"></ol>
+  <p class="note">Narration is synthesised from the script. Every frame is drawn live from one timeline, so the film can also be rendered to MP4. Sources are named on each chapter card.</p>
+  <audio id="au" src="narration.mp3" preload="auto"></audio>
+</div>
+
+<script>
+const DATA=/*DATA*/null;
+/*LIB*/
+/* ================= SCENES ================= */
+/*SCENES*/
+/* ================= PLAYER ================= */
+/*PLAYER*/
+</script>

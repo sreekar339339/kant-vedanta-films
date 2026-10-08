@@ -1,0 +1,428 @@
+{
+ "duration": 280.184,
+ "voice": "af_heart",
+ "speed": 0.92,
+ "chapters": [
+  {
+   "id": "open",
+   "start": 0.6,
+   "end": 21.155,
+   "lines": [
+    {
+     "text": "Calcutta, eighteen eighty-one. A college student named Narendranath is reading Kant.",
+     "start": 0.6,
+     "end": 6.066,
+     "ph": "kælkˈʌɾə, ˈeɪtiːn ˈeɪɾiwˌʌn. ɐ kˈɑːlɪdʒ stˈuːdənt nˈeɪmd nəɹˈeɪndɹənɑːt ɪz ɹˈiːdɪŋ kˈɑːnt."
+    },
+    {
+     "text": "Kant tells him something unsettling: reason cannot see past its own walls.",
+     "start": 6.486,
+     "end": 11.092,
+     "ph": "kˈɑːnt tˈɛlz hˌɪm sˈʌmθɪŋ ʌnsˈɛɾəlɪŋ: ɹˈiːzən kænˈɑːt sˈiː pˈæst ɪts ˈoʊn wˈɔːlz."
+    },
+    {
+     "text": "Years later, as Swami Vivekananda, he would say the sages of India had found that wall long before.",
+     "start": 11.512,
+     "end": 18.28,
+     "ph": "jˈɪɹz lˈeɪɾɚ, æz swˈɑːmi vɪvˌeɪkɑːnˈʌndə, hiː wʊd sˈeɪ ðə sˈeɪdʒᵻz ʌv ˈɪndiə hæd fˈaʊnd ðæt wˈɔːl lˈɔŋ bᵻfˈoːɹ."
+    },
+    {
+     "text": "And they had looked for a way through it.",
+     "start": 18.7,
+     "end": 20.455,
+     "ph": "ænd ðeɪ hæd lˈʊkt fɚɹə wˈeɪ θɹˈuː ɪt."
+    }
+   ]
+  },
+  {
+   "id": "wave",
+   "start": 22.255,
+   "end": 39.756,
+   "lines": [
+    {
+     "text": "The soul, he said, is always looking for something that does not change.",
+     "start": 22.255,
+     "end": 26.386,
+     "ph": "ðə sˈoʊl, hiː sˈɛd, ɪz ˈɔːlweɪz lˈʊkɪŋ fɔːɹ sˈʌmθɪŋ ðæt dʌznˌɑːt tʃˈeɪndʒ."
+    },
+    {
+     "text": "Wealth comes and goes. Ambition is fed, and is hungry again.",
+     "start": 26.806,
+     "end": 30.752,
+     "ph": "wˈɛlθ kˈʌmz ænd ɡˈoʊz. æmbˈɪʃən ɪz fˈɛd, ænd ɪz hˈʌŋɡɹi ɐɡˈɛn."
+    },
+    {
+     "text": "Everything we can grasp rises and falls, like a wave.",
+     "start": 31.172,
+     "end": 34.653,
+     "ph": "ˈɛvɹɪθˌɪŋ wiː kæn ɡɹˈæsp ɹˈaɪzᵻz ænd fˈɔːlz, lˈaɪk ɐ wˈeɪv."
+    },
+    {
+     "text": "Religion, for him, was the search for what lies beneath the waves.",
+     "start": 35.073,
+     "end": 39.056,
+     "ph": "ɹᵻlˈɪdʒən, fɔːɹ hˈɪm, wʌzðə sˈɜːtʃ fɔːɹ wʌt lˈaɪz bᵻnˌiːθ ðə wˈeɪvz."
+    }
+   ]
+  },
+  {
+   "id": "forms",
+   "start": 40.856,
+   "end": 61.417,
+   "lines": [
+    {
+     "text": "Here is the discovery he credited to Kant.",
+     "start": 40.856,
+     "end": 43.447,
+     "ph": "hˈɪɹ ɪz ðə dɪskˈʌvɚɹi hiː kɹˈɛdɪɾᵻd tuː kˈɑːnt."
+    },
+    {
+     "text": "Time, space and causation are not things out there. They are modes of thought.",
+     "start": 43.867,
+     "end": 48.276,
+     "ph": "tˈaɪm, spˈeɪs ænd kɔːsˈeɪʃən ɑːɹ nˌɑːt θˈɪŋz ˈaʊt ðˈɛɹ. ðeɪ ɑːɹ mˈoʊdz ʌv θˈɔːt."
+    },
+    {
+     "text": "Every picture the mind makes is projected through these three.",
+     "start": 48.696,
+     "end": 52.251,
+     "ph": "ˈɛvɹi pˈɪktʃɚ ðə mˈaɪnd mˌeɪks ɪz pɹədʒˈɛktᵻd θɹuː ðiːz θɹˈiː."
+    },
+    {
+     "text": "Vedanta, he said, taught this ages ago, and called it Maya.",
+     "start": 52.671,
+     "end": 56.539,
+     "ph": "veɪdˈɑːntə, hiː sˈɛd, tˈɔːt ðɪs ˈeɪdʒᵻz ɐɡˈoʊ, ænd kˈɔːld ɪt mˈɑːjɑː."
+    },
+    {
+     "text": "Not a product of thought, but the groundwork of all human thought.",
+     "start": 56.959,
+     "end": 60.717,
+     "ph": "nˌɑːɾə pɹˈɑːdʌkt ʌv θˈɔːt, bˌʌt ðə ɡɹˈaʊndwɜːk ʌv ˈɔːl hjˈuːmən θˈɔːt."
+    }
+   ]
+  },
+  {
+   "id": "xmind",
+   "start": 62.517,
+   "end": 89.939,
+   "lines": [
+    {
+     "text": "Look at a wall. Light reaches the eye, but you do not see the wall until the mind reacts.",
+     "start": 62.517,
+     "end": 68.039,
+     "ph": "lˈʊk æɾə wˈɔːl. lˈaɪt ɹˈiːtʃᵻz ðɪ ˈaɪ, bˌʌt juː duːnˌɑːt sˈiː ðə wˈɔːl ʌntˈɪl ðə mˈaɪnd ɹɪˈækts."
+    },
+    {
+     "text": "Try it here. No triangle has been drawn on this card.",
+     "start": 68.459,
+     "end": 71.791,
+     "ph": "tɹˈaɪ ɪt hˈɪɹ. nˈoʊ tɹˈaɪæŋɡəl hˈæzbiːn dɹˈɔːn ˌɔn ðɪs kˈɑːɹd."
+    },
+    {
+     "text": "Your mind supplies every edge.",
+     "start": 72.211,
+     "end": 73.994,
+     "ph": "jʊɹ mˈaɪnd səplˈaɪz ˈɛvɹi ˈɛdʒ."
+    },
+    {
+     "text": "So the world we see is the real world, call it X, plus mind.",
+     "start": 74.414,
+     "end": 78.241,
+     "ph": "sˌoʊ ðə wˈɜːld wiː sˈiː ɪz ðə ɹˈiːəl wˈɜːld, kˈɔːl ɪɾ ˈɛks, plˈʌs mˈaɪnd."
+    },
+    {
+     "text": "A blind man knows the world by touch and sound. Give us an electric sense, and the world would change again.",
+     "start": 78.661,
+     "end": 85.212,
+     "ph": "ɐ blˈaɪnd mˈæn nˈoʊz ðə wˈɜːld baɪ tˈʌtʃ ænd sˈaʊnd. ɡˈɪv ˌʌs ɐn ᵻlˈɛktɹɪk sˈɛns, ænd ðə wˈɜːld wʊd tʃˈeɪndʒ ɐɡˈɛn."
+    },
+    {
+     "text": "Each mind brings its own world. X remains unchanged.",
+     "start": 85.632,
+     "end": 89.239,
+     "ph": "ˈiːtʃ mˈaɪnd bɹˈɪŋz ɪts ˈoʊn wˈɜːld. ˈɛks ɹᵻmˈeɪnz ʌntʃˈeɪndʒd."
+    }
+   ]
+  },
+  {
+   "id": "ymind",
+   "start": 91.039,
+   "end": 116.975,
+   "lines": [
+    {
+     "text": "Now turn inward. The self we feel is also seen through the mind.",
+     "start": 91.039,
+     "end": 95.138,
+     "ph": "nˈaʊ tˈɜːn ˈɪnwɚd. ðə sˈɛlf wiː fˈiːl ɪz ˈɔːlsoʊ sˈiːn θɹuː ðə mˈaɪnd."
+    },
+    {
+     "text": "Call the real self Y. What we know is Y plus mind.",
+     "start": 95.558,
+     "end": 99.038,
+     "ph": "kˈɔːl ðə ɹˈiːəl sˈɛlf wˈaɪ. wˌʌt wiː nˈoʊ ɪz wˈaɪ plˈʌs mˈaɪnd."
+    },
+    {
+     "text": "Kant, he said, was the first to arrive at this analysis of mind. The Vedas had stated it long ago.",
+     "start": 99.458,
+     "end": 106.082,
+     "ph": "kˈɑːnt, hiː sˈɛd, wʌzðə fˈɜːst tʊ ɚɹˈaɪv æt ðɪs ɐnˈæləsˌɪs ʌv mˈaɪnd. ðˈə vˈeɪdəz hæd stˈeɪɾᵻd ɪt lˈɔŋ ɐɡˈoʊ."
+    },
+    {
+     "text": "But X and Y are both beyond time, and time is what makes difference.",
+     "start": 106.502,
+     "end": 110.947,
+     "ph": "bˌʌt ˈɛks ænd wˈaɪ ɑːɹ bˈoʊθ bᵻjˌɔnd tˈaɪm, ænd tˈaɪm ɪz wʌt mˌeɪks dˈɪfɹəns."
+    },
+    {
+     "text": "So they must be one. Seen outside, we call it the world. Seen inside, the Self.",
+     "start": 111.367,
+     "end": 116.275,
+     "ph": "sˌoʊ ðeɪ mˈʌst biː wˌʌn. sˈiːn aʊtsˈaɪd, wiː kˈɔːl ɪt ðə wˈɜːld. sˈiːn ɪnsˈaɪd, ðə sˈɛlf."
+    }
+   ]
+  },
+  {
+   "id": "rope",
+   "start": 118.075,
+   "end": 135.331,
+   "lines": [
+    {
+     "text": "Then are there two worlds, a real one hidden behind a false one?",
+     "start": 118.075,
+     "end": 122.022,
+     "ph": "ðˈɛn ɑːɹ ðɛɹ tˈuː wˈɜːldz, ɐ ɹˈiːəl wˈʌn hˈɪdən bᵻhˌaɪnd ɐ fˈɔls wˌʌn?"
+    },
+    {
+     "text": "No. At dusk, a man sees a snake on the path.",
+     "start": 122.442,
+     "end": 125.513,
+     "ph": "nˈoʊ. æt dˈʌsk, ɐ mˈæn sˈiːz ɐ snˈeɪk ɔnðə pˈæθ."
+    },
+    {
+     "text": "Someone brings a lamp. It was a rope.",
+     "start": 125.933,
+     "end": 128.181,
+     "ph": "sˈʌmwʌn bɹˈɪŋz ɐ lˈæmp. ɪt wʌzɐ ɹˈoʊp."
+    },
+    {
+     "text": "He never saw both. Seen through the senses, the world is phenomenal. It was the real all along.",
+     "start": 128.601,
+     "end": 134.631,
+     "ph": "hiː nˈɛvɚ sˈɔː bˈoʊθ. sˈiːn θɹuː ðə sˈɛnsᵻz, ðə wˈɜːld ɪz fɪnˈɑːmɪnəl. ɪt wʌzðə ɹˈiːəl ˈɔːl ɐlˈɔŋ."
+    }
+   ]
+  },
+  {
+   "id": "will",
+   "start": 136.431,
+   "end": 154.67,
+   "lines": [
+    {
+     "text": "Schopenhauer said the world is will.",
+     "start": 136.431,
+     "end": 138.277,
+     "ph": "ʃˈoʊpənhaʊɚ sˈɛd ðə wˈɜːld ɪz wˈɪl."
+    },
+    {
+     "text": "Vivekananda disagreed. Will needs a stimulus from outside. It is a compound, as much as a wall is.",
+     "start": 138.697,
+     "end": 145.759,
+     "ph": "vɪvˌeɪkɑːnˈʌndə dˌɪsɐɡɹˈiːd. wɪl nˈiːdz ɐ stˈɪmjʊləs fɹʌm aʊtsˈaɪd. ɪɾ ɪz ɐ kˈɑːmpaʊnd, æz mˈʌtʃ æz ɐ wˈɔːl ɪz."
+    },
+    {
+     "text": "And take Kant's analysis: one cannot will without willing in time.",
+     "start": 146.179,
+     "end": 150.231,
+     "ph": "ænd tˈeɪk kˈɑːnts ɐnˈæləsˌɪs: wˈʌn kænˈɑːt wɪl wɪðˌaʊt wˈɪlɪŋ ɪn tˈaɪm."
+    },
+    {
+     "text": "Whatever lives inside time cannot be the Absolute.",
+     "start": 150.651,
+     "end": 153.97,
+     "ph": "wʌtˈɛvɚ lˈaɪvz ɪnsˈaɪd tˈaɪm kænˈɑːt biː ðɪ ˈæbsəlˌuːt."
+    }
+   ]
+  },
+  {
+   "id": "ocean",
+   "start": 155.77,
+   "end": 168.808,
+   "lines": [
+    {
+     "text": "My reality, nature's, and God's, he said, are the same. Only the form differs.",
+     "start": 155.77,
+     "end": 160.673,
+     "ph": "maɪ ɹɪˈælᵻɾi, nˈeɪtʃɚz, ænd ɡˈɑːdz, hiː sˈɛd, ɑːɹ ðə sˈeɪm. ˈoʊnli ðə fˈɔːɹm dˈɪfɚz."
+    },
+    {
+     "text": "The shore shapes the ocean into a bay, a strait, an inlet.",
+     "start": 161.093,
+     "end": 164.554,
+     "ph": "ðə ʃˈoːɹ ʃˈeɪps ðɪ ˈoʊʃən ˌɪntʊ ɐ bˈeɪ, ɐ stɹˈeɪt, ɐn ˈɪnlɪt."
+    },
+    {
+     "text": "Take away the shaping force, and all is ocean again.",
+     "start": 164.974,
+     "end": 168.108,
+     "ph": "tˈeɪk ɐwˈeɪ ðə ʃˈeɪpɪŋ fˈoːɹs, ænd ˈɔːl ɪz ˈoʊʃən ɐɡˈɛn."
+    }
+   ]
+  },
+  {
+   "id": "wall",
+   "start": 169.908,
+   "end": 196.094,
+   "lines": [
+    {
+     "text": "Kant, he said, proved beyond doubt that we cannot get past the tremendous dead wall called reason.",
+     "start": 169.908,
+     "end": 176.072,
+     "ph": "kˈɑːnt, hiː sˈɛd, pɹˈuːvd bᵻjˌɔnd dˈaʊt ðæt wiː kænˈɑːt ɡɛt pˈæst ðə tɹəmˈɛndəs dˈɛd wˈɔːl kˈɔːld ɹˈiːzən."
+    },
+    {
+     "text": "That is exactly where Indian thought takes its stand.",
+     "start": 176.492,
+     "end": 179.257,
+     "ph": "ðæt ɪz ɛɡzˈæktli wˌɛɹ ˈɪndiən θˈɔːt tˈeɪks ɪts stˈænd."
+    },
+    {
+     "text": "The sages asked nature: do you know what the soul is? Nature answered, no.",
+     "start": 179.677,
+     "end": 184.198,
+     "ph": "ðə sˈeɪdʒᵻz ˈæskt nˈeɪtʃɚ: dˈuː juː nˈoʊ wʌt ðə sˈoʊl ɪz? nˈeɪtʃɚɹ ˈænsɚd, nˈoʊ."
+    },
+    {
+     "text": "So they turned inward, and struck out everything that could be seen. Neti, neti. Not this, not this.",
+     "start": 184.618,
+     "end": 190.946,
+     "ph": "sˌoʊ ðeɪ tˈɜːnd ˈɪnwɚd, ænd stɹˈʌk ˈaʊt ˈɛvɹɪθˌɪŋ ðæt kʊd biː sˈiːn. nˈeɪti, nˈeɪti. nˌɑːt ðˈɪs, nˌɑːt ðˈɪs."
+    },
+    {
+     "text": "When every appearance has been negated, whatever remains, that is It.",
+     "start": 191.366,
+     "end": 195.394,
+     "ph": "wˌɛn ˈɛvɹi ɐpˈɪɹəns hˈæzbiːn nᵻɡˈeɪɾᵻd, wʌtˈɛvɚ ɹᵻmˈeɪnz, ðˈæt ɪz ɪt."
+    }
+   ]
+  },
+  {
+   "id": "dark",
+   "start": 197.194,
+   "end": 216.442,
+   "lines": [
+    {
+     "text": "Is what lies beyond thought only the dull silence of a stone?",
+     "start": 197.194,
+     "end": 201.025,
+     "ph": "ɪz wʌt lˈaɪz bᵻjˌɔnd θˈɔːt ˈoʊnli ðə dˈʌl sˈaɪləns əvə stˈoʊn?"
+    },
+    {
+     "text": "Light vibrating too slowly, we cannot see. Faster, it becomes light. Faster still, it is dark to us again.",
+     "start": 201.445,
+     "end": 208.697,
+     "ph": "lˈaɪt vˈaɪbɹeɪɾɪŋ tˈuː slˈoʊli, wiː kænˈɑːt sˈiː. fˈæstɚ, ɪt bɪkˌʌmz lˈaɪt. fˈæstɚ stˈɪl, ɪɾ ɪz dˈɑːɹk tʊ ˌʌs ɐɡˈɛn."
+    },
+    {
+     "text": "The two darknesses are as different as the two poles.",
+     "start": 209.117,
+     "end": 212.219,
+     "ph": "ðə tˈuː dˈɑːɹknəsᵻz ɑːɹ æz dˈɪfɹənt æz ðə tˈuː pˈoʊlz."
+    },
+    {
+     "text": "The stone cannot reason. God does not need to.",
+     "start": 212.639,
+     "end": 215.742,
+     "ph": "ðə stˈoʊn kænˈɑːt ɹˈiːzən. ɡˈɑːd dʌznˌɑːt nˈiːd tuː."
+    }
+   ]
+  },
+  {
+   "id": "shankara",
+   "start": 217.542,
+   "end": 236.012,
+   "lines": [
+    {
+     "text": "Was this Kant's idea, carried East? Vivekananda said it was the other way round.",
+     "start": 217.542,
+     "end": 222.664,
+     "ph": "wʌz ðˈɪs kˈɑːnts aɪdˈiə, kˈæɹid ˈiːst? vɪvˌeɪkɑːnˈʌndə sˈɛd ɪt wʌzðɪ ˈʌðɚ wˈeɪ ɹˈaʊnd."
+    },
+    {
+     "text": "Shankara had identified time, space and causation with Maya, many centuries before.",
+     "start": 223.084,
+     "end": 229.009,
+     "ph": "ʃˈʌŋkəɹə hæd aɪdˈɛntᵻfˌaɪd tˈaɪm, spˈeɪs ænd kɔːsˈeɪʃən wɪð mˈɑːjɑː, mˈɛni sˈɛntʃɚɹiz bᵻfˈoːɹ."
+    },
+    {
+     "text": "He found the passages in Shankara's commentaries, and sent them to his friend, Professor Max Muller.",
+     "start": 229.429,
+     "end": 235.312,
+     "ph": "hiː fˈaʊnd ðə pˈæsɪdʒᵻz ˈɪn ʃˈʌŋkəɹəz kˈɑːməntˌɛɹiz, ænd sˈɛnt ðˌɛm tə hɪz fɹˈɛnd, pɹəfˈɛsɚ mˈæks mˈʊlɚ."
+    }
+   ]
+  },
+  {
+   "id": "stairs",
+   "start": 237.112,
+   "end": 256.983,
+   "lines": [
+    {
+     "text": "Is the world unreal, then? A devotee once asked Ramakrishna.",
+     "start": 237.112,
+     "end": 241.202,
+     "ph": "ɪz ðə wˈɜːld ʌnɹˈiːəl, ðˈɛn? ɐ dˌɛvoʊtˈiː wˈʌns ˈæskt ɹˌɑːməkɹˈɪʃnə."
+    },
+    {
+     "text": "While you climb, he said, you reason: the stairs are not the roof. Not this, not this.",
+     "start": 241.622,
+     "end": 246.815,
+     "ph": "wˌaɪl juː klˈaɪm, hiː sˈɛd, juː ɹˈiːzən: ðə stˈɛɹz ɑːɹ nˌɑːt ðə ɹˈuːf. nˌɑːt ðˈɪs, nˌɑːt ðˈɪs."
+    },
+    {
+     "text": "Reach the roof, and you see the stairs are made of the same brick and lime.",
+     "start": 247.235,
+     "end": 251.191,
+     "ph": "ɹˈiːtʃ ðə ɹˈuːf, ænd juː sˈiː ðə stˈɛɹz ɑːɹ mˌeɪd ʌvðə sˈeɪm bɹˈɪk ænd lˈaɪm."
+    },
+    {
+     "text": "God himself has become the universe. But reasoning alone will not show it.",
+     "start": 251.611,
+     "end": 256.283,
+     "ph": "ɡˈɑːd hɪmsˈɛlf hɐz bɪkˌʌm ðə jˈuːnɪvˌɜːs. bˌʌt ɹˈiːzənɪŋ ɐlˈoʊn wɪl nˌɑːt ʃˈoʊ ɪt."
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "start": 258.083,
+   "end": 278.684,
+   "lines": [
+    {
+     "text": "Kant drew the wall. The Upanishads asked who stands behind it.",
+     "start": 258.083,
+     "end": 261.809,
+     "ph": "kˈɑːnt dɹˈuː ðə wˈɔːl. ðˈə uːpˈʌnɪʃədz ˈæskt hˌuː stˈændz bᵻhˈaɪnd ɪt."
+    },
+    {
+     "text": "If we are bound, Vivekananda asked, who bound us? No power can bind the Infinite but Itself.",
+     "start": 262.229,
+     "end": 268.484,
+     "ph": "ɪf wiː ɑːɹ bˈaʊnd, vɪvˌeɪkɑːnˈʌndə ˈæskt, hˌuː bˈaʊnd ˌʌs? nˈoʊ pˈaʊɚ kæn bˈaɪnd ðɪ ˈɪnfɪnət bˌʌt ɪtsˈɛlf."
+    },
+    {
+     "text": "Which came first, the bird or the egg? Give it up. Escape from Maya.",
+     "start": 268.904,
+     "end": 273.099,
+     "ph": "wˌɪtʃ kˈeɪm fˈɜːst, ðə bˈɜːd ɔːɹ ðɪ ˈɛɡ? ɡˈɪv ɪɾ ˈʌp. ɛskˈeɪp fɹʌm mˈɑːjɑː."
+    },
+    {
+     "text": "And the student who studied Kant went looking for a man who had seen beyond the wall.",
+     "start": 273.519,
+     "end": 277.984,
+     "ph": "ænd ðə stˈuːdənt hˌuː stˈʌdid kˈɑːnt wɛnt lˈʊkɪŋ fɚɹə mˈæn hˌuː hæd sˈiːn bᵻjˌɔnd ðə wˈɔːl."
+    }
+   ]
+  }
+ ]
+}

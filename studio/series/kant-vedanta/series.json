@@ -1,0 +1,15 @@
+{
+ "title": "Kant & Vedanta",
+ "site_path": "",
+ "films": [
+  {"dir": "film1", "title": "The Wall Called Reason", "poster": 19.8,
+   "desc": "Film 1 of 3: Kant, Māyā and the wall of reason, from the works of Swami Vivekananda.",
+   "artifact": "https://claude.ai/artifact/TEeiK3imV1MoRJVhxUW2qj"},
+  {"dir": "film2", "title": "The Student Who Read Kant", "poster": 24,
+   "desc": "Film 2 of 3: young Naren in Calcutta, reading Kant and searching for someone who had seen God.",
+   "artifact": "https://claude.ai/artifact/ErqJMZkQR2LA2u6Efs3eFT"},
+  {"dir": "film3", "title": "Kant Comes Home", "poster": 6,
+   "desc": "Film 3 of 3: the idea travels, from Baranagore to Kiel, London and the 1899 voyage.",
+   "artifact": "https://claude.ai/artifact/SxxBwTm2Ax1fA1KZXDfRr2"}
+ ]
+}

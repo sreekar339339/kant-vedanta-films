@@ -1,0 +1,342 @@
+{
+ "duration": 286.475,
+ "voice": "af_heart",
+ "speed": 0.92,
+ "chapters": [
+  {
+   "id": "math",
+   "start": 0.6,
+   "end": 26.568,
+   "lines": [
+    {
+     "text": "After Ramakrishna's passing, his young disciples took a crumbling house at Baranagore, said to be haunted.",
+     "start": 0.6,
+     "end": 6.969,
+     "ph": "ˈæftɚ ɹˌɑːməkɹˈɪʃnəz pˈæsɪŋ, hɪz jˈʌŋ dɪsˈaɪpəlz tˈʊk ɐ kɹˈʌmblɪŋ hˈaʊs æt bˈɑːɹənəɡˌɔːɹ, sˈɛd təbi hˈɔːntᵻd."
+    },
+    {
+     "text": "Some days there was rice but no salt. For months they lived on rice, salt, and boiled leaves.",
+     "start": 7.389,
+     "end": 13.212,
+     "ph": "sˌʌm dˈeɪz ðɛɹwˌʌz ɹˈaɪs bˌʌt nˈoʊ sˈɔlt. fɔːɹ mˈʌnθs ðeɪ lˈɪvd ˌɔn ɹˈaɪs, sˈɔlt, ænd bˈɔɪld lˈiːvz."
+    },
+    {
+     "text": "And they argued for hours: Kant, Hegel, Mill and Spencer, against the six systems of India.",
+     "start": 13.632,
+     "end": 19.759,
+     "ph": "ænd ðeɪ ˈɑːɹɡjuːd fɔːɹ ˈaʊɚz: kˈɑːnt, hˈeɪɡəl, mˈɪl ænd spˈɛnsɚ, ɐɡˈɛnst ðə sˈɪks sˈɪstəmz ʌv ˈɪndiə."
+    },
+    {
+     "text": "One day Naren would prove that God was a myth. The next, that God was the only reality.",
+     "start": 20.179,
+     "end": 25.868,
+     "ph": "wˈʌn dˈeɪ nəɹˈeɪn wʊd pɹˈuːv ðæt ɡˈɑːd wʌzɐ mˈɪθ. ðə nˈɛkst, ðæt ɡˈɑːd wʌzðɪ ˈoʊnli ɹɪˈælᵻɾi."
+    }
+   ]
+  },
+  {
+   "id": "route",
+   "start": 27.668,
+   "end": 49.834,
+   "lines": [
+    {
+     "text": "How had the Upanishads reached German philosophy at all?",
+     "start": 27.668,
+     "end": 30.96,
+     "ph": "hˌaʊ hˈæd ðə uːpˈʌnɪʃədz ɹˈiːtʃt dʒˈɜːmən fɪlˈɑːsəfi æɾ ˈɔːl?"
+    },
+    {
+     "text": "The Mughal prince Dara Shikoh had them translated into Persian.",
+     "start": 31.38,
+     "end": 35.408,
+     "ph": "ðˈə mˈuːɡəl pɹˈɪns dˈɑːɹɑː ʃˈɪkoʊ hˌædðɛm tɹænslˈeɪɾᵻd ˌɪntʊ pˈɜːʒən."
+    },
+    {
+     "text": "A Latin version reached Europe, and Schopenhauer read it. His philosophy, Vivekananda said, was moulded by it.",
+     "start": 35.828,
+     "end": 43.279,
+     "ph": "ɐ lˈætɪn vˈɜːʒən ɹˈiːtʃt jˈʊɹɹəp, ˈænd ʃˈoʊpənhaʊɚ ɹˈiːd ɪt. hɪz fɪlˈɑːsəfi, vɪvˌeɪkɑːnˈʌndə sˈɛd, wʌz mˈoʊldᵻd baɪ ɪt."
+    },
+    {
+     "text": "Next to him, he said, the philosophy of Kant also shows traces of the Upanishads.",
+     "start": 43.699,
+     "end": 49.134,
+     "ph": "nˈɛkst tə hˌɪm, hiː sˈɛd, ðə fɪlˈɑːsəfi ʌv kˈɑːnt ˈɔːlsoʊ ʃˈoʊz tɹˈeɪsᵻz ʌvðə uːpˈʌnɪʃədz."
+    }
+   ]
+  },
+  {
+   "id": "infinite",
+   "start": 50.934,
+   "end": 71.866,
+   "lines": [
+    {
+     "text": "Two ancient peoples, he said, looked for the infinite in different directions.",
+     "start": 50.934,
+     "end": 55.165,
+     "ph": "tˈuː ˈeɪntʃənt pˈiːpəlz, hiː sˈɛd, lˈʊkt fɚðɪ ˈɪnfɪnət ɪn dˈɪfɹənt dᵻɹˈɛkʃənz."
+    },
+    {
+     "text": "The Greeks, surrounded by beauty, studied the outer infinite. The macrocosm.",
+     "start": 55.585,
+     "end": 60.414,
+     "ph": "ðə ɡɹˈiːks, sɚɹˈaʊndᵻd baɪ bjˈuːɾi, stˈʌdid ðɪ ˈaʊɾɚɹ ˈɪnfɪnət. ðə mˈækɹəkˌɑːzəm."
+    },
+    {
+     "text": "India, surrounded by the sublime, studied the inner infinite. The microcosm.",
+     "start": 60.834,
+     "end": 65.97,
+     "ph": "ˈɪndiə, sɚɹˈaʊndᵻd baɪ ðə sʌblˈaɪm, stˈʌdid ðɪ ˈɪnɚɹ ˈɪnfɪnət. ðə mˈaɪkɹoʊkˌɑːzəm."
+    },
+    {
+     "text": "Neither needed to borrow from the other. But if they compared notes, both would gain.",
+     "start": 66.39,
+     "end": 71.166,
+     "ph": "nˈiːðɚ nˈiːdᵻd tə bˈɑːɹoʊ fɹʌmðɪ ˈʌðɚ. bˌʌt ɪf ðeɪ kəmpˈɛɹd nˈoʊts, bˈoʊθ wʊd ɡˈeɪn."
+    }
+   ]
+  },
+  {
+   "id": "wander",
+   "start": 72.966,
+   "end": 101.317,
+   "lines": [
+    {
+     "text": "In eighteen ninety, Naren left with a staff and a begging bowl, and the dust of India swallowed him.",
+     "start": 72.966,
+     "end": 78.908,
+     "ph": "ɪn ˈeɪtiːn nˈaɪnti, nəɹˈeɪn lˈɛft wɪð ɐ stˈæf ænd ɐ bˈɛɡɪŋ bˈoʊl, ænd ðə dˈʌst ʌv ˈɪndiə swˈɔloʊd hˌɪm."
+    },
+    {
+     "text": "Varanasi, Vrindavan, the Himalayas, Rajputana, Gujarat, Mysore, Travancore, and at last, Kanyakumari.",
+     "start": 79.328,
+     "end": 86.639,
+     "ph": "vɑːɹˈɑːnəsi, vɹˈɪndɑːvən, ðə hˌɪməlˈeɪəz, ɹˌɑːdʒpʊtˈɑːnə, ɡˌʊdʒɐɹˈæt, mˈaɪsoːɹ, tɹˈævəŋkɔːɹ, ænd æt lˈæst, kˌʌnjɑːkʊmˈɑːɹi."
+    },
+    {
+     "text": "In Madras a disciple marvelled at his range: from the Rig Veda to Kant and Hegel, from Yoga to a modern laboratory.",
+     "start": 87.059,
+     "end": 95.225,
+     "ph": "ɪn mədɹˈɑːs ɐ dɪsˈaɪpəl mˈɑːɹvəld æt hɪz ɹˈeɪndʒ: fɹʌmðˈə ɹˈɪɡ vˈeɪdə tˈuː kˈɑːnt ˈænd hˈeɪɡəl, fɹʌm jˈoʊɡə tʊ ɐ mˈɑːdɚn lˈæbɹətˌɔːɹi."
+    },
+    {
+     "text": "On the thirty-first of May, eighteen ninety-three, he sailed from Bombay for the West.",
+     "start": 95.645,
+     "end": 100.617,
+     "ph": "ɔnðə θˈɜːɾifˈɜːst ʌv mˈeɪ, ˈeɪtiːn nˈaɪntiθɹˈiː, hiː sˈeɪld fɹʌm bˈɑːmbeɪ fɚðə wˈɛst."
+    }
+   ]
+  },
+  {
+   "id": "hegel",
+   "start": 102.417,
+   "end": 135.019,
+   "lines": [
+    {
+     "text": "Back in Calcutta, he named the German he trusted least: Hegel.",
+     "start": 102.417,
+     "end": 106.38,
+     "ph": "bˈæk ɪn kælkˈʌɾə, hiː nˈeɪmd ðə dʒˈɜːmən hiː tɹˈʌstᵻd lˈiːst: hˈeɪɡəl."
+    },
+    {
+     "text": "Hegel's idea, he said, is that the Absolute is only chaos, and the individual form is greater. The world is greater than the non-world.",
+     "start": 106.8,
+     "end": 116.123,
+     "ph": "hˈeɪɡəlz aɪdˈiə, hiː sˈɛd, ɪz ðætðɪ ˈæbsəlˌuːt ɪz ˈoʊnli kˈeɪɑːs, ænd ðɪ ˌɪndᵻvˈɪdʒuːəl fˈɔːɹm ɪz ɡɹˈeɪɾɚ. ðə wˈɜːld ɪz ɡɹˈeɪɾɚ ðɐn ðə nˈɑːnwˈɜːld."
+    },
+    {
+     "text": "India's answer: every manifestation is a vain attempt of the unmanifested to show itself, like the sun trying to reflect itself in little mud puddles.",
+     "start": 116.543,
+     "end": 126.706,
+     "ph": "ˈɪndiəz ˈænsɚ: ˈɛvɹi mˌænɪfɪstˈeɪʃən ɪz ɐ vˈeɪn ɐtˈɛmpt ʌvðɪ ʌnmˈænɪfˌɛstᵻd tə ʃˈoʊ ɪtsˈɛlf, lˈaɪk ðə sˈʌn tɹˈaɪɪŋ tə ɹᵻflˈɛkt ɪtsˈɛlf ɪn lˈɪɾəl mˈʌd pˈʌdəlz."
+    },
+    {
+     "text": "After a time it beats a retreat to where it came from. That, he said, is renunciation, the beginning of religion.",
+     "start": 127.126,
+     "end": 134.319,
+     "ph": "ˈæftɚɹ ɐ tˈaɪm ɪt bˈiːts ɐ ɹᵻtɹˈiːt tʊ wˌɛɹ ɪt kˈeɪm fɹʌm. ðˈæt, hiː sˈɛd, ɪz ɹᵻnˌʌnsɪˈeɪʃən, ðə bɪɡˈɪnɪŋ ʌv ɹᵻlˈɪdʒən."
+    }
+   ]
+  },
+  {
+   "id": "kiel",
+   "start": 136.119,
+   "end": 164.235,
+   "lines": [
+    {
+     "text": "In eighteen ninety-six, Professor Paul Deussen invited him to Kiel. Deussen was a disciple of Schopenhauer, and a follower of Kant.",
+     "start": 136.119,
+     "end": 145.004,
+     "ph": "ɪn ˈeɪtiːn nˈaɪntisˈɪks, pɹəfˈɛsɚ pˈɔːl dˈɔɪsən ɪnvˈaɪɾᵻd hˌɪm tuː kˈiːl. dˈɔɪsən wʌzɐ dɪsˈaɪpəl ʌv ʃˈoʊpənhaʊɚ, ænd ɐ fˈɑːloʊɚɹ ʌv kˈɑːnt."
+    },
+    {
+     "text": "He spoke Sanskrit, and called the Vedanta one of the most majestic structures of the human mind.",
+     "start": 145.424,
+     "end": 151.344,
+     "ph": "hiː spˈoʊk sˈænskɹɪt, ænd kˈɔːld ðə veɪdˈɑːntə wˈʌn ʌvðə mˈoʊst mɐdʒˈɛstɪk stɹˈʌktʃɚz ʌvðə hjˈuːmən mˈaɪnd."
+    },
+    {
+     "text": "Once, absorbed in a book of poems, the Swami did not hear his host. Then he recited the verses back to him.",
+     "start": 151.764,
+     "end": 158.916,
+     "ph": "wˈʌns, ɐbsˈoːɹbd ɪn ɐ bˈʊk ʌv pˈoʊᵻmz, ðˈə swˈɑːmi dɪdnˌɑːt hˈɪɹ hɪz hˈoʊst. ðˈɛn hiː ɹᵻsˈaɪɾᵻd ðə vˈɜːsᵻz bˈæk tə hˌɪm."
+    },
+    {
+     "text": "Deussen foresaw India becoming the spiritual leader of the nations.",
+     "start": 159.336,
+     "end": 163.535,
+     "ph": "dˈɔɪsən fˈɔːɹsɔː ˈɪndiə bᵻkˈʌmɪŋ ðə spˈɪɹɪtʃˌuːəl lˈiːdɚɹ ʌvðə nˈeɪʃənz."
+    }
+   ]
+  },
+  {
+   "id": "london",
+   "start": 165.335,
+   "end": 189.025,
+   "lines": [
+    {
+     "text": "In London he gave three lectures on Maya. Some listeners, it is said, were moved to tears.",
+     "start": 165.335,
+     "end": 171.248,
+     "ph": "ɪn lˈʌndən hiː ɡˈeɪv θɹˈiː lˈɛktʃɚz ˈɔn mˈɑːjɑː. sˌʌm lˈɪsənɚz, ɪɾ ɪz sˈɛd, wɜː mˈuːvd tə tˈɪɹz."
+    },
+    {
+     "text": "A white-haired philosopher told him: you have spoken splendidly, but you have told us nothing new.",
+     "start": 171.668,
+     "end": 177.314,
+     "ph": "ɐ wˈaɪthˈɛɹd fɪlˈɑːsəfɚ tˈoʊld hˌɪm: juː hæv spˈoʊkən splˈɛndɪdli, bˌʌt juː hæv tˈoʊld ˌʌs nˈʌθɪŋ nˈuː."
+    },
+    {
+     "text": "He answered: Sir, I have told you the Truth. And the Truth is as old as the hills.",
+     "start": 177.734,
+     "end": 182.66,
+     "ph": "hiː ˈænsɚd: sˈɜː, aɪ hæv tˈoʊld juː ðə tɹˈuːθ. ænd ðə tɹˈuːθ ɪz æz ˈoʊld æz ðə hˈɪlz."
+    },
+    {
+     "text": "If I have told it in words that make you think, and live up to your thinking, do I not do well?",
+     "start": 183.08,
+     "end": 188.325,
+     "ph": "ɪf aɪ hæv tˈoʊld ɪɾ ɪn wˈɜːdz ðæt mˌeɪk juː θˈɪŋk, ænd lˈaɪv ˌʌp tə jʊɹ θˈɪŋkɪŋ, dˈuː aɪ nˌɑːt dˈuː wˈɛl?"
+    }
+   ]
+  },
+  {
+   "id": "voyage",
+   "start": 190.125,
+   "end": 218.618,
+   "lines": [
+    {
+     "text": "In June eighteen ninety-nine he sailed again, with Sister Nivedita, on the Golconda.",
+     "start": 190.125,
+     "end": 195.668,
+     "ph": "ɪn dʒˈuːn ˈeɪtiːn nˈaɪntinˈaɪn hiː sˈeɪld ɐɡˈɛn, wɪð sˈɪstɚ nɪvˈeɪdɪtɑː, ɔnðˈə ɡɑːlkˈɑːndə."
+    },
+    {
+     "text": "At Madras, plague kept every Indian passenger aboard. The monsoon tossed them for ten days to Aden.",
+     "start": 196.088,
+     "end": 202.433,
+     "ph": "æt mədɹˈɑːs, plˈeɪɡ kˈɛpt ˈɛvɹi ˈɪndiən pˈæsɪndʒɚɹ ɐbˈoːɹd. ðə mɔnsˈuːn tˈɔst ðˌɛm fɔːɹ tˈɛn dˈeɪz tʊ ˈeɪdən."
+    },
+    {
+     "text": "On deck he set Kant's time, space and causation beside the Vaisheshika categories, and the logic of the Nyaya.",
+     "start": 202.853,
+     "end": 210.049,
+     "ph": "ˌɔn dˈɛk hiː sˈɛt kˈɑːnts tˈaɪm, spˈeɪs ænd kɔːsˈeɪʃən bᵻsˈaɪd ðə vaɪʃˈeɪʃɪkə kˈæɾɪɡɚɹiz, ænd ðə lˈɑːdʒɪk ʌvðə njˈɑːjə."
+    },
+    {
+     "text": "One side gives priority to the outer thing, he said, the other to the inner idea. That problem has no solution.",
+     "start": 210.469,
+     "end": 217.918,
+     "ph": "wˈʌn sˈaɪd ɡˈɪvz pɹaɪˈɔːɹᵻɾi tə ðɪ ˈaʊɾɚ θˈɪŋ, hiː sˈɛd, ðɪ ˈʌðɚ tə ðɪ ˈɪnɚɹ aɪdˈiə. ðæt pɹˈɑːbləm hɐz nˈoʊ səlˈuːʃən."
+    }
+   ]
+  },
+  {
+   "id": "messina",
+   "start": 219.718,
+   "end": 240.944,
+   "lines": [
+    {
+     "text": "Off Sicily, Etna was in eruption, and the moon rose over the Straits of Messina.",
+     "start": 219.718,
+     "end": 224.719,
+     "ph": "ˈɔf sˈɪsɪli, ˈɛtnə wʌz ɪn ɪɹˈʌpʃən, ænd ðə mˈuːn ɹˈoʊz ˌoʊvɚ ðə stɹˈeɪts ʌv məsˈiːnə."
+    },
+    {
+     "text": "Beauty, he told Nivedita, is not outside. It is already in the mind.",
+     "start": 225.139,
+     "end": 229.515,
+     "ph": "bjˈuːɾi, hiː tˈoʊld nɪvˈeɪdɪtɑː, ɪz nˌɑːt aʊtsˈaɪd. ɪɾ ɪz ɔːlɹˌɛdi ɪnðə mˈaɪnd."
+    },
+    {
+     "text": "Look at these two grey squares. They are the very same grey. The surroundings make one look darker.",
+     "start": 229.935,
+     "end": 235.7,
+     "ph": "lˈʊk æt ðiːz tˈuː ɡɹˈeɪ skwˈɛɹz. ðeɪ ɑːɹ ðə vˈɛɹi sˈeɪm ɡɹˈeɪ. ðə sɚɹˈaʊndɪŋz mˌeɪk wˈʌn lˈʊk dˈɑːɹkɚ."
+    },
+    {
+     "text": "Messina must thank me, he laughed. It is I who give her all her beauty.",
+     "start": 236.12,
+     "end": 240.244,
+     "ph": "məsˈiːnə mˈʌst θˈæŋk mˌiː, hiː lˈæft. ɪɾ ɪz aɪ hˌuː ɡˈɪv hɜːɹ ˈɔːl hɜː bjˈuːɾi."
+    }
+   ]
+  },
+  {
+   "id": "moon",
+   "start": 242.044,
+   "end": 259.669,
+   "lines": [
+    {
+     "text": "Crossing the Atlantic that August, he paced the deck under a full moon.",
+     "start": 242.044,
+     "end": 246.176,
+     "ph": "kɹˈɔsɪŋ ðɪ ɐtlˈæntɪk ðæt ˈɔːɡəst, hiː pˈeɪst ðə dˈɛk ˌʌndɚɹ ɐ fˈʊl mˈuːn."
+    },
+    {
+     "text": "If all this Maya is so beautiful, he said, think of the wondrous beauty of the Reality behind it.",
+     "start": 246.596,
+     "end": 252.716,
+     "ph": "ɪf ˈɔːl ðˈɪs mˈɑːjɑː ɪz sˌoʊ bjˈuːɾifəl, hiː sˈɛd, θˈɪŋk ʌvðə wˈʌndɹəs bjˈuːɾi ʌvðə ɹɪˈælᵻɾi bᵻhˈaɪnd ɪt."
+    },
+    {
+     "text": "And pointing to the sea and sky: why recite poetry, when there is the very essence of poetry?",
+     "start": 253.136,
+     "end": 258.969,
+     "ph": "ænd pˈɔɪntɪŋ tə ðə sˈiː ænd skˈaɪ: wˌaɪ ɹᵻsˈaɪt pˈoʊɪtɹi, wˌɛn ðɛɹ ɪz ðə vˈɛɹi ˈɛsəns ʌv pˈoʊɪtɹi?"
+    }
+   ]
+  },
+  {
+   "id": "home",
+   "start": 260.769,
+   "end": 284.975,
+   "lines": [
+    {
+     "text": "The boy who studied Kant in Calcutta had carried the question around the world.",
+     "start": 260.769,
+     "end": 265.36,
+     "ph": "ðə bˈɔɪ hˌuː stˈʌdid kˈɑːnt ɪn kælkˈʌɾə hæd kˈæɹid ðə kwˈɛstʃən ɚɹˈaʊnd ðə wˈɜːld."
+    },
+    {
+     "text": "Kant showed that time, space and causation are forms of the mind. The Upanishads added: what lies beyond them is your own Self.",
+     "start": 265.78,
+     "end": 274.142,
+     "ph": "kˈɑːnt ʃˈoʊd ðæt tˈaɪm, spˈeɪs ænd kɔːsˈeɪʃən ɑːɹ fˈɔːɹmz ʌvðə mˈaɪnd. ðˈə uːpˈʌnɪʃədz ˈædᵻd: wˌʌt lˈaɪz bᵻjˌɔnd ðˌɛm ɪz jʊɹ ˈoʊn sˈɛlf."
+    },
+    {
+     "text": "From whom all this universe comes out, in whom all that is born lives, and to whom all returns.",
+     "start": 274.562,
+     "end": 280.613,
+     "ph": "fɹʌm hˈuːm ˈɔːl ðɪs jˈuːnɪvˌɜːs kˈʌmz ˈaʊt, ɪn hˈuːm ˈɔːl ðæt ɪz bˈɔːɹn lˈaɪvz, ænd tə hˈuːm ˈɔːl ɹᵻtˈɜːnz."
+    },
+    {
+     "text": "Arise, awake, and stop not till the goal is reached.",
+     "start": 281.033,
+     "end": 284.275,
+     "ph": "ɚɹˈaɪz, ɐwˈeɪk, ænd stˈɑːp nˌɑːt tˈɪl ðə ɡˈoʊl ɪz ɹˈiːtʃt."
+    }
+   ]
+  }
+ ]
+}

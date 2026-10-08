@@ -1,0 +1,348 @@
+{
+ "duration": 260.442,
+ "voice": "af_heart",
+ "speed": 0.92,
+ "chapters": [
+  {
+   "id": "boy",
+   "start": 0.6,
+   "end": 20.936,
+   "lines": [
+    {
+     "text": "Before he was Vivekananda, he was Naren, a boy in Calcutta.",
+     "start": 0.6,
+     "end": 4.774,
+     "ph": "bᵻfˈoːɹ hiː wʌz vɪvˌeɪkɑːnˈʌndə, hiː wˈʌz nəɹˈeɪn, ɐ bˈɔɪ ɪn kælkˈʌɾə."
+    },
+    {
+     "text": "At twilight, his mother would read him the Ramayana and the Mahabharata.",
+     "start": 5.194,
+     "end": 9.55,
+     "ph": "æt twˈaɪlaɪt, hɪz mˈʌðɚ wʊd ɹˈiːd hˌɪm ðə ɹɑːmˈɑːjənə ænd ðˈə məhˌɑːbˈɑːɹətə."
+    },
+    {
+     "text": "His father, Western-educated, handed him a Bible and said: if there is anything called religion, it is in this.",
+     "start": 9.97,
+     "end": 17.249,
+     "ph": "hɪz fˈɑːðɚ, wˈɛstɚnˈɛdʒuːkˌeɪɾᵻd, hˈændᵻd hˌɪm ɐ bˈaɪbəl ænd sˈɛd: ɪf ðɛɹ ɪz ˈɛnɪθˌɪŋ kˈɔːld ɹᵻlˈɪdʒən, ɪɾ ɪz ɪn ðˈɪs."
+    },
+    {
+     "text": "Two worlds, side by side, in one house.",
+     "start": 17.669,
+     "end": 20.236,
+     "ph": "tˈuː wˈɜːldz, sˈaɪd baɪ sˈaɪd, ɪn wˈʌn hˈaʊs."
+    }
+   ]
+  },
+  {
+   "id": "gita",
+   "start": 22.036,
+   "end": 45.391,
+   "lines": [
+    {
+     "text": "Reading the Gita as a boy, a single great sentence would stop him, and throb through his brain for days and nights.",
+     "start": 22.036,
+     "end": 29.103,
+     "ph": "ɹˈiːdɪŋ ðə ɡˈiːtɑː æz ɐ bˈɔɪ, ɐ sˈɪŋɡəl ɡɹˈeɪt sˈɛntəns wʊd stˈɑːp hˌɪm, ænd θɹˈɑːb θɹuː hɪz bɹˈeɪn fɔːɹ dˈeɪz ænd nˈaɪts."
+    },
+    {
+     "text": "They who find pleasure and pain the same, heat and cold the same, friend and foe the same.",
+     "start": 29.523,
+     "end": 34.922,
+     "ph": "ðeɪ hˌuː fˈaɪnd plˈɛʒɚ ænd pˈeɪn ðə sˈeɪm, hˈiːt ænd kˈoʊld ðə sˈeɪm, fɹˈɛnd ænd fˈoʊ ðə sˈeɪm."
+    },
+    {
+     "text": "And Krishna's words to Arjuna on the battlefield: ill doth it befit thee, Arjuna, to yield to unmanliness.",
+     "start": 35.342,
+     "end": 43.017,
+     "ph": "ˈænd kɹˈɪʃnəz wˈɜːdz tuː ˈɑːɹdʒʊnə ɔnðə bˈæɾəlfˌiːld: ˈɪl dʌθ ɪt bᵻfˈɪt ðˈiː, ˈɑːɹdʒʊnə, tə jˈiːld tʊ ʌnmˈænlinəs."
+    },
+    {
+     "text": "How strong, he said.",
+     "start": 43.437,
+     "end": 44.691,
+     "ph": "hˌaʊ stɹˈɔŋ, hiː sˈɛd."
+    }
+   ]
+  },
+  {
+   "id": "books",
+   "start": 46.491,
+   "end": 72.879,
+   "lines": [
+    {
+     "text": "In eighteen eighty-one, at college in Calcutta, John Stuart Mill's Three Essays on Religion upset his boyhood faith.",
+     "start": 46.491,
+     "end": 53.718,
+     "ph": "ɪn ˈeɪtiːn ˈeɪɾiwˌʌn, æt kˈɑːlɪdʒ ɪn kælkˈʌɾə, dʒˈɑːn stˈuːɚt mˈɪlz θɹˈiː ˈɛseɪz ˌɔn ɹᵻlˈɪdʒən ʌpsˈɛt hɪz bˈɔɪhʊd fˈeɪθ."
+    },
+    {
+     "text": "A friend gave him Hume's scepticism, and Herbert Spencer's doctrine of the Unknowable.",
+     "start": 54.138,
+     "end": 59.444,
+     "ph": "ɐ fɹˈɛnd ɡˈeɪv hˌɪm hjˈuːmz skˈɛptɪsˌɪzəm, ænd hˈɜːbɚt spˈɛnsɚz dˈɑːktɹɪn ʌvðɪ ʌnnˈoʊəbəl."
+    },
+    {
+     "text": "He went on to Descartes, Spinoza, Darwin, Comte, and the Germans: Kant, Fichte, Hegel, Schopenhauer.",
+     "start": 59.864,
+     "end": 66.489,
+     "ph": "hiː wɛnt ˈɔn tuː deɪkˈɑːɹt, spɪnˈoʊzə, dˈɑːɹwɪn, kˈoʊnt, ænd ðə dʒˈɜːmənz: kˈɑːnt, fˈɪktə, hˈeɪɡəl, ʃˈoʊpənhaʊɚ."
+    },
+    {
+     "text": "He even attended lectures at the Medical College, to learn how the nerves and the brain work.",
+     "start": 66.909,
+     "end": 72.179,
+     "ph": "hiː ˈiːvən ɐtˈɛndᵻd lˈɛktʃɚz æt ðə mˈɛdɪkəl kˈɑːlɪdʒ, tə lˈɜːn hˌaʊ ðə nˈɜːvz ænd ðə bɹˈeɪn wˈɜːk."
+    }
+   ]
+  },
+  {
+   "id": "walled",
+   "start": 73.979,
+   "end": 101.817,
+   "lines": [
+    {
+     "text": "What he learned was this. The brain and the senses react to outside stimuli, and only those changes in the mind are ever known.",
+     "start": 73.979,
+     "end": 81.879,
+     "ph": "wˌʌt hiː lˈɜːnd wʌz ðˈɪs. ðə bɹˈeɪn ænd ðə sˈɛnsᵻz ɹɪˈækt tʊ aʊtsˈaɪd stˈɪmjʊlˌaɪ, ænd ˈoʊnli ðoʊz tʃˈeɪndʒᵻz ɪnðə mˈaɪnd ɑːɹ ˈɛvɚ nˈoʊn."
+    },
+    {
+     "text": "What the outer world really is, the thing that causes them, stays unknown and unknowable.",
+     "start": 82.299,
+     "end": 87.56,
+     "ph": "wˌʌt ðɪ ˈaʊɾɚ wˈɜːld ɹˈiəli ɪz, ðə θˈɪŋ ðæt kˈɔːzᵻz ðˌɛm, stˈeɪz ʌnnˈoʊn ænd ʌnnˈoʊəbəl."
+    },
+    {
+     "text": "Inside, it is the same. Some unknown entity makes the mind say I. It too lies beyond time and space.",
+     "start": 87.98,
+     "end": 95.066,
+     "ph": "ɪnsˈaɪd, ɪɾ ɪz ðə sˈeɪm. sˌʌm ʌnnˈoʊn ˈɛntᵻɾi mˌeɪks ðə mˈaɪnd sˈeɪ ˈaɪ. ɪt tˈuː lˈaɪz bᵻjˌɔnd tˈaɪm ænd spˈeɪs."
+    },
+    {
+     "text": "Inward or outward, the mind was kept back by the impregnable wall of time and space.",
+     "start": 95.486,
+     "end": 101.117,
+     "ph": "ˈɪnwɚd ɔːɹ ˈaʊtwɚd, ðə mˈaɪnd wʌz kˈɛpt bˈæk baɪ ðɪ ɪmpɹˈɛɡnəbəl wˈɔːl ʌv tˈaɪm ænd spˈeɪs."
+    }
+   ]
+  },
+  {
+   "id": "err",
+   "start": 102.917,
+   "end": 122.522,
+   "lines": [
+    {
+     "text": "Worse, the sense perceptions themselves are full of errors.",
+     "start": 102.917,
+     "end": 106.314,
+     "ph": "wˈɜːs, ðə sˈɛns pɚsˈɛpʃənz ðɛmsˈɛlvz ɑːɹ fˈʊl ʌv ˈɛɹɚz."
+    },
+    {
+     "text": "Look at these two lines. They are exactly the same length.",
+     "start": 106.734,
+     "end": 109.921,
+     "ph": "lˈʊk æt ðiːz tˈuː lˈaɪnz. ðeɪ ɑːɹ ɛɡzˈæktli ðə sˈeɪm lˈɛŋθ."
+    },
+    {
+     "text": "Knowing it does not help. The eye still sees one longer.",
+     "start": 110.341,
+     "end": 113.57,
+     "ph": "nˈoʊɪŋ ɪt dʌznˌɑːt hˈɛlp. ðɪ ˈaɪ stˈɪl sˈiːz wˈʌn lˈɔŋɡɚ."
+    },
+    {
+     "text": "So whom should philosophy trust? The senses of ordinary people, or the rare realisations of a Buddha or a Jesus?",
+     "start": 113.99,
+     "end": 121.822,
+     "ph": "sˌoʊ hˈuːm ʃˌʊd fɪlˈɑːsəfi tɹˈʌst? ðə sˈɛnsᵻz ʌv ˈɔːɹdɪnˌɛɹi pˈiːpəl, ɔːɹ ðə ɹˈɛɹ ɹˌiːələzˈeɪʃənz əvə bˈuːdə ɔːɹ ɐ dʒˈiːzəs?"
+    }
+   ]
+  },
+  {
+   "id": "seal",
+   "start": 123.622,
+   "end": 147.266,
+   "lines": [
+    {
+     "text": "His friend Brajendranath Seal offered him a system: the sovereignty of Universal Reason.",
+     "start": 123.622,
+     "end": 129.494,
+     "ph": "hɪz fɹˈɛnd bɹədʒˈeɪndɹənɑːt sˈiːl ˈɔfɚd hˌɪm ɐ sˈɪstəm: ðə sˈɑːvɚɹˌɪnti ʌv jˌuːnɪvˈɜːsəl ɹˈiːzən."
+    },
+    {
+     "text": "It conquered his intellect. But his heart, he confessed, still belonged to the individual.",
+     "start": 129.914,
+     "end": 135.276,
+     "ph": "ɪt kˈɑːŋkɚd hɪz ˈɪntəlˌɛkt. bˌʌt hɪz hˈɑːɹt, hiː kənfˈɛst, stˈɪl bᵻlˈɔŋd tə ðɪ ˌɪndᵻvˈɪdʒuːəl."
+    },
+    {
+     "text": "A pale, bloodless reason could not save him in the hour of temptation.",
+     "start": 135.696,
+     "end": 140.158,
+     "ph": "ɐ pˈeɪl, blˈʌdləs ɹˈiːzən kʊd nˌɑːt sˈeɪv hˌɪm ɪnðɪ ˈaʊɚɹ ʌv tɛmptˈeɪʃən."
+    },
+    {
+     "text": "He wanted a flesh and blood reality. A hand to save him. A master who embodied perfection.",
+     "start": 140.578,
+     "end": 146.566,
+     "ph": "hiː wˈɔntᵻd ɐ flˈɛʃ ænd blˈʌd ɹɪˈælᵻɾi. ɐ hˈænd tə sˈeɪv hˌɪm. ɐ mˈæstɚ hˌuː ɛmbˈɑːdid pɚfˈɛkʃən."
+    }
+   ]
+  },
+  {
+   "id": "seen",
+   "start": 148.366,
+   "end": 166.601,
+   "lines": [
+    {
+     "text": "So he went from place to place in Calcutta, hearing big lectures, and asking each lecturer one question.",
+     "start": 148.366,
+     "end": 154.702,
+     "ph": "sˌoʊ hiː wɛnt fɹʌm plˈeɪs tə plˈeɪs ɪn kælkˈʌɾə, hˈɪɹɪŋ bˈɪɡ lˈɛktʃɚz, ænd ˈæskɪŋ ˈiːtʃ lˈɛktʃɚɹɚ wˈʌn kwˈɛstʃən."
+    },
+    {
+     "text": "Have you seen God?",
+     "start": 155.122,
+     "end": 156.33,
+     "ph": "hæv juː sˈiːn ɡˈɑːd?"
+    },
+    {
+     "text": "The man would be taken aback at the very idea.",
+     "start": 156.75,
+     "end": 159.38,
+     "ph": "ðə mˈæn wʊd biː tˈeɪkən ɐbˈæk æt ðə vˈɛɹi aɪdˈiə."
+    },
+    {
+     "text": "Only one man said, I have. And I will put you in the way of seeing Him too. That was Ramakrishna.",
+     "start": 159.8,
+     "end": 165.901,
+     "ph": "ˈoʊnli wˈʌn mˈæn sˈɛd, aɪ hˈæv. ænd aɪ wɪl pˌʊt juː ɪnðə wˈeɪ ʌv sˈiːɪŋ hˌɪm tˈuː. ðɐt wˈʌz ɹˌɑːməkɹˈɪʃnə."
+    }
+   ]
+  },
+  {
+   "id": "hamilton",
+   "start": 167.701,
+   "end": 186.52,
+   "lines": [
+    {
+     "text": "The philosopher Hamilton had written that the intellect can only hint that God exists.",
+     "start": 167.701,
+     "end": 172.953,
+     "ph": "ðə fɪlˈɑːsəfɚ hˈæməltən hæd ɹˈɪʔn̩ ðætðɪ ˈɪntəlˌɛkt kæn ˈoʊnli hˈɪnt ðæt ɡˈɑːd ɛɡzˈɪsts."
+    },
+    {
+     "text": "It cannot reveal His nature. It comes closer and closer, and never arrives.",
+     "start": 173.373,
+     "end": 178.304,
+     "ph": "ɪt kænˈɑːt ɹᵻvˈiːl hɪz nˈeɪtʃɚ. ɪt kˈʌmz klˈoʊsɚ ænd klˈoʊsɚ, ænd nˈɛvɚɹ ɚɹˈaɪvz."
+    },
+    {
+     "text": "Where philosophy ends, Hamilton said, religion begins.",
+     "start": 178.724,
+     "end": 182.242,
+     "ph": "wˌɛɹ fɪlˈɑːsəfi ˈɛndz, hˈæməltən sˈɛd, ɹᵻlˈɪdʒən bɪɡˈɪnz."
+    },
+    {
+     "text": "Naren loved that line, and quoted it again and again.",
+     "start": 182.662,
+     "end": 185.82,
+     "ph": "nəɹˈeɪn lˈʌvd ðæt lˈaɪn, ænd kwˈoʊɾᵻd ɪɾ ɐɡˈɛn ænd ɐɡˈɛn."
+    }
+   ]
+  },
+  {
+   "id": "flame",
+   "start": 187.62,
+   "end": 212.28,
+   "lines": [
+    {
+     "text": "Ramakrishna gave him a prayer: O God, I do not know Thy nature. Manifest Thyself to me as Thou really art.",
+     "start": 187.62,
+     "end": 195.232,
+     "ph": "ɹˌɑːməkɹˈɪʃnə ɡˈeɪv hˌɪm ɐ pɹˈɛɹ: ˈoʊ ɡˈɑːd, aɪ duːnˌɑːt nˈoʊ ðˌaɪ nˈeɪtʃɚ. mˈænɪfˌɛst ðaɪsˈɛlf tə mˌiː æz ðˈaʊ ɹˈiəli ˈɑːɹt."
+    },
+    {
+     "text": "Naren gave up every picture of God, even the formless one with attributes.",
+     "start": 195.652,
+     "end": 200.44,
+     "ph": "nəɹˈeɪn ɡˈeɪv ˌʌp ˈɛvɹi pˈɪktʃɚɹ ʌv ɡˈɑːd, ˈiːvən ðə fˈɔːɹmləs wˈʌn wɪð ˈætɹɪbjˌuːts."
+    },
+    {
+     "text": "He removed all thought, and held his mind still, like the flame of a lamp in a windless place.",
+     "start": 200.86,
+     "end": 206.626,
+     "ph": "hiː ɹᵻmˈuːvd ˈɔːl θˈɔːt, ænd hˈɛld hɪz mˈaɪnd stˈɪl, lˈaɪk ðə flˈeɪm əvə lˈæmp ɪn ɐ wˈɪndləs plˈeɪs."
+    },
+    {
+     "text": "At times the sense of time and body vanished. He sat like this whole nights.",
+     "start": 207.046,
+     "end": 211.58,
+     "ph": "æt tˈaɪmz ðə sˈɛns ʌv tˈaɪm ænd bˈɑːdi vˈænɪʃt. hiː sˈæt lˈaɪk ðɪs hˈoʊl nˈaɪts."
+    }
+   ]
+  },
+  {
+   "id": "monk",
+   "start": 213.38,
+   "end": 237.098,
+   "lines": [
+    {
+     "text": "One night, after meditation, a monk in ochre appeared, filling the room with light, a water pot in his hand.",
+     "start": 213.38,
+     "end": 220.014,
+     "ph": "wˈʌn nˈaɪt, ˈæftɚ mˌɛdɪtˈeɪʃən, ɐ mˈʌŋk ɪn ˈoʊkɚɹ ɐpˈɪɹd, fˈɪlɪŋ ðə ɹˈuːm wɪð lˈaɪt, ɐ wˈɔːɾɚ pˈɑːt ɪn hɪz hˈænd."
+    },
+    {
+     "text": "He walked toward Naren, as if to say something. Seized with fear, Naren got up and left the room.",
+     "start": 220.434,
+     "end": 226.512,
+     "ph": "hiː wˈɔːkt təwˈɔːɹd nəɹˈeɪn, æz ɪf tə sˈeɪ sˈʌmθɪŋ. sˈiːzd wɪð fˈɪɹ, nəɹˈeɪn ɡɑːt ˌʌp ænd lˈɛft ðə ɹˈuːm."
+    },
+    {
+     "text": "When he came back, the monk was gone.",
+     "start": 226.932,
+     "end": 228.989,
+     "ph": "wˌɛn hiː kˈeɪm bˈæk, ðə mˈʌŋk wʌz ɡˈɔn."
+    },
+    {
+     "text": "It may be a hallucination, he said later. But very often it comes to my mind that I saw Lord Buddha that day.",
+     "start": 229.409,
+     "end": 236.398,
+     "ph": "ɪt mˈeɪ biː ɐ hɐlˌuːsᵻnˈeɪʃən, hiː sˈɛd lˈeɪɾɚ. bˌʌt vˈɛɹi ˈɔfən ɪt kˈʌmz tə maɪ mˈaɪnd ðæt aɪ sˈɔː lˈɔːɹd bˈuːdə ðæt dˈeɪ."
+    }
+   ]
+  },
+  {
+   "id": "notgod",
+   "start": 238.198,
+   "end": 258.942,
+   "lines": [
+    {
+     "text": "The doubts did not end in a day. He fought every inch of the way.",
+     "start": 238.198,
+     "end": 241.74,
+     "ph": "ðə dˈaʊts dɪdnˌɑːt ˈɛnd ɪn ɐ dˈeɪ. hiː fˈɔːt ˈɛvɹi ˈɪntʃ ʌvðə wˈeɪ."
+    },
+    {
+     "text": "But slowly a conviction grew. The gods might be false, he thought. But not God.",
+     "start": 242.16,
+     "end": 247.144,
+     "ph": "bˌʌt slˈoʊli ɐ kənvˈɪkʃən ɡɹˈuː. ðə ɡˈɑːdz mˌaɪt biː fˈɔls, hiː θˈɔːt. bˌʌt nˌɑːt ɡˈɑːd."
+    },
+    {
+     "text": "His intellect was not stunted to be silenced. It was taken to its height, and then beyond.",
+     "start": 247.564,
+     "end": 253.018,
+     "ph": "hɪz ˈɪntəlˌɛkt wʌz nˌɑːt stˈʌntᵻd təbi sˈaɪlənst. ɪt wʌz tˈeɪkən tʊ ɪts hˈaɪt, ænd ðˈɛn bᵻjˈɔnd."
+    },
+    {
+     "text": "The student who read Kant would become a monk, and carry Kant's question to the West.",
+     "start": 253.438,
+     "end": 258.242,
+     "ph": "ðə stˈuːdənt hˌuː ɹˈiːd kˈɑːnt wʊd bɪkˌʌm ɐ mˈʌŋk, ænd kˈæɹi kˈɑːnts kwˈɛstʃən tə ðə wˈɛst."
+    }
+   ]
+  }
+ ]
+}
