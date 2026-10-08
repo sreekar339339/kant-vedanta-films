@@ -7,7 +7,8 @@ Output JSON (all coordinates in the traced image's pixel space, origin top-left)
    "contour": [[x0,y0,x1,y1,...], ...]      ink outlines, ordered top to bottom
    "hatch":   [[layer, x0,y0,x1,y1], ...]   cross-hatching segments, ordered by layer then sweep
    "colour":  [{"col":"#rrggbb","poly":[[x,y,...], ...]}, ...]  marker-colour regions,
-   "outline": [x,y,...]                     silhouette, used to hide drawing behind the figure}
+   "outline": [x,y,...]                     silhouette, used to hide drawing behind the figure,
+   "tone":    {"w","h","b64"}               small grayscale tone map (0 dark..255 light) for painted shading}
 The film engine draws contours, then hatching, then scribbles the colour regions underneath the ink.
 """
 import argparse, json, math, random
@@ -116,7 +117,7 @@ def colour_regions(img, mask, k):
         polys = []
         cs, _ = cv2.findContours(m, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         for c in cs:
-            if cv2.contourArea(c) < 400: continue
+            if cv2.contourArea(c) < 120: continue
             a = cv2.approxPolyDP(c, 2.0, True).reshape(-1, 2)
             polys.append([int(v) for v in a.ravel()])
         if polys:
@@ -162,7 +163,11 @@ def main():
     oc, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     big = max(oc, key=cv2.contourArea)
     outline = [int(v) for v in cv2.approxPolyDP(big, 2.0, True).reshape(-1, 2).ravel()]
-    json.dump({"w": w, "h": h, "outline": outline, "contour": contour, "hatch": hs, "colour": col}, open(a.out, "w"), separators=(",", ":"))
+    import base64
+    tw = 120; th = int(round(h * tw / w))
+    tsm = cv2.resize((np.clip(tone, 0, 1) * 255).astype(np.uint8), (tw, th), interpolation=cv2.INTER_AREA)
+    tone_small = {"w": tw, "h": th, "b64": base64.b64encode(tsm.tobytes()).decode()}
+    json.dump({"w": w, "h": h, "tone": tone_small, "outline": outline, "contour": contour, "hatch": hs, "colour": col}, open(a.out, "w"), separators=(",", ":"))
     print(f"{a.out}: {w}x{h} contours={len(contour)} hatch={len(hs)} colour_regions={len(col)}")
 
 if __name__ == "__main__":

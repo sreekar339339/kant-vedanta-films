@@ -1,0 +1,54 @@
+<title>Painted Mural Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Libre+Baskerville:ital@0;1&family=Tiro+Devanagari+Sanskrit&family=Amiri&family=IBM+Plex+Mono:wght@400;500&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+/* Layout: a studio wall. Title and what changed, one large stage, the style switch, then notes. Light single theme by choice: the subject is a whiteboard. */
+:root{--wall:#ebeae5;--panel:#fff;--line:#d3d1c9;--ink:#141416;--muted:#5b5a56;--red:#d6262a;
+  --hand:"Patrick Hand SC","Comic Sans MS",cursive;--serif:"Libre Baskerville",Georgia,serif;--body:"Atkinson Hyperlegible",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;color-scheme:light}
+*{box-sizing:border-box}
+body{background:var(--wall);color:var(--ink);font:400 16px/1.55 var(--body);margin:0}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:18px;padding-block:34px 80px;display:grid;gap:30px}
+h1{font-family:var(--hand);font-weight:400;font-size:clamp(2.4rem,7vw,4.2rem);margin:0;line-height:1.02;text-wrap:balance}
+h1 em{font-style:normal;color:var(--red)}
+.eyebrow{font:500 .74rem/1.2 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.lede{max-width:70ch;color:var(--muted);margin:12px 0 0}
+.stage{background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 22px 60px -26px rgba(0,0,0,.5),0 0 0 1px var(--line)}
+.stage canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;max-width:100%;cursor:pointer}
+.bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font:400 .78rem var(--mono);color:var(--muted)}
+.pb{font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:7px 14px;cursor:pointer}
+.tl{position:relative;flex:1;min-width:220px;height:28px;background:var(--panel);border:1px solid var(--line);border-radius:3px;cursor:pointer;display:flex}
+.tl i{flex:1;border-right:1px solid var(--line);font:500 .66rem/28px var(--mono);color:var(--muted);text-align:center;font-style:normal;overflow:hidden;white-space:nowrap}
+.tl i:last-of-type{border-right:0}
+.tl b{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--red)}
+.cap{min-height:3em;text-align:center;font-family:var(--serif);font-style:italic;font-size:clamp(.98rem,2vw,1.12rem);text-wrap:balance;max-width:80ch;margin:0 auto}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+.row > span{font:500 .72rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--panel)}
+.seg button{font:500 .88rem var(--body);border:0;background:transparent;padding:9px 16px;cursor:pointer;color:var(--ink);border-right:1px solid var(--line)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.seg button:focus-visible,.tl:focus-visible,.pb:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+#desc{margin:0;color:#33322f;max-width:76ch;border-left:3px solid var(--red);padding:2px 0 2px 14px}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px 28px}
+.notes h3{font:500 .72rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin:0 0 6px}
+.notes p{margin:0;font-size:.93rem;color:#33322f}
+</style>
+<main class="wrap">
+  <header><div class="eyebrow">From Colombo to Almora · painted mural study</div><h1>More things, <em>painted</em></h1>
+  <p class="lede">The cross-hatching is gone. Each object now sketches its outline quickly and floods with colour, one after another, so a scene builds up as a crowd of things from the narration instead of repeating one shading animation. Four scenes from the Colombo lecture, each about three times as full as in the current film. Switch the paint style below; the last option is the current film for comparison.</p></header>
+  <section style="display:grid;gap:14px" aria-label="Study">
+    <div class="stage"><canvas id="cv" width="960" height="540" aria-label="Painted mural study"></canvas></div>
+    <div class="bar"><button type="button" class="pb" id="pp">Pause</button><div class="tl" id="tl" tabindex="0" role="slider" aria-label="Scrub the study" aria-valuemin="0" aria-valuemax="40"><i>Colombo</i><i>Blood or blessing</i><i>The ploughman</i><i>Quote card</i><b id="ph"></b></div><span id="tc">0.0 s</span></div>
+    <div class="cap" id="cap"></div>
+    <div class="row"><span>Paint style</span><div class="seg" id="o-style"><button type="button" data-v="gouache">Gouache</button><button type="button" data-v="flat">Flat marker</button><button type="button" data-v="water">Watercolour</button><button type="button" data-v="hatch">Hatched (current)</button></div></div>
+    <p id="desc"></p>
+  </section>
+  <section class="notes">
+    <div><h3>Faster, and never the same twice</h3><p>An object takes a fraction of a second: outline, then colour flooding in by sweep, bloom or drop, chosen per object. With twenty to forty objects per scene, the screen is always changing.</p></div>
+    <div><h3>Objects from the sentence</h3><p>Colombo gets the lighthouse, the steamship, outrigger canoes, the welcome arch, bunting, garlands and the crowd. The ploughman gets the oxen, rice fields, huts, a well, the temple tower and women carrying water.</p></div>
+    <div><h3>Portraits</h3><p>The traced 1893 portrait is painted from its own colour regions with clean contour lines, no hatching.</p></div>
+  </section>
+</main>
+<script>
+/*LIB*//*ASSETS*//*COMMON*//*STUDY*/
+</script>
