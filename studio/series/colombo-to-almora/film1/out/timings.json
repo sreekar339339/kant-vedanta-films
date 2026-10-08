@@ -1,8 +1,8 @@
 {
- "duration": 584.703,
+ "duration": 571.118,
  "voice": "af_heart",
  "speed": 0.92,
- "quote_voice": "bm_george",
+ "quote_voice": "af_heart",
  "chapters": [
   {
    "id": "arrive",
@@ -87,7 +87,7 @@
   {
    "id": "punya",
    "start": 63.286,
-   "end": 107.742,
+   "end": 105.903,
    "lines": [
     {
      "text": "He begins by giving the credit away: whatever he did in the West came from the blessings that followed him from home.",
@@ -110,71 +110,71 @@
     {
      "text": "Today I stand here and say, with the conviction of truth, that it is so.",
      "start": 80.052,
-     "end": 84.972,
+     "end": 84.115,
      "ph": "tədˈeɪ aɪ stˈænd hˈɪɹ ænd sˈeɪ, wɪððə kənvˈɪkʃən ʌv tɹˈuːθ, ðˌɐɾɪt ɪz sˈoʊ.",
      "q": true
     },
     {
      "text": "If any land is the one to which every soul wending its way Godward must come, to attain its last home,",
-     "start": 85.392,
-     "end": 91.617,
+     "start": 84.535,
+     "end": 90.759,
      "ph": "ɪf ˌɛni lˈænd ɪz ðə wˈʌn tʊ wˌɪtʃ ˈɛvɹi sˈoʊl wˈɛndɪŋ ɪts wˈeɪ ɡˈɑːdwɚd mˈʌst kˈʌm, tʊ ɐtˈeɪn ɪts lˈæst hˈoʊm,"
     },
     {
      "text": "the land of introspection and of spirituality — it is India.",
-     "start": 92.217,
-     "end": 96.965,
+     "start": 91.359,
+     "end": 95.126,
      "ph": "ðə lˈænd ʌv ˌɪntɹəspˈɛkʃən ænd ʌv spˌɪɹɪtʃuːˈælᵻɾi— ɪɾ ɪz ˈɪndiə.",
      "q": true
     },
     {
      "text": "From here, tidal waves of philosophy have covered the earth. From here must start the wave that will spiritualise the material civilisation of the world.",
-     "start": 97.385,
-     "end": 107.042,
+     "start": 95.546,
+     "end": 105.203,
      "ph": "fɹʌm hˈɪɹ, tˈaɪdəl wˈeɪvz ʌv fɪlˈɑːsəfi hæv kˈʌvɚd ðɪ ˈɜːθ. fɹʌm hˈɪɹ mˈʌst stˈɑːɹt ðə wˈeɪv ðæt wɪl spˈɪɹɪtʃˌuːəlˌaɪz ðə mətˈɪɹiəl sˌɪvɪləzˈeɪʃən ʌvðə wˈɜːld."
     }
    ]
   },
   {
    "id": "sword",
-   "start": 108.842,
-   "end": 146.288,
+   "start": 107.003,
+   "end": 142.633,
    "lines": [
     {
      "text": "The debt the world owes to the patient Hindu, the mild Hindu, is immense.",
-     "start": 108.842,
-     "end": 113.196,
+     "start": 107.003,
+     "end": 111.357,
      "ph": "ðə dˈɛt ðə wˈɜːld ˈoʊz tə ðə pˈeɪʃənt hˈɪnduː, ðə mˈaɪld hˈɪnduː, ɪz ɪmˈɛns."
     },
     {
      "text": "Elsewhere, great ideas travelled with the blast of war trumpets and the march of embattled cohorts.",
-     "start": 113.616,
-     "end": 119.619,
+     "start": 111.777,
+     "end": 117.78,
      "ph": "ˈɛlswɛɹ, ɡɹˈeɪt aɪdˈiəz tɹˈævəld wɪððə blˈæst ʌv wˈɔːɹ tɹˈʌmpɪts ænd ðə mˈɑːɹtʃ ʌv ɛmbˈæɾəld kˈoʊhɔːɹts."
     },
     {
      "text": "Each idea had to be soaked in a deluge of blood.",
-     "start": 120.219,
-     "end": 124.06,
+     "start": 118.38,
+     "end": 121.288,
      "ph": "ˈiːtʃ aɪdˈiə hædtə biː sˈoʊkt ɪn ɐ dˈɛljuːdʒ ʌv blˈʌd.",
      "q": true
     },
     {
      "text": "Each word of power was followed by the wails of orphans, and the tears of widows.",
-     "start": 124.48,
-     "end": 129.225,
+     "start": 121.708,
+     "end": 126.453,
      "ph": "ˈiːtʃ wˈɜːd ʌv pˈaʊɚ wʌz fˈɑːloʊd baɪ ðə wˈeɪlz ʌv ˈɔːɹfənz, ænd ðə tˈɪɹz ʌv wˈɪdoʊz."
     },
     {
      "text": "From India, idea after idea has marched out, every word spoken with a blessing behind it and peace before it.",
-     "start": 129.645,
-     "end": 136.827,
+     "start": 126.873,
+     "end": 134.054,
      "ph": "fɹʌm ˈɪndiə, aɪdˈiə ˈæftɚɹ aɪdˈiə hɐz mˈɑːɹtʃt ˈaʊt, ˈɛvɹi wˈɜːd spˈoʊkən wɪð ɐ blˈɛsɪŋ bᵻhˌaɪnd ɪt ænd pˈiːs bᵻfˈoːɹ ɪt."
     },
     {
      "text": "We, of all nations of the world, have never been a conquering race, and that blessing is on our head, and therefore we live.",
-     "start": 137.427,
-     "end": 145.588,
+     "start": 134.654,
+     "end": 141.933,
      "ph": "wˈiː, ʌv ˈɔːl nˈeɪʃənz ʌvðə wˈɜːld, hæv nˈɛvɚ bˌɪn ɐ kˈɑːŋkɚɹɪŋ ɹˈeɪs, ænd ðæt blˈɛsɪŋ ɪz ˌɔn ˌaʊɚ hˈɛd, ænd ðˈɛɹfoːɹ wiː lˈɪv.",
      "q": true
     }
@@ -182,144 +182,144 @@
   },
   {
    "id": "capitol",
-   "start": 147.388,
-   "end": 186.291,
+   "start": 143.733,
+   "end": 181.677,
    "lines": [
     {
      "text": "There was a time when the earth trembled at the march of big Greek battalions. That ancient land is gone.",
-     "start": 147.388,
-     "end": 153.636,
+     "start": 143.733,
+     "end": 149.981,
      "ph": "ðɛɹwˌʌz ɐ tˈaɪm wɛn ðɪ ˈɜːθ tɹˈɛmbəld æt ðə mˈɑːɹtʃ ʌv bˈɪɡ ɡɹˈiːk bɐtˈæliənz. ðæt ˈeɪntʃənt lˈænd ɪz ɡˈɔn."
     },
     {
      "text": "There was a time when the Roman Eagle floated over everything worth having in this world.",
-     "start": 154.056,
-     "end": 158.98,
+     "start": 150.401,
+     "end": 155.324,
      "ph": "ðɛɹwˌʌz ɐ tˈaɪm wɛn ðə ɹˈoʊmən ˈiːɡəl flˈoʊɾᵻd ˌoʊvɚɹ ˈɛvɹɪθˌɪŋ wˈɜːθ hˌævɪŋ ɪn ðɪs wˈɜːld."
     },
     {
      "text": "But the Capitoline Hill is a mass of ruins, the spider weaves its web where the Caesars ruled.",
-     "start": 159.58,
-     "end": 166.382,
+     "start": 155.924,
+     "end": 161.768,
      "ph": "bˌʌt ðə kˈæpɪtˌɑːliːn hˈɪl ɪz ɐ mˈæs ʌv ɹˈuːɪnz, ðə spˈaɪdɚ wˈiːvz ɪts wˈɛb wˌɛɹ ðə sˈiːzɚz ɹˈuːld.",
      "q": true
     },
     {
      "text": "Other glorious nations came and went, vanishing like ripples on the face of the waters.",
-     "start": 166.802,
-     "end": 172.056,
+     "start": 162.188,
+     "end": 167.442,
      "ph": "ˈʌðɚ ɡlˈoːɹiəs nˈeɪʃənz kˈeɪm ænd wˈɛnt, vˈænɪʃɪŋ lˈaɪk ɹˈɪpəlz ɔnðə fˈeɪs ʌvðə wˈɔːɾɚz."
     },
     {
      "text": "But we live. If Manu came back today, he would not find himself in a foreign land.",
-     "start": 172.476,
-     "end": 177.462,
+     "start": 167.862,
+     "end": 172.848,
      "ph": "bˌʌt wiː lˈɪv. ˈɪf mˈʌnuː kˈeɪm bˈæk tədˈeɪ, hiː wʊd nˌɑːt fˈaɪnd hɪmsˈɛlf ɪn ɐ fˈɔːɹən lˈænd."
     },
     {
      "text": "Blow after blow of misfortune has only made the old laws stronger. The mainspring of the national life, he says, is here.",
-     "start": 177.882,
-     "end": 185.591,
+     "start": 173.268,
+     "end": 180.977,
      "ph": "blˈoʊ ˈæftɚ blˈoʊ ʌv mɪsfˈɔːɹtʃʊn hɐz ˈoʊnli mˌeɪd ðɪ ˈoʊld lˈɔːz stɹˈɔŋɡɚ. ðə mˈeɪnspɹɪŋ ʌvðə nˈæʃənəl lˈaɪf, hiː sˈɛz, ɪz hˈɪɹ."
     }
    ]
   },
   {
    "id": "plough",
-   "start": 187.391,
-   "end": 240.555,
+   "start": 182.777,
+   "end": 235.254,
    "lines": [
     {
      "text": "To other nations, religion is one occupation among many: politics, society, wealth, the senses, and perhaps a little bit of religion.",
-     "start": 187.391,
-     "end": 196.449,
+     "start": 182.777,
+     "end": 191.835,
      "ph": "tʊ ˈʌðɚ nˈeɪʃənz, ɹᵻlˈɪdʒən ɪz wˈʌn ˌɑːkjʊpˈeɪʃən ɐmˌʌŋ mˈɛni: pˈɑːlətˌɪks, səsˈaɪəɾi, wˈɛlθ, ðə sˈɛnsᵻz, ænd pɚhˈæps ɐ lˈɪɾəl bˈɪt ʌv ɹᵻlˈɪdʒən."
     },
     {
      "text": "Here, in India, religion is the one and the only occupation of life.",
-     "start": 196.869,
-     "end": 201.583,
+     "start": 192.255,
+     "end": 196.969,
      "ph": "hˈɪɹ, ɪn ˈɪndiə, ɹᵻlˈɪdʒən ɪz ðə wˈʌn ænd ðɪ ˈoʊnli ˌɑːkjʊpˈeɪʃən ʌv lˈaɪf."
     },
     {
      "text": "Few here have heard of the Sino-Japanese War. Yet even the poorest labourer knows there was a Parliament of Religions in America, and a Hindu Sannyasin sent there.",
-     "start": 202.003,
-     "end": 212.289,
+     "start": 197.389,
+     "end": 207.675,
      "ph": "fjˈuː hˈɪɹ hæv hˈɜːd ʌvðə sˈiːnoʊdʒˌæpənˈiːz wˈɔːɹ. jˈɛt ˈiːvən ðə pˈʊɹɹɪst lˈeɪbɚɹɚ nˈoʊz ðɛɹwˌʌz ɐ pˈɑːɹləmənt ʌv ɹᵻlˈɪdʒənz ɪn ɐmˈɛɹɪkə, ænd ɐ hˈɪnduː sənjˈɑːsɪn sˈɛnt ðˈɛɹ."
     },
     {
      "text": "Ask a ploughman in England or America his politics, and he names his party; he even knows something about the silver question.",
-     "start": 212.709,
-     "end": 220.58,
+     "start": 208.095,
+     "end": 215.966,
      "ph": "ˈæsk ɐ plˈaʊmən ɪn ˈɪŋɡlənd ɔːɹ ɐmˈɛɹɪkə hɪz pˈɑːlətˌɪks, ænd hiː nˈeɪmz hɪz pˈɑːɹɾi; hiː ˈiːvən nˈoʊz sˈʌmθɪŋ ɐbˌaʊt ðə sˈɪlvɚ kwˈɛstʃən."
     },
     {
      "text": "Ask his religion: he goes to church, belongs to a denomination, and that is all he knows.",
-     "start": 221.0,
-     "end": 226.823,
+     "start": 216.386,
+     "end": 222.209,
      "ph": "ˈæsk hɪz ɹᵻlˈɪdʒən: hiː ɡoʊz tə tʃˈɜːtʃ, bᵻlˈɔŋz tʊ ɐ dᵻnˌɑːmᵻnˈeɪʃən, ænd ðæt ɪz ˈɔːl hiː nˈoʊz."
     },
     {
      "text": "Ask an Indian ploughman about politics, and he says, what is that? Ask his religion, and he says:",
-     "start": 227.243,
-     "end": 233.534,
+     "start": 222.629,
+     "end": 228.92,
      "ph": "ˈæsk ɐn ˈɪndiən plˈaʊmən ɐbˌaʊt pˈɑːlətˌɪks, ænd hiː sˈɛz, wˌʌt ɪz ðˈæt? ˈæsk hɪz ɹᵻlˈɪdʒən, ænd hiː sˈɛz:"
     },
     {
      "text": "Look here, my friend, I have marked it on my forehead.",
-     "start": 234.134,
-     "end": 237.888,
+     "start": 229.52,
+     "end": 232.587,
      "ph": "lˈʊk hˈɪɹ, maɪ fɹˈɛnd, aɪ hæv mˈɑːɹkt ɪɾ ˌɔn maɪ fˈɔːɹhɛd.",
      "q": true
     },
     {
      "text": "That is our nation's life.",
-     "start": 238.308,
-     "end": 239.855,
+     "start": 233.007,
+     "end": 234.554,
      "ph": "ðæt ɪz ˌaʊɚ nˈeɪʃənz lˈaɪf."
     }
    ]
   },
   {
    "id": "dynamo",
-   "start": 241.655,
-   "end": 287.395,
+   "start": 236.354,
+   "end": 280.352,
    "lines": [
     {
      "text": "Each man comes into the world with a bent, marked out by his past Karma. And what is true of the individual is true of the race.",
-     "start": 241.655,
-     "end": 249.501,
+     "start": 236.354,
+     "end": 244.2,
      "ph": "ˈiːtʃ mˈæn kˈʌmz ˌɪntʊ ðə wˈɜːld wɪð ɐ bˈɛnt, mˈɑːɹkt ˈaʊt baɪ hɪz pˈæst kˈɑːɹmə. ænd wʌt ɪz tɹˈuː ʌvðɪ ˌɪndᵻvˈɪdʒuːəl ɪz tɹˈuː ʌvðə ɹˈeɪs."
     },
     {
      "text": "Political greatness or military power is never the mission of our race; it never was, and, mark my words, it never will be.",
-     "start": 250.101,
-     "end": 259.615,
+     "start": 244.8,
+     "end": 253.186,
      "ph": "pəlˈɪɾɪkəl ɡɹˈeɪtnəs ɔːɹ mˈɪlətˌɛɹi pˈaʊɚɹ ɪz nˈɛvɚ ðə mˈɪʃən ʌv ˌaʊɚ ɹˈeɪs; ɪt nˈɛvɚ wʌz, ˈænd, mˈɑːɹk maɪ wˈɜːdz, ɪt nˈɛvɚ wɪl bˈiː.",
      "q": true
     },
     {
      "text": "Its mission is to conserve, to accumulate, as it were into a dynamo, all the spiritual energy of the race,",
-     "start": 260.035,
-     "end": 266.8,
+     "start": 253.606,
+     "end": 260.371,
      "ph": "ɪts mˈɪʃən ɪz tə kənsˈɜːv, tʊ ɐkjˈuːmjʊlˌeɪt, æz ɪt wɜːɹ ˌɪntʊ ɐ dˈaɪnɐmˌoʊ, ˈɔːl ðə spˈɪɹɪtʃˌuːəl ˈɛnɚdʒi ʌvðə ɹˈeɪs,"
     },
     {
      "text": "and to pour it forth in a deluge on the world, whenever circumstances are propitious.",
-     "start": 267.22,
-     "end": 272.231,
+     "start": 260.791,
+     "end": 265.801,
      "ph": "ænd tə pˈoːɹ ɪt fˈɔːɹθ ɪn ɐ dˈɛljuːdʒ ɔnðə wˈɜːld, wɛnˌɛvɚ sˈɜːkəmstˌænsᵻz ɑːɹ pɹəpˈɪʃəs."
     },
     {
      "text": "Let the Persian, the Greek, the Roman, the Arab or the Englishman march his battalions and link the nations; India's thought flows along the new-made channels.",
-     "start": 272.651,
-     "end": 282.568,
+     "start": 266.221,
+     "end": 276.139,
      "ph": "lˈɛt ðə pˈɜːʒən, ðə ɡɹˈiːk, ðə ɹˈoʊmən, ðɪ ˈæɹəb ɔːɹ ðɪ ˈɪŋɡlɪʃmən mˈɑːɹtʃ hɪz bɐtˈæliənz ænd lˈɪŋk ðə nˈeɪʃənz; ˈɪndiəz θˈɔːt flˈoʊz ɐlˈɔŋ ðə nˈuːmˌeɪd tʃˈænəlz."
     },
     {
      "text": "India's gift to the world is the light spiritual.",
-     "start": 283.168,
-     "end": 286.695,
+     "start": 276.739,
+     "end": 279.652,
      "ph": "ˈɪndiəz ɡˈɪft tə ðə wˈɜːld ɪz ðə lˈaɪt spˈɪɹɪtʃˌuːəl.",
      "q": true
     }
@@ -327,308 +327,308 @@
   },
   {
    "id": "dew",
-   "start": 288.495,
-   "end": 342.658,
+   "start": 281.452,
+   "end": 333.743,
    "lines": [
     {
      "text": "Whenever a conquering nation linked India to the world, the world was flooded with Indian spiritual ideas.",
-     "start": 288.495,
-     "end": 295.094,
+     "start": 281.452,
+     "end": 288.05,
      "ph": "wɛnˌɛvɚɹ ɐ kˈɑːŋkɚɹɪŋ nˈeɪʃən lˈɪŋkt ˈɪndiə tə ðə wˈɜːld, ðə wˈɜːld wʌz flˈʌdᵻd wɪð ˈɪndiən spˈɪɹɪtʃˌuːəl aɪdˈiəz."
     },
     {
      "text": "At the beginning of this century, Schopenhauer studied the Upanishads in a Latin translation of an old Persian one, and wrote:",
-     "start": 295.514,
-     "end": 302.996,
+     "start": 288.47,
+     "end": 295.952,
      "ph": "æt ðə bɪɡˈɪnɪŋ ʌv ðɪs sˈɛntʃɚɹi, ʃˈoʊpənhaʊɚ stˈʌdid ðə uːpˈʌnɪʃədz ɪn ɐ lˈætɪn tɹænslˈeɪʃən əvən ˈoʊld pˈɜːʒən wˌʌn, ænd ɹˈoʊt:"
     },
     {
      "text": "In the whole world there is no study so beneficial and so elevating as that of the Upanishads. It has been the solace of my life, it will be the solace of my death.",
-     "start": 303.416,
-     "end": 313.445,
+     "start": 296.372,
+     "end": 306.402,
      "ph": "ɪnðə hˈoʊl wˈɜːld ðɛɹ ɪz nˈoʊ stˈʌdi sˌoʊ bˌɛnɪfˈɪʃəl ænd sˌoʊ ˈɛlɪvˌeɪɾɪŋ æz ðˈæt ʌvðə uːpˈʌnɪʃədz. ɪt hˈæzbiːn ðə sˈɑːlɪs ʌv maɪ lˈaɪf, ɪt wɪl biː ðə sˈɑːlɪs ʌv maɪ dˈɛθ."
     },
     {
      "text": "We never preached our thoughts with fire and sword.",
-     "start": 314.045,
-     "end": 317.403,
+     "start": 307.002,
+     "end": 309.481,
      "ph": "wiː nˈɛvɚ pɹˈiːtʃt ˌaʊɚ θˈɔːts wɪð fˈaɪɚ ænd sˈoːɹd.",
      "q": true
     },
     {
      "text": "If one English word names India's gift, it is fascination: a charm that comes imperceptibly, to those who persevere.",
-     "start": 317.823,
-     "end": 325.936,
+     "start": 309.901,
+     "end": 318.013,
      "ph": "ɪf wˈʌn ˈɪŋɡlɪʃ wˈɜːd nˈeɪmz ˈɪndiəz ɡˈɪft, ɪɾ ɪz fˌæsᵻnˈeɪʃən: ɐ tʃˈɑːɹm ðæt kˈʌmz ɪmpɚsˈɛptᵻbli, tə ðoʊz hˌuː pˌɜːsɪvˈɪɹ."
     },
     {
      "text": "Slow and silent, as the gentle dew that falls in the morning, unseen and unheard yet producing a most tremendous result,",
-     "start": 326.536,
-     "end": 335.822,
+     "start": 318.613,
+     "end": 326.906,
      "ph": "slˈoʊ ænd sˈaɪlənt, æz ðə dʒˈɛntəl dˈuː ðæt fˈɔːlz ɪnðə mˈɔːɹnɪŋ, ʌnsˈiːn ænd ʌnhˈɜːd jˈɛt pɹədˈuːsɪŋ ɐ mˈoʊst tɹəmˈɛndəs ɹɪzˈʌlt,",
      "q": true
     },
     {
      "text": "has been the work of the calm, patient, all-suffering spiritual race upon the world of thought.",
-     "start": 336.242,
-     "end": 341.958,
+     "start": 327.326,
+     "end": 333.043,
      "ph": "hˈæzbiːn ðə wˈɜːk ʌvðə kˈɑːm, pˈeɪʃənt, ˈɔːlsˈʌfɚɹɪŋ spˈɪɹɪtʃˌuːəl ɹˈeɪs əpˌɑːn ðə wˈɜːld ʌv θˈɔːt."
     }
    ]
   },
   {
    "id": "porcelain",
-   "start": 343.758,
-   "end": 384.363,
+   "start": 334.843,
+   "end": 375.448,
    "lines": [
     {
      "text": "Once more, history is going to repeat itself.",
-     "start": 343.758,
-     "end": 346.517,
+     "start": 334.843,
+     "end": 337.602,
      "ph": "wˈʌns mˈoːɹ, hˈɪstɚɹi ɪz ɡˌoʊɪŋ tə ɹᵻpˈiːt ɪtsˈɛlf."
     },
     {
      "text": "Under the blasting light of modern science, old and apparently invulnerable beliefs have been shattered to their very foundations.",
-     "start": 346.937,
-     "end": 354.858,
+     "start": 338.022,
+     "end": 345.943,
      "ph": "ˌʌndɚ ðə blˈæstɪŋ lˈaɪt ʌv mˈɑːdɚn sˈaɪəns, ˈoʊld ænd ɐpˈæɹəntli ɪnvˈʌlnɚɹəbəl bᵻlˈiːfs hɐvbɪn ʃˈæɾɚd tə ðɛɹ vˈɛɹi faʊndˈeɪʃənz."
     },
     {
      "text": "Antiquarian research pulverises antiquated orthodoxies, like masses of porcelain.",
-     "start": 355.278,
-     "end": 361.211,
+     "start": 346.363,
+     "end": 352.296,
      "ph": "ˌæntɪkwˈɛɹiən ɹᵻsˈɜːtʃ pˈʌlvɚɹˌaɪzᵻz ˈæntɪkwˌeɪɾᵻd ˈɔːɹθədˌɑːksiz, lˈaɪk mˈæsᵻz ʌv pˈoːɹsɪlˌɪn."
     },
     {
      "text": "The old sects looked upon the world as a little mud-puddle, and thought that time began but the other day.",
-     "start": 361.631,
-     "end": 367.381,
+     "start": 352.716,
+     "end": 358.466,
      "ph": "ðɪ ˈoʊld sˈɛkts lˈʊkt əpˌɑːn ðə wˈɜːld æz ɐ lˈɪɾəl mˈʌdpˈʌdəl, ænd θˈɔːt ðæt tˈaɪm bɪɡˈæn bˌʌt ðɪ ˈʌðɚ dˈeɪ."
     },
     {
      "text": "Evolution and the conservation of energy are dealing death blows to crude theologies.",
-     "start": 367.801,
-     "end": 373.363,
+     "start": 358.886,
+     "end": 364.448,
      "ph": "ˌɛvəlˈuːʃən ænd ðə kˌɑːnsɚvˈeɪʃən ʌv ˈɛnɚdʒi ɑːɹ dˈiːlɪŋ dˈɛθ blˈoʊz tə kɹˈuːd θɪˈɑːlədʒiz."
     },
     {
      "text": "What can hold cultured humanity now? The Vedanta: the oneness of all, the eternal soul of man, the infinite range of time, space, and causation.",
-     "start": 373.783,
-     "end": 383.663,
+     "start": 364.868,
+     "end": 374.748,
      "ph": "wˌʌt kæn hˈoʊld kˈʌltʃɚd hjuːmˈænᵻɾi nˈaʊ? ðˈə veɪdˈɑːntə: ðə wˈʌnnəs ʌv ˈɔːl, ðɪ ɪtˈɜːnəl sˈoʊl ʌv mˈæn, ðɪ ˈɪnfɪnət ɹˈeɪndʒ ʌv tˈaɪm, spˈeɪs, ænd kɔːsˈeɪʃən."
     }
    ]
   },
   {
    "id": "yugas",
-   "start": 385.463,
-   "end": 426.49,
+   "start": 376.548,
+   "end": 417.575,
    "lines": [
     {
      "text": "But what goes out to the world is only the principles, the foundation; not the details of custom.",
-     "start": 385.463,
-     "end": 391.344,
+     "start": 376.548,
+     "end": 382.429,
      "ph": "bˌʌt wʌt ɡoʊz ˈaʊt tə ðə wˈɜːld ɪz ˈoʊnli ðə pɹˈɪnsɪpəlz, ðə faʊndˈeɪʃən; nˌɑːt ðə diːtˈeɪlz ʌv kˈʌstəm."
     },
     {
      "text": "Our books make a clear distinction between two sets of truths.",
-     "start": 391.764,
-     "end": 395.03,
+     "start": 382.849,
+     "end": 386.114,
      "ph": "ˌaʊɚ bˈʊks mˌeɪk ɐ klˈɪɹ dɪstˈɪŋkʃən bᵻtwˌiːn tˈuː sˈɛts ʌv tɹˈuːθs."
     },
     {
      "text": "One set abides for ever: the nature of the soul, of God, of perfection; creation, or more correctly speaking, projection; the law of cyclical procession.",
-     "start": 395.45,
-     "end": 405.875,
+     "start": 386.534,
+     "end": 396.96,
      "ph": "wˈʌn sˈɛt ɐbˈaɪdz fɔːɹ ˈɛvɚ: ðə nˈeɪtʃɚɹ ʌvðə sˈoʊl, ʌv ɡˈɑːd, ʌv pɚfˈɛkʃən; kɹiːˈeɪʃən, ɔːɹ mˈoːɹ kɚɹˈɛktli spˈiːkɪŋ, pɹədʒˈɛkʃən; ðə lˈɔː ʌv sˈaɪklɪkəl pɹəsˈɛʃən."
     },
     {
      "text": "These are founded upon universal laws in nature, and belong to the Shrutis.",
-     "start": 406.295,
-     "end": 411.037,
+     "start": 397.38,
+     "end": 402.121,
      "ph": "ðiːz ɑːɹ fˈaʊndᵻd əpˌɑːn jˌuːnɪvˈɜːsəl lˈɔːz ɪn nˈeɪtʃɚ, ænd bᵻlˈɔŋ tə ðə ʃɹˈʊtiz."
     },
     {
      "text": "The other set, the minor laws of everyday life, belongs to the Puranas and the Smritis.",
-     "start": 411.457,
-     "end": 417.048,
+     "start": 402.541,
+     "end": 408.133,
      "ph": "ðɪ ˈʌðɚ sˈɛt, ðə mˈaɪnɚ lˈɔːz ʌv ˈɛvɹɪdˌeɪ lˈaɪf, bᵻlˈɔŋz tə ðə pʊɹˈɑːnəz ænd ðˈə smɹˈɪtiz."
     },
     {
      "text": "Customs of one Yuga are not the customs of another. Great Rishis will appear, and lead us to customs suited to new environments.",
-     "start": 417.468,
-     "end": 425.79,
+     "start": 408.553,
+     "end": 416.875,
      "ph": "kˈʌstəmz ʌv wˌʌn jˈʊɡə ɑːɹ nˌɑːt ðə kˈʌstəmz ʌv ɐnˈʌðɚ. ɡɹˈeɪt ɹˈɪʃiz wɪl ɐpˈɪɹ, ænd lˈiːd ˌʌs tə kˈʌstəmz sˈuːɾᵻd tə nˈuː ɛnvˈaɪɹənmənts."
     }
    ]
   },
   {
    "id": "tribes",
-   "start": 427.59,
-   "end": 459.304,
+   "start": 418.675,
+   "end": 450.389,
    "lines": [
     {
      "text": "Watch religions grow, and you find each tribe begins with a god of its own.",
-     "start": 427.59,
-     "end": 432.215,
+     "start": 418.675,
+     "end": 423.3,
      "ph": "wˈɑːtʃ ɹᵻlˈɪdʒənz ɡɹˈoʊ, ænd juː fˈaɪnd ˈiːtʃ tɹˈaɪb bɪɡˈɪnz wɪð ɐ ɡˈɑːd ʌv ɪts ˈoʊn."
     },
     {
      "text": "Allied Babylonian tribes called their gods Baal. The Jewish tribes called theirs Moloch.",
-     "start": 432.635,
-     "end": 438.011,
+     "start": 423.72,
+     "end": 429.096,
      "ph": "ˈælaɪd bˌæbɪlˈoʊniən tɹˈaɪbz kˈɔːld ðɛɹ ɡˈɑːdz bˈɑːl. ðə dʒˈuːɪʃ tɹˈaɪbz kˈɔːld ðˈɛɹz mˈɑːlɑːk."
     },
     {
      "text": "Then one tribe rises over the rest, and its god must become the god of all.",
-     "start": 438.431,
-     "end": 443.198,
+     "start": 429.516,
+     "end": 434.282,
      "ph": "ðˈɛn wˈʌn tɹˈaɪb ɹˈaɪzᵻz ˌoʊvɚ ðə ɹˈɛst, ænd ɪts ɡˈɑːd mˈʌst bɪkˌʌm ðə ɡˈɑːd ʌv ˈɔːl."
     },
     {
      "text": "Baal-Merodach, said the Babylonians, was the greatest. Moloch-Yahveh was over all the other Molochs.",
-     "start": 443.618,
-     "end": 450.015,
+     "start": 434.702,
+     "end": 441.1,
      "ph": "bˈɑːlmˈɛɹədˌætʃ, sˈɛd ðə bˌæbɪlˈoʊniənz, wʌzðə ɡɹˈeɪɾɪst. mˈɑːlɑːkjˈɑːveɪ wʌz ˌoʊvɚɹ ˈɔːl ðɪ ˈʌðɚ mˈɑːlɑːkz."
     },
     {
      "text": "These questions had to be decided by the fortunes of battle.",
-     "start": 450.435,
-     "end": 454.003,
+     "start": 441.52,
+     "end": 445.087,
      "ph": "ðiːz kwˈɛstʃənz hædtə biː dᵻsˈaɪdᵻd baɪ ðə fˈɔːɹtʃʊnz ʌv bˈæɾəl."
     },
     {
      "text": "In India too, competing gods struggled with each other for supremacy.",
-     "start": 454.423,
-     "end": 458.604,
+     "start": 445.507,
+     "end": 449.689,
      "ph": "ɪn ˈɪndiə tˈuː, kəmpˈiːɾɪŋ ɡˈɑːdz stɹˈʌɡəld wɪð ˈiːtʃ ˈʌðɚ fɔːɹ suːpɹˈɛməsi."
     }
    ]
   },
   {
    "id": "ekam",
-   "start": 460.404,
-   "end": 500.779,
+   "start": 451.489,
+   "end": 489.631,
    "lines": [
     {
      "text": "But in the midst of the din and confusion, there came a voice.",
-     "start": 460.404,
-     "end": 463.871,
+     "start": 451.489,
+     "end": 454.956,
      "ph": "bˌʌt ɪnðə mˈɪdst ʌvðə dˈɪn ænd kənfjˈuːʒən, ðɛɹ kˈeɪm ɐ vˈɔɪs."
     },
     {
      "text": "Ekam sad vipra bahudha vadanti. That which exists is One; sages call It by various names.",
-     "start": 464.471,
-     "end": 472.321,
+     "start": 455.556,
+     "end": 462.304,
      "ph": "ˈeɪkəm sˈʌd vˈɪpɹɑː bˈʌhʊdʰɑː vˈʌdənti. ðæt wˌɪtʃ ɛɡzˈɪsts ɪz wˌʌn; sˈeɪdʒᵻz kˈɔːl ɪt baɪ vˈɛɹiəs nˈeɪmz.",
      "q": true
     },
     {
      "text": "Not that Shiva is superior to Vishnu: it is the same One, whom you call by a hundred other names.",
-     "start": 472.741,
-     "end": 478.842,
+     "start": 462.724,
+     "end": 468.825,
      "ph": "nˌɑːt ðˈæt ʃˈɪvə ɪz suːpˈiəɹɪɚ tuː vˈɪʃnuː: ɪɾ ɪz ðə sˈeɪm wˌʌn, hˈuːm juː kˈɔːl baɪ ɐ hˈʌndɹɪd ˈʌðɚ nˈeɪmz."
     },
     {
      "text": "The whole history of India you may read in these few words.",
-     "start": 479.442,
-     "end": 484.129,
+     "start": 469.425,
+     "end": 472.981,
      "ph": "ðə hˈoʊl hˈɪstɚɹi ʌv ˈɪndiə juː mˈeɪ ɹˈiːd ɪn ðiːz fjˈuː wˈɜːdz.",
      "q": true
     },
     {
      "text": "It was repeated till it tingled in every drop of the nation's blood, and the land became the most wonderful land of toleration.",
-     "start": 484.549,
-     "end": 492.601,
+     "start": 473.401,
+     "end": 481.453,
      "ph": "ɪt wʌz ɹᵻpˈiːɾᵻd tˈɪl ɪt tˈɪŋɡəld ɪn ˈɛvɹi dɹˈɑːp ʌvðə nˈeɪʃənz blˈʌd, ænd ðə lˈænd bɪkˌeɪm ðə mˈoʊst wˈʌndɚfəl lˈænd ʌv tˌɑːlɚɹˈeɪʃən."
     },
     {
      "text": "So a dualist and a monist, the eternal servant of God and the one who is one with God, are both good Hindus.",
-     "start": 493.021,
-     "end": 500.079,
+     "start": 481.873,
+     "end": 488.931,
      "ph": "sˌoʊ ɐ dˈuːəlˌɪst ænd ɐ mˈɑːnɪst, ðɪ ɪtˈɜːnəl sˈɜːvənt ʌv ɡˈɑːd ænd ðə wˈʌn hˌuː ɪz wˈʌn wɪð ɡˈɑːd, ɑːɹ bˈoʊθ ɡˈʊd hˈɪnduːz."
     }
    ]
   },
   {
    "id": "rivers",
-   "start": 501.879,
-   "end": 544.131,
+   "start": 490.731,
+   "end": 532.186,
    "lines": [
     {
      "text": "Elsewhere he has seen tremendous religious persecution, in every country he has been.",
-     "start": 501.879,
-     "end": 506.925,
+     "start": 490.731,
+     "end": 495.777,
      "ph": "ˈɛlswɛɹ hiː hɐz sˈiːn tɹəmˈɛndəs ɹᵻlˈɪdʒəs pˌɜːsɪkjˈuːʃən, ɪn ˈɛvɹi kˈʌntɹi hiː hˈæzbiːn."
     },
     {
      "text": "It is here that Indians build temples for Mohammedans and Christians; nowhere else.",
-     "start": 507.525,
-     "end": 513.303,
+     "start": 496.377,
+     "end": 501.358,
      "ph": "ɪɾ ɪz hˈɪɹ ðæt ˈɪndiənz bˈɪld tˈɛmpəlz fɔːɹ moʊhˈæmɪdənz ænd kɹˈɪstʃənz; nˈoʊwɛɹ ˈɛls.",
      "q": true
     },
     {
      "text": "The Mahimnah-stotra says: as the different rivers, taking their start from different mountains, running straight or crooked, at last come unto the ocean,",
-     "start": 513.723,
-     "end": 522.757,
+     "start": 501.778,
+     "end": 510.812,
      "ph": "ðə mˈæhɪmnəstˈɑːtɹə sˈɛz: æz ðə dˈɪfɹənt ɹˈɪvɚz, tˈeɪkɪŋ ðɛɹ stˈɑːɹt fɹʌm dˈɪfɹənt mˈaʊntɪnz, ɹˈʌnɪŋ stɹˈeɪt ɔːɹ kɹˈʊkɪd, æt lˈæst kˈʌm ˌʌntʊ ðɪ ˈoʊʃən,"
     },
     {
      "text": "so, O Shiva, the different paths which men take, crooked or straight, all lead unto Thee.",
-     "start": 523.177,
-     "end": 528.474,
+     "start": 511.232,
+     "end": 516.529,
      "ph": "sˈoʊ, ˈoʊ ʃˈɪvə, ðə dˈɪfɹənt pˈæθs wˌɪtʃ mˈɛn tˈeɪk, kɹˈʊkɪd ɔːɹ stɹˈeɪt, ˈɔːl lˈiːd ˌʌntʊ ðˈiː."
     },
     {
      "text": "A real lover of Shiva sees Him not only in the Linga, but in everything and in everyone.",
-     "start": 528.894,
-     "end": 534.269,
+     "start": 516.949,
+     "end": 522.323,
      "ph": "ɐ ɹˈiːəl lˈʌvɚɹ ʌv ʃˈɪvə sˈiːz hˌɪm nˌɑːt ˈoʊnli ɪnðə lˈɪŋɡə, bˌʌt ɪn ˈɛvɹɪθˌɪŋ ænd ɪn ˈɛvɹɪwˌʌn."
     },
     {
      "text": "Knees bending towards the Caaba, kneeling in a Christian church, or in a Buddhist temple, all are kneeling to Him, whether they know it or not.",
-     "start": 534.689,
-     "end": 543.431,
+     "start": 522.743,
+     "end": 531.486,
      "ph": "nˈiːz bˈɛndɪŋ təwˈɔːɹdz ðə kˈɑːbə, nˈiːlɪŋ ɪn ɐ kɹˈɪstʃən tʃˈɜːtʃ, ɔːɹ ɪn ɐ bˈuːdɪst tˈɛmpəl, ˈɔːl ɑːɹ nˈiːlɪŋ tə hˌɪm, wˈɛðɚ ðeɪ nˈoʊ ɪt ɔːɹ nˈɑːt."
     }
    ]
   },
   {
    "id": "mission",
-   "start": 545.231,
-   "end": 583.203,
+   "start": 533.286,
+   "end": 569.618,
    "lines": [
     {
      "text": "Difference cannot cease; without variation life must cease. But it is not necessary that we should hate each other.",
-     "start": 545.231,
-     "end": 552.07,
+     "start": 533.286,
+     "end": 540.124,
      "ph": "dˈɪfɹəns kænˈɑːt sˈiːs; wɪðˌaʊt vˌɛɹɪˈeɪʃən lˈaɪf mˈʌst sˈiːs. bˌʌt ɪɾ ɪz nˌɑːt nˈɛsᵻsɚɹi ðæt wiː ʃˌʊd hˈeɪt ˈiːtʃ ˈʌðɚ."
     },
     {
      "text": "The one great lesson, therefore, that the world wants most, that the world has yet to learn from India, is the idea not only of toleration, but of sympathy.",
-     "start": 552.67,
-     "end": 563.485,
+     "start": 540.724,
+     "end": 550.524,
      "ph": "ðə wˈʌn ɡɹˈeɪt lˈɛsən, ðˈɛɹfoːɹ, ðætðə wˈɜːld wˈɔnts mˈoʊst, ðætðə wˈɜːld hɐz jˈɛt tə lˈɜːn fɹʌm ˈɪndiə, ɪz ðɪ aɪdˈiə nˌɑːt ˈoʊnli ʌv tˌɑːlɚɹˈeɪʃən, bˌʌt ʌv sˈɪmpəθi.",
      "q": true
     },
     {
      "text": "Mildness, gentleness, forbearance, toleration, sympathy, and brotherhood: everyone may learn them, man, woman, or child, without respect of race, caste, or creed.",
-     "start": 563.905,
-     "end": 575.018,
+     "start": 550.944,
+     "end": 562.057,
      "ph": "mˈaɪldnəs, dʒˈɛntəlnəs, fˈɔːɹbɛɹəns, tˌɑːlɚɹˈeɪʃən, sˈɪmpəθi, ænd bɹˈʌðɚhˌʊd: ˈɛvɹɪwˌʌn mˈeɪ lˈɜːn ðˌɛm, mˈæn, wˈʊmən, ɔːɹ tʃˈaɪld, wɪðˌaʊt ɹᵻspˈɛkt ʌv ɹˈeɪs, kˈæst, ɔːɹ kɹˈiːd."
     },
     {
      "text": "They call Thee by various names; Thou art One.",
-     "start": 575.618,
-     "end": 579.04,
+     "start": 562.657,
+     "end": 565.456,
      "ph": "ðeɪ kˈɔːl ðiː baɪ vˈɛɹiəs nˈeɪmz; ðˈaʊ ˈɑːɹt wˌʌn.",
      "q": true
     },
     {
      "text": "From Colombo, the road runs north, to Jaffna.",
-     "start": 579.46,
-     "end": 582.503,
+     "start": 565.876,
+     "end": 568.918,
      "ph": "fɹʌm kəlˈɑːmboʊ, ðə ɹˈoʊd ɹˈʌnz nˈɔːɹθ, tˈuː dʒˈɑːfnə."
     }
    ]

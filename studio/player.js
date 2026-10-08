@@ -3,9 +3,10 @@ const CH=DATA.chapters,DUR=DATA.duration;
 const cv=document.getElementById('cv'),ctx=cv.getContext('2d');const dpr=Math.min(2,devicePixelRatio||1);cv.width=W*dpr;cv.height=H*dpr;ctx.scale(dpr,dpr);
 CH.forEach(ch=>{ch.B=ch.lines.map(l=>l.start-ch.start);});
 function chAt(T){let k=0;CH.forEach((ch,i)=>{if(T>=ch.start-(i?0.2:99))k=i;});return k;}
-function drawScene(c,i,T){const ch=CH[i];c.save();try{SC[ch.id](c,T-ch.start,ch.B);}catch(e){console.error(ch.id,e);}c.restore();}
+function drawScene(c,i,T){const ch=CH[i];c.save();try{const q=typeof QUOTE==='function'&&ch.lines.find((l,j)=>l.q&&T>=l.start-.05&&T<(j+1<ch.lines.length?ch.lines[j+1].start-.05:1e9));if(q)QUOTE(c,q.text,T-q.start,q.end-q.start,ch,i);else SC[ch.id](c,T-ch.start,ch.B);}catch(e){console.error(ch.id,e);}c.restore();}
 function frame(T){const k=chAt(T),n=k+1;drawScene(ctx,k,T);
-  if(n<CH.length){const ws=CH[n].start-1.1,w=ease(seg(T,ws,ws+.9));if(w>0){ctx.save();ctx.beginPath();ctx.moveTo(0,0);for(let y=0;y<=H;y+=12)ctx.lineTo(W*w+Math.sin(y*.05+T)*10,y);ctx.lineTo(0,H);ctx.closePath();ctx.clip();drawScene(ctx,n,T);ctx.restore();
+  if(n<CH.length&&typeof TRANSITION==='function')TRANSITION(ctx,T,k,n,drawScene,CH);
+  else if(n<CH.length){const ws=CH[n].start-1.1,w=ease(seg(T,ws,ws+.9));if(w>0){ctx.save();ctx.beginPath();ctx.moveTo(0,0);for(let y=0;y<=H;y+=12)ctx.lineTo(W*w+Math.sin(y*.05+T)*10,y);ctx.lineTo(0,H);ctx.closePath();ctx.clip();drawScene(ctx,n,T);ctx.restore();
     if(w<1){ctx.strokeStyle=INK;ctx.lineWidth=9;ctx.lineCap='round';ctx.beginPath();for(let y=-10;y<=H+10;y+=12){const x=W*w+Math.sin(y*.05+T)*10;y<0?ctx.moveTo(x,y):ctx.lineTo(x,y);}ctx.stroke();}}}
   if(T<.5){ctx.fillStyle=`rgba(0,0,0,${1-T/.5})`;ctx.fillRect(0,0,W,H);}
   if(T>DUR-.8){ctx.fillStyle=`rgba(0,0,0,${seg(T,DUR-.8,DUR)})`;ctx.fillRect(0,0,W,H);}}

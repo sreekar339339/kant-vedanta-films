@@ -82,3 +82,10 @@ SC.open=(c,t,B)=>{ paper(c); /* t = seconds since chapter start; B[i] = start of
 2. `python3 studio/build.py studio/series/<slug> site` writes `<slug>/filmN/`.
 3. Write `<slug>/index.html` as the series landing page (copy the root `index.html` design). Capture posters with a frame from each film (`window.__film.frame(T)`, then `canvas.toDataURL`). Add a link to the new series on the root `index.html`.
 4. Commit (keep `out/timings.json` and `out/narration.mp3`; `.wav` and `build/` are ignored), then `git push`. Pages updates in about a minute.
+
+## 9. Series-level direction (hooks used by "From Colombo to Almora")
+- `<series>/common.js` is prepended to every film's `scenes.js`. It can redefine the look for a whole series.
+- `QUOTE(c, text, lt, dur, ch, i)`: if defined, every script line written as `{"q": "..."}` is drawn by it instead of the chapter scene, from the line's start until the next line starts. Colombo to Almora uses it for full-frame kinetic type of the speaker's exact words.
+- `TRANSITION(ctx, T, k, n, drawScene, CH)`: if defined, replaces the Kalighat ink wipe between chapters. Colombo to Almora flies through a yantra into the next chapter.
+- A series may replace the chapter style keys by mutating `STY` (it is a const object). Colombo to Almora uses the Holo-Chart modes: `map` (3D chart flight), `panel` (data panel), `signal` (transmission: scripture and Sanskrit decoded), `sim` (simulation: parables and processes), `dossier` (people and scenes), `alert` (violence, persecution).
+- Narration is one voice (`af_heart`, 0.92). Quotes are still marked `{"q": ...}` so captions and the quote layer can treat them differently.
