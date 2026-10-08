@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Student Who Read Kant · Kant &amp; Vedanta</title>
+<meta name="description" content="Film 2 of 3: young Naren in Calcutta, reading Kant and searching for someone who had seen God.">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Tiro+Devanagari+Sanskrit&family=Amiri:wght@400;700&display=swap">
+</head>
+<body>
+<style>
+/* Layout: a screening room. Film stage on top, caption bar, style-coloured chapter timeline, chapter list. Single dark theme by choice. */
+:root{
+  --ground:#101219;--panel:#181b24;--line:#2a2f3c;--paper:#efe6d2;--muted:#9a9db0;--gerua:#e0904a;
+  --display:"Cormorant Garamond",Georgia,serif;--body:"Atkinson Hyperlegible",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;
+  color-scheme:dark;
+}
+body{background:var(--ground);color:var(--paper);font-family:var(--body);line-height:1.5}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:16px;padding-block:28px 64px;display:grid;gap:18px}
+header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(30px,5vw,48px);margin:0;line-height:1.05;text-wrap:balance}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gerua)}
+.stage{position:relative;background:#000;border-radius:6px;overflow:hidden;box-shadow:0 24px 60px -24px #000}
+.stage canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;max-width:100%;cursor:pointer}
+.big{position:absolute;inset:0;margin:auto;width:84px;height:84px;border-radius:50%;border:0;background:rgba(224,144,74,.92);color:#1a1006;font-size:30px;cursor:pointer;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.big:focus-visible,button:focus-visible{outline:2px solid #f0c56a;outline-offset:3px}
+.caption{min-height:3.2em;font-size:clamp(16px,2.2vw,20px);text-align:center;color:#f4ecdc;padding:4px 8px;text-wrap:balance}
+.caption.off{visibility:hidden}
+.ctrl{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;color:var(--muted);flex-wrap:wrap}
+button{font:inherit;color:var(--paper);background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:6px 12px;cursor:pointer}
+button:hover{border-color:var(--gerua)}
+.tl{position:relative;height:30px;display:flex;border-radius:4px;overflow:hidden;cursor:pointer;background:var(--panel)}
+.tl div{height:100%;border-right:1px solid var(--ground);opacity:.55;transition:opacity .2s}
+.tl div.on{opacity:1}
+.ph{position:absolute;top:-3px;bottom:-3px;width:2px;background:#fff;pointer-events:none;box-shadow:0 0 6px #fff}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--muted)}
+.legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;background:var(--c);vertical-align:-1px}
+.chapters{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px;margin:8px 0 0;padding:0;list-style:none}
+.chapters li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--c);border-radius:4px;padding:8px 12px;cursor:pointer;display:grid;gap:2px}
+.chapters li:hover{border-color:var(--gerua)}
+.chapters b{font-family:var(--display);font-size:19px;font-weight:600}
+.chapters small{font-size:12px;color:var(--muted)}
+.chapters em{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--c)}
+.series{display:flex;gap:8px 18px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.series a{color:var(--paper);text-decoration-color:var(--gerua)}
+.series b{color:var(--gerua);font-weight:600}
+.note{font-size:13px;color:var(--muted);max-width:70ch}
+</style>
+
+<div class="wrap">
+  <header>
+    <div><div class="eyebrow">Kant &amp; Vedanta · Film 2 of 3</div><h1>The Student Who Read Kant</h1></div>
+    <div class="eyebrow" style="color:var(--muted)">From the works of Swami Vivekananda</div>
+  </header>
+  <div class="stage"><canvas id="cv" width="960" height="540" aria-label="Film: The Student Who Read Kant"></canvas><button class="big" id="big" type="button" aria-label="Play">▶</button></div>
+  <div class="caption" id="cap"></div>
+  <div class="ctrl"><button id="pp" type="button">Play</button><button id="cc" type="button">Captions on</button><span id="tc">0:00 / 0:00</span><span id="chn"></span></div>
+  <div class="tl" id="tl"><span class="ph" id="ph"></span></div>
+  <div class="legend" id="lg"></div>
+  <nav class="series"><a href="../">All films</a> · <a href="../film1/">1. The Wall Called Reason</a> · <b>2. The Student Who Read Kant</b> · <a href="../film3/">3. Kant Comes Home</a></nav>
+  <ol class="chapters" id="chs"></ol>
+  <p class="note">Narration is synthesised from the script. Every frame is drawn live from one timeline, so the film can also be rendered to MP4. Sources are named on each chapter card.</p>
+  <audio id="au" src="narration.mp3" preload="auto"></audio>
+</div>
+
+<script>
+const DATA={"duration": 260.442, "poster": 24, "chapters": [{"id": "boy", "title": "A Calcutta boy", "style": "kalighat", "src": "Eastern & Western Disciples ch. 8 · Great Master 5.8a", "start": 0.6, "lines": [{"text": "Before he was Vivekananda, he was Naren, a boy in Calcutta.", "start": 0.6, "end": 4.774}, {"text": "At twilight, his mother would read him the Ramayana and the Mahabharata.", "start": 5.194, "end": 9.55}, {"text": "His father, Western-educated, handed him a Bible and said: if there is anything called religion, it is in this.", "start": 9.97, "end": 17.249}, {"text": "Two worlds, side by side, in one house.", "start": 17.669, "end": 20.236}]}, {"id": "gita", "title": "A line that throbbed", "style": "palmleaf", "src": "Nivedita, The Master as I Saw Him, ch. 15", "start": 22.036, "lines": [{"text": "Reading the Gita as a boy, a single great sentence would stop him, and throb through his brain for days and nights.", "start": 22.036, "end": 29.103}, {"text": "They who find pleasure and pain the same, heat and cold the same, friend and foe the same.", "start": 29.523, "end": 34.922}, {"text": "And Krishna's words to Arjuna on the battlefield: ill doth it befit thee, Arjuna, to yield to unmanliness.", "start": 35.342, "end": 43.017}, {"text": "How strong, he said.", "start": 43.437, "end": 44.691}]}, {"id": "books", "title": "1881: the books", "style": "kalighat", "src": "Brajendranath Seal, in Eastern & Western Disciples ch. 8 · Great Master 5.8a", "start": 46.491, "lines": [{"text": "In eighteen eighty-one, at college in Calcutta, John Stuart Mill's Three Essays on Religion upset his boyhood faith.", "start": 46.491, "end": 53.718}, {"text": "A friend gave him Hume's scepticism, and Herbert Spencer's doctrine of the Unknowable.", "start": 54.138, "end": 59.444}, {"text": "He went on to Descartes, Spinoza, Darwin, Comte, and the Germans: Kant, Fichte, Hegel, Schopenhauer.", "start": 59.864, "end": 66.489}, {"text": "He even attended lectures at the Medical College, to learn how the nerves and the brain work.", "start": 66.909, "end": 72.179}]}, {"id": "walled", "title": "Walled in", "style": "plate", "src": "Great Master 5.8a", "start": 73.979, "lines": [{"text": "What he learned was this. The brain and the senses react to outside stimuli, and only those changes in the mind are ever known.", "start": 73.979, "end": 81.879}, {"text": "What the outer world really is, the thing that causes them, stays unknown and unknowable.", "start": 82.299, "end": 87.56}, {"text": "Inside, it is the same. Some unknown entity makes the mind say I. It too lies beyond time and space.", "start": 87.98, "end": 95.066}, {"text": "Inward or outward, the mind was kept back by the impregnable wall of time and space.", "start": 95.486, "end": 101.117}]}, {"id": "err", "title": "The senses err", "style": "percept", "src": "Great Master 5.8a · illusion: Müller-Lyer, 1889", "start": 102.917, "lines": [{"text": "Worse, the sense perceptions themselves are full of errors.", "start": 102.917, "end": 106.314}, {"text": "Look at these two lines. They are exactly the same length.", "start": 106.734, "end": 109.921}, {"text": "Knowing it does not help. The eye still sees one longer.", "start": 110.341, "end": 113.57}, {"text": "So whom should philosophy trust? The senses of ordinary people, or the rare realisations of a Buddha or a Jesus?", "start": 113.99, "end": 121.822}]}, {"id": "seal", "title": "Pure Reason", "style": "kalighat", "src": "Brajendranath Seal, in Eastern & Western Disciples ch. 8", "start": 123.622, "lines": [{"text": "His friend Brajendranath Seal offered him a system: the sovereignty of Universal Reason.", "start": 123.622, "end": 129.494}, {"text": "It conquered his intellect. But his heart, he confessed, still belonged to the individual.", "start": 129.914, "end": 135.276}, {"text": "A pale, bloodless reason could not save him in the hour of temptation.", "start": 135.696, "end": 140.158}, {"text": "He wanted a flesh and blood reality. A hand to save him. A master who embodied perfection.", "start": 140.578, "end": 146.566}]}, {"id": "seen", "title": "Have you seen God?", "style": "kalighat", "src": "The Vedanta in All Its Phases (CW vol. 3)", "start": 148.366, "lines": [{"text": "So he went from place to place in Calcutta, hearing big lectures, and asking each lecturer one question.", "start": 148.366, "end": 154.702}, {"text": "Have you seen God?", "start": 155.122, "end": 156.33}, {"text": "The man would be taken aback at the very idea.", "start": 156.75, "end": 159.38}, {"text": "Only one man said, I have. And I will put you in the way of seeing Him too. That was Ramakrishna.", "start": 159.8, "end": 165.901}]}, {"id": "hamilton", "title": "Where philosophy ends", "style": "plate", "src": "Great Master 5.8a · Eastern & Western Disciples ch. 8", "start": 167.701, "lines": [{"text": "The philosopher Hamilton had written that the intellect can only hint that God exists.", "start": 167.701, "end": 172.953}, {"text": "It cannot reveal His nature. It comes closer and closer, and never arrives.", "start": 173.373, "end": 178.304}, {"text": "Where philosophy ends, Hamilton said, religion begins.", "start": 178.724, "end": 182.242}, {"text": "Naren loved that line, and quoted it again and again.", "start": 182.662, "end": 185.82}]}, {"id": "flame", "title": "A flame in a windless place", "style": "lantern", "src": "Great Master 5.8a", "start": 187.62, "lines": [{"text": "Ramakrishna gave him a prayer: O God, I do not know Thy nature. Manifest Thyself to me as Thou really art.", "start": 187.62, "end": 195.232}, {"text": "Naren gave up every picture of God, even the formless one with attributes.", "start": 195.652, "end": 200.44}, {"text": "He removed all thought, and held his mind still, like the flame of a lamp in a windless place.", "start": 200.86, "end": 206.626}, {"text": "At times the sense of time and body vanished. He sat like this whole nights.", "start": 207.046, "end": 211.58}]}, {"id": "monk", "title": "The monk in ochre", "style": "lantern", "src": "Great Master 5.8a", "start": 213.38, "lines": [{"text": "One night, after meditation, a monk in ochre appeared, filling the room with light, a water pot in his hand.", "start": 213.38, "end": 220.014}, {"text": "He walked toward Naren, as if to say something. Seized with fear, Naren got up and left the room.", "start": 220.434, "end": 226.512}, {"text": "When he came back, the monk was gone.", "start": 226.932, "end": 228.989}, {"text": "It may be a hallucination, he said later. But very often it comes to my mind that I saw Lord Buddha that day.", "start": 229.409, "end": 236.398}]}, {"id": "notgod", "title": "But not God", "style": "kalighat", "src": "Eastern & Western Disciples ch. 8", "start": 238.198, "lines": [{"text": "The doubts did not end in a day. He fought every inch of the way.", "start": 238.198, "end": 241.74}, {"text": "But slowly a conviction grew. The gods might be false, he thought. But not God.", "start": 242.16, "end": 247.144}, {"text": "His intellect was not stunted to be silenced. It was taken to its height, and then beyond.", "start": 247.564, "end": 253.018}, {"text": "The student who read Kant would become a monk, and carry Kant's question to the West.", "start": 253.438, "end": 258.242}]}]};
+const W=960,H=540;
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const seg=(t,a,b)=>clamp((t-a)/(b-a));
+const ease=x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+const lerp=(a,b,k)=>a+(b-a)*k;
+const P=(t,B,i,d=1,o=0)=>ease(seg(t,B[i]+o,B[i]+o+d));
+function hexm(a,b,k){const p=s=>[1,3,5].map(i=>parseInt(s.slice(i,i+2),16));const x=p(a),y=p(b);return'rgb('+x.map((v,i)=>Math.round(lerp(v,y[i],k))).join(',')+')';}
+const STY={kalighat:['Kalighat pat','#c94a32'],papercut:['Paper-cut','#3aa59a'],lantern:['Magic lantern','#e2b04a'],percept:['Perception lab','#d6cfbf'],plate:['Scientific plate','#6f9bd1'],palmleaf:['Palm leaf','#c07a3a'],chart:["Ship's chart",'#9a8ad6']};
+const INK='#2a1a10';
+const ARAB='Amiri,serif';
+const MONO='"JetBrains Mono",monospace',DISP='"Cormorant Garamond",Georgia,serif',DEV='"Tiro Devanagari Sanskrit",serif',BODY='"Atkinson Hyperlegible",sans-serif';
+function txt(c,s,x,y,font,col,al='left',a=1){if(a<=0)return;c.save();c.globalAlpha*=a;c.font=font;c.fillStyle=col;c.textAlign=al;c.fillText(s,x,y);c.restore();}
+function heading(c,n,title,style,dark,a=1){txt(c,`${String(n).padStart(2,'0')} · ${STY[style][0].toUpperCase()}`,36,42,`600 11px ${MONO}`,dark?'#e0904a':'#a8382a','left',a);txt(c,title,36,74,`600 30px ${DISP}`,dark?'#f1e8d6':INK,'left',a);}
+function fig(c,s,src,dark){txt(c,s,36,H-14,`11px ${MONO}`,dark?'#8fb3d9':'#6b5434');if(src)txt(c,src,W-36,H-14,`11px ${MONO}`,dark?'#6f829c':'#8a7456','right');}
+
+/* ---------- backgrounds ---------- */
+let PAPER,LEAFC,NOISE;
+function paper(c){if(!PAPER){PAPER=document.createElement('canvas');PAPER.width=W;PAPER.height=H;const p=PAPER.getContext('2d');p.fillStyle='#f1e7d0';p.fillRect(0,0,W,H);
+  let r=7;const rnd=()=>{r=(r*16807)%2147483647;return r/2147483647;};
+  for(let i=0;i<16;i++){p.fillStyle=`rgba(170,120,60,${rnd()*.06})`;p.beginPath();p.ellipse(rnd()*W,rnd()*H,40+rnd()*120,30+rnd()*80,0,0,7);p.fill();}
+  for(let i=0;i<1200;i++){p.fillStyle='rgba(120,90,50,.08)';p.fillRect(rnd()*W,rnd()*H,1,1);}}
+  c.drawImage(PAPER,0,0);}
+function grid(c,light){c.fillStyle=light?'#f3efe6':'#0f1420';c.fillRect(0,0,W,H);
+  for(let x=0;x<=W;x+=24){c.strokeStyle=light?(x%120?'rgba(30,30,30,.05)':'rgba(30,30,30,.11)'):(x%120?'rgba(120,160,210,.07)':'rgba(120,160,210,.16)');c.lineWidth=1;c.beginPath();c.moveTo(x+.5,0);c.lineTo(x+.5,H);c.stroke();}
+  for(let y=0;y<=H;y+=24){c.strokeStyle=light?(y%120?'rgba(30,30,30,.05)':'rgba(30,30,30,.11)'):(y%120?'rgba(120,160,210,.07)':'rgba(120,160,210,.16)');c.beginPath();c.moveTo(0,y+.5);c.lineTo(W,y+.5);c.stroke();}
+  c.strokeStyle=light?'#555':'#8fb3d9';c.lineWidth=2;
+  [[16,16,1,1],[W-16,16,-1,1],[16,H-16,1,-1],[W-16,H-16,-1,-1]].forEach(([x,y,sx,sy])=>{c.beginPath();c.moveTo(x,y+18*sy);c.lineTo(x,y);c.lineTo(x+18*sx,y);c.stroke();});}
+function parchment(c){c.fillStyle='#e9dfc6';c.fillRect(0,0,W,H);c.strokeStyle='#6b5434';c.lineWidth=2;c.strokeRect(14,14,W-28,H-28);c.lineWidth=1;c.strokeRect(20,20,W-40,H-40);}
+
+/* ---------- shared drawings ---------- */
+const NAREN={
+ legs:new Path2D('M300 470 C 320 420, 420 420, 480 438 C 540 420, 640 420, 660 470 C 600 492, 360 492, 300 470 Z'),
+ shawl:new Path2D('M372 448 C 360 360, 380 290, 440 262 C 462 252, 498 252, 520 262 C 580 290, 600 360, 588 448 C 520 430, 440 430, 372 448 Z'),
+ neck:new Path2D('M466 236 L 466 262 Q 480 270 494 262 L 494 236 Z'),
+ head:new Path2D('M480 140 C 520 140, 532 176, 528 204 C 524 236, 504 252, 480 252 C 456 252, 436 236, 432 204 C 428 176, 440 140, 480 140 Z'),
+ hair:new Path2D('M432 200 C 426 160, 450 130, 480 130 C 512 130, 536 158, 528 200 C 516 170, 500 160, 480 162 C 460 160, 444 170, 432 200 Z'),
+ book:new Path2D('M408 392 L 480 404 L 552 392 L 548 424 L 480 436 L 412 424 Z'),
+ handL:new Path2D('M398 404 C 404 390, 424 392, 424 408 C 424 420, 404 422, 398 404 Z'),
+ handR:new Path2D('M536 408 C 536 392, 556 390, 562 404 C 556 422, 536 420, 536 408 Z')};
+function person(c,x,y,s,dp,fp,o={}){
+  const fills={legs:o.dhoti||'#f7f2e6',shawl:o.shawl||'#34477e',neck:o.skin||'#d79e62',head:o.skin||'#d79e62',hair:o.hair||'#1f1510',book:'#b8392b',handL:o.skin||'#d79e62',handR:o.skin||'#d79e62'};
+  c.save();c.translate(x,y);c.scale(s,s);c.translate(-480,-300);
+  const L=2600;
+  Object.keys(NAREN).forEach(k=>{if(k==='book'&&!o.book)return;const p=NAREN[k];
+    c.globalAlpha=fp;c.fillStyle=fills[k];c.fill(p);
+    if(fp>0&&k!=='hair'&&k!=='book'){c.save();c.clip(p);c.globalAlpha=fp*.32;c.strokeStyle=k==='shawl'?'rgba(10,15,40,.9)':'#8a5a2c';c.lineWidth=22;c.stroke(p);c.restore();}
+    c.globalAlpha=1;c.setLineDash([L,L]);c.lineDashOffset=L*(1-dp);c.strokeStyle=INK;c.lineWidth=(k==='legs'||k==='shawl'?5:4)/Math.max(.6,s);c.lineCap='round';c.lineJoin='round';c.stroke(p);c.setLineDash([]);});
+  const fa=clamp(dp*1.4-.4);c.globalAlpha=fa;c.strokeStyle=INK;c.lineWidth=2.5;
+  [[462,198],[498,198]].forEach(([ex,ey])=>{c.beginPath();c.moveTo(ex-12,ey);c.quadraticCurveTo(ex,ey-9,ex+12,ey);c.quadraticCurveTo(ex,ey+6,ex-12,ey);c.stroke();c.fillStyle=INK;c.beginPath();c.arc(ex+(o.look||1),ey,3,0,7);c.fill();
+    c.beginPath();c.moveTo(ex-14,ey-12);c.quadraticCurveTo(ex,ey-20,ex+14,ey-13);c.stroke();});
+  c.beginPath();c.moveTo(480,204);c.quadraticCurveTo(474,220,482,222);c.stroke();c.beginPath();c.moveTo(470,234);c.quadraticCurveTo(480,238,490,234);c.stroke();
+  if(o.beard){c.fillStyle=INK;c.globalAlpha=fa*.85;c.beginPath();c.moveTo(452,228);c.quadraticCurveTo(480,268,508,228);c.quadraticCurveTo(480,250,452,228);c.fill();}
+  if(o.book&&fp>0){c.globalAlpha=fp;c.fillStyle='#f6efe0';c.beginPath();c.moveTo(418,396);c.lineTo(480,407);c.lineTo(542,396);c.lineTo(540,418);c.lineTo(480,428);c.lineTo(420,418);c.fill();
+    c.fillStyle=INK;c.font=`700 11px ${MONO}`;c.textAlign='center';c.fillText(o.bookLabel||'KANT',452,416);}
+  c.restore();}
+function bricks(c,x,y,w,h,col,ink=INK){if(w<=0||h<=0)return;c.save();c.beginPath();c.rect(x,y,w,h);c.clip();c.fillStyle=col;c.fillRect(x,y,w,h);
+  c.strokeStyle=ink;c.globalAlpha=.55;c.lineWidth=2;for(let yy=y+h,r=0;yy>y-20;yy-=22,r++){c.beginPath();c.moveTo(x,yy);c.lineTo(x+w,yy);c.stroke();for(let xx=x+(r%2?24:0);xx<x+w;xx+=48){c.beginPath();c.moveTo(xx,yy);c.lineTo(xx,yy-22);c.stroke();}}
+  c.restore();c.strokeStyle=ink;c.lineWidth=4;c.strokeRect(x,y,w,h);}
+function cloud(c,cx,cy,rx,ry,a,ink=INK,fill='#fbf6ea'){if(a<=0)return;c.save();c.globalAlpha*=a;const B=[[-.6,0,.55],[-.2,-.35,.6],[.3,-.3,.6],[.62,.05,.5],[.25,.32,.55],[-.3,.3,.5]];
+  c.strokeStyle=ink;c.lineWidth=3;c.fillStyle=fill;B.forEach(([dx,dy,r])=>{c.beginPath();c.ellipse(cx+dx*rx,cy+dy*ry,r*rx*.7,r*ry*.9,0,0,7);c.fill();c.stroke();});
+  B.forEach(([dx,dy,r])=>{c.beginPath();c.ellipse(cx+dx*rx,cy+dy*ry,r*rx*.7-3,r*ry*.9-3,0,0,7);c.fill();});c.beginPath();c.ellipse(cx,cy,rx*.8,ry*.6,0,0,7);c.fill();c.restore();}
+function arrow(c,x1,y1,x2,y2,col,w=2,p=1){if(p<=0)return;const x=lerp(x1,x2,p),y=lerp(y1,y2,p);c.strokeStyle=col;c.fillStyle=col;c.lineWidth=w;c.beginPath();c.moveTo(x1,y1);c.lineTo(x,y);c.stroke();const a=Math.atan2(y2-y1,x2-x1);c.beginPath();c.moveTo(x,y);c.lineTo(x-10*Math.cos(a-.4),y-10*Math.sin(a-.4));c.lineTo(x-10*Math.cos(a+.4),y-10*Math.sin(a+.4));c.closePath();c.fill();}
+
+/* paper-cut waves */
+function waves(c,t,top,gap,amp,cols){cols.forEach((col,i)=>{c.save();c.shadowColor='rgba(0,0,0,.35)';c.shadowBlur=14;c.shadowOffsetY=-4;c.fillStyle=col;c.beginPath();const y0=top+i*gap;c.moveTo(0,H+80);c.lineTo(0,y0);for(let x=0;x<=W;x+=16)c.lineTo(x,y0+Math.sin(x*.012+t*(.6+i*.15)+i)*amp);c.lineTo(W,H+80);c.closePath();c.fill();c.restore();});}
+const waveY=(x,t,top,gap,amp,i)=>top+i*gap+Math.sin(x*.012+t*(.6+i*.15)+i)*amp;
+function tag(c,s,x,y,a,rot=0){if(a<=0)return;c.save();c.globalAlpha*=a;c.translate(x,y);c.rotate(rot);c.font=`700 16px ${MONO}`;const w=c.measureText(s).width+24;c.shadowColor='rgba(0,0,0,.4)';c.shadowBlur=10;c.shadowOffsetY=5;c.fillStyle='#e6d2a6';c.fillRect(-w/2,-16,w,32);c.shadowColor='transparent';c.fillStyle=INK;c.textAlign='center';c.fillText(s,0,6);c.restore();}
+
+/* magic lantern */
+function lanternRig(c,t,screen){c.fillStyle='#07070a';c.fillRect(0,0,W,H);
+  const cx=640,cy=262,R=190,fl=.9+.1*Math.sin(t*37)*Math.sin(t*13);
+  const bg=c.createLinearGradient(240,300,cx,cy);bg.addColorStop(0,`rgba(255,236,190,${.22*fl})`);bg.addColorStop(1,'rgba(255,236,190,.03)');
+  c.fillStyle=bg;c.beginPath();c.moveTo(262,290);c.lineTo(cx,cy-R);c.lineTo(cx,cy+R);c.lineTo(262,312);c.closePath();c.fill();
+  c.save();c.beginPath();c.arc(cx,cy,R,0,7);c.clip();const sg=c.createRadialGradient(cx,cy,20,cx,cy,R);sg.addColorStop(0,`rgba(255,246,222,${fl})`);sg.addColorStop(1,`rgba(170,140,100,${fl})`);c.fillStyle=sg;c.fillRect(cx-R,cy-R,2*R,2*R);
+  screen(c,cx,cy,R);
+  for(let i=0;i<60;i++){c.fillStyle=`rgba(40,30,20,${Math.random()*.22})`;c.fillRect(cx-R+Math.random()*2*R,cy-R+Math.random()*2*R,1.5,1.5);}
+  const vg=c.createRadialGradient(cx,cy,R*.6,cx,cy,R);vg.addColorStop(0,'rgba(0,0,0,0)');vg.addColorStop(1,'rgba(0,0,0,.55)');c.fillStyle=vg;c.fillRect(cx-R,cy-R,2*R,2*R);c.restore();
+  c.fillStyle='#3a2a18';c.strokeStyle='#b08a4a';c.lineWidth=3;c.beginPath();c.rect(90,240,120,120);c.fill();c.stroke();
+  c.fillRect(132,200,36,40);c.strokeRect(132,200,36,40);c.beginPath();c.moveTo(126,200);c.lineTo(174,200);c.lineTo(150,182);c.closePath();c.fill();c.stroke();
+  c.fillRect(214,288,40,24);c.strokeRect(214,288,40,24);c.beginPath();c.arc(262,300,14,0,7);c.fill();c.stroke();
+  const glow=c.createRadialGradient(150,300,4,150,300,40);glow.addColorStop(0,`rgba(255,220,150,${.7*fl})`);glow.addColorStop(1,'rgba(255,220,150,0)');c.fillStyle=glow;c.beginPath();c.arc(150,300,40,0,7);c.fill();}
+function slide(c,x,y,label,col,a){if(a<=0)return;c.save();c.globalAlpha*=a;c.fillStyle=col;c.fillRect(x,y,22,56);c.strokeStyle='#d8c9a6';c.lineWidth=1.5;c.strokeRect(x,y,22,56);
+  c.translate(x-7,y+28);c.rotate(-Math.PI/2);c.fillStyle='#e9dfc6';c.font=`600 10px ${MONO}`;c.textAlign='center';c.fillText(label,0,0);c.restore();}
+function worldPicture(c,cx,cy,R,aS,aT,aC,t){
+  c.save();c.globalAlpha=aS*.95;c.fillStyle='rgba(150,190,220,.55)';c.fillRect(cx-R,cy-R,2*R,R+10);c.fillStyle='rgba(150,180,110,.6)';c.fillRect(cx-R,cy+10,2*R,R);
+  c.fillStyle='rgba(90,150,170,.75)';c.beginPath();c.moveTo(cx-20,cy+10);c.lineTo(cx+10,cy+10);c.quadraticCurveTo(cx+60,cy+110,cx+30,cy+R);c.lineTo(cx-90,cy+R);c.quadraticCurveTo(cx-10,cy+110,cx-20,cy+10);c.fill();
+  c.strokeStyle='rgba(60,50,40,.25)';c.lineWidth=1;for(let i=-4;i<=4;i++){c.beginPath();c.moveTo(cx,cy+10);c.lineTo(cx+i*90,cy+R);c.stroke();}
+  c.globalAlpha=aT;for(let i=0;i<5;i++){const a=Math.PI*(1-(i+.5)/5),x=cx+Math.cos(a)*150,y=cy+10-Math.sin(a)*130;c.fillStyle=`rgba(235,150,60,${i===2?.95:.3})`;c.beginPath();c.arc(x,y,i===2?18:12,0,7);c.fill();}
+  c.strokeStyle='rgba(200,110,40,.4)';c.setLineDash([4,6]);c.beginPath();c.arc(cx,cy+10,140,Math.PI,0);c.stroke();c.setLineDash([]);
+  c.globalAlpha=aC;c.fillStyle='rgba(120,120,140,.8)';[[-120,-120,26],[-96,-128,30],[-72,-118,24]].forEach(([dx,dy,r])=>{c.beginPath();c.arc(cx+dx,cy+dy,r,0,7);c.fill();});
+  c.strokeStyle='rgba(70,100,150,.8)';c.lineWidth=2;for(let i=0;i<6;i++){const x=cx-130+i*12,y=cy-90+((t*90+i*17)%60);c.beginPath();c.moveTo(x,y);c.lineTo(x-4,y+10);c.stroke();}
+  c.fillStyle='rgba(60,90,40,.9)';c.beginPath();c.arc(cx+110,cy-10,34,0,7);c.fill();c.fillStyle='rgba(90,60,30,.9)';c.fillRect(cx+104,cy+10,12,50);
+  arrow(c,cx-90,cy-30,cx-40,cy+60,'rgba(150,40,30,.85)',2.5);arrow(c,cx+10,cy+80,cx+80,cy+40,'rgba(150,40,30,.85)',2.5);c.restore();}
+
+/* palm leaf */
+function leaf(c,x,y,w,h){const lg=c.createLinearGradient(0,y,0,y+h);lg.addColorStop(0,'#e1c88f');lg.addColorStop(.5,'#d5b878');lg.addColorStop(1,'#c3a262');
+  c.save();c.shadowColor='rgba(0,0,0,.5)';c.shadowBlur=20;c.shadowOffsetY=8;c.fillStyle=lg;c.beginPath();c.roundRect?c.roundRect(x,y,w,h,24):c.rect(x,y,w,h);c.fill();c.restore();
+  c.strokeStyle='rgba(120,85,40,.18)';c.lineWidth=1;for(let yy=y+10;yy<y+h-6;yy+=7){c.beginPath();c.moveTo(x+10,yy);c.lineTo(x+w-10,yy+Math.sin(yy)*2);c.stroke();}
+  [x+40,x+w-40].forEach(hx=>{c.fillStyle='#1a0f08';c.beginPath();c.arc(hx,y+h/2,8,0,7);c.fill();});}
+function wood(c){const wg=c.createLinearGradient(0,0,0,H);wg.addColorStop(0,'#2b1b10');wg.addColorStop(1,'#1a0f08');c.fillStyle=wg;c.fillRect(0,0,W,H);}
+function strike(c,x,y,w,p){if(p<=0)return;c.strokeStyle='#8c2f1c';c.lineWidth=5;c.lineCap='round';c.beginPath();c.moveTo(x-8,y);c.lineTo(x-8+(w+16)*p,y-4*p);c.stroke();}
+
+
+/* ================= SCENES ================= */
+const SC={};
+/* ---- film 2 helpers ---- */
+function standing(c,x,y,s,coat,o={}){c.save();c.translate(x,y);c.scale(s,s);c.rotate(o.lean||0);c.lineJoin='round';
+  c.fillStyle=coat;c.strokeStyle=INK;c.lineWidth=4;c.beginPath();c.moveTo(-34,0);c.quadraticCurveTo(-40,-120,-22,-150);c.lineTo(22,-150);c.quadraticCurveTo(40,-120,34,0);c.closePath();c.fill();c.stroke();
+  c.fillStyle=o.skin||'#d79e62';c.beginPath();c.ellipse(0,-176,20,25,0,0,7);c.fill();c.stroke();
+  c.fillStyle=o.hair||INK;c.beginPath();c.ellipse(0,-192,21,11,0,Math.PI,0);c.fill();
+  if(o.arm){c.strokeStyle=INK;c.lineWidth=9;c.lineCap='round';c.beginPath();c.moveTo(18,-130);c.lineTo(52,-150+(o.arm||0)*-30);c.stroke();}
+  c.fillStyle=INK;c.beginPath();c.arc(-7,-178,2.5,0,7);c.arc(7,-178,2.5,0,7);c.fill();c.restore();}
+function balance(c,x,y,l1,l2,lv){c.save();c.translate(x,y);c.strokeStyle=INK;c.fillStyle=INK;c.lineWidth=3;c.beginPath();c.moveTo(0,0);c.lineTo(0,-70);c.stroke();
+  c.save();c.translate(0,-70);c.rotate((1-lv)*.28);c.beginPath();c.moveTo(-60,0);c.lineTo(60,0);c.stroke();
+  [[-60,l1],[60,l2]].forEach(([px,l])=>{c.save();c.translate(px,0);c.rotate(-(1-lv)*.28);c.beginPath();c.moveTo(0,0);c.lineTo(-18,30);c.moveTo(0,0);c.lineTo(18,30);c.stroke();c.beginPath();c.ellipse(0,32,24,6,0,0,7);c.fillStyle='#8c5a2a';c.fill();c.stroke();
+    c.fillStyle=INK;c.font=`20px ${DEV}`;c.textAlign='center';c.fillText(l,0,62);c.restore();});
+  c.restore();c.beginPath();c.moveTo(-20,0);c.lineTo(20,0);c.stroke();c.restore();}
+function twilight(c,a){if(a<=0)return;const g=c.createLinearGradient(0,0,0,H);g.addColorStop(0,`rgba(214,120,70,${.28*a})`);g.addColorStop(.5,`rgba(120,70,120,${.12*a})`);g.addColorStop(1,'rgba(0,0,0,0)');c.fillStyle=g;c.fillRect(0,0,W,H);}
+
+SC.boy=(c,t,B)=>{paper(c);twilight(c,P(t,B,1,1.4));
+  person(c,480,370,.6,ease(seg(t,0,2.4)),seg(t,2,3.2),{shawl:'#34477e'});
+  txt(c,'Naren',480,500,`italic 600 22px ${DISP}`,'#a8382a','center',seg(t,2,3));
+  person(c,210,360,.62,P(t,B,1,2),P(t,B,1,1,1.6),{shawl:'#b8392b',dhoti:'#e9c46a',book:true,bookLabel:'RAMAYANA',look:2});
+  txt(c,'his mother',210,500,`italic 600 22px ${DISP}`,'#a8382a','center',P(t,B,1,1,1.6));
+  txt(c,'Ramayana · Mahabharata',210,226,`italic 600 22px ${DISP}`,INK,'center',P(t,B,1,1,2.4));
+  person(c,750,360,.62,P(t,B,2,2),P(t,B,2,1,1.6),{shawl:'#3b3f46',dhoti:'#f7f2e6',book:true,bookLabel:'BIBLE',look:-2});
+  txt(c,'his father',750,500,`italic 600 22px ${DISP}`,'#a8382a','center',P(t,B,2,1,1.6));
+  const q=P(t,B,2,.8,2.4)*(1-P(t,B,3,.5));cloud(c,700,150,210,70,q);txt(c,'“If there be anything called religion,',700,144,`italic 600 21px ${DISP}`,INK,'center',q);txt(c,'it is in this.”',700,172,`italic 600 21px ${DISP}`,INK,'center',q);
+  txt(c,'two worlds, one house',480,120,`600 40px ${DISP}`,INK,'center',P(t,B,3,1)*(1-q*.0));
+  heading(c,1,'A Calcutta boy','kalighat',false,1-P(t,B,3,.5));fig(c,'','Eastern & Western Disciples ch. 8 · Great Master 5.8a',false);
+};
+SC.gita=(c,t,B)=>{wood(c);leaf(c,50,110,860,300);
+  const tp=P(t,B,0,1)*(1-P(t,B,1,.5));if(tp>0){const pulse=1+.05*Math.max(0,Math.sin((t-2)*5))*seg(t,2,3);c.save();c.translate(480,262);c.scale(pulse,pulse);txt(c,'भगवद्गीता',0,22,`76px ${DEV}`,INK,'center',tp);c.restore();
+    for(let k=0;k<3;k++){const r=((t*60+k*70)%210);c.strokeStyle=`rgba(140,47,28,${tp*(1-r/210)*.5})`;c.lineWidth=2;c.beginPath();c.ellipse(480,248,140+r,50+r*.35,0,0,7);c.stroke();}}
+  const bp=P(t,B,1,.6)*(1-P(t,B,2,.5));if(bp>0){c.save();c.globalAlpha=bp;
+    [['सुख','दुःख',.4],['शीत','उष्ण',1.4],['शत्रु','मित्र',2.4]].forEach(([a,b,o],i)=>balance(c,230+i*250,330,a,b,P(t,B,1,1,o)));
+    txt(c,'समः',480,170,`46px ${DEV}`,'#8c2f1c','center',P(t,B,1,1,3.2));c.restore();
+    txt(c,'pleasure and pain · heat and cold · friend and foe: the same',480,460,`italic 500 26px ${DISP}`,'#e8d6ad','center',bp*P(t,B,1,1,1));}
+  const ap=P(t,B,2,.8)*(1-P(t,B,3,.6,1.6)*.0);if(ap>0){txt(c,'क्लैब्यं मा स्म गमः पार्थ',480,280,`56px ${DEV}`,INK,'center',ap);
+    txt(c,'GITA 2.3 · KRISHNA TO ARJUNA',480,330,`600 13px ${MONO}`,'#5a3e22','center',ap);
+    txt(c,'“Ill doth it befit thee, Arjuna, to yield to unmanliness!”',480,460,`italic 500 26px ${DISP}`,'#e8d6ad','center',ap*(1-P(t,B,3,.5)));}
+  txt(c,'How strong!',480,468,`italic 600 40px ${DISP}`,'#f0c56a','center',P(t,B,3,.8));
+  heading(c,2,'A line that throbbed','palmleaf',true);fig(c,'','Nivedita, The Master as I Saw Him, ch. 15',true);
+};
+SC.books=(c,t,B)=>{paper(c);
+  const night=P(t,B,0,1.5);c.fillStyle=`rgba(27,34,54,${.5*night})`;c.fillRect(0,0,W,H);
+  const gl=c.createRadialGradient(330,300,10,330,300,300);gl.addColorStop(0,`rgba(255,200,110,${.45*night})`);gl.addColorStop(1,'rgba(255,200,110,0)');c.fillStyle=gl;c.fillRect(0,0,W,H);
+  person(c,300,360,.66,ease(seg(t,0,2)),seg(t,1.6,2.6),{shawl:'#34477e',book:true,bookLabel:'MILL'});
+  const books=[['MILL · THREE ESSAYS ON RELIGION',0,0],['HUME',1,0],['SPENCER · THE UNKNOWABLE',1,1],['DESCARTES',2,0],['SPINOZA',2,.4],['DARWIN',2,.8],['COMTE',2,1.2],['KANT',2,2.2],['FICHTE',2,2.7],['HEGEL',2,3.2],['SCHOPENHAUER',2,3.7]];
+  const cols=['#7a2e22','#2e4a6a','#4d5a2a','#8a5a1e','#3b2a52','#6a2a3a','#2a5a5a','#9a3a20','#4a4a6a','#5a3a2a','#3a2a52'];
+  books.forEach(([n,bi,o],i)=>{const a=P(t,B,bi,.5,o+(bi===0?.6:0));if(a<=0)return;const by=486-i*25,bw=270-(i%3)*18,bx=610+(i%2)*10;c.save();c.globalAlpha=a;c.translate(0,(1-a)*-30);
+    c.fillStyle=cols[i];c.fillRect(bx,by-23,bw,23);c.strokeStyle=INK;c.lineWidth=2.5;c.strokeRect(bx,by-23,bw,23);c.fillStyle='#f3e6c4';c.font=`600 12px ${MONO}`;c.textAlign='center';c.fillText(n,bx+bw/2,by-7);c.restore();
+    if(n==='KANT'&&a>=1){c.strokeStyle='#f0c56a';c.lineWidth=3;c.strokeRect(bx-4,by-27,bw+8,31);}});
+  const br=P(t,B,3,1);if(br>0){cloud(c,700,120,180,70,br);c.save();c.globalAlpha=br;c.strokeStyle=INK;c.lineWidth=3;c.fillStyle='#e8b4a0';c.beginPath();c.ellipse(650,118,46,32,0,0,7);c.fill();c.stroke();
+    c.beginPath();c.moveTo(615,112);c.quadraticCurveTo(640,92,655,118);c.quadraticCurveTo(672,140,690,110);c.stroke();c.beginPath();c.moveTo(660,148);c.lineTo(668,175);c.stroke();c.restore();
+    txt(c,'nerves &',760,112,`italic 600 22px ${DISP}`,INK,'center',br);txt(c,'the brain',760,136,`italic 600 22px ${DISP}`,INK,'center',br);}
+  txt(c,'boyhood faith, shaken',300,110,`italic 600 24px ${DISP}`,'#a8382a','center',P(t,B,0,1,2.4)*(1-P(t,B,2,.6)));
+  heading(c,3,'1881: the books','kalighat',night<.5);fig(c,'','Seal, in Eastern & Western Disciples ch. 8 · Great Master 5.8a',false);
+};
+SC.walled=(c,t,B)=>{grid(c,false);
+  const pp=P(t,B,0,2.4);
+  const xb=(x,y,L,sub,a)=>{if(a<=0)return;c.save();c.globalAlpha*=a;c.setLineDash([6,5]);c.strokeStyle='#c9d6e8';c.lineWidth=1.5;c.strokeRect(x-50,y-50,100,100);c.setLineDash([]);c.restore();txt(c,L,x,y+18,`600 52px ${DISP}`,'#e8eef7','center',a);txt(c,sub,x,y+76,`12px ${MONO}`,'#8a9bb3','center',a);};
+  xb(110,270,'?','the world itself',pp);
+  c.strokeStyle='#9be0b5';c.lineWidth=2;arrow(c,165,270,268,270,'#9be0b5',2,seg(pp,0,.25));txt(c,'stimulus',215,256,`12px ${MONO}`,'#9be0b5','center',seg(pp,.1,.3));
+  if(pp>.25){c.save();c.globalAlpha=seg(pp,.25,.4);c.strokeStyle='#e8eef7';c.lineWidth=2.5;c.fillStyle='#0f1420';c.beginPath();c.moveTo(270,270);c.quadraticCurveTo(298,246,326,270);c.quadraticCurveTo(298,294,270,270);c.fill();c.stroke();c.fillStyle='#7fb2ff';c.beginPath();c.arc(300,270,9,0,7);c.fill();c.restore();txt(c,'sense',298,312,`12px ${MONO}`,'#8a9bb3','center',seg(pp,.3,.45));}
+  const np=seg(pp,.4,.7);c.strokeStyle='#7fb2ff';c.lineWidth=2.5;c.beginPath();c.moveTo(330,270);c.lineTo(lerp(330,420,np),270);c.stroke();
+  if(np>0&&np<1){c.fillStyle='#f0c56a';c.beginPath();c.arc(lerp(330,420,np),270,5,0,7);c.fill();}
+  const mp=seg(pp,.65,1);if(mp>0){c.save();c.globalAlpha=mp;c.fillStyle='rgba(240,197,106,.12)';c.strokeStyle='#f0c56a';c.lineWidth=2;c.beginPath();c.ellipse(520,270,100,90,0,0,7);c.fill();c.stroke();
+    c.fillStyle='rgba(232,180,160,.85)';c.beginPath();c.ellipse(520,262,48,34,0,0,7);c.fill();c.strokeStyle='#121212';c.lineWidth=2;c.beginPath();c.moveTo(480,256);c.quadraticCurveTo(505,236,520,262);c.quadraticCurveTo(538,286,556,254);c.stroke();c.restore();
+    txt(c,'changes in the mind',520,392,`600 13px ${MONO}`,'#f0c56a','center',mp);txt(c,'all that is ever known',520,410,`12px ${MONO}`,'#8a9bb3','center',mp);}
+  txt(c,'unknown and unknowable',120,404,`italic 600 20px ${DISP}`,'#e8eef7','center',P(t,B,1,1,.6));
+  const w1=P(t,B,1,1.2,1.4);if(w1>0){c.save();c.globalAlpha=.95;bricks(c,214,470-300*w1,40,300*w1,'#4a5568','#c9d6e8');c.restore();}
+  const yb=P(t,B,2,1);xb(850,270,'“I”','made by an unknown',yb);arrow(c,800,270,624,270,'#c9d6e8',2,P(t,B,2,1,.6));
+  const w2=P(t,B,2,1.2,2);if(w2>0)bricks(c,740,470-300*w2,40,300*w2,'#4a5568','#c9d6e8');
+  const wl=P(t,B,3,1);if(wl>0){c.save();c.shadowColor='#7fb2ff';c.shadowBlur=24*wl;c.strokeStyle=`rgba(127,178,255,${wl})`;c.lineWidth=3;c.strokeRect(214,170,40,300);c.strokeRect(740,170,40,300);c.restore();
+    txt(c,'THE IMPREGNABLE WALL OF TIME AND SPACE',480,140,`600 16px ${MONO}`,'#7fb2ff','center',wl);}
+  heading(c,4,'Walled in','plate',true);fig(c,'FIG. 2.4 · ONLY THE MIND’S OWN CHANGES ARE KNOWN','Great Master 5.8a',true);
+};
+SC.err=(c,t,B)=>{grid(c,true);
+  const a0=P(t,B,0,1)*(1-P(t,B,1,.5));txt(c,'the senses',480,250,`italic 500 54px ${DISP}`,'#121212','center',a0);txt(c,'are full of errors',480,306,`italic 500 54px ${DISP}`,'#c0392b','center',P(t,B,0,1,.8)*(1-P(t,B,1,.5)));
+  const ml=P(t,B,1,.8)*(1-P(t,B,3,.6));if(ml>0){c.save();c.globalAlpha=ml;c.strokeStyle='#121212';c.lineWidth=4;c.lineCap='round';
+    const line=(y,out)=>{const x1=330,x2=630,f=34*(out?1:-1);c.beginPath();c.moveTo(x1,y);c.lineTo(x2,y);c.moveTo(x1,y);c.lineTo(x1-f,y-28);c.moveTo(x1,y);c.lineTo(x1-f,y+28);c.moveTo(x2,y);c.lineTo(x2+f,y-28);c.moveTo(x2,y);c.lineTo(x2+f,y+28);c.stroke();};
+    line(210,true);line(360,false);
+    const g=P(t,B,2,.8);if(g>0){c.save();c.globalAlpha*=g;c.setLineDash([6,6]);c.strokeStyle='#c0392b';c.lineWidth=2;[330,630].forEach(x=>{c.beginPath();c.moveTo(x,150);c.lineTo(x,420);c.stroke();});c.restore();
+      txt(c,'300 px',480,196,`600 13px ${MONO}`,'#c0392b','center',g);txt(c,'300 px',480,346,`600 13px ${MONO}`,'#c0392b','center',g);txt(c,'same length. The eye still disagrees.',480,460,`italic 500 26px ${DISP}`,'#121212','center',P(t,B,2,1,1));}
+    c.restore();}
+  const ch=P(t,B,3,1);if(ch>0){c.save();c.globalAlpha=ch;
+    for(let i=0;i<9;i++){const x=150+(i%3)*44,y=230+Math.floor(i/3)*58;c.fillStyle='#8a8478';c.beginPath();c.arc(x,y,13,0,7);c.fill();c.fillRect(x-11,y+14,22,26);}
+    txt(c,'the senses of',195,410,`italic 600 24px ${DISP}`,'#121212','center');txt(c,'ordinary people',195,438,`italic 600 24px ${DISP}`,'#121212','center');
+    [700,800].forEach((x,i)=>{const g=c.createRadialGradient(x,240,4,x,240,60);g.addColorStop(0,'rgba(240,197,106,.8)');g.addColorStop(1,'rgba(240,197,106,0)');c.fillStyle=g;c.fillRect(x-60,180,120,120);
+      c.fillStyle='#121212';c.beginPath();c.arc(x,240,16,0,7);c.fill();c.fillRect(x-14,258,28,70);txt(c,i?'Jesus':'Buddha',x,352,`italic 600 22px ${DISP}`,'#121212','center');});
+    txt(c,'the realisations of',750,410,`italic 600 24px ${DISP}`,'#121212','center');txt(c,'rare souls',750,438,`italic 600 24px ${DISP}`,'#121212','center');
+    txt(c,'?',480,320,`600 96px ${DISP}`,'#c0392b','center',P(t,B,3,.8,1.2));c.restore();}
+  heading(c,5,'The senses err','percept',false);fig(c,ml>0?'LAB CARD 2.5 · MÜLLER-LYER ILLUSION (1889)':'','Great Master 5.8a',false);
+};
+SC.seal=(c,t,B)=>{paper(c);
+  person(c,230,370,.6,ease(seg(t,0,2)),seg(t,1.6,2.6),{shawl:'#5a6a7a',look:2});txt(c,'Brajendranath Seal',230,500,`italic 600 22px ${DISP}`,'#a8382a','center',seg(t,1.6,2.6));
+  person(c,730,370,.6,ease(seg(t,.4,2.4)),seg(t,2,3),{shawl:'#34477e',look:-2});txt(c,'Naren',730,500,`italic 600 22px ${DISP}`,'#a8382a','center',seg(t,2,3));
+  const pale=P(t,B,2,1.4);const sc=P(t,B,0,.8,1.2);
+  if(sc>0){cloud(c,280,140,200,72,sc*(1-pale*.6),INK,hexm('#fbf6ea','#e9e6e0',pale));
+    txt(c,'the sovereignty of',280,136,`italic 600 22px ${DISP}`,INK,'center',sc*(1-pale*.6));txt(c,'Universal Reason',280,164,`600 28px ${DISP}`,INK,'center',sc*(1-pale*.6));}
+  txt(c,'a pale, bloodless reason',280,230,`italic 600 24px ${DISP}`,'#7a7a7a','center',pale);
+  const nc=P(t,B,1,.8);if(nc>0){cloud(c,700,140,190,72,nc);
+    const hp=1-P(t,B,3,.6);txt(c,'intellect: conquered',700,130,`italic 600 22px ${DISP}`,INK,'center',nc*hp);txt(c,'heart: the individual',700,162,`italic 600 22px ${DISP}`,'#a8382a','center',P(t,B,1,.8,2)*hp);
+    const wn=P(t,B,3,.8);txt(c,'a flesh and blood reality',700,116,`italic 600 21px ${DISP}`,INK,'center',wn);txt(c,'a hand to save',700,142,`italic 600 21px ${DISP}`,INK,'center',P(t,B,3,.8,1.4));txt(c,'a master',700,168,`600 24px ${DISP}`,'#a8382a','center',P(t,B,3,.8,2.6));}
+  heading(c,6,'Pure Reason','kalighat',false,1-sc);fig(c,'','Seal, in Eastern & Western Disciples ch. 8',false);
+};
+SC.seen=(c,t,B)=>{paper(c);
+  const pan=(x,y,w,h,a,draw,cap)=>{if(a<=0)return;c.save();c.globalAlpha*=a;c.translate((1-a)*30,0);c.save();c.beginPath();c.rect(x,y,w,h);c.clip();draw(x,y,w,h);c.restore();c.strokeStyle=INK;c.lineWidth=5;c.strokeRect(x,y,w,h);
+    c.font=`700 15px ${BODY}`;const cw=c.measureText(cap).width;c.fillStyle='#f6e7a8';c.fillRect(x+10,y+10,cw+20,28);c.lineWidth=2;c.strokeRect(x+10,y+10,cw+20,28);c.fillStyle=INK;c.textAlign='left';c.fillText(cap,x+20,y+29);c.restore();};
+  const b2=P(t,B,3,.8);
+  pan(30,96,lerp(900,430,b2),400,P(t,B,0,.8),(x,y,w,h)=>{c.fillStyle='#e2d3b2';c.fillRect(x,y,w,h);
+    const lean=P(t,B,2,.6)*(1-P(t,B,2,.6,2.4)*.6);c.fillStyle='#7a5a3a';c.fillRect(x+w*.62-50,y+250,100,120);c.strokeStyle=INK;c.lineWidth=4;c.strokeRect(x+w*.62-50,y+250,100,120);
+    standing(c,x+w*.62,y+262,.9,'#2f3540',{lean:-lean*.25,arm:1-lean});
+    for(let i=0;i<7;i++){const hx=x+40+i*Math.max(40,w*.08),hy=y+h-30+(i%2)*8;c.fillStyle=i===2?'#34477e':INK;c.beginPath();c.arc(hx,hy-20,15,0,7);c.fill();c.fillRect(hx-18,hy-6,36,40);}
+    if(lean>.2)txt(c,'!',x+w*.62+40,y+130,`700 60px ${DISP}`,'#a8382a','center',lean);
+  },'Calcutta lecture halls');
+  const q=P(t,B,1,.5)*(1-b2*.4);if(q>0){cloud(c,lerp(260,190,b2),190,lerp(150,120,b2),60,q);txt(c,'Have you seen God?',lerp(260,190,b2),198,`italic 700 ${Math.round(lerp(30,24,b2))}px ${DISP}`,INK,'center',q);}
+  pan(490,96,440,400,b2,(x,y,w,h)=>{c.fillStyle='#efe6cf';c.fillRect(x,y,w,h);const g=c.createRadialGradient(x+220,y+260,10,x+220,y+260,240);g.addColorStop(0,'rgba(255,230,160,.6)');g.addColorStop(1,'rgba(255,230,160,0)');c.fillStyle=g;c.fillRect(x,y,w,h);
+    person(c,x+220,y+282,.58,1,1,{shawl:'#efe9da',beard:true,look:1});},'Dakshineswar');
+  const r1=P(t,B,3,.6,1.6),r2=P(t,B,3,.6,3.2);if(r1>0){cloud(c,710,170,110,46,r1);txt(c,'I have.',710,180,`italic 700 30px ${DISP}`,INK,'center',r1);}
+  if(r2>0){txt(c,'“And I will put you in the way',710,452,`italic 600 19px ${DISP}`,INK,'center',r2);txt(c,'of seeing Him too.”',710,476,`italic 600 19px ${DISP}`,INK,'center',r2);}
+  heading(c,7,'Have you seen God?','kalighat',false,1-P(t,B,0,.6));fig(c,'','The Vedanta in All Its Phases, CW vol. 3',false);
+};
+SC.hamilton=(c,t,B)=>{grid(c,false);const x0=110,x1=740,y0=430,y1=150,X=x=>lerp(x0,x1,x/6),Y=v=>lerp(y0,y1,v);
+  const ax=P(t,B,0,.8);c.save();c.globalAlpha=ax;c.strokeStyle='#c9d6e8';c.lineWidth=2;c.beginPath();c.moveTo(x0,y1-30);c.lineTo(x0,y0);c.lineTo(x1+40,y0);c.stroke();
+  txt(c,'inquiry →',x1+40,y0+24,`12px ${MONO}`,'#8fb3d9','right');c.save();c.translate(x0-18,(y0+y1)/2);c.rotate(-Math.PI/2);txt(c,'what the intellect can know of God',0,0,`12px ${MONO}`,'#8fb3d9','center');c.restore();
+  c.setLineDash([8,6]);c.strokeStyle='#f0c56a';c.beginPath();c.moveTo(x0,Y(1));c.lineTo(x1+40,Y(1));c.stroke();c.setLineDash([]);txt(c,'God’s nature',x1+40,Y(1)-10,`600 13px ${MONO}`,'#f0c56a','right');c.restore();
+  const cp=P(t,B,0,2.4,.6)*.45+P(t,B,1,3)*.55;c.strokeStyle='#7fb2ff';c.lineWidth=3;c.beginPath();for(let x=0;x<=6*cp;x+=.05){const v=1-Math.exp(-x);x?c.lineTo(X(x),Y(v)):c.moveTo(X(x),Y(v));}c.stroke();
+  txt(c,'a hint that God exists',X(1.2)+14,Y(1-Math.exp(-1.2))+30,`italic 500 24px ${DISP}`,'#e8eef7','left',P(t,B,0,1,1.6));
+  const gp=P(t,B,1,1,2.4);if(gp>0){const xe=X(5.6),ye=Y(1-Math.exp(-5.6));c.strokeStyle=`rgba(240,197,106,${gp})`;c.lineWidth=1.5;c.beginPath();c.moveTo(xe,ye);c.lineTo(xe,Y(1));c.stroke();txt(c,'never closes',xe-8,ye-14,`12px ${MONO}`,'#f0c56a','right',gp);}
+  const rg=P(t,B,2,1);if(rg>0){c.fillStyle=`rgba(240,197,106,${.14*rg})`;c.fillRect(x1+48,100,W-x1-70,340);c.strokeStyle=`rgba(240,197,106,${rg})`;c.lineWidth=2;c.beginPath();c.moveTo(x1+48,100);c.lineTo(x1+48,y0);c.stroke();
+    txt(c,'religion',x1+118,250,`italic 600 30px ${DISP}`,'#f0c56a','center',rg);txt(c,'begins',x1+118,284,`italic 600 30px ${DISP}`,'#f0c56a','center',rg);txt(c,'philosophy ends',x1+44,92,`600 12px ${MONO}`,'#f0c56a','right',rg);}
+  txt(c,'“Where philosophy ends, religion begins.”',430,500,`italic 500 26px ${DISP}`,'#e8eef7','center',P(t,B,3,1));
+  heading(c,8,'Where philosophy ends','plate',true);fig(c,'FIG. 2.8 · y = 1 − e⁻ˣ: ALWAYS CLOSER, NEVER THERE','Hamilton, as quoted by Naren · Great Master 5.8a',true);
+};
+SC.flame=(c,t,B)=>{const still=P(t,B,2,1);const tt=lerp(t,B[2]+.5,still);
+  lanternRig(c,tt,(c,cx,cy,R)=>{
+    const imgs=1-P(t,B,1,.8,1.2);if(imgs>0){c.save();c.globalAlpha=imgs;c.strokeStyle='#5a3a1a';c.fillStyle='rgba(200,140,60,.55)';c.lineWidth=3;
+      c.beginPath();c.moveTo(cx-120,cy+60);c.lineTo(cx-120,cy-30);c.quadraticCurveTo(cx-90,cy-80,cx-60,cy-30);c.lineTo(cx-60,cy+60);c.closePath();c.fill();c.stroke();
+      for(let i=0;i<12;i++){const a=i*Math.PI/6;c.beginPath();c.moveTo(cx+80+Math.cos(a)*24,cy-40+Math.sin(a)*24);c.lineTo(cx+80+Math.cos(a)*52,cy-40+Math.sin(a)*52);c.stroke();}c.beginPath();c.arc(cx+80,cy-40,20,0,7);c.fill();c.stroke();
+      c.beginPath();c.moveTo(cx-30,cy+90);c.lineTo(cx-20,cy+50);c.lineTo(cx,cy+76);c.lineTo(cx+20,cy+50);c.lineTo(cx+30,cy+90);c.closePath();c.fill();c.stroke();c.restore();}
+    const fl=P(t,B,2,1.2);if(fl>0){c.save();c.globalAlpha=fl;const g=c.createRadialGradient(cx,cy+10,4,cx,cy+10,150);g.addColorStop(0,'rgba(255,240,190,.95)');g.addColorStop(1,'rgba(255,200,120,0)');c.fillStyle=g;c.fillRect(cx-R,cy-R,2*R,2*R);
+      c.fillStyle='#f0a030';c.beginPath();c.moveTo(cx,cy-80);c.quadraticCurveTo(cx+36,cy,cx,cy+40);c.quadraticCurveTo(cx-36,cy,cx,cy-80);c.fill();c.fillStyle='#fff6d8';c.beginPath();c.moveTo(cx,cy-40);c.quadraticCurveTo(cx+16,cy+6,cx,cy+28);c.quadraticCurveTo(cx-16,cy+6,cx,cy-40);c.fill();
+      c.fillStyle='#3a2a18';c.beginPath();c.ellipse(cx,cy+60,60,16,0,0,7);c.fill();c.restore();}
+    const tb=P(t,B,3,1);if(tb>0){c.save();c.globalAlpha=tb*(1-P(t,B,3,1.4,1.6));c.strokeStyle='#3a2a18';c.lineWidth=3;c.beginPath();c.arc(cx-110,cy-90,26,0,7);c.stroke();c.beginPath();c.moveTo(cx-110,cy-90);c.lineTo(cx-110,cy-108);c.moveTo(cx-110,cy-90);c.lineTo(cx-96,cy-90);c.stroke();c.restore();}});
+  const sl=['FORM','FORMLESS, WITH ATTRIBUTES'];sl.forEach((n,i)=>{const pu=P(t,B,1,.8,.6+i*1.4);slide(c,212+i*14,lerp(272,90,pu),n,i?'rgba(130,160,200,.75)':'rgba(220,150,80,.75)',1-pu);});
+  const tl=(s,y,f,col,a)=>txt(c,s,640,y,f,col,'center',a);
+  tl('“O God, I do not know Thy nature.',476,`italic 500 22px ${DISP}`,'#e9dfc6',P(t,B,0,1,.6)*(1-P(t,B,1,.5,3)));tl('Manifest Thyself to me as Thou really art.”',502,`italic 500 22px ${DISP}`,'#f0c56a',P(t,B,0,1,2)*(1-P(t,B,1,.5,3)));
+  tl('like a lamp in a windless place',490,`italic 600 28px ${DISP}`,'#f0c56a',P(t,B,2,1,2.2)*(1-P(t,B,3,.5)));
+  tl('time and body vanish · whole nights',490,`italic 500 26px ${DISP}`,'#e9dfc6',P(t,B,3,1,.8));
+  heading(c,9,'A flame in a windless place','lantern',true);fig(c,'','Great Master 5.8a',true);
+};
+SC.monk=(c,t,B)=>{
+  lanternRig(c,t,(c,cx,cy,R)=>{c.fillStyle='rgba(40,30,30,.55)';c.fillRect(cx-R,cy-R,2*R,2*R);
+    c.fillStyle='rgba(30,20,15,.85)';c.fillRect(cx+110,cy-60,50,150);
+    const ap=P(t,B,0,1.6)*(1-P(t,B,2,.8,-.2));const walk=P(t,B,1,2);const mx=lerp(cx-110,cx-40,walk);
+    if(ap>0){c.save();c.globalAlpha=ap;const g=c.createRadialGradient(mx,cy-20,6,mx,cy-20,170);g.addColorStop(0,'rgba(255,220,150,.9)');g.addColorStop(1,'rgba(255,200,120,0)');c.fillStyle=g;c.fillRect(cx-R,cy-R,2*R,2*R);
+      c.fillStyle='#d8761e';c.beginPath();c.moveTo(mx,cy-50);c.quadraticCurveTo(mx+40,cy+20,mx+36,cy+96);c.lineTo(mx-36,cy+96);c.quadraticCurveTo(mx-40,cy+20,mx,cy-50);c.fill();
+      c.fillStyle='#c98a5a';c.beginPath();c.arc(mx,cy-66,18,0,7);c.fill();c.fillStyle='#5a3a2a';c.beginPath();c.ellipse(mx+40,cy+30,12,15,0,0,7);c.fill();c.restore();}
+    const nx=lerp(cx+60,cx+136,P(t,B,1,1.2,2.4)*(1-P(t,B,2,1.2)));const nA=1-P(t,B,1,.6,3.4)*(1-P(t,B,2,.6));
+    c.save();c.globalAlpha=nA;c.fillStyle='#1a1410';const up=P(t,B,1,.6,1.8);c.beginPath();c.arc(nx,cy+lerp(30,-10,up),14,0,7);c.fill();c.fillRect(nx-14,cy+lerp(46,6,up),28,lerp(44,90,up));c.restore();});
+  const tl=(s,y,f,col,a)=>txt(c,s,640,y,f,col,'center',a);
+  tl('a monk in ochre, a water pot in his hand',490,`italic 500 24px ${DISP}`,'#e9dfc6',P(t,B,0,1,1.6)*(1-P(t,B,1,.5)));
+  tl('seized with fear',490,`italic 500 26px ${DISP}`,'#e9dfc6',P(t,B,1,1,1.6)*(1-P(t,B,2,.5)));
+  tl('gone',490,`italic 600 30px ${DISP}`,'#e9dfc6',P(t,B,2,1)*(1-P(t,B,3,.5)));
+  tl('“…I saw Lord Buddha that day.”',490,`italic 600 28px ${DISP}`,'#f0c56a',P(t,B,3,1,2.4));
+  heading(c,10,'The monk in ochre','lantern',true);fig(c,'','Great Master 5.8a',true);
+};
+SC.notgod=(c,t,B)=>{paper(c);const go=P(t,B,3,1.6,.6);
+  person(c,300,370,.66,ease(seg(t,0,2)),seg(t,1.6,2.6),{shawl:hexm('#34477e','#c8692c',go)});
+  for(let i=0;i<6;i++){const a=(i/6)*Math.PI*2+t*.3,r=140+Math.sin(t*2+i)*10,on=P(t,B,0,.4,.3+i*.4)*(1-P(t,B,1,.6,i*.2));txt(c,'?',300+Math.cos(a)*r,250+Math.sin(a)*r*.7,`700 ${34+i*3}px ${DISP}`,'#a8382a','center',on);}
+  txt(c,'The gods might be false.',890,170,`600 36px ${DISP}`,INK,'right',P(t,B,1,1,1.6)*(1-P(t,B,2,.5)));txt(c,'But not God.',890,216,`600 44px ${DISP}`,'#a8382a','right',P(t,B,1,1,3.4)*(1-P(t,B,2,.5)));
+  const ip=P(t,B,2,2.4);if(ip>0){c.save();c.globalAlpha=P(t,B,2,.5)*(1-P(t,B,3,.5));c.strokeStyle=INK;c.lineWidth=4;c.strokeRect(640,150,60,300);c.fillStyle='#34477e';c.fillRect(640,450-300*ip,60,300*ip);
+    txt(c,'INTELLECT',670,474,`600 12px ${MONO}`,INK,'center');const bg=P(t,B,2,1,2.4);const g=c.createRadialGradient(670,110,4,670,110,120);g.addColorStop(0,`rgba(255,220,140,${.8*bg})`);g.addColorStop(1,'rgba(255,220,140,0)');c.fillStyle=g;c.fillRect(540,0,260,240);
+    txt(c,'beyond',670,96,`italic 600 30px ${DISP}`,'#a8382a','center',bg);c.restore();}
+  txt(c,'NEXT · FILM 3 OF 3',920,410,`600 12px ${MONO}`,'#a8382a','right',P(t,B,3,1,2.2));txt(c,'Kant Comes Home',920,452,`600 42px ${DISP}`,INK,'right',P(t,B,3,1,2.6));
+  heading(c,11,'But not God','kalighat',false);fig(c,'','Eastern & Western Disciples ch. 8',false);
+};
+
+/* ================= PLAYER ================= */
+
+const CH=DATA.chapters,DUR=DATA.duration;
+const cv=document.getElementById('cv'),ctx=cv.getContext('2d');const dpr=Math.min(2,devicePixelRatio||1);cv.width=W*dpr;cv.height=H*dpr;ctx.scale(dpr,dpr);
+CH.forEach(ch=>{ch.B=ch.lines.map(l=>l.start-ch.start);});
+function chAt(T){let k=0;CH.forEach((ch,i)=>{if(T>=ch.start-(i?0.2:99))k=i;});return k;}
+function drawScene(c,i,T){const ch=CH[i];c.save();try{SC[ch.id](c,T-ch.start,ch.B);}catch(e){console.error(ch.id,e);}c.restore();}
+function frame(T){const k=chAt(T),n=k+1;drawScene(ctx,k,T);
+  if(n<CH.length){const ws=CH[n].start-1.1,w=ease(seg(T,ws,ws+.9));if(w>0){ctx.save();ctx.beginPath();ctx.moveTo(0,0);for(let y=0;y<=H;y+=12)ctx.lineTo(W*w+Math.sin(y*.05+T)*10,y);ctx.lineTo(0,H);ctx.closePath();ctx.clip();drawScene(ctx,n,T);ctx.restore();
+    if(w<1){ctx.strokeStyle=INK;ctx.lineWidth=9;ctx.lineCap='round';ctx.beginPath();for(let y=-10;y<=H+10;y+=12){const x=W*w+Math.sin(y*.05+T)*10;y<0?ctx.moveTo(x,y):ctx.lineTo(x,y);}ctx.stroke();}}}
+  if(T<.5){ctx.fillStyle=`rgba(0,0,0,${1-T/.5})`;ctx.fillRect(0,0,W,H);}
+  if(T>DUR-.8){ctx.fillStyle=`rgba(0,0,0,${seg(T,DUR-.8,DUR)})`;ctx.fillRect(0,0,W,H);}}
+const disp=s=>s.replace(/eighteen eighty-one/g,'1881').replace(/\bMaya\b/g,'Māyā').replace(/Muller/g,'Müller');
+const au=document.getElementById('au'),cap=document.getElementById('cap'),tc=document.getElementById('tc'),chn=document.getElementById('chn'),pp=document.getElementById('pp'),big=document.getElementById('big'),ph=document.getElementById('ph'),tl=document.getElementById('tl');
+let playing=false,T=DATA.poster||0,useAudio=true,lastNow=performance.now(),started=false,capsOn=true;
+au.addEventListener('error',()=>{useAudio=false;});
+const fmt=s=>`${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
+CH.forEach((ch,i)=>{const d=document.createElement('div');const end=i<CH.length-1?CH[i+1].start:DUR;d.style.width=((end-(i?ch.start:0))/DUR*100)+'%';d.style.background=STY[ch.style][1];d.title=`${i+1}. ${ch.title}`;tl.insertBefore(d,ph);ch.seg=d;
+  const li=document.createElement('li');li.style.setProperty('--c',STY[ch.style][1]);li.innerHTML=`<em>${String(i+1).padStart(2,'0')} · ${STY[ch.style][0]} · ${fmt(ch.start)}</em><b>${ch.title}</b><small>${ch.src}</small>`;li.onclick=()=>seek(Math.max(0,ch.start-.9),true);document.getElementById('chs').appendChild(li);});
+Object.entries(STY).forEach(([k,[n,c]])=>{const s=document.createElement('span');s.style.setProperty('--c',c);s.textContent=n;document.getElementById('lg').appendChild(s);});
+function seek(x,play){T=clamp(x,0,DUR);started=true;if(useAudio){try{au.currentTime=T;}catch(e){}}if(play)setPlay(true);ui();}
+function setPlay(v){playing=v;started=true;big.hidden=true;pp.textContent=v?'Pause':'Play';if(useAudio){if(v){const p=au.play();if(p&&p.catch)p.catch(()=>{useAudio=false;});}else au.pause();}lastNow=performance.now();}
+pp.onclick=()=>{if(!started){seek(0,true);return;}setPlay(!playing);};big.onclick=()=>seek(0,true);cv.onclick=()=>{if(!started)seek(0,true);else setPlay(!playing);};
+document.getElementById('cc').onclick=e=>{capsOn=!capsOn;e.target.textContent=capsOn?'Captions on':'Captions off';cap.classList.toggle('off',!capsOn);};
+tl.onclick=e=>{const r=tl.getBoundingClientRect();seek((e.clientX-r.left)/r.width*DUR,playing||!started);};
+document.addEventListener('keydown',e=>{if(e.code==='Space'&&e.target===document.body){e.preventDefault();pp.click();}});
+au.addEventListener('ended',()=>{playing=false;pp.textContent='Play';});
+function ui(){let line='';CH.forEach(ch=>ch.lines.forEach(l=>{if(T>=l.start-.15&&T<l.end+.4)line=l.text;}));cap.textContent=started?disp(line):'';
+  const k=chAt(T);chn.textContent=started?`${k+1}. ${CH[k].title}`:'';CH.forEach((ch,i)=>ch.seg.classList.toggle('on',i===k));
+  ph.style.left=(T/DUR*100)+'%';tc.textContent=`${fmt(started?T:0)} / ${fmt(DUR)}`;}
+function loop(now){const dt=Math.min(.1,(now-lastNow)/1000);lastNow=now;
+  if(playing){if(useAudio&&!au.paused)T=au.currentTime;else T+=dt;if(T>=DUR){T=DUR;playing=false;pp.textContent='Play';}}
+  frame(T);ui();requestAnimationFrame(loop);}
+(document.fonts?document.fonts.ready:Promise.resolve()).then(()=>requestAnimationFrame(loop));
+frame(T);ui();
+window.__film={frame,CH,DUR};
+
+</script>
+</body>
+</html>

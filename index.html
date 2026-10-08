@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kant &amp; Vedanta · Three Films</title>
+<meta name="description" content="Three narrated animated films on Kant and Vedanta, drawn from the works of Swami Vivekananda.">
+<meta property="og:title" content="Kant &amp; Vedanta · Three Films">
+<meta property="og:description" content="Kant said reason hits a wall. Vedanta asked what lies past it.">
+<meta property="og:image" content="film1/poster.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: the screening-room lobby. Thesis headline, three film cards in viewing order, the seven-style key, sources. Single dark theme, matching the films. */
+:root{
+  --ground:#101219;--panel:#181b24;--line:#2a2f3c;--paper:#efe6d2;--muted:#9a9db0;--gerua:#e0904a;
+  --display:"Cormorant Garamond",Georgia,serif;--body:"Atkinson Hyperlegible",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--paper);font-family:var(--body);font-size:16px;line-height:1.55}
+img{max-width:100%;display:block}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:20px;padding-block:56px 80px;display:grid;gap:56px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gerua)}
+h1,h2,h3{font-family:var(--display);font-weight:600;margin:0;line-height:1.08;text-wrap:balance}
+h1{font-size:clamp(40px,7vw,80px);letter-spacing:-.01em}
+h1 em{font-style:italic;font-weight:500;color:var(--gerua)}
+h2{font-size:clamp(26px,3.6vw,36px)}
+h3{font-size:28px}
+p{margin:0;max-width:65ch}
+.hero{display:grid;gap:18px}
+.lede{font-size:19px;color:#d9d2c0}
+.films{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.film{display:grid;gap:14px;align-content:start;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;transition:border-color .2s,transform .2s}
+.film:hover{border-color:var(--gerua);transform:translateY(-2px)}
+.film:focus-visible{outline:2px solid #f0c56a;outline-offset:3px}
+.film .poster{aspect-ratio:16/9;width:100%;object-fit:cover;background:#000}
+.film .body{display:grid;gap:10px;padding:4px 20px 22px}
+.meta{font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.film p{font-size:15px;color:#ddd6c5}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--mono);font-size:11px;padding:3px 8px;border-radius:3px;border:1px solid var(--c);color:var(--c)}
+.watch{font-family:var(--mono);font-size:13px;color:var(--gerua)}
+.styles{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px 28px}
+.styles div{border-left:3px solid var(--c);padding-left:14px;display:grid;gap:2px}
+.styles b{font-family:var(--display);font-size:21px;font-weight:600}
+.styles span{font-size:14px;color:var(--muted)}
+.src{columns:2 320px;font-size:14px;color:var(--muted);margin:0;padding-left:20px}
+.src li{break-inside:avoid;margin-bottom:5px}
+.src a{color:#cfc6b2;text-decoration-color:var(--line)}
+.src a:hover{text-decoration-color:var(--gerua)}
+footer{font-size:13px;color:var(--muted);display:grid;gap:6px;border-top:1px solid var(--line);padding-top:20px}
+@media (prefers-reduced-motion:reduce){.film{transition:none}.film:hover{transform:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <div class="eyebrow">Kant &amp; Vedanta · three films · from the works of Swami Vivekananda</div>
+    <h1>Kant said reason hits a wall. <em>Vedanta asked what lies past it.</em></h1>
+    <p class="lede">Three short narrated animations about one idea: that time, space and causation belong to the mind. Kant argued it in 1781. Vivekananda said India's sages had found it long before, and had gone looking for what lies beyond. Watch them in order, about fourteen minutes in all.</p>
+  </header>
+
+  <section class="films" aria-label="The films">
+    <a class="film" href="film1/">
+      <img class="poster" src="film1/poster.jpg" alt="Kalighat-style painting of young Naren beside a brick wall with a doorway of light" width="960" height="540">
+      <div class="body">
+        <div class="meta">FILM 1 · 4:40 · 13 CHAPTERS</div>
+        <h3>The Wall Called Reason</h3>
+        <p>The idea itself. X plus mind, the rope and the snake, why will cannot be the Absolute, neti neti, and Shankara's claim to have got there first.</p>
+        <div class="chips"><span class="chip" style="--c:#6f9bd1">Plate</span><span class="chip" style="--c:#3aa59a">Paper-cut</span><span class="chip" style="--c:#e2b04a">Lantern</span><span class="chip" style="--c:#d6cfbf">Perception</span><span class="chip" style="--c:#c07a3a">Palm leaf</span><span class="chip" style="--c:#c94a32">Kalighat</span><span class="chip" style="--c:#9a8ad6">Chart</span></div>
+        <div class="watch">Watch →</div>
+      </div>
+    </a>
+    <a class="film" href="film2/">
+      <img class="poster" src="film2/poster.jpg" alt="Two comic panels: a lecturer taken aback by 'Have you seen God?', and Ramakrishna answering 'I have.'" width="960" height="540">
+      <div class="body">
+        <div class="meta">FILM 2 · 4:20 · 11 CHAPTERS</div>
+        <h3>The Student Who Read Kant</h3>
+        <p>The man. Naren in Calcutta, from Mill and Hume to Kant and Schopenhauer, walled in by time and space, asking every lecturer one question.</p>
+        <div class="chips"><span class="chip" style="--c:#c94a32">Kalighat</span><span class="chip" style="--c:#c07a3a">Palm leaf</span><span class="chip" style="--c:#6f9bd1">Plate</span><span class="chip" style="--c:#d6cfbf">Perception</span><span class="chip" style="--c:#e2b04a">Lantern</span></div>
+        <div class="watch">Watch →</div>
+      </div>
+    </a>
+    <a class="film" href="film3/">
+      <img class="poster" src="film3/poster.jpg" alt="Paper-cut night sea with a moon, a ship's deck and a pacing figure" width="960" height="540">
+      <div class="body">
+        <div class="meta">FILM 3 · 4:46 · 11 CHAPTERS</div>
+        <h3>Kant Comes Home</h3>
+        <p>The journey. Baranagore, the Upanishads travelling west into Persian, Latin and German, Deussen at Kiel, the London lectures on Māyā, and the 1899 voyage.</p>
+        <div class="chips"><span class="chip" style="--c:#9a8ad6">Chart</span><span class="chip" style="--c:#c94a32">Kalighat</span><span class="chip" style="--c:#3aa59a">Paper-cut</span><span class="chip" style="--c:#6f9bd1">Plate</span><span class="chip" style="--c:#e2b04a">Lantern</span><span class="chip" style="--c:#d6cfbf">Perception</span></div>
+        <div class="watch">Watch →</div>
+      </div>
+    </a>
+  </section>
+
+  <section style="display:grid;gap:20px">
+    <h2>Seven styles, one job each</h2>
+    <div class="styles">
+      <div style="--c:#6f9bd1"><b>Scientific plate</b><span>An argument with a real scientific parallel, source cited on the plate.</span></div>
+      <div style="--c:#d6cfbf"><b>Perception lab</b><span>You see the point for yourself: Kanizsa, Müller-Lyer, Chevreul.</span></div>
+      <div style="--c:#e2b04a"><b>Magic lantern</b><span>Māyā: the slides between the light and the picture.</span></div>
+      <div style="--c:#c07a3a"><b>Palm leaf</b><span>Scripture and Sanskrit, struck out word by word: neti, neti.</span></div>
+      <div style="--c:#3aa59a"><b>Paper-cut</b><span>Parables of form and boundary: the ocean and its bays.</span></div>
+      <div style="--c:#c94a32"><b>Kalighat pat</b><span>People and scenes, in the style of Calcutta's own 19th-century painters.</span></div>
+      <div style="--c:#9a8ad6"><b>Ship's chart</b><span>Journeys, places and dates.</span></div>
+    </div>
+  </section>
+
+  <section style="display:grid;gap:16px">
+    <h2>Sources</h2>
+    <p style="color:var(--muted);font-size:15px">Every line of narration comes from these pages on ramakrishnavivekananda.info. Each chapter in the films names its source.</p>
+    <ol class="src">
+      <li><a href="https://www.ramakrishnavivekananda.info/vivekananda/volume_8/notes_of_class_talks_and_lectures/the_reality_and_the_shadow.htm">The Reality and the Shadow</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/vivekananda/volume_5/notes_from_lectures_and_discourses/buddhism_and_vedanta.htm">Buddhism and Vedanta</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/vivekananda/volume_7/inspired_talks/22_sunday_july_14.htm">Inspired Talks, 14 July 1895</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/vivekananda/volume_6/lectures_and_discourses/introduction_to_jnana-yoga.htm">Introduction to Jnana-Yoga</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/vivekananda/volume_1/raja-yoga/introduction.htm">Raja-Yoga, Introduction</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/vedantism_2.htm">Vedantism (Khetri, 1897)</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/sisternivedita1910/15_hinduism.htm">Nivedita: The Swami on Hinduism</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/sriramakrishna_thegreatmaster/5_8a_narendranath_schooling.htm">Sri Ramakrishna the Great Master, 5.8a</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/vivekananda/volume_1/lectures_and_discourses/vedic_religious_ideals.htm">Vedic Religious Ideals</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/the_vedanta_in_all_its_phases.htm">The Vedanta in All Its Phases</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/vivekananda/volume_3/lectures_from_colombo_to_almora/address_of_welcome_presented_at_calcutta_and_reply.htm">Calcutta Address and Reply</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/swamieastwest/2_files/1-8.html">Eastern &amp; Western Disciples, ch. 8</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/swamieastwest/2_files/1-12.html">ch. 12: The Baranagore Math</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/swamieastwest/2_files/1-19.html">ch. 19: In Madras and Hyderabad</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/vivekananda_biography/05_wandering_monk.htm">Biography: As a Wandering Monk</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/gospel/volume_1/16_devotees_at_dakshineswar_ii.htm">Gospel: With the Devotees at Dakshineswar (II)</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/vivekananda_biography/09_experiences.htm">Biography: Experiences in the West</a></li>
+      <li><a href="https://www.ramakrishnavivekananda.info/swamieastwest/2_files/1-35.html">ch. 35: Second Visit to America</a></li>
+    </ol>
+  </section>
+
+  <footer>
+    <div>Narration is synthesised speech (Kokoro). Every frame is drawn live in the browser from a single timeline.</div>
+  </footer>
+</main>
+</body>
+</html>
