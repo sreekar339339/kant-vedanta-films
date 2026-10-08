@@ -1,6 +1,6 @@
 """Render narration for a film script with Kokoro (onnx) + espeak-ng phonemes.
 Usage: python3 studio/tts.py <film>/script.json <film>/out [voice] [speed] [quote_voice] [quote_speed]   (run studio/setup_tts.sh once first)
-A line may be a string (narrator) or {"q": "text"}: an exact quotation, spoken by quote_voice and captioned as a quote.
+A line may be a string or {"q": "text"}: an exact quotation, captioned as a quote (spoken by the narrator unless quote_voice is given).
 Writes outdir/narration.wav and outdir/timings.json (start/end of every line)."""
 import json, re, subprocess, sys, wave, os
 import numpy as np, onnxruntime as ort
@@ -60,8 +60,8 @@ def main():
     names = [i.name for i in sess.get_inputs()]
     tok_in = 'input_ids' if 'input_ids' in names else 'tokens'
     speed_dt = np.int32 if 'int' in next(i.type for i in sess.get_inputs() if i.name == 'speed') else np.float32
-    qvoice = sys.argv[5] if len(sys.argv) > 5 else 'bm_george'
-    qspeed = float(sys.argv[6]) if len(sys.argv) > 6 else speed * 0.97
+    qvoice = sys.argv[5] if len(sys.argv) > 5 else voice   # one narrator by default; pass a voice to give quotes their own
+    qspeed = float(sys.argv[6]) if len(sys.argv) > 6 else speed
     bank = np.load(f'{TTS}/voices.bin')
     vstyle, qstyle = bank[voice], bank[qvoice]
     data = json.load(open(script))
