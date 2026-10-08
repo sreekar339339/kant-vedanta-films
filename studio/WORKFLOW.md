@@ -89,3 +89,10 @@ SC.open=(c,t,B)=>{ paper(c); /* t = seconds since chapter start; B[i] = start of
 - `TRANSITION(ctx, T, k, n, drawScene, CH)`: if defined, replaces the Kalighat ink wipe between chapters. Colombo to Almora flies through a yantra into the next chapter.
 - A series may replace the chapter style keys by mutating `STY` (it is a const object). Colombo to Almora uses the Holo-Chart modes: `map` (3D chart flight), `panel` (data panel), `signal` (transmission: scripture and Sanskrit decoded), `sim` (simulation: parables and processes), `dossier` (people and scenes), `alert` (violence, persecution).
 - Narration is one voice (`af_heart`, 0.92). Quotes are still marked `{"q": ...}` so captions and the quote layer can treat them differently.
+
+## 10. Whiteboard mural direction (From Colombo to Almora, from Film 1 v3)
+- Style reference: hand-drawn whiteboard explainers. One continuous mural per chapter; ink outlines, then cross-hatching from a tone map, then marker colour; camera pans right; pull-back at chapter end; clean board between chapters. No hand in shot, no full-frame quote type.
+- `<series>/common.js` holds the engine: `Scene` builder (`S` shaded shape, `L` line, `T` lettering, `G` glow, `A` traced asset), `compileScene` (tone map → hatching), `muralScene(id)`, `stack()` lettering blocks, `wash()` pastel glows, and the object library.
+- `filmN/scenes.js`: `MURAL.<chapterId>=[pn(lineIndex, S=>{...}), ...]`, then `SC[id]=muralScene(id)`. One hero drawing per panel, satellites around it, one `stack()` of lettering in clear space.
+- Portraits: `python3 studio/trace.py <public-domain photo> <series>/assets/<name>.json [--no-colour] [--height N]`; build.py embeds `assets/*.json` as `ASSETS`; place with `S.A(name,x,y,scale,{mono})`.
+- Check with a completion contact sheet (each panel just before its pan, plus the pull-back), not the beat sheet.

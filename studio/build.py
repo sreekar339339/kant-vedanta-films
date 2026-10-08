@@ -7,7 +7,8 @@
   {"title": "...", "site_path": "" (root) or "my-series",
    "films": [{"dir": "film1", "title": "...", "desc": "...", "poster": 19.8, "artifact": "https://claude.ai/artifact/..."}]}
 Each film dir holds script.json, scenes.js and out/ (timings.json + narration.mp3 from tts.py).
-An optional <series_dir>/common.js (helpers shared by a series) is prepended to every film's scenes.js.
+An optional <series_dir>/common.js (helpers shared by a series) is prepended to every film's scenes.js,
+and <series_dir>/assets/*.json (e.g. traced portraits from trace.py) are embedded as const ASSETS.
 """
 import html, json, os, shutil, sys
 
@@ -22,6 +23,14 @@ HEAD = '''<!doctype html>
 <meta name="description" content="{desc}">
 <style>*,*::before,*::after{{box-sizing:border-box}}body{{margin:0}}img{{max-width:100%}}[hidden]{{display:none!important}}</style>
 '''
+
+def assets_js(series_dir):
+    """Embed <series_dir>/assets/*.json (traced portraits etc.) as const ASSETS={name: data}."""
+    ad = os.path.join(series_dir, 'assets')
+    if not os.path.isdir(ad):
+        return ''
+    items = [f'{json.dumps(os.path.splitext(f)[0])}:{open(os.path.join(ad, f)).read().strip()}' for f in sorted(os.listdir(ad)) if f.endswith('.json')]
+    return 'const ASSETS={' + ','.join(items) + '};\n'
 
 def film_html(series_dir, ser, i, standalone):
     f = ser['films'][i]; d = os.path.join(series_dir, f['dir'])
@@ -42,7 +51,7 @@ def film_html(series_dir, ser, i, standalone):
     h = h.replace('{{TITLE}}', s['title']).replace('{{NUM}}', str(i+1)).replace('{{NAV}}', nav)
     h = (h.replace('/*DATA*/null', json.dumps(data, ensure_ascii=False))
           .replace('/*LIB*/', open(f'{STUDIO}/lib.js').read())
-          .replace('/*SCENES*/', (open(f'{series_dir}/common.js').read() + '\n' if os.path.exists(f'{series_dir}/common.js') else '') + open(f'{d}/scenes.js').read())
+          .replace('/*SCENES*/', assets_js(series_dir) + (open(f'{series_dir}/common.js').read() + '\n' if os.path.exists(f'{series_dir}/common.js') else '') + open(f'{d}/scenes.js').read())
           .replace('/*PLAYER*/', open(f'{STUDIO}/player.js').read()))
     if standalone:
         title_tag = f"<title>{s['title']}</title>\n"

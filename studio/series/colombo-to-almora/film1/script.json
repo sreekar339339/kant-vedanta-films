@@ -4,7 +4,7 @@
   {
    "id": "arrive",
    "title": "Landfall at Colombo",
-   "style": "map",
+   "style": "sea",
    "src": "First Public Lecture in the East (Colombo)",
    "lines": [
     "On the afternoon of the fifteenth of January, eighteen ninety-seven, Swami Vivekananda lands at Colombo.",
@@ -17,7 +17,7 @@
   {
    "id": "welcome",
    "title": "The welcome",
-   "style": "dossier",
+   "style": "portrait",
    "src": "First Public Lecture in the East (Colombo)",
    "lines": [
     "The Hindus of Colombo give him a right royal reception, and read an address of welcome.",
@@ -31,7 +31,7 @@
   {
    "id": "punya",
    "title": "Punya Bhumi",
-   "style": "map",
+   "style": "marker",
    "src": "First Public Lecture in the East (Colombo)",
    "lines": [
     "He begins by giving the credit away: whatever he did in the West came from the blessings that followed him from home.",
@@ -50,7 +50,7 @@
   {
    "id": "sword",
    "title": "Blood or blessing",
-   "style": "alert",
+   "style": "blood",
    "src": "First Public Lecture in the East (Colombo)",
    "lines": [
     "The debt the world owes to the patient Hindu, the mild Hindu, is immense.",
@@ -68,7 +68,7 @@
   {
    "id": "capitol",
    "title": "A spider's web on the Capitol",
-   "style": "map",
+   "style": "ink",
    "src": "First Public Lecture in the East (Colombo)",
    "lines": [
     "There was a time when the earth trembled at the march of big Greek battalions. That ancient land is gone.",
@@ -84,7 +84,7 @@
   {
    "id": "plough",
    "title": "The ploughman's mark",
-   "style": "panel",
+   "style": "earth",
    "src": "First Public Lecture in the East (Colombo)",
    "lines": [
     "To other nations, religion is one occupation among many: politics, society, wealth, the senses, and perhaps a little bit of religion.",
@@ -102,7 +102,7 @@
   {
    "id": "dynamo",
    "title": "Storing the light",
-   "style": "sim",
+   "style": "light",
    "src": "First Public Lecture in the East (Colombo)",
    "lines": [
     "Each man comes into the world with a bent, marked out by his past Karma. And what is true of the individual is true of the race.",
@@ -120,7 +120,7 @@
   {
    "id": "dew",
    "title": "Like the gentle dew",
-   "style": "sim",
+   "style": "earth",
    "src": "First Public Lecture in the East (Colombo)",
    "lines": [
     "Whenever a conquering nation linked India to the world, the world was flooded with Indian spiritual ideas.",
@@ -139,7 +139,7 @@
   {
    "id": "porcelain",
    "title": "Porcelain cracks",
-   "style": "panel",
+   "style": "ink",
    "src": "First Public Lecture in the East (Colombo)",
    "lines": [
     "Once more, history is going to repeat itself.",
@@ -153,7 +153,7 @@
   {
    "id": "yugas",
    "title": "Shruti and Smriti",
-   "style": "signal",
+   "style": "marker",
    "src": "First Public Lecture in the East (Colombo)",
    "lines": [
     "But what goes out to the world is only the principles, the foundation; not the details of custom.",
@@ -167,7 +167,7 @@
   {
    "id": "tribes",
    "title": "Gods of the tribes",
-   "style": "sim",
+   "style": "ink",
    "src": "First Public Lecture in the East (Colombo)",
    "lines": [
     "Watch religions grow, and you find each tribe begins with a god of its own.",
@@ -181,7 +181,7 @@
   {
    "id": "ekam",
    "title": "Ekam sat",
-   "style": "signal",
+   "style": "light",
    "src": "First Public Lecture in the East (Colombo)",
    "lines": [
     "But in the midst of the din and confusion, there came a voice.",
@@ -199,7 +199,7 @@
   {
    "id": "rivers",
    "title": "Rivers to one ocean",
-   "style": "sim",
+   "style": "sea",
    "src": "First Public Lecture in the East (Colombo)",
    "lines": [
     "Elsewhere he has seen tremendous religious persecution, in every country he has been.",
@@ -215,7 +215,7 @@
   {
    "id": "mission",
    "title": "Not toleration, sympathy",
-   "style": "dossier",
+   "style": "portrait",
    "src": "First Public Lecture in the East (Colombo)",
    "lines": [
     "Difference cannot cease; without variation life must cease. But it is not necessary that we should hate each other.",
