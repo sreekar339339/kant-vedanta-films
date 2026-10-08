@@ -63,8 +63,8 @@ SC.punya=(c,t,B)=>{paper(c);
     if(wv>0){for(let i=0;i<7;i++){const r=((t*60+i*70)%480)*wv;c.strokeStyle=`rgba(168,56,42,${(1-r/480)*.5})`;c.lineWidth=2;c.beginPath();c.arc(680,300,40+r,0,7);c.stroke();}}
     c.save();c.globalAlpha=p3;c.fillStyle='rgba(200,105,44,.35)';c.strokeStyle=INK;c.lineWidth=2.5;c.beginPath();COAST.forEach(([lo,la],i)=>{const[x,y]=pj(lo,la);i?c.lineTo(x,y):c.moveTo(x,y);});[[93,26],[88,28],[80,32],[74,35],[68,30],[66.6,25.4]].forEach(p=>c.lineTo(...pj(...p)));c.closePath();c.fill();c.stroke();
     c.beginPath();CEYLON.forEach(([lo,la],i)=>{const[x,y]=pj(lo,la);i?c.lineTo(x,y):c.moveTo(x,y);});c.fill();c.stroke();c.restore();
-    const w1=1-P(t,B,6,.5);txt(c,'the land of introspection',360,170,`italic 600 30px ${DISP}`,INK,'center',p3*w1);txt(c,'and of spirituality —',360,208,`italic 600 30px ${DISP}`,INK,'center',p3*w1);txt(c,'it is India.',360,252,`italic 600 40px ${DISP}`,RED,'center',P(t,B,5,1,1.6)*w1);
-    txt(c,'tidal waves of philosophy',360,170,`italic 600 30px ${DISP}`,INK,'center',P(t,B,6,1,.6));txt(c,'to spiritualise the material',360,210,`italic 600 26px ${DISP}`,RED,'center',P(t,B,6,1,2.6));txt(c,'civilisation of the world',360,244,`italic 600 26px ${DISP}`,RED,'center',P(t,B,6,1,3));}
+    const w1=1-P(t,B,6,.5);txt(c,'the land of introspection',360,136,`italic 600 30px ${DISP}`,INK,'center',p3*w1);txt(c,'and of spirituality —',360,174,`italic 600 30px ${DISP}`,INK,'center',p3*w1);txt(c,'it is India.',360,218,`italic 600 40px ${DISP}`,RED,'center',P(t,B,5,1,1.6)*w1);
+    txt(c,'tidal waves of philosophy',360,136,`italic 600 30px ${DISP}`,INK,'center',P(t,B,6,1,.6));txt(c,'to spiritualise the material',360,176,`italic 600 26px ${DISP}`,RED,'center',P(t,B,6,1,2.6));txt(c,'civilisation of the world',360,208,`italic 600 26px ${DISP}`,RED,'center',P(t,B,6,1,3));}
   heading(c,3,'Punya Bhumi','kalighat',false,1-P(t,B,5,.5));fig(c,'','Floral Hall lecture · '+SRC1,false);
 };
 
