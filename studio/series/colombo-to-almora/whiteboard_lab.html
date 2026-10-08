@@ -1,0 +1,234 @@
+<title>Whiteboard Marker Studies</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Kalam:wght@400;700&family=IBM+Plex+Mono:wght@400;500&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+/* Layout: four reels on a whiteboard wall. Each reel: name, live stage, cut strip, notes. Light single theme by choice: the subject is a whiteboard. */
+:root{
+  --wall:#ecebe6; --panel:#ffffff; --line:#d6d4cc; --ink:#17171b; --muted:#5d5c58; --red:#d6262a; --saffron:#ef7d1a;
+  --display:"Permanent Marker","Kalam",cursive; --hand:"Kalam",cursive; --body:"Atkinson Hyperlegible",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--wall);color:var(--ink);font:400 16px/1.55 var(--body);margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:18px;padding-block:36px 90px;display:grid;gap:56px}
+h1,h2{font-family:var(--display);font-weight:400;margin:0;line-height:1.05;text-wrap:balance}
+h1{font-size:clamp(2.4rem,7vw,4.4rem)}
+h2{font-size:clamp(1.7rem,4vw,2.5rem)}
+.eyebrow{font:500 .74rem/1.2 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.lede{max-width:66ch;color:var(--muted);margin:14px 0 0}
+.traits{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px 26px;margin-top:22px}
+.traits div{min-width:0;border-top:2px solid var(--ink);padding-top:10px}
+.traits b{font-family:var(--hand);font-weight:700;font-size:1.15rem;display:block}
+.traits p{margin:4px 0 0;font-size:.92rem;color:#3b3a37}
+.reel{display:grid;gap:14px}
+.rhead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 18px}
+.pitch{font-family:var(--hand);font-size:1.25rem;color:var(--muted);max-width:44ch}
+.stage{position:relative;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 20px 50px -24px rgba(0,0,0,.45),0 0 0 1px var(--line)}
+.stage canvas{display:block;width:100%;height:auto;aspect-ratio:16/9;max-width:100%;cursor:pointer}
+.bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font:400 .78rem var(--mono);color:var(--muted)}
+.bar button{font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:6px 12px;cursor:pointer}
+.bar button:hover{border-color:var(--ink)}
+.bar button:focus-visible,.strip:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.strip{position:relative;flex:1;min-width:200px;height:26px;background:var(--panel);border:1px solid var(--line);border-radius:3px;cursor:pointer}
+.strip i{position:absolute;top:3px;bottom:3px;width:2px;background:var(--red);opacity:.7}
+.strip i.beat{background:var(--ink);opacity:.85;top:0;bottom:0}
+.strip b{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--saffron);box-shadow:0 0 0 1px #fff}
+.cap{min-height:2.6em;text-align:center;font-family:var(--hand);font-size:clamp(1.05rem,2.2vw,1.3rem);color:var(--ink);text-wrap:balance}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px 26px}
+.notes div{min-width:0}
+.notes h3{font:500 .72rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin:0 0 6px}
+.notes p{margin:0;font-size:.93rem;color:#33322f}
+.foot{color:var(--muted);font-size:.9rem;max-width:70ch}
+</style>
+
+<main class="wrap">
+  <header>
+    <div class="eyebrow">From Colombo to Almora · whiteboard studies</div>
+    <h1>Marker on a whiteboard</h1>
+    <p class="lede">Four takes on the hand-drawn whiteboard look you pointed to, each animating the same fourteen seconds of the Colombo lecture with original drawings. The marks under each reel are its cuts and camera moves; the dark ones are the narration beats. Narration stays one voice.</p>
+    <div class="traits">
+      <div><b>Real marker, real board</b><p>The reference channel says all its art is hand-drawn on an actual whiteboard with dry-erase markers. White ground, black line, nothing glossy.</p></div>
+      <div><b>Hatching does the shading</b><p>Form comes from line weight and cross-hatching, not gradients. Faces and figures are expressive, a little caricatured, never clip-art.</p></div>
+      <div><b>Colour is a marker, used sparingly</b><p>Mostly black and white. One or two saturated marker colours scribbled in for the thing that matters, with bursts of full colour for big moments.</p></div>
+      <div><b>One idea, one drawing</b><p>Symbolic props carry the argument: a light bulb, a lamp, a globe. Hand-lettered capitals name the idea.</p></div>
+    </div>
+  </header>
+  <div id="reels" style="display:grid;gap:72px"></div>
+  <p class="foot">Each frame is still drawn live from one timeline, so whichever you choose stays seekable, renders to MP4 and plays on a phone. The drawings here are original and only borrow the technique, not any of the reference channel's artwork.</p>
+</main>
+
+<script>
+const W=960,H=540,LOOP=14,BEATS=[0,3.5,7,10.5];
+const LINES=['There was a time when at the sound of the march of big Greek battalions the earth trembled.','Each idea had to be soaked in a deluge of blood.','We, of all nations of the world, have never been a conquering race… and therefore we live.','India’s gift to the world is the light spiritual.'];
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x)),seg=(t,a,b)=>clamp((t-a)/(b-a)),lerp=(a,b,k)=>a+(b-a)*k;
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2,eo=x=>1-Math.pow(1-x,3);
+function rng(seed){let s=(seed>>>0)||1;return()=>(s=(Math.imul(s,1664525)+1013904223)>>>0)/4294967296;}
+const beatOf=t=>t>=10.5?3:t>=7?2:t>=3.5?1:0;
+const INK='#17171b',RED='#d6262a',SAF='#ef7d1a',YEL='#ffd21f',BLU='#1f7ae0',GRN='#2aa84a',PNK='#ff5fa2',PUR='#7b4ce0';
+const MK='"Permanent Marker","Kalam",cursive';
+
+/* ---------- marker drawing engine ---------- */
+const arc=(cx,cy,rx,ry,a0,a1,n=28)=>{const o=[];for(let i=0;i<=n;i++){const a=lerp(a0,a1,i/n);o.push([cx+Math.cos(a)*rx,cy+Math.sin(a)*ry]);}return o;};
+const bez=(p0,p1,p2,p3,n=20)=>{const o=[];for(let i=0;i<=n;i++){const t=i/n,u=1-t;o.push([u*u*u*p0[0]+3*u*u*t*p1[0]+3*u*t*t*p2[0]+t*t*t*p3[0],u*u*u*p0[1]+3*u*u*t*p1[1]+3*u*t*t*p2[1]+t*t*t*p3[1]]);}return o;};
+const plen=p=>{let s=0;for(let i=1;i<p.length;i++)s+=Math.hypot(p[i][0]-p[i-1][0],p[i][1]-p[i-1][1]);return s;};
+function wob(pts,seed,amp=1.3){const r=rng(seed),ph=r()*6.28,ph2=r()*6.28;const o=[];let s=0;for(let i=0;i<pts.length;i++){if(i)s+=Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]);const a=pts[Math.min(i+1,pts.length-1)],b=pts[Math.max(i-1,0)];let nx=-(a[1]-b[1]),ny=a[0]-b[0];const nl=Math.hypot(nx,ny)||1;nx/=nl;ny/=nl;const d=amp*(Math.sin(s*.045+ph)+.5*Math.sin(s*.13+ph2));o.push([pts[i][0]+nx*d,pts[i][1]+ny*d]);}return o;}
+function subdiv(pts,step=6){const o=[pts[0]];for(let i=1;i<pts.length;i++){const a=pts[i-1],b=pts[i],d=Math.hypot(b[0]-a[0],b[1]-a[1]),n=Math.max(1,Math.round(d/step));for(let k=1;k<=n;k++)o.push([lerp(a[0],b[0],k/n),lerp(a[1],b[1],k/n)]);}return o;}
+function bbox(p){let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;p.forEach(([x,y])=>{x0=Math.min(x0,x);y0=Math.min(y0,y);x1=Math.max(x1,x);y1=Math.max(y1,y);});return[x0,y0,x1,y1];}
+function hatchSegs(poly,ang,gap){const[x0,y0,x1,y1]=bbox(poly),cx=(x0+x1)/2,cy=(y0+y1)/2,R=Math.hypot(x1-x0,y1-y0)/2+4,ca=Math.cos(ang),sa=Math.sin(ang),o=[];for(let d=-R;d<=R;d+=gap){o.push([[cx-sa*d-ca*R,cy+ca*d-sa*R],[cx-sa*d+ca*R,cy+ca*d+sa*R]]);}return o;}
+function scribble(poly,ang,gap){const s=hatchSegs(poly,ang,gap),o=[];s.forEach((sg,i)=>{const[a,b]=i%2?[sg[1],sg[0]]:sg;o.push(a,b);});return o;}
+/* item kinds: L line, X hatch (clipped), F fill scribble (clipped), T lettering */
+const L=(pts,o={})=>({k:'L',pts,w:o.w||3.2,col:o.col||INK,c:o.c});
+const X=(poly,ang,gap,o={})=>({k:'X',poly,segs:hatchSegs(poly,ang,gap),w:o.w||1.4,col:o.col||INK,c:o.c});
+const F=(poly,col,o={})=>({k:'F',poly,pts:scribble(poly,o.ang??-.6,o.gap||7),col,w:o.w||(o.gap||7)*1.7,c:o.c||'accent',alpha:o.alpha??.85});
+const Tx=(s,x,y,size,col=INK,o={})=>({k:'T',s,x,y,size,col,al:o.al||'left',rot:o.rot||0,c:o.c,n:Array.isArray(s)?s.map(q=>q[0]).join('').length:s.length});
+function build(items,seed){let tot=0;items.forEach((it,i)=>{if(it.k==='L'){it.pts=wob(subdiv(it.pts),seed*131+i);it.len=plen(it.pts);}else if(it.k==='X'){it.len=it.segs.length*18;}else if(it.k==='F'){it.len=plen(it.pts)*.12;}else it.len=it.n*22;tot+=it.len;});
+  let acc=0;items.forEach(it=>{it.t0=acc/tot;acc+=it.len;it.t1=acc/tot;});return items;}
+function partial(c,pts,k){if(k<=0)return;const tot=plen(pts),tg=k*tot;let acc=0;c.beginPath();c.moveTo(pts[0][0],pts[0][1]);for(let i=1;i<pts.length;i++){const d=Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]);if(acc+d<=tg){c.lineTo(pts[i][0],pts[i][1]);acc+=d;}else{const f=(tg-acc)/d;c.lineTo(lerp(pts[i-1][0],pts[i][0],f),lerp(pts[i-1][1],pts[i][1],f));break;}}c.stroke();}
+function polyPath(c,p){c.beginPath();p.forEach(([x,y],i)=>i?c.lineTo(x,y):c.moveTo(x,y));c.closePath();}
+function draw(c,items,p,mode='accent',o={}){items.forEach(it=>{const k=seg(p,it.t0,it.t1);if(k<=0)return;if(it.c&&!(mode==='full'||(mode==='accent'&&it.c==='accent')))return;
+  c.save();c.lineCap='round';c.lineJoin='round';
+  if(it.k==='L'){c.strokeStyle=it.col;c.lineWidth=it.w*(o.wscale||1);partial(c,it.pts,k);c.globalAlpha=.12;c.lineWidth=it.w*2.2;partial(c,it.pts,k);}
+  else if(it.k==='X'){polyPath(c,it.poly);c.clip();c.strokeStyle=it.col;c.lineWidth=it.w;const n=it.segs.length*k;it.segs.forEach((s,i)=>{if(i>n)return;const f=i+1>n?n-i:1;c.beginPath();c.moveTo(s[0][0],s[0][1]);c.lineTo(lerp(s[0][0],s[1][0],f),lerp(s[0][1],s[1][1],f));c.stroke();});}
+  else if(it.k==='F'){polyPath(c,it.poly);c.clip();c.globalCompositeOperation='multiply';c.globalAlpha=it.alpha;c.strokeStyle=it.col;c.lineWidth=it.w;partial(c,it.pts,k);}
+  else{c.translate(it.x,it.y);c.rotate(it.rot);c.font=`${it.size}px ${MK}`;c.textAlign='left';c.textBaseline='alphabetic';const segs=Array.isArray(it.s)?it.s:[[it.s,it.col]];const ws=segs.map(q=>c.measureText(q[0]).width),w=ws.reduce((a,b)=>a+b,0),x0=it.al==='center'?-w/2:it.al==='right'?-w:0;c.beginPath();c.rect(x0-4,-it.size*1.2,(w+8)*k,it.size*1.6);c.clip();let xx=x0;segs.forEach((q,i)=>{c.fillStyle=q[1];c.fillText(q[0],xx,0);xx+=ws[i];});}
+  c.restore();});}
+function board(c,seed=1,dark=false){c.fillStyle='#fbfbf8';c.fillRect(0,0,W,H);const r=rng(seed);c.save();c.globalAlpha=.05;c.strokeStyle='#6f6f6a';c.lineWidth=7;c.lineCap='round';for(let i=0;i<7;i++){c.beginPath();const x=r()*W,y=r()*H;c.moveTo(x,y);c.bezierCurveTo(x+80,y-40,x+160,y+60,x+260*r(),y+20);c.stroke();}c.restore();
+  const g=c.createLinearGradient(0,0,W,H);g.addColorStop(0,'rgba(255,255,255,0)');g.addColorStop(.45,'rgba(255,255,255,.35)');g.addColorStop(.55,'rgba(255,255,255,0)');c.fillStyle=g;c.fillRect(0,0,W,H);}
+
+/* ---------- the four drawings (original) ---------- */
+function hoplite(x,g,s,seed){const P=(a,b)=>[x+a*s,g+b*s];const tunic=[P(-24,-62),P(-20,-120),P(20,-120),P(24,-62)];const shield=arc(x+24*s,g-92*s,31*s,31*s,0,Math.PI*2,30);return[
+  L([P(-12,-62),P(-26,0)],{w:3.6}),L([P(6,-62),P(22,0)],{w:3.6}),L([P(-24,-30),P(-21,-10)],{w:2}),L([P(14,-30),P(19,-10)],{w:2}),
+  L(tunic.concat([tunic[0]]),{w:3.6}),X(tunic,.9,4.5,{w:1.5}),X(tunic,-.9,9,{w:1.2}),L([P(-22,-80),P(22,-80)],{w:2}),
+  L(arc(x+2*s,g-142*s,19*s,21*s,Math.PI*.95,Math.PI*2.15,18),{w:3.6}),L([P(18,-140),P(10,-130),P(20,-124)],{w:3}),X(arc(x+2*s,g-142*s,19*s,21*s,Math.PI*1.4,Math.PI*2.1,10).concat([P(2,-142)]),1.1,4),
+  L(bez(P(-20,-156),P(-14,-196),P(20,-200),P(26,-158),14),{w:3.4}),
+  F(bez(P(-20,-156),P(-14,-196),P(20,-200),P(26,-158),14).concat([P(18,-160),P(-14,-160)]),RED,{gap:5,c:'accent'}),
+  L(shield,{w:4}),L(arc(x+24*s,g-92*s,22*s,22*s,0,Math.PI*2,24),{w:1.8}),L(arc(x+24*s,g-92*s,8*s,8*s,0,Math.PI*2,12),{w:3}),
+  X(arc(x+24*s,g-92*s,31*s,31*s,-Math.PI/2,Math.PI/2,16),.8,4.5,{w:1.5}),X(arc(x+24*s,g-92*s,31*s,31*s,-Math.PI*.1,Math.PI*.6,10).concat([P(24,-92)]),-.8,5,{w:1.4}),
+  F(shield,'#c9a24a',{gap:6,c:'full',alpha:.7}),
+  L([P(44,-20),P(70,-250)],{w:3}),L([P(64,-244),P(72,-276),P(80,-246),P(64,-244)],{w:3}),F([P(64,-244),P(72,-276),P(80,-246)],INK,{gap:2,c:'accent',alpha:1})];}
+function bust(x,y,s){const P=(a,b)=>[x+a*s,y+b*s];const it=[];
+  const turb=bez(P(-74,212),P(-90,110),P(92,96),P(76,210),26);it.push(L(turb,{w:4}),L([P(-74,212),P(76,210)],{w:3.6}));
+  [[[-70,186],[-20,150],[30,150],[72,176]],[[-60,158],[-10,124],[40,126],[64,150]],[[-40,132],[0,110],[40,112],[56,124]],[[30,108],[70,104],[86,140],[70,176]]].forEach(q=>it.push(L(bez(...q.map(v=>P(...v)),14),{w:2.6})));
+  it.push(F(turb.concat([P(-74,212)]),SAF,{gap:6,c:'accent',ang:-.4}),X([P(30,108),P(86,140),P(76,210),P(40,200)],.6,4.5,{w:1.4}));
+  const face=bez(P(-60,214),P(-66,300),P(-20,334),P(4,334),16).concat(bez(P(4,334),P(30,334),P(68,300),P(62,212),16));it.push(L(face,{w:3.8}));
+  it.push(X([P(30,222),P(62,214),P(60,284),P(26,328),P(18,300)],.9,4,{w:1.4}),X([P(-60,220),P(-44,222),P(-40,290),P(-52,300)],-.9,4.5,{w:1.3}));
+  [[-26,248],[28,248]].forEach(([dx,dy])=>{it.push(L(arc(x+dx*s,y+dy*s,15*s,7*s,Math.PI*1.05,Math.PI*1.95,10),{w:3}),L(arc(x+dx*s,y+(dy-1)*s,14*s,6*s,Math.PI*.1,Math.PI*.9,10),{w:2}),L(arc(x+(dx+1)*s,y+dy*s,4.5*s,4.5*s,0,Math.PI*2,10),{w:5}),L([P(dx-18,dy-17),P(dx,dy-21),P(dx+16,dy-19)],{w:6}));});
+  it.push(L([P(2,250),P(-6,288),P(10,292)],{w:3}),L(bez(P(-22,308),P(-6,314),P(12,314),P(26,306),8),{w:3.2}),L(arc(x+2*s,y+314*s,10*s,5*s,Math.PI*.15,Math.PI*.85,8),{w:2.2}),X([P(-2,262),P(10,262),P(12,288),P(-2,286)],-1,3.5,{w:1.2}));
+  it.push(L([P(-26,328),P(-30,354)],{w:3.4}),L([P(34,326),P(40,354)],{w:3.4}),X([P(10,330),P(34,326),P(40,354),P(6,350)],.9,4,{w:1.3}));
+  const robe=[P(-30,354),P(-150,400),P(-200,560),P(240,560),P(190,400),P(40,354)];it.push(L(robe,{w:4}),L([P(-30,354),P(6,416),P(40,354)],{w:3.4}));
+  [[[-120,420],[-90,450],[-60,480],[-40,560]],[[130,420],[110,450],[90,490],[70,560]],[[-170,470],[-150,500],[-140,530],[-130,560]],[[40,440],[50,480],[60,520],[56,560]]].forEach(q=>it.push(L(bez(...q.map(v=>P(...v)),10),{w:2.6})));
+  it.push(X([P(120,410),P(190,400),P(240,560),P(90,560)],.75,4.5,{w:1.4}),X([P(-150,400),P(-110,420),P(-150,560),P(-200,560)],-.75,5,{w:1.3}),X([P(6,416),P(40,354),P(50,440)],.4,4,{w:1.2}));
+  it.push(F(robe,'#f6a24a',{gap:8,c:'full',alpha:.75,ang:-.5}));return it;}
+const DRAWINGS=[
+ ()=>{const it=[];const g=500;it.push(Tx([['THE EARTH ',INK],['TREMBLED',RED]],40,84,58,INK,{rot:-.02}));
+   [[150,1.25],[420,1.45],[700,1.25]].forEach(([x,s],i)=>it.push(...hoplite(x,g,s,i)));
+   const gr=[];for(let x=10;x<=950;x+=18)gr.push([x,g+Math.sin(x*.05)*4]);it.push(L(gr,{w:4.2}));
+   [120,330,560,800].forEach(x=>{it.push(L([[x-20,g+6],[x-8,g+22],[x+4,g+14],[x+14,g+36]],{w:2.4}));});
+   for(let k=0;k<7;k++){const x=70+k*140;it.push(L(arc(x,g-8,16,10,Math.PI*1.1,Math.PI*1.7,6),{w:2.4}),L(arc(x,g-8,28,18,Math.PI*1.1,Math.PI*1.7,6),{w:2.4}));}
+   for(let k=0;k<5;k++){const x=180+k*160;it.push(L(arc(x,g-12,40,14,Math.PI,Math.PI*2,14),{w:1.8,col:'#55555a'}));}
+   it.push(X([[10,g],[950,g],[950,540],[10,540]],.5,7,{w:1.2}),F([[10,g],[950,g],[950,540],[10,540]],'#c98a4a',{gap:9,c:'full',alpha:.5}));return it;},
+ ()=>{const it=[],cx=520,cy=220;it.push(Tx([['EACH IDEA',INK]],40,84,56,INK,{rot:-.02}));
+   const R=150;const bulb=arc(cx,cy,R,R,Math.PI*.68,Math.PI*2.32,44);it.push(L(bulb,{w:4.4}),L([[cx-66,cy+132],[cx-56,cy+190]],{w:4}),L([[cx+66,cy+132],[cx+56,cy+190]],{w:4}));
+   for(let k=0;k<5;k++)it.push(L([[cx-58,cy+196+k*16],[cx+58,cy+190+k*16]],{w:3.6}));it.push(X([[cx-60,cy+190],[cx+60,cy+190],[cx+56,cy+272],[cx-56,cy+272]],.7,4,{w:1.6}));
+   it.push(X(arc(cx,cy,R-4,R-4,-Math.PI*.35,Math.PI*.55,14).concat([[cx+R*.45,cy]]),1,6,{w:1.3}),L(arc(cx-50,cy-60,60,60,Math.PI*1.05,Math.PI*1.45,10),{w:3}));
+   it.push(L([[cx-30,cy+132],[cx-20,cy+30],[cx-10,cy+66],[cx,cy+14],[cx+10,cy+66],[cx+20,cy+30],[cx+30,cy+132]],{w:2.6}));
+   for(let k=0;k<7;k++){const a=-Math.PI*.92+k*Math.PI*.14;it.push(L([[cx+Math.cos(a)*(R+22),cy+Math.sin(a)*(R+22)],[cx+Math.cos(a)*(R+60),cy+Math.sin(a)*(R+60)]],{w:3}));}
+   const wv=[];for(let x=0;x<=960;x+=14)wv.push([x,300+Math.sin(x*.022)*22]);it.push(L(wv,{w:4.2,col:'#7a0d10'}));const wv2=wv.map(([x,y])=>[x,y+40+Math.sin(x*.03)*8]);it.push(L(wv2,{w:2.4,col:'#7a0d10'}));
+   [[150,70],[330,110],[690,80],[860,120]].forEach(([x,h])=>{const y=300+Math.sin(x*.022)*22;it.push(L([[x,y],[x-2,y+h]],{w:3.4,col:'#7a0d10'}),L(arc(x-2,y+h+7,7,9,0,Math.PI*2,10),{w:3.4,col:'#7a0d10'}));});
+   it.push(F(wv.concat([[960,540],[0,540]]),RED,{gap:9,c:'accent',alpha:.85}),X(wv.concat([[960,540],[0,540]]),.6,9,{w:1.3,col:'#5a0a0c'}));
+   it.push(Tx([['SOAKED IN ',INK],['BLOOD',RED]],520,80,40,INK,{rot:-.02}));return it;},
+ ()=>{const it=[];it.push(...bust(250,-30,1.25));
+   it.push(Tx([['NEVER A',INK]],560,96,46),Tx([['CONQUERING RACE',INK]],520,150,42));
+   const lx=700,ly=440;it.push(L(arc(lx,ly,110,38,0,Math.PI,24),{w:4}),L(arc(lx,ly,110,16,Math.PI,Math.PI*2,24),{w:3.4}),L([[lx+104,ly-4],[lx+146,ly-20],[lx+110,ly+8]],{w:3.4}),X(arc(lx,ly,110,38,0,Math.PI,16),.5,4.5,{w:1.4}),F(arc(lx,ly,110,38,0,Math.PI,16),'#b5652a',{gap:7,c:'full',alpha:.7}));
+   const fl=bez([lx+132,ly-24],[lx+180,ly-84],[lx+144,ly-132],[lx+134,ly-170],12).concat(bez([lx+134,ly-170],[lx+118,ly-124],[lx+100,ly-84],[lx+132,ly-24],12));it.push(L(fl,{w:3.4}),F(fl,YEL,{gap:5,c:'accent'}),F(fl.map(([a,b])=>[a,b+10]),SAF,{gap:4,c:'full',alpha:.6}));
+   for(let k=0;k<6;k++){const a=-Math.PI*.95+k*.32;it.push(L([[lx+136+Math.cos(a)*60,ly-100+Math.sin(a)*60],[lx+136+Math.cos(a)*84,ly-100+Math.sin(a)*84]],{w:2.6}));}
+   it.push(Tx([['…AND THEREFORE ',INK],['WE LIVE',RED]],470,250,34,INK,{rot:-.03}));return it;},
+ ()=>{const it=[],cx=480,cy=290,R=175;it.push(Tx([["INDIA'S GIFT TO THE WORLD",INK]],480,70,44,INK,{al:'center',rot:-.01}));
+   const cols=[YEL,SAF,RED,PNK,PUR,BLU,GRN];const pj=(lo,la)=>[lerp(448,578,(lo-66)/29),lerp(164,316,(37-la)/31)];const o=pj(78,20);
+   for(let k=0;k<18;k++){const a=k/18*Math.PI*2-.2,r0=50,r1=k%2?360:470;const p0=[o[0]+Math.cos(a)*r0,o[1]+Math.sin(a)*r0],p1=[o[0]+Math.cos(a)*r1,o[1]+Math.sin(a)*r1];const wd=.065,wedge=[p0,[o[0]+Math.cos(a-wd)*r1,o[1]+Math.sin(a-wd)*r1],[o[0]+Math.cos(a+wd)*r1,o[1]+Math.sin(a+wd)*r1]];
+     it.push(F(wedge,k%3?YEL:SAF,{gap:6,c:'accent',alpha:.6}),F(wedge,cols[k%cols.length],{gap:5,c:'full',alpha:.6}),L([p0,p1],{w:2.2,col:'#8a5a00'}));}
+   it.push(L(arc(cx,cy,R,R,0,Math.PI*2,52),{w:4.4}));[64,124].forEach(rx=>it.push(L(arc(cx,cy,rx,R,-Math.PI/2,Math.PI/2,24),{w:2}),L(arc(cx,cy,rx,R,Math.PI/2,Math.PI*1.5,24),{w:2})));
+   [-.55,0,.55].forEach(k=>{const y=cy+k*R*.8,rx=Math.sqrt(R*R-(k*R*.8)**2);it.push(L(arc(cx,y,rx,rx*.12,0,Math.PI,24),{w:2}));});
+   it.push(X(arc(cx,cy,R-3,R-3,-Math.PI*.4,Math.PI*.4,16).concat(arc(cx+40,cy,R-60,R-10,Math.PI*.4,-Math.PI*.4,16)),.9,5,{w:1.4}));
+   const ind=[[66.6,25.4],[69,22.3],[72.6,21.1],[73.4,16.5],[74.8,12.8],[77.5,8.1],[79.9,11.2],[80.1,15.5],[84.1,18.3],[87.4,21.6],[91.8,22.4],[93,19.6],[95,27],[88,28.2],[81,30.5],[77,35.5],[74,36.8],[71,34],[66.6,25.4]].map(p=>pj(...p));
+   it.push(L(ind,{w:3.6}),F(ind,GRN,{gap:5,c:'full',alpha:.6}),X(ind,.8,5,{w:1.2}));
+   it.push(L(arc(o[0],o[1],18,18,0,Math.PI*2,14),{w:3.4}),F(arc(o[0],o[1],18,18,0,Math.PI*2,14),YEL,{gap:4,c:'accent'}));
+   it.push(Tx([['THE LIGHT ',INK],['SPIRITUAL',SAF]],480,508,62,INK,{al:'center',rot:-.02}));return it;}];
+let DR=null;function ensure(){if(!DR)DR=DRAWINGS.map((f,i)=>build(f(),i+1));}
+
+/* ---------- the four reels ---------- */
+function marks(c,t,col='rgba(23,23,27,.45)'){c.save();c.font=`500 11px "IBM Plex Mono",monospace`;c.fillStyle=col;c.textAlign='right';c.fillText(`${String(Math.floor(t)).padStart(2,'0')}:${String(Math.floor((t%1)*24)).padStart(2,'0')}`,W-20,H-16);c.restore();}
+/* 1 · draw-on and slide: classic time-lapse, accent colour, the board slides to the next drawing */
+function classic(c,t){ensure();const b=beatOf(t),l=t-BEATS[b],p=eio(seg(l,.1,3));const sl=eio(seg(l,3.05,3.5));
+  c.save();c.translate(-sl*W,0);board(c,b+1);draw(c,DR[b],p,'accent');c.restore();if(sl>0){c.save();c.translate(W*(1-sl),0);board(c,b+2);c.restore();}
+  if(t>13.6){c.fillStyle=`rgba(251,251,248,${seg(t,13.6,14)})`;c.fillRect(0,0,W,H);}marks(c,t);}
+const C_CUTS=[0,3.05,3.5,6.55,7,10.05,10.5,13.6];
+/* 2 · one continuous board: camera travels between drawings and finally pulls back to show the whole argument */
+const POS=[[0,0],[1120,-60],[1180,700],[60,760]];
+function journey(c,t){ensure();const bt=b=>BEATS[b];let cx,cy,z;const centre=k=>[POS[k][0]+W/2,POS[k][1]+H/2];
+  const b=beatOf(t),l=t-bt(b);const mv=b<3?eio(seg(l,2.9,3.5)):0;const A=centre(b),Bn=centre(Math.min(3,b+1));cx=lerp(A[0],Bn[0],mv);cy=lerp(A[1],Bn[1],mv);z=1-Math.sin(Math.PI*mv)*.32+(1-mv)*.04*seg(l,0,2.9);
+  const out=eio(seg(t,12.6,13.6));const all=[(POS[0][0]+POS[2][0]+W)/2+40,(POS[1][1]+POS[3][1]+H)/2];cx=lerp(cx,all[0],out);cy=lerp(cy,all[1],out);z=lerp(z,.36,out);
+  c.fillStyle='#fbfbf8';c.fillRect(0,0,W,H);c.save();c.translate(W/2,H/2);c.scale(z,z);c.translate(-cx,-cy);
+  c.save();c.translate(-200,-400);c.scale(2400/W*1.2,1700/H*1.2);board(c,9);c.restore();
+  const arrows=[[[900,300],[1120,230]],[[1600,520],[1640,700]],[[1180,1000],[1000,1020]]];
+  arrows.forEach(([a,bb],k)=>{const pk=seg(t,bt(k)+2.6,bt(k)+3.4);if(pk<=0)return;const pts=wob(subdiv(bez(a,[a[0]+(bb[0]-a[0])*.3,a[1]-80],[bb[0]-(bb[0]-a[0])*.3,bb[1]-80],bb,16)),k+40);c.strokeStyle=INK;c.lineWidth=4;c.lineCap='round';partial(c,pts,pk);if(pk>=1){const e=pts[pts.length-1],f=pts[pts.length-4],an=Math.atan2(e[1]-f[1],e[0]-f[0]);c.beginPath();c.moveTo(e[0]-18*Math.cos(an-.5),e[1]-18*Math.sin(an-.5));c.lineTo(e[0],e[1]);c.lineTo(e[0]-18*Math.cos(an+.5),e[1]-18*Math.sin(an+.5));c.stroke();}});
+  DR.forEach((d,k)=>{const pk=eio(seg(t,bt(k)+.1,bt(k)+3));if(pk<=0)return;c.save();c.translate(POS[k][0],POS[k][1]);draw(c,d,pk,'accent');c.restore();});c.restore();
+  marks(c,t);}
+const J_CUTS=[0,2.9,3.5,6.4,7,9.9,10.5,12.6];
+/* 3 · full-colour marker: same drawings, every colour scribbled in, slow push-in, hard cuts */
+function fullcolour(c,t){ensure();const b=beatOf(t),l=t-BEATS[b],p=eio(seg(l,.05,2.7));const z=1+seg(l,0,3.5)*.07;
+  c.save();c.translate(W/2,H/2);c.scale(z,z);c.translate(-W/2,-H/2);board(c,b+5);draw(c,DR[b],p,'full',{wscale:1.08});c.restore();
+  if(l<.08){c.fillStyle=`rgba(255,255,255,${.7*(1-l/.08)})`;c.fillRect(0,0,W,H);}if(t>13.6){c.fillStyle=`rgba(251,251,248,${seg(t,13.6,14)})`;c.fillRect(0,0,W,H);}marks(c,t);}
+const F_CUTS=[0,3.5,7,10.5];
+/* 4 · erase and zoom-through: an eraser clears the board between drawings; the lamp flame becomes the light of the last drawing */
+function eraser(c,t){ensure();const b=beatOf(t),l=t-BEATS[b];
+  if(b===2&&l>2.9){const k=eio(seg(l,2.9,3.5));const fx=834,fy=318;c.save();c.translate(fx,fy);c.scale(1+k*14,1+k*14);c.translate(-fx,-fy);board(c,7);draw(c,DR[2],1,'accent');c.restore();c.fillStyle=`rgba(255,230,120,${k*.9})`;c.fillRect(0,0,W,H);marks(c,t);return;}
+  board(c,b+3);const p=eio(seg(l,b===3?.0:.1,3));if(b===3&&l<.5){c.fillStyle=`rgba(255,230,120,${.9*(1-l/.5)})`;}
+  draw(c,DR[b],p,'accent');if(b===3&&l<.5)c.fillRect(0,0,W,H);
+  if(b<2&&l>2.85){const k=seg(l,2.85,3.5);const rows=5;c.save();c.fillStyle='#fbfbf8';for(let r=0;r<rows;r++){const y0=r*H/rows,dir=r%2?-1:1;const prog=clamp(k*rows-r);if(prog<=0)continue;const xw=W*prog;c.fillRect(dir>0?0:W-xw,y0-6,xw,H/rows+12);
+      const ex=dir>0?xw:W-xw;if(prog<1){c.fillStyle='#2f2f35';c.fillRect(ex-30,y0+8,60,H/rows-16);c.fillStyle='#d8d2c0';c.fillRect(ex-30,y0+H/rows-24,60,10);c.fillStyle='#fbfbf8';}}
+    c.globalAlpha=.08;c.strokeStyle='#777';c.lineWidth=18;for(let r=0;r<rows;r++){c.beginPath();c.moveTo(0,r*H/rows+H/rows/2);c.lineTo(W*clamp(k*rows-r),r*H/rows+H/rows/2+10);c.stroke();}c.restore();}
+  if(t>13.6){c.fillStyle=`rgba(251,251,248,${seg(t,13.6,14)})`;c.fillRect(0,0,W,H);}marks(c,t);}
+const E_CUTS=[0,2.85,3.5,6.35,7,9.9,10.5];
+
+const REELS=[
+ {id:'classic',name:'Draw-on and slide',pitch:'The marker draws every line as you listen; the board slides on.',fn:classic,cuts:C_CUTS,poster:9.9,
+  notes:[['How it moves','Each beat, a drawing appears line by line in time-lapse: outlines first, then hatching, then a single colour scribbled in, then the hand-lettered words. When the drawing is complete, the whole board slides left to a clean area.'],
+   ['Colour','Black marker throughout, with one accent per drawing: red for the helmet crests and the blood, saffron for the turban and yellow for the flame, gold for the light.'],
+   ['Feel','Calm, legible and patient. The viewer watches the idea being built, which suits long narration. The pace is set by the drawing, not by cuts.'],
+   ['Trade-offs','The closest to the reference and the easiest to keep consistent across 29 films. With one drawing per beat, it needs a strong drawing for every line of the script.']]},
+ {id:'journey',name:'One continuous board',pitch:'Everything lives on one huge whiteboard; the camera travels through it.',fn:journey,cuts:J_CUTS,poster:13.2,
+  notes:[['How it moves','All four drawings sit on one giant board. The camera holds on each while it draws, then glides and dips to the next as a hand-drawn arrow links them. At the end it pulls back to show the whole argument as a map.'],
+   ['Colour','The same restrained accent colour, so the final pull-back reads as one coherent wall of thought.'],
+   ['Feel','Immersive and connective. The arrows make the lecture\'s logic visible, and every chapter could end on its own pull-back.'],
+   ['Trade-offs','The most distinctive option and good for argument-heavy lectures. It needs careful layout per chapter, and the pull-back frames must stay readable on a phone.']]},
+ {id:'fullcolour',name:'Full-colour marker',pitch:'The same lines, with every marker in the box.',fn:fullcolour,cuts:F_CUTS,poster:13.0,
+  notes:[['How it moves','A fast time-lapse draw-on with a slow push-in, then a hard cut with a white flash on each beat.'],
+   ['Colour','Every area gets scribbled colour: bronze shields, a saffron robe, a green India, and a rainbow burst of light at the climax, echoing the reference\'s psychedelic thumbnails.'],
+   ['Feel','Joyful and high-impact. It works best for climaxes, devotion and visions of light.'],
+   ['Trade-offs','Busier, and the colour can compete with the line. It works best as the treatment for big moments within a black-and-white film rather than everywhere.']]},
+ {id:'eraser',name:'Erase and zoom-through',pitch:'The eraser clears the board; the camera dives into the flame.',fn:eraser,cuts:E_CUTS,poster:12.6,
+  notes:[['How it moves','Drawings appear in time-lapse. Between beats, a whiteboard eraser wipes the board clean in passes, leaving a faint ghost. Before the final beat, the camera dives into the lamp\'s flame, and its light becomes the last drawing.'],
+   ['Colour','Accent colour as in the first reel, with a warm flash on the zoom-through.'],
+   ['Feel','Tactile and playful, and the physical eraser keeps it rooted in a real board. The zoom-through gives chapters a satisfying hand-off.'],
+   ['Trade-offs','Erasing every beat gets repetitive, so in a full film it would mark chapter changes, with zoom-throughs where one image naturally leads into the next.']]}];
+
+const host=document.getElementById('reels'),RS=[],reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+REELS.forEach((r,ri)=>{const sec=document.createElement('section');sec.className='reel';sec.id=r.id;
+  sec.innerHTML=`<div class="rhead"><div><div class="eyebrow">Study ${ri+1} of 4</div><h2>${r.name}</h2></div><div class="pitch">${r.pitch}</div></div>
+  <div class="stage"><canvas width="960" height="540" aria-label="${r.name} demo"></canvas></div>
+  <div class="bar"><button type="button" class="pp">Pause</button><button type="button" class="rs">Restart</button><div class="strip" tabindex="0" role="slider" aria-label="Scrub ${r.name}" aria-valuemin="0" aria-valuemax="14"></div><span class="tc">0.0 s</span></div>
+  <div class="cap"></div><div class="notes">${r.notes.map(([h,p])=>`<div><h3>${h}</h3><p>${p}</p></div>`).join('')}</div>`;host.appendChild(sec);
+  const cv=sec.querySelector('canvas'),dpr=Math.min(1.5,window.devicePixelRatio||1);cv.width=W*dpr;cv.height=H*dpr;const c=cv.getContext('2d');c.scale(dpr,dpr);
+  const strip=sec.querySelector('.strip');r.cuts.forEach(ct=>{const i=document.createElement('i');i.style.left=(ct/LOOP*100)+'%';strip.appendChild(i);});BEATS.forEach(bt=>{const i=document.createElement('i');i.className='beat';i.style.left=(bt/LOOP*100)+'%';strip.appendChild(i);});const head=document.createElement('b');strip.appendChild(head);
+  const st={r,c,sec,cv,strip,head,cap:sec.querySelector('.cap'),tc:sec.querySelector('.tc'),pp:sec.querySelector('.pp'),t:reduce?r.poster:0,playing:!reduce,visible:false};RS.push(st);st.pp.textContent=st.playing?'Pause':'Play';
+  const toggle=()=>{st.playing=!st.playing;st.pp.textContent=st.playing?'Pause':'Play';};st.pp.onclick=toggle;cv.onclick=toggle;sec.querySelector('.rs').onclick=()=>{st.t=0;st.playing=true;st.pp.textContent='Pause';};
+  const scrub=e=>{const b=strip.getBoundingClientRect();st.t=clamp((e.clientX-b.left)/b.width)*LOOP*.999;paint(st);};strip.addEventListener('pointerdown',e=>{scrub(e);strip.setPointerCapture(e.pointerId);});strip.addEventListener('pointermove',e=>{if(e.buttons)scrub(e);});
+  strip.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){st.t=(st.t+.5)%LOOP;paint(st);}if(e.key==='ArrowLeft'){st.t=(st.t+LOOP-.5)%LOOP;paint(st);}});});
+function paint(st){st.c.save();try{st.r.fn(st.c,st.t);}catch(e){console.error(st.r.id,e);}st.c.restore();st.head.style.left=(st.t/LOOP*100)+'%';st.tc.textContent=st.t.toFixed(1)+' s';st.cap.textContent='“'+LINES[beatOf(st.t)]+'”';st.strip.setAttribute('aria-valuenow',st.t.toFixed(1));}
+const io=new IntersectionObserver(es=>es.forEach(e=>{const st=RS.find(s=>s.sec===e.target);if(st){st.visible=e.isIntersecting;if(st.visible)paint(st);}}),{rootMargin:'100px'});RS.forEach(s=>io.observe(s.sec));
+let last=performance.now();function loop(now){const dt=Math.min(.1,(now-last)/1000);last=now;RS.forEach(st=>{if(!st.visible)return;if(st.playing){st.t=(st.t+dt)%LOOP;paint(st);}});requestAnimationFrame(loop);}
+const fontsReady=document.fonts?Promise.all(['48px "Permanent Marker"','20px Kalam'].map(f=>document.fonts.load(f).catch(()=>{}))):Promise.resolve();
+Promise.race([fontsReady,new Promise(r=>setTimeout(r,2500))]).then(()=>{RS.forEach(paint);requestAnimationFrame(loop);});
+window.__lab={RS,paint};
+</script>
