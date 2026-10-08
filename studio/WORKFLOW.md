@@ -96,3 +96,8 @@ SC.open=(c,t,B)=>{ paper(c); /* t = seconds since chapter start; B[i] = start of
 - `filmN/scenes.js`: `MURAL.<chapterId>=[pn(lineIndex, S=>{...}), ...]`, then `SC[id]=muralScene(id)`. One hero drawing per panel, satellites around it, one `stack()` of lettering in clear space.
 - Portraits: `python3 studio/trace.py <public-domain photo> <series>/assets/<name>.json [--no-colour] [--height N]`; build.py embeds `assets/*.json` as `ASSETS`; place with `S.A(name,x,y,scale,{mono})`.
 - Check with a completion contact sheet (each panel just before its pan, plus the pull-back), not the beat sheet.
+
+## 11. Watercolour mural and Hindu motifs (Film 1 v4 onward)
+- Paint mode replaces hatching: `MSTYLE='water'` (layered washes on paper texture). Each object sketches its outline, then floods with colour by sweep, bloom or drop. Aim for 20 to 50 narration objects per panel; use the clusters (`skyset`, `harbour`, `village`, `battlefield`, `templeTown`, `crowdRows`, `flowers`).
+- Panels are 960 apart (`PW=960`) so nothing bleeds between them.
+- Where India is the subject, call `IN(S)` first (a temple-border band across the top, which joins up panel to panel like a sari border) and start lettering at y=30. Then draw from the Hindu motif library in common.js: `om`, `kalash`, `toran`, `marigolds`, `rangoli`, `bell`, `samai` (brass lamp), `peacock`, `elephant({umbrella})`, `nandi`, `tulsi`, `chakra`, `sriYantra`, `kamandalu`, `shikhara`, `dhwaja`, `parasol`, `veena`, `havan`, `mala`, `ghat`, `kumbamBand`, plus the older `diya`, `lotus`, `gopuram`, `lingam`, `trident`, `conch`, `palmleaf`, `banyan`. Keep Western and world scenes free of them, so the contrast reads.

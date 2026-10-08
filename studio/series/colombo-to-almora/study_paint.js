@@ -1,5 +1,4 @@
 /* Painted-style study: four dense scenes from the Colombo lecture on one mural. */
-const DEVF='"Tiro Devanagari Sanskrit",serif';
 const STUDY=[
  {cap:'On the afternoon of the fifteenth of January, 1897, Swami Vivekananda lands at Colombo. The Hindus of Colombo give him a right royal reception.',
   draw:S=>{wash(S,780,130,240,'rgba(255,214,120,.9)',.45);sun(S,820,100,40);cloud(S,600,70,200,3);for(let k=0;k<7;k++)bird(S,250+k*48,70+(k%3)*18,1.1);
