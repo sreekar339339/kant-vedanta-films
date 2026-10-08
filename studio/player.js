@@ -9,7 +9,7 @@ function frame(T){const k=chAt(T),n=k+1;drawScene(ctx,k,T);
     if(w<1){ctx.strokeStyle=INK;ctx.lineWidth=9;ctx.lineCap='round';ctx.beginPath();for(let y=-10;y<=H+10;y+=12){const x=W*w+Math.sin(y*.05+T)*10;y<0?ctx.moveTo(x,y):ctx.lineTo(x,y);}ctx.stroke();}}}
   if(T<.5){ctx.fillStyle=`rgba(0,0,0,${1-T/.5})`;ctx.fillRect(0,0,W,H);}
   if(T>DUR-.8){ctx.fillStyle=`rgba(0,0,0,${seg(T,DUR-.8,DUR)})`;ctx.fillRect(0,0,W,H);}}
-const disp=s=>s.replace(/eighteen eighty-one/g,'1881').replace(/\bMaya\b/g,'Māyā').replace(/Muller/g,'Müller');
+const _O={one:1,two:2,three:3,four:4,five:5,six:6,seven:7,eight:8,nine:9},_T={twenty:2,thirty:3,forty:4,fifty:5,sixty:6,seventy:7,eighty:8,ninety:9};const disp=s=>s.replace(/\b(eighteen|nineteen) (twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)(?:-(one|two|three|four|five|six|seven|eight|nine))?\b/gi,(m,c,t,o)=>`${/^e/i.test(c)?18:19}${_T[t.toLowerCase()]}${o?_O[o.toLowerCase()]:0}`).replace(/\b(eighteen|nineteen) oh (one|two|three|four|five|six|seven|eight|nine)\b/gi,(m,c,o)=>`${/^e/i.test(c)?18:19}0${_O[o.toLowerCase()]}`).replace(/\bMaya\b/g,'Māyā').replace(/Muller/g,'Müller');
 const au=document.getElementById('au'),cap=document.getElementById('cap'),tc=document.getElementById('tc'),chn=document.getElementById('chn'),pp=document.getElementById('pp'),big=document.getElementById('big'),ph=document.getElementById('ph'),tl=document.getElementById('tl');
 let playing=false,T=DATA.poster||0,useAudio=true,lastNow=performance.now(),started=false,capsOn=true;
 au.addEventListener('error',()=>{useAudio=false;});
@@ -24,7 +24,7 @@ document.getElementById('cc').onclick=e=>{capsOn=!capsOn;e.target.textContent=ca
 tl.onclick=e=>{const r=tl.getBoundingClientRect();seek((e.clientX-r.left)/r.width*DUR,playing||!started);};
 document.addEventListener('keydown',e=>{if(e.code==='Space'&&e.target===document.body){e.preventDefault();pp.click();}});
 au.addEventListener('ended',()=>{playing=false;pp.textContent='Play';});
-function ui(){let line='';CH.forEach(ch=>ch.lines.forEach(l=>{if(T>=l.start-.15&&T<l.end+.4)line=l.text;}));cap.textContent=started?disp(line):'';
+function ui(){let line='',q=false;CH.forEach(ch=>ch.lines.forEach(l=>{if(T>=l.start-.15&&T<l.end+.4){line=l.text;q=!!l.q;}}));cap.textContent=started&&line?(q?`“${disp(line)}”`:disp(line)):'';cap.classList.toggle('q',started&&q);
   const k=chAt(T);chn.textContent=started?`${k+1}. ${CH[k].title}`:'';CH.forEach((ch,i)=>ch.seg.classList.toggle('on',i===k));
   ph.style.left=(T/DUR*100)+'%';tc.textContent=`${fmt(started?T:0)} / ${fmt(DUR)}`;}
 function loop(now){const dt=Math.min(.1,(now-lastNow)/1000);lastNow=now;

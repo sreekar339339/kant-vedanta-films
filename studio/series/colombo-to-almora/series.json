@@ -1,0 +1,180 @@
+{
+ "title": "From Colombo to Almora",
+ "site_path": "colombo-to-almora",
+ "films": [
+  {
+   "dir": "film1",
+   "title": "The Land of the Light Spiritual",
+   "poster": 20,
+   "desc": "Film 1 of 29: First Public Lecture in the East (Colombo) (Floral Hall, Colombo · 16 Jan 1897), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film2",
+   "title": "Vaidika: The Common Ground",
+   "poster": 20,
+   "desc": "Film 2 of 29: Vedantism (Jaffna, Ceylon), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film3",
+   "title": "Never Passive",
+   "poster": 20,
+   "desc": "Film 3 of 29: Reply to the Address of Welcome at Pamban (Pamban), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film4",
+   "title": "Real Worship",
+   "poster": 20,
+   "desc": "Film 4 of 29: Address at the Rameswaram Temple on Real Worship (Rameswaram Temple), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film5",
+   "title": "The Giant Rising",
+   "poster": 20,
+   "desc": "Film 5 of 29: Reply to the Address of Welcome at Ramnad (Ramnad · 25 Jan 1897), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film6",
+   "title": "Strength Is Goodness",
+   "poster": 20,
+   "desc": "Film 6 of 29: Reply to the Address of Welcome at Paramakudi (Paramakudi), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film7",
+   "title": "Bring It Out",
+   "poster": 20,
+   "desc": "Film 7 of 29: Reply to the Address of Welcome at Shivaganga and Manamadura (Manamadura), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film8",
+   "title": "Essentials and Non-essentials",
+   "poster": 20,
+   "desc": "Film 8 of 29: Reply to the Address of Welcome at Madura (Madura), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film9",
+   "title": "The Mission of the Vedanta",
+   "poster": 20,
+   "desc": "Film 9 of 29: The Mission of the Vedanta (Kumbakonam), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film10",
+   "title": "From the Carriage Box",
+   "poster": 20,
+   "desc": "Film 10 of 29: Reply to the Address of Welcome at Madras (Madras), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film11",
+   "title": "My Plan of Campaign",
+   "poster": 20,
+   "desc": "Film 11 of 29: My Plan of Campaign (Victoria Hall, Madras), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film12",
+   "title": "Strength from Every Page",
+   "poster": 20,
+   "desc": "Film 12 of 29: Vedanta in its Application to Indian Life (Madras), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film13",
+   "title": "The Sages of India",
+   "poster": 20,
+   "desc": "Film 13 of 29: The Sages of India (Madras), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film14",
+   "title": "The Work Before Us",
+   "poster": 20,
+   "desc": "Film 14 of 29: The Work Before Us (Triplicane Literary Society, Madras), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film15",
+   "title": "The Future of India",
+   "poster": 20,
+   "desc": "Film 15 of 29: The Future of India (Madras), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film16",
+   "title": "On Charity",
+   "poster": 20,
+   "desc": "Film 16 of 29: On Charity (Annadana Samajam, Madras), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film17",
+   "title": "I Am Your Brother",
+   "poster": 20,
+   "desc": "Film 17 of 29: Address of Welcome Presented at Calcutta and Reply (Sobha Bazar, Calcutta), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film18",
+   "title": "The Vedanta in All Its Phases",
+   "poster": 20,
+   "desc": "Film 18 of 29: The Vedanta in all its phases (Calcutta), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film19",
+   "title": "Father of Mountains",
+   "poster": 20,
+   "desc": "Film 19 of 29: Address of Welcome at Almora and Reply (Almora), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film20",
+   "title": "Theory and Practice",
+   "poster": 20,
+   "desc": "Film 20 of 29: Vedic Teaching in Theory and Practice (English Club, Almora), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film21",
+   "title": "Bhakti at Sialkot",
+   "poster": 20,
+   "desc": "Film 21 of 29: Bhakti (Sialkot) (Sialkot, Punjab), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film22",
+   "title": "The Common Bases of Hinduism",
+   "poster": 20,
+   "desc": "Film 22 of 29: The Common Bases of Hinduism (Lahore), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film23",
+   "title": "Bhakti at Lahore",
+   "poster": 20,
+   "desc": "Film 23 of 29: Bhakti (Lahore) (Lahore · 9 Nov 1897), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film24",
+   "title": "The Vedanta",
+   "poster": 20,
+   "desc": "Film 24 of 29: The Vedanta (Lahore · 12 Nov 1897), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film25",
+   "title": "Vedantism at Khetri",
+   "poster": 20,
+   "desc": "Film 25 of 29: Vedantism (Khetri) (Khetri · 20 Dec 1897), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film26",
+   "title": "Teachers, Not Beggars",
+   "poster": 20,
+   "desc": "Film 26 of 29: The Influence of Indian Spiritual Thought in England (Star Theatre, Calcutta · 11 Mar 1898), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film27",
+   "title": "The Sannyasin Loves Death",
+   "poster": 20,
+   "desc": "Film 27 of 29: Sannyasa: Its Ideal and Practice (Belur Math · 19 Jun 1899), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film28",
+   "title": "What Have I Learnt?",
+   "poster": 20,
+   "desc": "Film 28 of 29: What have I learnt? (Dacca · 30 Mar 1901), from the Complete Works of Swami Vivekananda, vol. 3."
+  },
+  {
+   "dir": "film29",
+   "title": "The Religion We Are Born In",
+   "poster": 20,
+   "desc": "Film 29 of 29: The Religion we are born in (Dacca · 31 Mar 1901), from the Complete Works of Swami Vivekananda, vol. 3."
+  }
+ ]
+}

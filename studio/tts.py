@@ -1,5 +1,6 @@
 """Render narration for a film script with Kokoro (onnx) + espeak-ng phonemes.
-Usage: python3 studio/tts.py <film>/script.json <film>/out [voice] [speed]   (run studio/setup_tts.sh once first)
+Usage: python3 studio/tts.py <film>/script.json <film>/out [voice] [speed] [quote_voice] [quote_speed]   (run studio/setup_tts.sh once first)
+A line may be a string (narrator) or {"q": "text"}: an exact quotation, spoken by quote_voice and captioned as a quote.
 Writes outdir/narration.wav and outdir/timings.json (start/end of every line)."""
 import json, re, subprocess, sys, wave, os
 import numpy as np, onnxruntime as ort
@@ -16,6 +17,12 @@ IPA = {  # names espeak gets wrong
  'rig':'ɹˈɪɡ','veda':'vˈeɪdə','sicily':'sˈɪsɪli','messina':'məsˈiːnə','etna':'ˈɛtnə','kiel':'kˈiːl','swami':'swˈɑːmi',
  'maya':'mˈɑːjɑː','neti':'nˈeɪti','narendranath':'nəɹˈeɪndɹənɑːt','vivekananda':'vɪvˌeɪkɑːnˈʌndə',
  'shankara':'ʃˈʌŋkəɹə','upanishads':'uːpˈʌnɪʃədz','vedanta':'veɪdˈɑːntə','vedas':'vˈeɪdəz',
+ 'punya':'pˈʊɲjə','bhumi':'bʰˈuːmi','sannyasin':'sənjˈɑːsɪn','sannyasins':'sənjˈɑːsɪnz','rameswaram':'ɹɑːmˈeɪʃwəɹəm',
+ 'madura':'mˈʌdʊɹə','almora':'ʌlmˈoːɹə','manu':'mˈʌnuː','yuga':'jˈʊɡə','yugas':'jˈʊɡəz','rishis':'ɹˈɪʃiz','rishi':'ɹˈɪʃi',
+ 'shrutis':'ʃɹˈʊtiz','shruti':'ʃɹˈʊti','smritis':'smɹˈɪtiz','smriti':'smɹˈɪti','puranas':'pʊɹˈɑːnəz','purana':'pʊɹˈɑːnə',
+ 'merodach':'mˈɛɹədæk','ekam':'ˈeɪkəm','sad':'sˈʌd','vipra':'vˈɪpɹɑː','bahudha':'bˈʌhʊdʰɑː','vadanti':'vˈʌdənti',
+ 'mahimnah':'məhˈɪmnəh','stotra':'stˈoʊtɹə','caaba':'kˈɑːbə','jaffna':'dʒˈɑːfnə','pamban':'pˈɑːmbən',
+ 'karma':'kˈɑːɹmə','shiva':'ʃˈɪvə','vishnu':'vˈɪʃnuː','linga':'lˈɪŋɡə',
  'ramakrishna':'ɹˌɑːməkɹˈɪʃnə','schopenhauer':'ʃˈoʊpənhaʊɚ','kant':'kˈɑːnt','muller':'mˈʊlɚ'}
 PUNCT = set(',.;:!?—')
 
@@ -53,7 +60,10 @@ def main():
     names = [i.name for i in sess.get_inputs()]
     tok_in = 'input_ids' if 'input_ids' in names else 'tokens'
     speed_dt = np.int32 if 'int' in next(i.type for i in sess.get_inputs() if i.name == 'speed') else np.float32
-    vstyle = np.load(f'{TTS}/voices.bin')[voice]
+    qvoice = sys.argv[5] if len(sys.argv) > 5 else 'bm_george'
+    qspeed = float(sys.argv[6]) if len(sys.argv) > 6 else speed * 0.97
+    bank = np.load(f'{TTS}/voices.bin')
+    vstyle, qstyle = bank[voice], bank[qvoice]
     data = json.load(open(script))
     audio, t, timings = [], 0.0, []
     def sil(sec):
@@ -65,18 +75,22 @@ def main():
         ch_start = t
         lines = []
         for li, line in enumerate(ch['lines']):
+            q = isinstance(line, dict)
+            if q: line = line['q']
             ph = phonemize(line)
             toks = [VOCAB[c] for c in ph if c in VOCAB][:510]
+            sty, spd = (qstyle, qspeed) if q else (vstyle, speed)
+            if q and li: sil(0.18)
             out = sess.run(None, {tok_in: np.array([[0, *toks, 0]], np.int64),
-                                  'style': vstyle[len(toks) - 1].reshape(1, -1).astype(np.float32),
-                                  'speed': np.array([speed], speed_dt)})
+                                  'style': sty[len(toks) - 1].reshape(1, -1).astype(np.float32),
+                                  'speed': np.array([spd], speed_dt)})
             a = np.asarray(out[0]).ravel().astype(np.float32)
             # trim near-silent edges
             nz = np.where(np.abs(a) > 0.01)[0]
             if len(nz): a = a[max(0, nz[0] - 1200): nz[-1] + 2400]
             start = t
             audio.append(a); t += len(a) / SR
-            lines.append({'text': line, 'start': round(start, 3), 'end': round(t, 3), 'ph': ph})
+            lines.append({'text': line, 'start': round(start, 3), 'end': round(t, 3), 'ph': ph, **({'q': True} if q else {})})
             sil(0.42 if li < len(ch['lines']) - 1 else 0.7)
             print(f'{ch["id"]}.{li} {t:7.2f}s  {ph[:70]}', flush=True)
         timings.append({'id': ch['id'], 'start': round(ch_start, 3), 'end': round(t, 3), 'lines': lines})
@@ -85,7 +99,7 @@ def main():
     pcm = (pcm / max(1e-6, np.abs(pcm).max()) * 0.92 * 32767).astype(np.int16)
     with wave.open(f'{outdir}/narration.wav', 'wb') as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes(pcm.tobytes())
-    json.dump({'duration': round(t, 3), 'voice': voice, 'speed': speed, 'chapters': timings}, open(f'{outdir}/timings.json', 'w'), ensure_ascii=False, indent=1)
+    json.dump({'duration': round(t, 3), 'voice': voice, 'speed': speed, 'quote_voice': qvoice, 'chapters': timings}, open(f'{outdir}/timings.json', 'w'), ensure_ascii=False, indent=1)
     print('TOTAL', round(t, 2))
 
 if __name__ == '__main__':

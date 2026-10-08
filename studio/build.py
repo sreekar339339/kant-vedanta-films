@@ -7,6 +7,7 @@
   {"title": "...", "site_path": "" (root) or "my-series",
    "films": [{"dir": "film1", "title": "...", "desc": "...", "poster": 19.8, "artifact": "https://claude.ai/artifact/..."}]}
 Each film dir holds script.json, scenes.js and out/ (timings.json + narration.mp3 from tts.py).
+An optional <series_dir>/common.js (helpers shared by a series) is prepended to every film's scenes.js.
 """
 import html, json, os, shutil, sys
 
@@ -26,7 +27,7 @@ def film_html(series_dir, ser, i, standalone):
     f = ser['films'][i]; d = os.path.join(series_dir, f['dir'])
     s = json.load(open(f'{d}/script.json')); t = json.load(open(f'{d}/out/timings.json'))
     chs = [{'id': sc['id'], 'title': sc['title'], 'style': sc['style'], 'src': sc['src'], 'start': tc['start'],
-            'lines': [{'text': l['text'], 'start': l['start'], 'end': l['end']} for l in tc['lines']]}
+            'lines': [{'text': l['text'], 'start': l['start'], 'end': l['end'], **({'q': 1} if l.get('q') else {})} for l in tc['lines']]}
            for sc, tc in zip(s['chapters'], t['chapters'])]
     data = {'duration': t['duration'], 'poster': f.get('poster', 5), 'chapters': chs}
     n = len(ser['films'])
@@ -41,7 +42,7 @@ def film_html(series_dir, ser, i, standalone):
     h = h.replace('{{TITLE}}', s['title']).replace('{{NUM}}', str(i+1)).replace('{{NAV}}', nav)
     h = (h.replace('/*DATA*/null', json.dumps(data, ensure_ascii=False))
           .replace('/*LIB*/', open(f'{STUDIO}/lib.js').read())
-          .replace('/*SCENES*/', open(f'{d}/scenes.js').read())
+          .replace('/*SCENES*/', (open(f'{series_dir}/common.js').read() + '\n' if os.path.exists(f'{series_dir}/common.js') else '') + open(f'{d}/scenes.js').read())
           .replace('/*PLAYER*/', open(f'{STUDIO}/player.js').read()))
     if standalone:
         title_tag = f"<title>{s['title']}</title>\n"
