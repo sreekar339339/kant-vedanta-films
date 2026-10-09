@@ -28,6 +28,8 @@ IPA = {  # names espeak gets wrong
  'satya':'sˈʌtjə','treta':'tɹˈeɪtɑː','dwapara':'dwˈɑːpəɹə','kali':'kˈʌli','prakriti':'pɹˈʌkɹɪti','pralaya':'pɹˈʌləjə','brahman':'bɹˈʌhmən','sukshma':'sˈʊkʃmə','sharira':'ʃəɹˈiːɹə',
  'manas':'mˈʌnəs','atman':'ˈɑːtmən','indra':'ˈɪndɹə','indras':'ˈɪndɹəz','nahusha':'nəhˈuːʃə','mukti':'mˈʊkti','advaita':'ədvˈaɪtə','ishta':'ˈɪʃtə','dana':'dˈɑːnə',
  'vyasa':'vjˈɑːsə','sindhu':'sˈɪndʰuː','tantras':'tˈʌntɹəz','lavoisier':'ləvwˈɑːzieɪ','antoine':'ɑːntwˈɑːn','vid':'vˈɪd','jains':'dʒˈeɪnz',
+ 'annisquam':'ˈænɪskwɑːm','manmatha':'mˈʌnməθə','nath':'nˈɑːt','bhattacharya':'bˌʌtʃɑːtʃˈɑːɹjə','rajput':'ɹˈɑːdʒpʊt','mazoomdar':'məzˈuːmdɑːɹ','greenacre':'ɡɹˈiːneɪkɚ',
+ 'lakshmi':'lˈʌkʃmi','saraswati':'sˈʌɹəsvəti','khetri':'kˈeɪtɹi','maharaja':'mˌɑːhəɹˈɑːdʒə','babu':'bˈɑːbuː','bengali':'bɛŋɡˈɔːli',
  'ramakrishna':'ɹˌɑːməkɹˈɪʃnə','schopenhauer':'ʃˈoʊpənhaʊɚ','kant':'kˈɑːnt','muller':'mˈʊlɚ'}
 PUNCT = set(',.;:!?—')
 

@@ -1,0 +1,14 @@
+{
+ "title": "Letters of Swami Vivekananda",
+ "site_path": "letters",
+ "films": [
+  {
+   "dir": "bhattacharya",
+   "title": "Expansion Is Life",
+   "poster": 20,
+   "desc": "A letter from America to Manmatha Nath Bhattacharya, 5 September 1894 (translated from Bengali), from the Complete Works of Swami Vivekananda, vol. 7, Epistles, third series, XXIII.",
+   "artifact": "https://claude.ai/artifact/8ZLCPgBJKeznYp19H8vrpZ",
+   "source": "https://www.ramakrishnavivekananda.info/vivekananda/volume_7/epistles_third_series/23_mr_bhattacharya.htm"
+  }
+ ]
+}
