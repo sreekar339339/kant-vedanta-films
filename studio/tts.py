@@ -23,6 +23,11 @@ IPA = {  # names espeak gets wrong
  'merodach':'mˈɛɹədæk','ekam':'ˈeɪkəm','sad':'sˈʌd','vipra':'vˈɪpɹɑː','bahudha':'bˈʌhʊdʰɑː','vadanti':'vˈʌdənti',
  'mahimnah':'məhˈɪmnəh','stotra':'stˈoʊtɹə','caaba':'kˈɑːbə','jaffna':'dʒˈɑːfnə','pamban':'pˈɑːmbən',
  'karma':'kˈɑːɹmə','shiva':'ʃˈɪvə','vishnu':'vˈɪʃnuː','linga':'lˈɪŋɡə',
+ 'vaidikas':'vˈaɪdɪkəz','vedantists':'veɪdˈɑːntɪsts','vedantism':'veɪdˈɑːntɪzəm','mantra':'mˈʌntɹə','drashta':'dɹˈɑːʃtɑː','kanda':'kˈɑːndə','jnana':'ɡjˈɑːnə',
+ 'shaivites':'ʃˈaɪvaɪts','shaivite':'ʃˈaɪvaɪt','vaishnavites':'vˈaɪʃnəvaɪts','vaishnavite':'vˈaɪʃnəvaɪt','shaktas':'ʃˈɑːktəz','sauras':'sˈaʊɹəz','ganapatyas':'ɡˌʌnəpˈɑːtjəz',
+ 'satya':'sˈʌtjə','treta':'tɹˈeɪtɑː','dwapara':'dwˈɑːpəɹə','kali':'kˈʌli','prakriti':'pɹˈʌkɹɪti','pralaya':'pɹˈʌləjə','brahman':'bɹˈʌhmən','sukshma':'sˈʊkʃmə','sharira':'ʃəɹˈiːɹə',
+ 'manas':'mˈʌnəs','atman':'ˈɑːtmən','indra':'ˈɪndɹə','indras':'ˈɪndɹəz','nahusha':'nəhˈuːʃə','mukti':'mˈʊkti','advaita':'ədvˈaɪtə','ishta':'ˈɪʃtə','dana':'dˈɑːnə',
+ 'vyasa':'vjˈɑːsə','sindhu':'sˈɪndʰuː','tantras':'tˈʌntɹəz','lavoisier':'ləvwˈɑːzieɪ','antoine':'ɑːntwˈɑːn','vid':'vˈɪd','jains':'dʒˈeɪnz',
  'ramakrishna':'ɹˌɑːməkɹˈɪʃnə','schopenhauer':'ʃˈoʊpənhaʊɚ','kant':'kˈɑːnt','muller':'mˈʊlɚ'}
 PUNCT = set(',.;:!?—')
 
