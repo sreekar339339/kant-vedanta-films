@@ -1,106 +1,242 @@
 {
  "title": "Expansion Is Life",
  "chapters": [
-  {"id": "annisquam", "title": "A letter from the seaside", "style": "sea", "src": "Letter to Manmatha Nath Bhattacharya, U.S.A., 5 September 1894 (translated from Bengali)", "lines": [
-   "September eighteen ninety-four. Swami Vivekananda has been in America for just over a year.",
-   "He writes in Bengali to a friend in Madras, Manmatha Nath Bhattacharya.",
-   "His friend has asked about a weaving machine, and the Swami promises to make inquiries and let him know.",
-   "For now he is resting at Annisquam, a village on the seacoast of Massachusetts.",
-   {"q": "Some come to bathe in the sea, some to take rest, and some to catch husbands."},
-   "What follows is one of his most candid letters: America and India, seen side by side."
-  ]},
-  {"id": "decorum", "title": "A strong sense of decorum", "style": "ink", "src": "Letter, paragraphs 2–3", "lines": [
-   "There is a strong sense of decorum in this country, he writes.",
-   "In the presence of women you must always be covered from neck to foot, and the body's normal functions are never mentioned.",
-   "You may blow your nose a thousand times into a handkerchief, but to belch is highly uncivilised.",
-   "A low-cut evening gown is acceptable, yet to go barefoot is as bad as being naked.",
-   {"q": "Just as we always dwell on the soul, so they take care of the body."},
-   "There is no end to the cleaning and embellishing of it, and one who fails to do this has no place in society."
-  ]},
-  {"id": "plates", "title": "Cow-dung and spotless plates", "style": "earth", "src": "Letter, paragraph 4", "lines": [
-   "To Americans, cooking over cow-dung fuel and eating on the floor is eating like pigs. The very word is taboo in English.",
-   "Yet many will drink from the same glass without washing it, and rarely wash things before cooking.",
-   "But if the cook's clothes are a little soiled, she is thrown out.",
-   "The table-ware is all spick and span.",
-   {"q": "They are the richest people on earth; their enjoyments and luxuries beggar description."}
-  ]},
-  {"id": "village", "title": "Visit the next village", "style": "marker", "src": "Letter, paragraphs 5–6", "lines": [
-   "In Rajputana, he notes, people dine on a low seat with the plate on a low table, far better than a banana leaf on an earthen floor.",
-   "Bengali women lose caste if they wear shoes; Rajput women lose caste if they do not. And Manu says, one shall always wear shoes.",
-   "People should have a decent standard of living: neat and clean, even if not luxurious.",
-   {"q": "Why do we have to be Englishmen? It is enough for the present if we imitate our brothers of the western provinces."},
-   "If group after group of Indians travel the world and come back, the face of India will change within twenty years.",
-   "But how will anything happen if the people of one village do not visit the next? By and by, he writes, the stubborn Bengali boys will awaken the country."
-  ]},
-  {"id": "marriage", "title": "The root of all sins", "style": "blood", "src": "Letter, paragraph 6", "lines": [
-   "Then he turns, sharply, to child marriage.",
-   {"q": "Manmatha Babu, you will have to stop this shameful business of marrying off nine-year-old girls. That is the root of all sins."},
-   "When the government tried to pass a law against early marriage, our people raised a tremendous howl.",
-   "If we do not stop it ourselves, he warns, the government will naturally intervene.",
-   "Parents give a ten-year-old daughter in marriage to a full-grown man. All the world cries fie upon us.",
-   "Is there any punishment without a sin? It is all the fruit of Karma, he says."
-  ]},
-  {"id": "capture", "title": "The courtship game", "style": "ink", "src": "Letter, paragraph 7", "lines": [
-   "In America, the struggle over marriage falls on the girls, not the parents. It is the girls' job to capture husbands.",
-   "He watches it all closely: I am, as it were, a woman amongst women.",
-   "Dinners, dances, musical parties, the watering places; and all the while the young women scheme how to capture husbands.",
-   "The boys flirt and slave for them, but the moment the girls reach out to catch them, they run away.",
-   "Money decides most matches, here as at home. One marriage in a thousand comes from love; then a quarrel, and divorce.",
-   {"q": "It is the same in all countries. The result is the same in either case."}
-  ]},
-  {"id": "civilwar", "title": "Since the Civil War", "style": "portrait", "src": "Letter, paragraph 8–9", "lines": [
-   "Nowadays, he writes, American girls do not want to marry.",
-   "During the Civil War so many men were killed that women began to do all kinds of work, and they have kept the rights they won.",
-   {"q": "If we truly fall in love, then we shall marry; otherwise, we shall earn and meet our own expenses."},
-   "Even a millionaire's son must earn enough before he marries.",
-   "When a girl marries, she brings her husband into her parents' home.",
-   "And in everything the husband here must say, Yes dear."
-  ]},
-  {"id": "father", "title": "Father or brother", "style": "light", "src": "Letter, paragraphs 10–11", "lines": [
-   "There are rivers of wealth here, he writes, waves of beauty, and an abundance of knowledge everywhere.",
-   "The women are sentimental, with a mania for romance.",
-   {"q": "I am, however, a strange sort of animal who hasn't any romantic feeling."},
-   "So they show him great respect. He makes them all call him father, or brother.",
-   "Of the unmarried girls, he says, they are exceedingly good, because their future is bright."
-  ]},
-  {"id": "lakshmi", "title": "Lakshmi and Saraswati", "style": "light", "src": "Letter, paragraph 12", "lines": [
-   "Many American women are very well educated, and put many a learned professor to shame.",
-   "And what kindness, what noble thought and action! In the best houses he is treated like their own son.",
-   "A young woman is gathering information about the weaving machine for him; the girls arranged a phonograph for the Maharaja of Khetri.",
-   {"q": "They are the goddess Lakshmi in beauty and the goddess Saraswati in talents and accomplishments."},
-   "This cannot be achieved through books, he says. Can you send out men and women to see the world?",
-   "The men here are clever at earning wealth. Where others do not see even dust, there they see gold."
-  ]},
-  {"id": "expand", "title": "Expansion is life", "style": "marker", "src": "Letter, paragraph 13 (written in English)", "lines": [
-   "Then he breaks into English.",
-   {"q": "Keeping aloof from the community of nations is the only cause for the downfall of India."},
-   "Since the English came, India has been forced back into the company of nations, and is visibly rising again.",
-   "Everyone who goes out of the country benefits the whole nation, for that is how its horizon expands. And because women cannot go, they have made almost no progress.",
-   {"q": "There is no station of rest; either you progress upwards or you go back and die out."},
-   {"q": "The only sign of life is going outward and forward and expansion. Contraction is death."},
-   "Why do good to others? Because it is the only condition of life: you expand beyond your little self, and live and grow.",
-   {"q": "All narrowness, all contraction, all selfishness is simply slow suicide."},
-   "Women too must go forward. Who would break this horrible crystallisation of death? Lord help us!"
-  ]},
-  {"id": "slowly", "title": "Patch the quilt slowly", "style": "earth", "src": "Letter, paragraphs 14–15", "lines": [
-   "Yet change will come gradually, and he quotes a Bengali saying.",
-   {"q": "One should cross a road slowly and cautiously; one should patch a quilt carefully and cautiously; so should one be slow and cautious in crossing a mountain."},
-   "The papers from India have arrived, he reports, and the enemy has been silenced.",
-   "A fellow countryman, Mazoomdar, has been calling him a rogue, but no one pays attention.",
-   "These people let an unknown young man live among their families. I am like a foster son to the American women; they are really my mother."
-  ]},
-  {"id": "greenacre", "title": "Under a tree at Greenacre", "style": "light", "src": "Letter, paragraphs 16–17", "lines": [
-   "A while back, several hundred intellectual men and women gathered at a place called Greenacre, in Maine, and he stayed nearly two months.",
-   "Every day he sat in the Hindu fashion under a tree, and his followers sat on the grass all around him.",
-   "Every morning he taught them. How earnest they were!",
-   "The whole country now knows him. Some ministers are angry, though many learned ministers follow him.",
-   "I have been adopted by them, he writes."
-  ]},
-  {"id": "public", "title": "A public man", "style": "portrait", "src": "Letter, closing", "lines": [
-   "When will he return to India? Possibly next winter. There I shall have to wander, and here also I do the same.",
-   "Then a last request: please don't make this letter public.",
-   {"q": "I have to be careful about every word I say. I am now a public man. Everybody is watching."},
-   "Yours faithfully, Vivekananda."
-  ]}
+  {
+   "id": "annisquam",
+   "title": "A letter from the seaside",
+   "style": "sea",
+   "src": "Letter to Manmatha Nath Bhattacharya, U.S.A., 5 September 1894 (translated from Bengali)",
+   "lines": [
+    "September eighteen ninety-four. Swami Vivekananda has been in America for just over a year.",
+    "He writes in Bengali to a friend in Madras, Manmatha Nath Bhattacharya.",
+    "His friend has asked about a weaving machine, and the Swami promises to make inquiries and let him know.",
+    "For now he is resting at Annisquam, a village on the seacoast of Massachusetts.",
+    {
+     "q": "Some come to bathe in the sea, some to take rest, and some to catch husbands."
+    },
+    "What follows is one of his most candid letters: America and India, seen side by side."
+   ]
+  },
+  {
+   "id": "decorum",
+   "title": "A strong sense of decorum",
+   "style": "ink",
+   "src": "Letter, paragraphs 2–3",
+   "lines": [
+    "There is a strong sense of decorum in this country, he writes.",
+    "In the presence of women you must always be covered from neck to foot, and the body's normal functions are never mentioned.",
+    "You may blow your nose a thousand times into a handkerchief, but to belch is highly uncivilised.",
+    "A low-cut evening gown is acceptable, yet to go barefoot is as bad as being naked.",
+    {
+     "q": "Just as we always dwell on the soul, so they take care of the body."
+    },
+    "There is no end to the cleaning and embellishing of it, and one who fails to do this has no place in society."
+   ]
+  },
+  {
+   "id": "plates",
+   "title": "Cow-dung and spotless plates",
+   "style": "earth",
+   "src": "Letter, paragraph 4",
+   "lines": [
+    "To Americans, cooking over cow-dung fuel and eating on the floor is eating like pigs. The very word is taboo in English.",
+    "Yet many will drink from the same glass without washing it, and rarely wash things before cooking.",
+    "But if the cook's clothes are a little soiled, she is thrown out.",
+    "The table-ware is all spick and span.",
+    {
+     "q": "They are the richest people on earth; their enjoyments and luxuries beggar description."
+    }
+   ]
+  },
+  {
+   "id": "village",
+   "title": "Visit the next village",
+   "style": "marker",
+   "src": "Letter, paragraphs 5–6",
+   "lines": [
+    "In Rajputana, he notes, people dine on a low seat with the plate on a low table, far better than a banana leaf on an earthen floor.",
+    "Bengali women lose caste if they wear shoes; Rajput women lose caste if they do not. And Manu says, one shall always wear shoes.",
+    "People should have a decent standard of living: neat and clean, even if not luxurious.",
+    {
+     "q": "Why do we have to be Englishmen? It is enough for the present if we imitate our brothers of the western provinces."
+    },
+    "If group after group of Indians travel the world and come back, the face of India will change within twenty years.",
+    "But how will anything happen if the people of one village do not visit the next? By and by, he writes, the stubborn Bengali boys will awaken the country."
+   ]
+  },
+  {
+   "id": "marriage",
+   "title": "The root of all sins",
+   "style": "blood",
+   "src": "Letter, paragraph 6",
+   "lines": [
+    "Then he turns, sharply, to child marriage.",
+    {
+     "q": "Manmatha Babu, you will have to stop this shameful business of marrying off nine-year-old girls. That is the root of all sins."
+    },
+    "When the government tried to pass a law against early marriage, our people raised a tremendous howl.",
+    "If we do not stop it ourselves, he warns, the government will naturally intervene.",
+    {
+     "q": "What a horror! Even a father and mother allow their ten-year-old daughter to be given in marriage to a full-grown fat husband!"
+    },
+    "All the world cries fie upon us. You remain shut up in your homes, but the people outside spit upon you.",
+    "Is there any punishment unless there has been a sin? It is all the fruit of Karma, he says.",
+    {
+     "q": "If ours were not a terribly sinful nation, then why should it have been booted and beaten for seven hundred years?"
+    }
+   ]
+  },
+  {
+   "id": "capture",
+   "title": "The courtship game",
+   "style": "ink",
+   "src": "Letter, paragraph 7",
+   "lines": [
+    "In America, the struggle over marriage falls on the girls, not the parents. It is the girls' job to capture husbands.",
+    "He watches it all closely: I am, as it were, a woman amongst women.",
+    "Dinners, dances, musical parties, the watering places; and all the while the young women scheme how to capture husbands.",
+    "The boys flirt and slave for them, but the moment the girls reach out to catch them, they run away.",
+    "Money decides most matches, here as at home. One marriage in a thousand comes from love; then a quarrel, and divorce.",
+    {
+     "q": "It is the same in all countries. The result is the same in either case."
+    }
+   ]
+  },
+  {
+   "id": "civilwar",
+   "title": "Since the Civil War",
+   "style": "portrait",
+   "src": "Letter, paragraph 8–9",
+   "lines": [
+    "Nowadays, he writes, American girls do not want to marry.",
+    "During the Civil War so many men were killed that women began to do all kinds of work, and they have kept the rights they won.",
+    {
+     "q": "If we truly fall in love, then we shall marry; otherwise, we shall earn and meet our own expenses."
+    },
+    "Even a millionaire's son must earn enough before he marries.",
+    "When a girl marries, she brings her husband into her parents' home.",
+    "And in everything the husband here must say, Yes dear."
+   ]
+  },
+  {
+   "id": "father",
+   "title": "Father or brother",
+   "style": "light",
+   "src": "Letter, paragraphs 10–11",
+   "lines": [
+    "There are rivers of wealth here, he writes, waves of beauty, and an abundance of knowledge everywhere.",
+    "The women are sentimental, with a mania for romance.",
+    {
+     "q": "I am, however, a strange sort of animal who hasn't any romantic feeling."
+    },
+    "So they show him great respect. He makes them all call him father, or brother.",
+    "Of the unmarried girls, he says, they are exceedingly good, because their future is bright."
+   ]
+  },
+  {
+   "id": "beauty",
+   "title": "The best blood strains",
+   "style": "portrait",
+   "src": "Letter, paragraph 11",
+   "lines": [
+    "He goes on to compare the women he has seen, in his own blunt words.",
+    {
+     "q": "Those emaciated Western women, looking like old dried-up fruit, whom you see in India, are English, and the English are an ugly race amongst the Europeans."
+    },
+    {
+     "q": "In America, the best blood strains of Europe have been blended, and therefore, the American women are very beautiful."
+    },
+    {
+     "q": "And how they take care of their beauty! Can a woman retain her beauty if she gives birth to children every hour from her tenth year on? Damn nonsense! What a terrible sin!"
+    },
+    {
+     "q": "Even the most beautiful woman of our country will look like a black owl here."
+    },
+    "Yet it must be admitted, he adds, that the women of the Punjab have very well-drawn features."
+   ]
+  },
+  {
+   "id": "lakshmi",
+   "title": "Lakshmi and Saraswati",
+   "style": "light",
+   "src": "Letter, paragraph 12",
+   "lines": [
+    "Many American women are very well educated, and put many a learned professor to shame.",
+    "And what kindness, what noble thought and action! In the best houses he is treated like their own son.",
+    "A young woman is gathering information about the weaving machine for him; the girls arranged a phonograph for the Maharaja of Khetri.",
+    {
+     "q": "They are the goddess Lakshmi in beauty and the goddess Saraswati in talents and accomplishments."
+    },
+    "This cannot be achieved through books, he says. Can you send out men and women to see the world?",
+    "The men here are clever at earning wealth. Where others do not see even dust, there they see gold."
+   ]
+  },
+  {
+   "id": "expand",
+   "title": "Expansion is life",
+   "style": "marker",
+   "src": "Letter, paragraph 13 (written in English)",
+   "lines": [
+    "Then he breaks into English.",
+    {
+     "q": "Keeping aloof from the community of nations is the only cause for the downfall of India."
+    },
+    "Since the English came, India has been forced back into the company of nations, and is visibly rising again.",
+    "Everyone who goes out of the country benefits the whole nation, for that is how its horizon expands. And because women cannot go, they have made almost no progress.",
+    {
+     "q": "There is no station of rest; either you progress upwards or you go back and die out."
+    },
+    {
+     "q": "The only sign of life is going outward and forward and expansion. Contraction is death."
+    },
+    "Why do good to others? Because it is the only condition of life: you expand beyond your little self, and live and grow.",
+    {
+     "q": "All narrowness, all contraction, all selfishness is simply slow suicide."
+    },
+    "Women too must go forward. Who would break this horrible crystallisation of death? Lord help us!"
+   ]
+  },
+  {
+   "id": "slowly",
+   "title": "Patch the quilt slowly",
+   "style": "earth",
+   "src": "Letter, paragraphs 14–15",
+   "lines": [
+    "Yet change will come gradually, and he quotes a Bengali saying.",
+    {
+     "q": "One should cross a road slowly and cautiously; one should patch a quilt carefully and cautiously; so should one be slow and cautious in crossing a mountain."
+    },
+    "The papers from India have arrived, he reports, and the enemy has been silenced.",
+    "A fellow countryman, Mazoomdar, has been calling him a rogue, but no one pays attention.",
+    "These people let an unknown young man live among their families. I am like a foster son to the American women; they are really my mother."
+   ]
+  },
+  {
+   "id": "greenacre",
+   "title": "Under a tree at Greenacre",
+   "style": "light",
+   "src": "Letter, paragraphs 16–17",
+   "lines": [
+    "A while back, several hundred intellectual men and women gathered at a place called Greenacre, in Maine, and he stayed nearly two months.",
+    "Every day he sat in the Hindu fashion under a tree, and his followers sat on the grass all around him.",
+    "Every morning he taught them. How earnest they were!",
+    "The whole country now knows him. Some ministers are angry, though many learned ministers follow him.",
+    "I have been adopted by them, he writes."
+   ]
+  },
+  {
+   "id": "public",
+   "title": "A public man",
+   "style": "portrait",
+   "src": "Letter, closing",
+   "lines": [
+    "When will he return to India? Possibly next winter. There I shall have to wander, and here also I do the same.",
+    "Then a last request: please don't make this letter public.",
+    {
+     "q": "I have to be careful about every word I say. I am now a public man. Everybody is watching."
+    },
+    "Yours faithfully, Vivekananda."
+   ]
+  }
  ]
 }

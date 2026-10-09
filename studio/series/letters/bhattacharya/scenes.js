@@ -99,11 +99,13 @@ MURAL.marriage=[
    crowd(S,440,940,540,.8,11,{n:9,arms:'up'});S.g();for(let k=0;k<5;k++){const x=520+k*90;S.L([[x,220],[x-10,170]],{lw:2,col:MRED,any:1});S.L([[x+12,226],[x+20,176]],{lw:2,col:MRED,any:1});}LBL(S,'A TREMENDOUS HOWL',690,140,28,MRED);}),
  pn(3,S=>{IN(S);wash(S,480,300,380,'rgba(200,200,220,.9)',.3);colonial(S,600,470,280,220,'#e8dcc8');flag(S,860,250,.8,MBLU);S.g();for(let k=0;k<3;k++)gent(S,640+k*80,540,.6,'#2a2a3a');
    hut(S,200,470,1);S.g();arrowL(S,[600,380],[340,380],{lift:20,lw:4,col:MINK});TXT(S,[['stop it ourselves',30,{OURSELVES:MGRN}],['or the government will intervene',24]]);}),
- pn(4,S=>{wash(S,480,300,420,'rgba(212,35,38,.9)',.2);const o=globe(S,480,300,150);S.g();for(let k=0;k<8;k++){const a=k/8*Math.PI*2;const x=480+Math.cos(a)*300,y=300+Math.sin(a)*180;person(S,x,y+60,.5,{head:k%2?'hat':'hair',col:LADY[k%7],arms:'out'});arrowL(S,[x+(480-x)*.2,y+(300-y)*.2],[x+(480-x)*.55,y+(300-y)*.55],{lift:4,lw:2.4,col:MRED});}
+ pn(4,S=>{IN(S);wash(S,480,320,380,'rgba(212,35,38,.9)',.25);toran(S,120,840,40,{sag:10});person(S,200,520,1.1,{head:'turban',col:'#f4efe4',arms:'out'});person(S,300,520,1,{head:'veil',col:MRED,arms:'out'});doll(S,480,520,1.1);garland(S,480,380,120,MSAF);gent(S,700,540,1.6,'#5a4a3a',{hat:false});S.g();S.L(ell(580,400,250,170,40),{closed:1,lw:7,col:MRED,any:1});S.L([[400,540],[760,260]],{lw:7,col:MRED,any:1});LBL(S,'TEN YEARS OLD',480,300,20,MRED);TXT(S,[['“What a horror!”',36,{HORROR:MRED}]],30,100,400);}),
+ pn(5,S=>{wash(S,480,300,420,'rgba(212,35,38,.9)',.2);const o=globe(S,480,300,150);S.g();for(let k=0;k<8;k++){const a=k/8*Math.PI*2;const x=480+Math.cos(a)*300,y=300+Math.sin(a)*180;person(S,x,y+60,.5,{head:k%2?'hat':'hair',col:LADY[k%7],arms:'out'});arrowL(S,[x+(480-x)*.2,y+(300-y)*.2],[x+(480-x)*.55,y+(300-y)*.55],{lift:4,lw:2.4,col:MRED});}
    TXT(S,[['all the world cries fie upon us',30,{FIE:MRED}]],30,30,420);}),
- pn(5,S=>{IN(S);wash(S,480,300,380,'rgba(150,140,200,.9)',.3);S.g();S.L([[480,140],[480,440]],{lw:4,col:BRASS,any:1});S.L([[300,200],[660,200]],{lw:4,col:BRASS,any:1});S.S(ell(300,280,90,16,18),{tone:[1,.5],col:BRASS,lw:1.6});S.S(ell(660,240,90,16,18),{tone:[1,.5],col:BRASS,lw:1.6});
+ pn(6,S=>{IN(S);wash(S,480,300,380,'rgba(150,140,200,.9)',.3);S.g();S.L([[480,140],[480,440]],{lw:4,col:BRASS,any:1});S.L([[300,200],[660,200]],{lw:4,col:BRASS,any:1});S.S(ell(300,280,90,16,18),{tone:[1,.5],col:BRASS,lw:1.6});S.S(ell(660,240,90,16,18),{tone:[1,.5],col:BRASS,lw:1.6});
    S.L([[300,200],[230,280]],{lw:1.4}).L([[300,200],[370,280]],{lw:1.4}).L([[660,200],[590,240]],{lw:1.4}).L([[660,200],[730,240]],{lw:1.4});knot(S,300,250,24,MRED);fearShadow(S,660,236,.18);S.S(rect(420,440,120,20),{tone:[1,.5],col:BRASS,lw:1.4});
    LBL(S,'SIN',300,330,24,MRED);LBL(S,'SUFFERING',660,300,24,MPUR);TXT(S,[['the fruit of Karma',32,{KARMA:MSAF}]],30,30,400);}),
+ pn(7,S=>{IN(S);wash(S,480,300,420,'rgba(150,140,170,.9)',.3);const pj=indiaMap(S,330,60,300,{hills:false});S.g();for(let k=0;k<14;k++){const a=k/14*Math.PI*2;S.L(ell(480+Math.cos(a)*190,270+Math.sin(a)*190,16,9,12),{closed:1,lw:3,col:'#7a7a82',any:1});}S.g();S.L([[60,470],[900,470]],{lw:3,col:MINK,any:1});[[80,'1194'],[880,'1894']].forEach(([x,t])=>{S.L([[x,455],[x,485]],{lw:3,col:MINK,any:1});LBL(S,t,x,510,20);});for(let k=0;k<6;k++)sword(S,160+k*120,470,60,-.8+k*.3,.5);LBL(S,'SEVEN HUNDRED YEARS',480,440,26,MRED);TXT(S,[['“booted and beaten for seven hundred years”',26,{BEATEN:MRED}]],30,30,400);})
 ];
 
 MURAL.capture=[
@@ -153,6 +155,23 @@ MURAL.father=[
    S.S([[630,150],[860,150],[860,220],[820,220],[830,250],[800,220],[630,220]],{tone:[1,.9],col:'#fffbe8',lw:2});S.T([['BROTHER',MSAF]],745,198,28,{al:'center'});TXT(S,[['great respect',28]],380,40,300);}),
  pn(4,S=>{wash(S,480,300,420,'rgba(255,240,200,.9)',.4);for(let k=0;k<5;k++)lady(S,140+k*170,520,.9,LADY[k+1],{hat:k%2?MPUR:null});sun(S,820,100,50);rays(S,820,100,60,140,16,{lw:1.4});
    TXT(S,[['the unmarried girls: exceedingly good',28,{GOOD:MGRN}],['because their future is bright',24,{BRIGHT:MSAF}]]);}),
+];
+
+MURAL.beauty=[
+ pn(0,S=>{wash(S,480,300,420,'rgba(220,200,230,.9)',.3);S.A('sv1893_bust',40,60,.6,{mono:1});envelope(S,700,420,1);S.g();S.L(bz([560,300],[620,240],[680,260],[740,220],10),{lw:3,col:MINK,any:1});
+   TXT(S,[['in his own blunt words',32,{BLUNT:MRED}]],440,40,480);}),
+ pn(1,S=>{wash(S,300,320,260,'rgba(200,170,140,.9)',.3);for(let k=0;k<3;k++)driedFruit(S,180+k*110,470,1.1-k*.15);S.g();S.S(rect(560,280,300,200),{tone:[1,.6],col:'#e8e0d0',lw:1.8});
+   const ux=710,uy=380;S.L([[560,280],[860,480]],{lw:10,col:MRED,any:1});S.L([[860,280],[560,480]],{lw:10,col:MRED,any:1});S.L([[710,280],[710,480]],{lw:16,col:MRED,any:1});S.L([[560,380],[860,380]],{lw:16,col:MRED,any:1});LBL(S,'ENGLAND',710,520,20);
+   TXT(S,[['“Those emaciated Western women, looking like old dried-up fruit, whom you see in India, are English, and the English are an ugly race amongst the Europeans.”',24]],30,30,900);}),
+ pn(2,S=>{wash(S,480,300,420,'rgba(150,200,255,.9)',.3);S.g();const eu=[[110,140],[300,110],[400,160],[360,260],[220,280],[120,220]];S.S(eu,{tone:[1,.6],col:'#cfe3c0',lw:1.8});LBL(S,'EUROPE',250,200,22);
+   [[150,170],[230,140],[330,150],[280,240],[170,240]].forEach(([x,y],k)=>arrowL(S,[x,y],[640,240],{lift:30+k*10,lw:2,col:LADY[k]}));S.S([[560,180],[880,170],[900,300],[560,320]],{tone:[1,.6],col:'#d8e8c8',lw:1.8});LBL(S,'AMERICA',730,210,24,MBLU);
+   for(let k=0;k<4;k++)lady(S,600+k*90,540,.75,LADY[k],{hat:k%2?MSAF:null});TXT(S,[['“the best blood strains of Europe have been blended”',26]],30,440,500);}),
+ pn(3,S=>{IN(S);wash(S,480,300,420,'rgba(212,35,38,.9)',.2);clock(S,160,200,70);S.g();for(let k=0;k<6;k++)cradle(S,300+k*100,470-(k%2)*20,.7);lady(S,860,520,.9,'#7a7a82',{hair:'#3a2a1a'});
+   LBL(S,'FROM HER TENTH YEAR',160,310,18,MRED);TXT(S,[['“Damn nonsense! What a terrible sin!”',32,{SIN:MRED}]],300,40,620);}),
+ pn(4,S=>{wash(S,480,300,420,'rgba(200,200,220,.9)',.3);lady(S,300,520,1.3,MPNK,{hat:MPUR});owl(S,680,440,1.6);
+   TXT(S,[['“Even the most beautiful woman of our country will look like a black owl here.”',26]],30,30,900);}),
+ pn(5,S=>{IN(S);wash(S,480,300,420,'rgba(255,214,120,.9)',.35);const pj=indiaMap(S,560,60,300,{hills:false});S.g();[[72.5,31.5],[73.5,31],[74.3,31.6],[75.2,31.3],[76,30.8]].forEach(([lo,la],k)=>{const p=pj(lo,la);S.L([[p[0],p[1]-50],[p[0]-8,p[1]+30]],{lw:3,col:'#5fb4e8',any:1});});
+   person(S,280,520,1.4,{head:'veil',col:MRED,arms:'hold'});LBL(S,'PUNJAB',740,100,24,MSAF);TXT(S,[['the women of the Punjab: very well-drawn features',26,{PUNJAB:MSAF}]],30,30,460);}),
 ];
 
 MURAL.lakshmi=[

@@ -1,5 +1,5 @@
 {
- "duration": 471.943,
+ "duration": 533.932,
  "voice": "af_heart",
  "speed": 0.92,
  "quote_voice": "af_heart",
@@ -177,7 +177,7 @@
   {
    "id": "marriage",
    "start": 151.349,
-   "end": 186.312,
+   "end": 202.374,
    "lines": [
     {
      "text": "Then he turns, sharply, to child marriage.",
@@ -205,58 +205,72 @@
      "ph": "ɪf wiː duːnˌɑːt stˈɑːp ɪɾ aʊɚsˈɛlvz, hiː wˈɔːɹnz, ðə ɡˈʌvɚnmənt wɪl nˈætʃɚɹəli ˌɪntɚvˈiːn."
     },
     {
-     "text": "Parents give a ten-year-old daughter in marriage to a full-grown man. All the world cries fie upon us.",
-     "start": 174.612,
-     "end": 180.703,
-     "ph": "pˈɛɹənts ɡˈɪv ɐ tˈɛnjˈɪɹˈoʊld dˈɔːɾɚɹ ɪn mˈæɹɪdʒ tʊ ɐ fˈʊlɡɹˈoʊn mˈæn. ˈɔːl ðə wˈɜːld kɹˈaɪz fˈaɪ əpˌɑːn ˌʌs."
+     "text": "What a horror! Even a father and mother allow their ten-year-old daughter to be given in marriage to a full-grown fat husband!",
+     "start": 174.792,
+     "end": 182.087,
+     "ph": "wˌʌt ɐ hˈɔɹɚ! ˈiːvən ɐ fˈɑːðɚ ænd mˈʌðɚɹ ɐlˈaʊ ðɛɹ tˈɛnjˈɪɹˈoʊld dˈɔːɾɚ təbi ɡˈɪvən ɪn mˈæɹɪdʒ tʊ ɐ fˈʊlɡɹˈoʊn fˈæt hˈʌsbənd!",
+     "q": true
     },
     {
-     "text": "Is there any punishment without a sin? It is all the fruit of Karma, he says.",
-     "start": 181.123,
-     "end": 185.612,
-     "ph": "ɪz ðɛɹ ˌɛni pˈʌnɪʃmənt wɪðˌaʊt ɐ sˈɪn? ɪɾ ɪz ˈɔːl ðə fɹˈuːt ʌv kˈɑːɹmə, hiː sˈɛz."
+     "text": "All the world cries fie upon us. You remain shut up in your homes, but the people outside spit upon you.",
+     "start": 182.507,
+     "end": 188.858,
+     "ph": "ˈɔːl ðə wˈɜːld kɹˈaɪz fˈaɪ əpˌɑːn ˌʌs. juː ɹᵻmˈeɪn ʃˈʌt ˌʌp ɪn jʊɹ hˈoʊmz, bˌʌt ðə pˈiːpəl aʊtsˈaɪd spˈɪt əpˌɑːn juː."
+    },
+    {
+     "text": "Is there any punishment unless there has been a sin? It is all the fruit of Karma, he says.",
+     "start": 189.278,
+     "end": 194.538,
+     "ph": "ɪz ðɛɹ ˌɛni pˈʌnɪʃmənt ʌnlˈɛs ðɛɹ hˈæzbiːn ɐ sˈɪn? ɪɾ ɪz ˈɔːl ðə fɹˈuːt ʌv kˈɑːɹmə, hiː sˈɛz."
+    },
+    {
+     "text": "If ours were not a terribly sinful nation, then why should it have been booted and beaten for seven hundred years?",
+     "start": 195.138,
+     "end": 201.674,
+     "ph": "ɪf aʊɚz wɜː nˌɑːɾə tˈɛɹᵻbli sˈɪnfəl nˈeɪʃən, ðˈɛn wˌaɪ ʃˌʊd ɪt hɐvbɪn bˈuːɾᵻd ænd bˈiːʔn̩ fɔːɹ sˈɛvən hˈʌndɹɪd jˈɪɹz?",
+     "q": true
     }
    ]
   },
   {
    "id": "capture",
-   "start": 187.412,
-   "end": 227.772,
+   "start": 203.474,
+   "end": 243.835,
    "lines": [
     {
      "text": "In America, the struggle over marriage falls on the girls, not the parents. It is the girls' job to capture husbands.",
-     "start": 187.412,
-     "end": 194.879,
+     "start": 203.474,
+     "end": 210.941,
      "ph": "ɪn ɐmˈɛɹɪkə, ðə stɹˈʌɡəl ˌoʊvɚ mˈæɹɪdʒ fˈɔːlz ɔnðə ɡˈɜːlz, nˌɑːt ðə pˈɛɹənts. ɪɾ ɪz ðə ɡˈɜːlz dʒˈɑːb tə kˈæptʃɚ hˈʌsbəndz."
     },
     {
      "text": "He watches it all closely: I am, as it were, a woman amongst women.",
-     "start": 195.299,
-     "end": 199.686,
+     "start": 211.361,
+     "end": 215.748,
      "ph": "hiː wˈɑːtʃᵻz ɪɾ ˈɔːl klˈoʊsli: aɪˈæm, æz ɪt wˈɜː, ɐ wˈʊmən ɐmˌʌŋst wˈɪmɪn."
     },
     {
      "text": "Dinners, dances, musical parties, the watering places; and all the while the young women scheme how to capture husbands.",
-     "start": 200.106,
-     "end": 207.552,
+     "start": 216.168,
+     "end": 223.614,
      "ph": "dˈɪnɚz, dˈænsᵻz, mjˈuːzɪkəl pˈɑːɹɾiz, ðə wˈɔːɾɚɹɪŋ plˈeɪsᵻz; ænd ˈɔːl ðə wˈaɪl ðə jˈʌŋ wˈɪmɪn skˈiːm hˌaʊ tə kˈæptʃɚ hˈʌsbəndz."
     },
     {
      "text": "The boys flirt and slave for them, but the moment the girls reach out to catch them, they run away.",
-     "start": 207.972,
-     "end": 213.894,
+     "start": 224.034,
+     "end": 229.956,
      "ph": "ðə bˈɔɪz flˈɜːt ænd slˈeɪv fɔːɹ ðˌɛm, bˌʌt ðə mˈoʊmənt ðə ɡˈɜːlz ɹˈiːtʃ ˈaʊt tə kˈætʃ ðˌɛm, ðeɪ ɹˈʌn ɐwˈeɪ."
     },
     {
      "text": "Money decides most matches, here as at home. One marriage in a thousand comes from love; then a quarrel, and divorce.",
-     "start": 214.314,
-     "end": 222.05,
+     "start": 230.376,
+     "end": 238.112,
      "ph": "mˈʌni dᵻsˈaɪdz mˈoʊst mˈætʃᵻz, hˈɪɹ æz æt hˈoʊm. wˈʌn mˈæɹɪdʒ ɪn ɐ θˈaʊzənd kˈʌmz fɹʌm lˈʌv; ðˈɛn ɐ kwˈɔːɹəl, ænd dᵻvˈoːɹs."
     },
     {
      "text": "It is the same in all countries. The result is the same in either case.",
-     "start": 222.65,
-     "end": 227.072,
+     "start": 238.712,
+     "end": 243.135,
      "ph": "ɪɾ ɪz ðə sˈeɪm ɪn ˈɔːl kˈʌntɹiz. ðə ɹɪzˈʌlt ɪz ðə sˈeɪm ɪn ˈiːðɚ kˈeɪs.",
      "q": true
     }
@@ -264,298 +278,345 @@
   },
   {
    "id": "civilwar",
-   "start": 228.872,
-   "end": 258.171,
+   "start": 244.935,
+   "end": 274.234,
    "lines": [
     {
      "text": "Nowadays, he writes, American girls do not want to marry.",
-     "start": 228.872,
-     "end": 232.358,
+     "start": 244.935,
+     "end": 248.421,
      "ph": "nˈaʊədˌeɪz, hiː ɹˈaɪts, ɐmˈɛɹɪkən ɡˈɜːlz duːnˌɑːt wˈɔnt tə mˈæɹi."
     },
     {
      "text": "During the Civil War so many men were killed that women began to do all kinds of work, and they have kept the rights they won.",
-     "start": 232.778,
-     "end": 239.886,
+     "start": 248.841,
+     "end": 255.948,
      "ph": "dˈʊɹɹɪŋ ðə sˈɪvəl wˈɔːɹ sˌoʊ mˈɛni mˈɛn wɜː kˈɪld ðæt wˈɪmɪn bɪɡˈæn tə dˈuː ˈɔːl kˈaɪndz ʌv wˈɜːk, ænd ðeɪ hæv kˈɛpt ðə ɹˈaɪts ðeɪ wˈʌn."
     },
     {
      "text": "If we truly fall in love, then we shall marry; otherwise, we shall earn and meet our own expenses.",
-     "start": 240.486,
-     "end": 246.369,
+     "start": 256.548,
+     "end": 262.432,
      "ph": "ɪf wiː tɹˈuːli fˈɔːl ɪn lˈʌv, ðˈɛn wiːʃˌɐl mˈæɹi; ˈʌðɚwˌaɪz, wiːʃˌɐl ˈɜːn ænd mˈiːt ˌaʊɚɹ ˈoʊn ɛkspˈɛnsᵻz.",
      "q": true
     },
     {
      "text": "Even a millionaire's son must earn enough before he marries.",
-     "start": 246.789,
-     "end": 250.257,
+     "start": 262.852,
+     "end": 266.319,
      "ph": "ˈiːvən ɐ mˌɪliənˈɛɹz sˈʌn mˈʌst ˈɜːn ɪnˈʌf bᵻfˌoːɹ hiː mˈæɹiz."
     },
     {
      "text": "When a girl marries, she brings her husband into her parents' home.",
-     "start": 250.677,
-     "end": 254.129,
+     "start": 266.739,
+     "end": 270.191,
      "ph": "wˌɛn ɐ ɡˈɜːl mˈæɹiz, ʃiː bɹˈɪŋz hɜː hˈʌsbənd ˌɪntʊ hɜː pˈɛɹənts hˈoʊm."
     },
     {
      "text": "And in everything the husband here must say, Yes dear.",
-     "start": 254.549,
-     "end": 257.471,
+     "start": 270.611,
+     "end": 273.534,
      "ph": "ænd ɪn ˈɛvɹɪθˌɪŋ ðə hˈʌsbənd hˈɪɹ mˈʌst sˈeɪ, jˈɛs dˈɪɹ."
     }
    ]
   },
   {
    "id": "father",
-   "start": 259.271,
-   "end": 285.299,
+   "start": 275.334,
+   "end": 301.361,
    "lines": [
     {
      "text": "There are rivers of wealth here, he writes, waves of beauty, and an abundance of knowledge everywhere.",
-     "start": 259.271,
-     "end": 265.107,
+     "start": 275.334,
+     "end": 281.169,
      "ph": "ðɛɹˌɑːɹ ɹˈɪvɚz ʌv wˈɛlθ hˈɪɹ, hiː ɹˈaɪts, wˈeɪvz ʌv bjˈuːɾi, ænd ɐn ɐbˈʌndəns ʌv nˈɑːlɪdʒ ˈɛvɹɪwˌɛɹ."
     },
     {
      "text": "The women are sentimental, with a mania for romance.",
-     "start": 265.527,
-     "end": 268.691,
+     "start": 281.589,
+     "end": 284.753,
      "ph": "ðə wˈɪmɪn ɑːɹ sˌɛntɪmˈɛntəl, wɪð ɐ mˈeɪniə fɔːɹ ɹoʊmˈæns."
     },
     {
      "text": "I am, however, a strange sort of animal who hasn't any romantic feeling.",
-     "start": 269.291,
-     "end": 273.988,
+     "start": 285.353,
+     "end": 290.05,
      "ph": "aɪˈæm, haʊˈɛvɚ, ɐ stɹˈeɪndʒ sˈɔːɹt ʌv ˈænɪməl hˌuː hˈæzənt ˌɛni ɹoʊmˈæntɪk fˈiːlɪŋ.",
      "q": true
     },
     {
      "text": "So they show him great respect. He makes them all call him father, or brother.",
-     "start": 274.408,
-     "end": 278.95,
+     "start": 290.47,
+     "end": 295.012,
      "ph": "sˌoʊ ðeɪ ʃˈoʊ hˌɪm ɡɹˈeɪt ɹᵻspˈɛkt. hiː mˌeɪks ðˌɛm ˈɔːl kˈɔːl hˌɪm fˈɑːðɚ, ɔːɹ bɹˈʌðɚ."
     },
     {
      "text": "Of the unmarried girls, he says, they are exceedingly good, because their future is bright.",
-     "start": 279.37,
-     "end": 284.599,
+     "start": 295.432,
+     "end": 300.661,
      "ph": "ʌvðɪ ʌnmˈæɹid ɡˈɜːlz, hiː sˈɛz, ðeɪ ɑːɹ ɛksˈiːdɪŋli ɡˈʊd, bɪkˈʌz ðɛɹ fjˈuːtʃɚɹ ɪz bɹˈaɪt."
     }
    ]
   },
   {
+   "id": "beauty",
+   "start": 302.461,
+   "end": 347.288,
+   "lines": [
+    {
+     "text": "He goes on to compare the women he has seen, in his own blunt words.",
+     "start": 302.461,
+     "end": 306.342,
+     "ph": "hiː ɡoʊz ˌɔn tə kəmpˈɛɹ ðə wˈɪmɪn hiː hɐz sˈiːn, ɪn hɪz ˈoʊn blˈʌnt wˈɜːdz."
+    },
+    {
+     "text": "Those emaciated Western women, looking like old dried-up fruit, whom you see in India, are English, and the English are an ugly race amongst the Europeans.",
+     "start": 306.942,
+     "end": 317.176,
+     "ph": "ðoʊz iːmˈeɪsɪˌeɪɾᵻd wˈɛstɚn wˈɪmɪn, lˈʊkɪŋ lˈaɪk ˈoʊld dɹˈaɪdˌʌp fɹˈuːt, hˈuːm juː sˈiː ɪn ˈɪndiə, ɑːɹ ˈɪŋɡlɪʃ, ænd ðɪ ˈɪŋɡlɪʃ ɑːɹ ɐn ˈʌɡli ɹˈeɪs ɐmˌʌŋst ðə jˌʊɹɹəpˈiənz.",
+     "q": true
+    },
+    {
+     "text": "In America, the best blood strains of Europe have been blended, and therefore, the American women are very beautiful.",
+     "start": 317.776,
+     "end": 324.773,
+     "ph": "ɪn ɐmˈɛɹɪkə, ðə bˈɛst blˈʌd stɹˈeɪnz ʌv jˈʊɹɹəp hɐvbɪn blˈɛndᵻd, ænd ðˈɛɹfoːɹ, ðɪ ɐmˈɛɹɪkən wˈɪmɪn ɑːɹ vˈɛɹi bjˈuːɾifəl.",
+     "q": true
+    },
+    {
+     "text": "And how they take care of their beauty! Can a woman retain her beauty if she gives birth to children every hour from her tenth year on? Damn nonsense! What a terrible sin!",
+     "start": 325.373,
+     "end": 335.617,
+     "ph": "ænd hˌaʊ ðeɪ tˈeɪk kˈɛɹ ʌv ðɛɹ bjˈuːɾi! kæn ɐ wˈʊmən ɹᵻtˈeɪn hɜː bjˈuːɾi ɪf ʃiː ɡˈɪvz bˈɜːθ tə tʃˈɪldɹən ˈɛvɹi ˈaʊɚ fɹʌm hɜː tˈɛnθ jˈɪɹ ˈɔn? dˈæm nˈɑːnsəns! wˌʌt ɐ tˈɛɹᵻbəl sˈɪn!",
+     "q": true
+    },
+    {
+     "text": "Even the most beautiful woman of our country will look like a black owl here.",
+     "start": 336.217,
+     "end": 340.355,
+     "ph": "ˈiːvən ðə mˈoʊst bjˈuːɾifəl wˈʊmən ʌv ˌaʊɚ kˈʌntɹi wɪl lˈʊk lˈaɪk ɐ blˈæk ˈaʊl hˈɪɹ.",
+     "q": true
+    },
+    {
+     "text": "Yet it must be admitted, he adds, that the women of the Punjab have very well-drawn features.",
+     "start": 340.775,
+     "end": 346.588,
+     "ph": "jˈɛt ɪt mˈʌst biː ɐdmˈɪɾᵻd, hiː ˈædz, ðætðə wˈɪmɪn ʌvðə pʌndʒˈɑːb hæv vˈɛɹi wˈɛldɹˈɔːn fˈiːtʃɚz."
+    }
+   ]
+  },
+  {
    "id": "lakshmi",
-   "start": 286.399,
-   "end": 326.222,
+   "start": 348.388,
+   "end": 388.211,
    "lines": [
     {
      "text": "Many American women are very well educated, and put many a learned professor to shame.",
-     "start": 286.399,
-     "end": 291.983,
+     "start": 348.388,
+     "end": 353.972,
      "ph": "mˈɛni ɐmˈɛɹɪkən wˈɪmɪn ɑːɹ vˈɛɹi wˈɛl ˈɛdʒuːkˌeɪɾᵻd, ænd pˌʊt mˈɛni ɐ lˈɜːnᵻd pɹəfˈɛsɚ tə ʃˈeɪm."
     },
     {
      "text": "And what kindness, what noble thought and action! In the best houses he is treated like their own son.",
-     "start": 292.403,
-     "end": 298.663,
+     "start": 354.392,
+     "end": 360.652,
      "ph": "ænd wʌt kˈaɪndnəs, wˌʌt nˈoʊbəl θˈɔːt ænd ˈækʃən! ɪnðə bˈɛst hˈaʊzᵻz hiː ɪz tɹˈiːɾᵻd lˈaɪk ðɛɹ ˈoʊn sˈʌn."
     },
     {
      "text": "A young woman is gathering information about the weaving machine for him; the girls arranged a phonograph for the Maharaja of Khetri.",
-     "start": 299.083,
-     "end": 307.444,
+     "start": 361.072,
+     "end": 369.433,
      "ph": "ɐ jˈʌŋ wˈʊmən ɪz ɡˈæðɚɹɪŋ ˌɪnfɚmˈeɪʃən ɐbˌaʊt ðə wˈiːvɪŋ məʃˈiːn fɔːɹ hˌɪm; ðə ɡˈɜːlz ɚɹˈeɪndʒd ɐ fˈɑːnəɡɹˌæf fɚðə mˌɑːhəɹˈɑːdʒə ˈʌv kˈeɪtɹi."
     },
     {
      "text": "They are the goddess Lakshmi in beauty and the goddess Saraswati in talents and accomplishments.",
-     "start": 308.044,
-     "end": 313.637,
+     "start": 370.033,
+     "end": 375.626,
      "ph": "ðeɪ ɑːɹ ðə ɡˈɑːdəs lˈʌkʃmi ɪn bjˈuːɾi ænd ðə ɡˈɑːdəs sˈʌɹəsvəti ɪn tˈælənts ænd ɐkˈɑːmplɪʃmənts.",
      "q": true
     },
     {
      "text": "This cannot be achieved through books, he says. Can you send out men and women to see the world?",
-     "start": 314.057,
-     "end": 319.338,
+     "start": 376.046,
+     "end": 381.327,
      "ph": "ðɪs kænˈɑːt biː ɐtʃˈiːvd θɹuː bˈʊks, hiː sˈɛz. kæn juː sˈɛnd ˈaʊt mˈɛn ænd wˈɪmɪn tə sˈiː ðə wˈɜːld?"
     },
     {
      "text": "The men here are clever at earning wealth. Where others do not see even dust, there they see gold.",
-     "start": 319.758,
-     "end": 325.522,
+     "start": 381.747,
+     "end": 387.511,
      "ph": "ðə mˈɛn hˈɪɹ ɑːɹ klˈɛvɚɹ æɾ ˈɜːnɪŋ wˈɛlθ. wˌɛɹ ˈʌðɚz duːnˌɑːt sˈiː ˈiːvən dˈʌst, ðɛɹ ðeɪ sˈiː ɡˈoʊld."
     }
    ]
   },
   {
    "id": "expand",
-   "start": 327.322,
-   "end": 384.511,
+   "start": 389.311,
+   "end": 446.5,
    "lines": [
     {
      "text": "Then he breaks into English.",
-     "start": 327.322,
-     "end": 328.906,
+     "start": 389.311,
+     "end": 390.894,
      "ph": "ðˈɛn hiː bɹˈeɪks ˌɪntʊ ˈɪŋɡlɪʃ."
     },
     {
      "text": "Keeping aloof from the community of nations is the only cause for the downfall of India.",
-     "start": 329.506,
-     "end": 334.94,
+     "start": 391.494,
+     "end": 396.929,
      "ph": "kˈiːpɪŋ ɐlˈuːf fɹʌmðə kəmjˈuːnᵻɾi ʌv nˈeɪʃənz ɪz ðɪ ˈoʊnli kˈɔːz fɚðə dˈaʊnfɔːl ʌv ˈɪndiə.",
      "q": true
     },
     {
      "text": "Since the English came, India has been forced back into the company of nations, and is visibly rising again.",
-     "start": 335.36,
-     "end": 342.075,
+     "start": 397.349,
+     "end": 404.064,
      "ph": "sˈɪns ðɪ ˈɪŋɡlɪʃ kˈeɪm, ˈɪndiə hˈæzbiːn fˈoːɹst bˈæk ˌɪntʊ ðə kˈʌmpəni ʌv nˈeɪʃənz, ænd ɪz vˈɪzᵻbli ɹˈaɪzɪŋ ɐɡˈɛn."
     },
     {
      "text": "Everyone who goes out of the country benefits the whole nation, for that is how its horizon expands. And because women cannot go, they have made almost no progress.",
-     "start": 342.495,
-     "end": 352.978,
+     "start": 404.484,
+     "end": 414.967,
      "ph": "ˈɛvɹɪwˌʌn hˌuː ɡoʊz ˌaʊɾəv ðə kˈʌntɹi bˈɛnɪfˌɪts ðə hˈoʊl nˈeɪʃən, fɔːɹ ðæt ɪz hˌaʊ ɪts hɚɹˈaɪzən ɛkspˈændz. ænd bɪkˈʌz wˈɪmɪn kænˈɑːt ɡˈoʊ, ðeɪ hæv mˌeɪd ˈɔːlmoʊst nˈoʊ pɹˈɑːɡɹɛs."
     },
     {
      "text": "There is no station of rest; either you progress upwards or you go back and die out.",
-     "start": 353.578,
-     "end": 358.609,
+     "start": 415.567,
+     "end": 420.598,
      "ph": "ðɛɹ ɪz nˈoʊ stˈeɪʃən ʌv ɹˈɛst; ˈiːðɚ juː pɹəɡɹˈɛs ˈʌpwɚdz ɔːɹ juː ɡˌoʊ bˈæk ænd dˈaɪ ˈaʊt.",
      "q": true
     },
     {
      "text": "The only sign of life is going outward and forward and expansion. Contraction is death.",
-     "start": 359.209,
-     "end": 364.778,
+     "start": 421.198,
+     "end": 426.766,
      "ph": "ðɪ ˈoʊnli sˈaɪn ʌv lˈaɪf ɪz ɡˌoʊɪŋ ˈaʊtwɚd ænd fˈɔːɹwɚd ænd ɛkspˈænʃən. kəntɹˈækʃən ɪz dˈɛθ.",
      "q": true
     },
     {
      "text": "Why do good to others? Because it is the only condition of life: you expand beyond your little self, and live and grow.",
-     "start": 365.198,
-     "end": 372.311,
+     "start": 427.186,
+     "end": 434.299,
      "ph": "wˌaɪ dˈuː ɡˈʊd tʊ ˈʌðɚz? bɪkˈʌz ɪɾ ɪz ðɪ ˈoʊnli kəndˈɪʃən ʌv lˈaɪf: juː ɛkspˈænd bᵻjˌɔnd jʊɹ lˈɪɾəl sˈɛlf, ænd lˈaɪv ænd ɡɹˈoʊ."
     },
     {
      "text": "All narrowness, all contraction, all selfishness is simply slow suicide.",
-     "start": 372.911,
-     "end": 377.739,
+     "start": 434.899,
+     "end": 439.728,
      "ph": "ˈɔːl nˈæɹoʊnəs, ˈɔːl kəntɹˈækʃən, ˈɔːl sˈɛlfɪʃnəs ɪz sˈɪmpli slˈoʊ sˈuːɪsˌaɪd.",
      "q": true
     },
     {
      "text": "Women too must go forward. Who would break this horrible crystallisation of death? Lord help us!",
-     "start": 378.159,
-     "end": 383.811,
+     "start": 440.148,
+     "end": 445.8,
      "ph": "wˈɪmɪn tˈuː mˈʌst ɡˌoʊ fˈɔːɹwɚd. hˌuː wʊd bɹˈeɪk ðɪs hˈɔːɹɪbəl kɹˌɪstɐləzˈeɪʃən ʌv dˈɛθ? lˈɔːɹd hˈɛlp ˌʌs!"
     }
    ]
   },
   {
    "id": "slowly",
-   "start": 385.611,
-   "end": 420.382,
+   "start": 447.6,
+   "end": 482.371,
    "lines": [
     {
      "text": "Yet change will come gradually, and he quotes a Bengali saying.",
-     "start": 385.611,
-     "end": 389.479,
+     "start": 447.6,
+     "end": 451.468,
      "ph": "jˈɛt tʃˈeɪndʒ wɪl kˈʌm ɡɹˈædʒuːəli, ænd hiː kwˈoʊts ˈeɪ bɛŋɡˈɔːli sˈeɪɪŋ."
     },
     {
      "text": "One should cross a road slowly and cautiously; one should patch a quilt carefully and cautiously; so should one be slow and cautious in crossing a mountain.",
-     "start": 390.079,
-     "end": 399.488,
+     "start": 452.068,
+     "end": 461.477,
      "ph": "wˈʌn ʃˌʊd kɹˈɔs ɐ ɹˈoʊd slˈoʊli ænd kˈɔːʃəsli; wˈʌn ʃˌʊd pˈætʃ ɐ kwˈɪlt kˈɛɹfəli ænd kˈɔːʃəsli; sˌoʊ ʃˌʊd wˈʌn biː slˈoʊ ænd kˈɔːʃəs ɪn kɹˈɔsɪŋ ɐ mˈaʊntɪn.",
      "q": true
     },
     {
      "text": "The papers from India have arrived, he reports, and the enemy has been silenced.",
-     "start": 399.908,
-     "end": 404.958,
+     "start": 461.897,
+     "end": 466.946,
      "ph": "ðə pˈeɪpɚz fɹʌm ˈɪndiə hæv ɚɹˈaɪvd, hiː ɹᵻpˈoːɹts, ænd ðɪ ˈɛnəmi hˈæzbiːn sˈaɪlənst."
     },
     {
      "text": "A fellow countryman, Mazoomdar, has been calling him a rogue, but no one pays attention.",
-     "start": 405.378,
-     "end": 411.005,
+     "start": 467.366,
+     "end": 472.994,
      "ph": "ɐ fˈɛloʊ kˈʌntɹɪmən, məzˈuːmdɑːɹ, hˈæzbiːn kˈɔːlɪŋ hˌɪm ɐ ɹˈoʊɡ, bˌʌt nˈoʊwˈʌn pˈeɪz ɐtˈɛnʃən."
     },
     {
      "text": "These people let an unknown young man live among their families. I am like a foster son to the American women; they are really my mother.",
-     "start": 411.425,
-     "end": 419.682,
+     "start": 473.414,
+     "end": 481.671,
      "ph": "ðiːz pˈiːpəl lˈɛt ɐn ʌnnˈoʊn jˈʌŋ mˈæn lˈaɪv ɐmˌʌŋ ðɛɹ fˈæmɪliz. aɪɐm lˈaɪk ɐ fˈɑːstɚ sˈʌn tə ðɪ ɐmˈɛɹɪkən wˈɪmɪn; ðeɪ ɑːɹ ɹˈiəli maɪ mˈʌðɚ."
     }
    ]
   },
   {
    "id": "greenacre",
-   "start": 421.482,
-   "end": 449.133,
+   "start": 483.471,
+   "end": 511.122,
    "lines": [
     {
      "text": "A while back, several hundred intellectual men and women gathered at a place called Greenacre, in Maine, and he stayed nearly two months.",
-     "start": 421.482,
-     "end": 429.69,
+     "start": 483.471,
+     "end": 491.679,
      "ph": "ɐ wˈaɪl bˈæk, sˈɛvɹəl hˈʌndɹɪd ˌɪntəlˈɛktʃuːəl mˈɛn ænd wˈɪmɪn ɡˈæðɚd æɾə plˈeɪs kˈɔːld ɡɹˈiːneɪkɚ, ɪn mˈeɪn, ænd hiː stˈeɪd nˌɪɹli tˈuː mˈʌnθs."
     },
     {
      "text": "Every day he sat in the Hindu fashion under a tree, and his followers sat on the grass all around him.",
-     "start": 430.11,
-     "end": 436.185,
+     "start": 492.099,
+     "end": 498.174,
      "ph": "ˈɛvɹi dˈeɪ hiː sˈæt ɪnðə hˈɪnduː fˈæʃən ˌʌndɚɹ ɐ tɹˈiː, ænd hɪz fˈɑːloʊɚz sˈæt ɔnðə ɡɹˈæs ˈɔːl ɚɹˈaʊnd hˌɪm."
     },
     {
      "text": "Every morning he taught them. How earnest they were!",
-     "start": 436.605,
-     "end": 439.291,
+     "start": 498.594,
+     "end": 501.28,
      "ph": "ˈɛvɹi mˈɔːɹnɪŋ hiː tˈɔːt ðˌɛm. hˌaʊ ˈɜːnɪst ðeɪ wɜː!"
     },
     {
      "text": "The whole country now knows him. Some ministers are angry, though many learned ministers follow him.",
-     "start": 439.711,
-     "end": 445.791,
+     "start": 501.7,
+     "end": 507.78,
      "ph": "ðə hˈoʊl kˈʌntɹi nˈaʊ nˈoʊz hˌɪm. sˌʌm mˈɪnɪstɚz ɑːɹ ˈæŋɡɹi, ðˌoʊ mˈɛni lˈɜːnᵻd mˈɪnɪstɚz fˈɑːloʊ hˌɪm."
     },
     {
      "text": "I have been adopted by them, he writes.",
-     "start": 446.211,
-     "end": 448.433,
+     "start": 508.2,
+     "end": 510.422,
      "ph": "aɪ hɐvbɪn ɐdˈɑːptᵻd baɪ ðˌɛm, hiː ɹˈaɪts."
     }
    ]
   },
   {
    "id": "public",
-   "start": 450.233,
-   "end": 470.443,
+   "start": 512.222,
+   "end": 532.432,
    "lines": [
     {
      "text": "When will he return to India? Possibly next winter. There I shall have to wander, and here also I do the same.",
-     "start": 450.233,
-     "end": 456.828,
+     "start": 512.222,
+     "end": 518.817,
      "ph": "wˌɛn wɪl hiː ɹᵻtˈɜːn tʊ ˈɪndiə? pˈɑːsᵻbli nˈɛkst wˈɪntɚ. ðɛɹ aɪʃˌɐl hæv tə wˈɔndɚ, ænd hˈɪɹ ˈɔːlsoʊ aɪ dˈuː ðə sˈeɪm."
     },
     {
      "text": "Then a last request: please don't make this letter public.",
-     "start": 457.248,
-     "end": 460.636,
+     "start": 519.237,
+     "end": 522.625,
      "ph": "ðˈɛn ɐ lˈæst ɹᵻkwˈɛst: plˈiːz dˈoʊnt mˌeɪk ðɪs lˈɛɾɚ pˈʌblɪk."
     },
     {
      "text": "I have to be careful about every word I say. I am now a public man. Everybody is watching.",
-     "start": 461.236,
-     "end": 467.153,
+     "start": 523.225,
+     "end": 529.142,
      "ph": "aɪ hæv təbi kˈɛɹfəl ɐbˌaʊt ˈɛvɹi wˈɜːd aɪ sˈeɪ. aɪɐm nˈaʊ ɐ pˈʌblɪk mˈæn. ˈɛvɹɪbˌɑːdi ɪz wˈɑːtʃɪŋ.",
      "q": true
     },
     {
      "text": "Yours faithfully, Vivekananda.",
-     "start": 467.573,
-     "end": 469.743,
+     "start": 529.562,
+     "end": 531.732,
      "ph": "jˈoːɹz fˈeɪθfəli, vɪvˌeɪkɑːnˈʌndə."
     }
    ]
