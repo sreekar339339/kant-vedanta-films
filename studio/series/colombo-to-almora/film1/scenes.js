@@ -153,11 +153,12 @@ MURAL.yugas=[
 
 MURAL.tribes=[
  pn(0,S=>{skyset(S,30,{sx:880,sy:60,clouds:2,cx0:520,cx1:720,cy:70,birds:4,bx:600,by:120});hill(S,0,340,500,140,'#d9c08a');hill(S,300,660,500,180,'#d9c08a');hill(S,620,960,500,140,'#d9c08a');
-   [[170,360,'BAAL'],[480,320,'BAAL'],[790,360,'MOLOCH']].forEach(([x,y,n])=>{S.g();S.S(tf([[-22,0],[-22,-80],[0,-104],[22,-80],[22,0]],x,y,1),{tone:[.9,.4],dir:0,col:MBRZ});S.T([[n,MINK]],x,y-120,22,{al:'center'});flag(S,x+50,y,.5,[MRED,MBLU,MGRN][x%3]);crowd(S,x-110,x+110,y+150,.5,x|0,{n:5});fire(S,x-50,y+10,.35);});
+   baalStorm(S,170,360,.62);baalStorm(S,480,320,.66,-1);ark(S,790,356,.5);
+   [[170,360,'BAAL',MRED],[480,320,'BAAL',MBLU],[790,360,'MOLOCH',MGRN]].forEach(([x,y,n,fc])=>{S.T([[n,MINK]],x,y-(n==='MOLOCH'?122:218),22,{al:'center'});flag(S,x+76,y,.5,fc);crowd(S,x-110,x+110,y+150,.5,x|0,{n:5});fire(S,x-70,y+10,.35);});
    TXT(S,[['each tribe, a god of its own',32]],30,18,460);}),
- pn(2,S=>{wash(S,300,250,200,'rgba(211,162,74,.9)',.3);crownX(S,280,130,1.3);S.g();S.S(tf([[-36,0],[-36,-140],[0,-190],[36,-140],[36,0]],280,400,1),{tone:[.9,.35],dir:0,col:MBRZ});S.T([['BAAL-MERODACH',MINK]],280,434,24,{al:'center'});
-   S.g();S.S(tf([[-36,0],[-36,-140],[0,-190],[36,-140],[36,0]],680,400,1),{tone:[.9,.35],dir:0,col:'#9a9aa2'});S.T([['MOLOCH-YAHVEH',MINK]],680,434,24,{al:'center'});sword(S,410,300,130,-.6,1.3);sword(S,550,300,130,Math.PI+.6,1.3);
-   battlefield(S,20,170,545,11);battlefield(S,790,950,545,13);fire(S,480,420,.6);TXT(S,[['decided by the fortunes of battle',30,{BATTLE:MRED}]],420,40,500);}),
+ pn(2,S=>{wash(S,300,250,200,'rgba(211,162,74,.9)',.3);crownX(S,250,196,.8);mushhushshu(S,250,410,.62);S.T([['BAAL-MERODACH',MINK]],250,444,24,{al:'center'});
+   crownX(S,690,196,.8);ark(S,690,400,.78);S.T([['MOLOCH-YAHVEH',MINK]],690,440,24,{al:'center'});sword(S,410,300,130,-.6,1.3);sword(S,550,300,130,Math.PI+.6,1.3);
+   battlefield(S,0,130,545,11);battlefield(S,800,950,545,13);fire(S,480,420,.6);TXT(S,[['decided by the fortunes of battle',30,{BATTLE:MRED}]],420,40,500);}),
  pn(5,S=>{IN(S);wash(S,480,270,280,'rgba(150,210,120,.9)',.3);indiaMap(S,300,30,360,{hills:false});trident(S,170,500,1.5);conch(S,780,300,1.5);S.T([['SHIVA',MINK]],170,535,26,{al:'center'});S.T([['VISHNU',MINK]],790,410,26,{al:'center'});
    lingam(S,280,520,.35);nandi(S,400,535,.32,-1);lotus(S,690,530,.5);chakra(S,900,170,42);peacock(S,880,530,.42,-1);bell(S,90,200,.42);crowd(S,470,640,540,.36,17,{n:4});TXT(S,[['in India too, competing gods',28]],680,30,260);}),
 ];

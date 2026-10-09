@@ -28,6 +28,7 @@ const flat=a=>{const o=[];for(let i=0;i<a.length;i+=2)o.push([a[i],a[i+1]]);retu
 /* ---------- scene builder ---------- */
 class Scene{constructor(){this.items=[];this.n=0;this.obj=-1;}
   g(){this.obj++;return this;}
+  gi(){this.obj++;(this.inst=this.inst||new Set()).add(this.obj);return this;} /* an object drawn at once, never animated */
   S(pts,o={}){this.items.push({k:'S',pts,idx:this.n++,obj:this.obj,tone:o.tone||[.95,.62],dir:o.dir??.8,rad:o.rad,lw:o.lw??2.4,col:o.col,cA:o.cA??.9,noline:o.noline,cang:o.cang??-.62});return this;}
   L(pts,o={}){this.items.push({k:'L',pts,layer:this.n-1,obj:this.obj,lw:o.lw??1.7,closed:o.closed,col:o.col,any:o.any});return this;}
   T(segs,x,y,size,o={}){this.items.push({k:'T',segs,x,y,size,rot:o.rot||0,al:o.al||'left',font:o.font||LETF,style:o.style||'',obj:this.obj});return this;}
@@ -96,7 +97,7 @@ function drawCol(c,P,p){for(const o of P.col){if(p<=o.t0)break;const k=p>=o.t1?1
   else{const it=o.it;c.save();c.globalAlpha=it.a*k;c.translate(it.x,it.y);c.scale(it.sx,1);const g=c.createRadialGradient(0,0,2,0,0,it.r);g.addColorStop(0,it.col);g.addColorStop(1,'rgba(255,255,255,0)');c.fillStyle=g;c.beginPath();c.arc(0,0,it.r,0,7);c.fill();c.restore();}}}
 const MCS=1.5;let MLRU=[];
 function mcache(P,key,fn){if(!P.cache[key]){const cv=mkc(W*MCS,H*MCS),g=cv.getContext('2d');g.scale(MCS,MCS);fn(g);P.cache[key]=cv;MLRU.push([P,key]);if(MLRU.length>16){const[q,kk]=MLRU.shift();delete q.cache[kk];}}return P.cache[key];}
-function renderPanel(c,P,inkP,colP){if(P.paint){const p=Math.min(inkP,1);if(p>=1)c.drawImage(mcache(P,'full-'+MSTYLE,g=>drawPaint(g,P,1,MSTYLE)),0,0,W,H);else if(p>0)drawPaint(c,P,p,MSTYLE);return;}
+function renderPanel(c,P,inkP,colP){if(P.paint){const p=Math.min(inkP,1);if(p>=1)c.drawImage(mcache(P,'full-'+MSTYLE,g=>drawPaint(g,P,1,MSTYLE)),0,0,W,H);else if(p>0)drawPaint(c,P,p,MSTYLE);else if(P.inst)c.drawImage(mcache(P,'inst-'+MSTYLE,g=>drawPaint(g,P,0,MSTYLE)),0,0,W,H);return;}
   if(inkP>=1&&colP>=1){c.drawImage(mcache(P,'full',g=>{drawCol(g,P,1);drawInk(g,P,1);}),0,0,W,H);return;}
   if(colP>0)drawCol(c,P,colP);
   if(inkP>=1)c.drawImage(mcache(P,'ink',g=>drawInk(g,P,1)),0,0,W,H);else if(inkP>0)drawInk(c,P,inkP);}
@@ -114,7 +115,7 @@ function muralScene(id){return(c,t,B)=>{const ps=MURAL[id],n=ps.length,len=chapt
   const panT=cur+1<n?eio(seg(t,en[cur]-.9,en[cur])):0;let camX=cur*PW+W/2+panT*PW,z=1,camY=H/2;
   const total=(n-1)*PW+W,zf=Math.min(1,(W-60)/total),pb=eio(seg(t,len-2.4,len-1.3));z=lerp(1,zf,pb);camX=lerp(camX,total/2,pb);camY=lerp(H/2,H/2,pb);
   c.save();c.translate(W/2,H/2);c.scale(z,z);c.translate(-camX,-camY);
-  for(let i=0;i<=Math.min(n-1,cur+1);i++){const ox=i*PW;if(ox+W<camX-W/2/z-4||ox>camX+W/2/z+4)continue;const[a,b]=prog(i);if(a<=0&&b<=0)continue;c.save();c.translate(ox,0);renderPanel(c,mpanel(id,i),a,b);c.restore();}
+  for(let i=0;i<=Math.min(n-1,cur+1);i++){const ox=i*PW;if(ox+W<camX-W/2/z-4||ox>camX+W/2/z+4)continue;const[a,b]=prog(i);const P=mpanel(id,i);if(a<=0&&b<=0&&!P.inst)continue;c.save();c.translate(ox,0);renderPanel(c,P,a,b);c.restore();}
   c.restore();
   if(pb>0){c.save();c.globalAlpha=pb*.5;c.strokeStyle='#cfcfc8';c.lineWidth=1;c.strokeRect(W/2-total*z/2,H/2-H*z/2,total*z,H*z);c.restore();}};}
 function TRANSITION(ctx,T_,k,n,drawScene,CH){const ws=CH[n].start-1.1,u=seg(T_,ws,ws+1.05);if(u<=0||u>=1)return;
@@ -265,9 +266,9 @@ function compilePaint(sc,seed){
       if(a.tone){const op=T(a.outline);add(it.obj,{k:'M',a,x:it.x,y:it.y,s:it.s,poly:op,mono:it.mono,len:40,ord:-.5});}
       a.contour.forEach(cn=>{const p=T(cn);add(it.obj,{k:'L',pts:p,lw:Math.max(1.1,1.8*it.s),len:plen(p)*.35,ord:1});});
       if(it.mono&&!a.tone){const hs=a.hatch.filter(h=>h[0]>=2);hs.forEach(h=>{const pts=[[it.x+h[1]*it.s,it.y+h[2]*it.s],[it.x+h[3]*it.s,it.y+h[4]*it.s]];add(it.obj,{k:'L',pts,lw:.9,len:plen(pts)*.15,ord:1});});}}});
-  const ops=[];Object.keys(byObj).map(Number).sort((a,b)=>a-b).forEach(o=>{const L=byObj[o];L.sort((a,b)=>a.ord-b.ord);ops.push(...L);});
-  let tot=ops.reduce((a,o)=>a+o.len,0)||1,acc=0;ops.forEach(o=>{o.t0=acc/tot;acc+=o.len;o.t1=acc/tot;});
-  return{paint:true,ops,cache:{}};}
+  const inst=sc.inst||new Set(),pre=[],ops=[];Object.keys(byObj).map(Number).sort((a,b)=>a-b).forEach(o=>{const L=byObj[o];L.sort((a,b)=>a.ord-b.ord);(inst.has(o)?pre:ops).push(...L);});
+  let tot=ops.reduce((a,o)=>a+o.len,0)||1,acc=0;ops.forEach(o=>{o.t0=acc/tot;acc+=o.len;o.t1=acc/tot;});pre.forEach(o=>{o.t0=-1;o.t1=0;});
+  return{paint:true,ops:pre.concat(ops),inst:pre.length>0,cache:{}};}
 function paintFill(c,o,k,style){const s=o.s,[x0,y0,x1,y1]=o.bb,cx=(x0+x1)/2,cy=(y0+y1)/2,R=Math.max(x1-x0,y1-y0)/2+2;
   const col=s.col||NEUTRAL(s.tone?(s.tone[0]+s.tone[1])/2:.8);
   c.save();mpath(c,s.pts);c.clip();
@@ -403,5 +404,40 @@ function mala(S,x,y,r){S.g();for(let k=0;k<30;k++){const a=Math.PI*.6+k/30*Math.
 function ghat(S,x0,x1,y,seed){const r=rng(seed);S.g();for(let k=0;k<5;k++){const yy=y-k*16,ins=k*14;S.S([[x0+ins,yy],[x1-ins,yy],[x1-ins,yy-16],[x0+ins,yy-16]],{tone:[.98,.55],dir:1.5,col:k%2?'#e2cfaa':'#d8c39c',lw:1.4});}
   const top=y-80;const n=Math.max(2,Math.round((x1-x0)/170));for(let k=0;k<n;k++){const cx=lerp(x0+80,x1-80,n>1?k/(n-1):.5);if(k%2)shikhara(S,cx,top,.32+r()*.08);else{parasol(S,cx,top,.55,['#c8a04a',MRED,MSAF][k%3]);}}
   for(let k=0;k<4;k++)person(S,lerp(x0+40,x1-40,(k+.5)/4),y+10,.28,{head:k%2?'veil':'hair',col:[MSAF,MPNK,'#f4efe4',MPUR][k],arms:k%2?'up':'hold'});}
-function kumbamBand(S,x0,x1,y,o={}){const h=o.h??9,col=o.col??VERM;S.g();S.S([[x0,y],[x1,y],[x1,y+5],[x0,y+5]],{tone:[1,.6],col:TURM,lw:1,noline:1});const w=h*1.3;for(let x=x0;x<x1-1;x+=w){S.S([[x,y+5],[x+w,y+5],[x+w/2,y+5+h]],{tone:[1,.55],col,lw:.8});}
+function kumbamBand(S,x0,x1,y,o={}){const h=o.h??9,col=o.col??VERM;S.gi();S.S([[x0,y],[x1,y],[x1,y+5],[x0,y+5]],{tone:[1,.6],col:TURM,lw:1,noline:1});const w=h*1.3;for(let x=x0;x<x1-1;x+=w){S.S([[x,y+5],[x+w,y+5],[x+w/2,y+5+h]],{tone:[1,.55],col,lw:.8});}
   S.L([[x0,y+5+h+2],[x1,y+5+h+2]],{lw:1,col:TURM,any:1});}
+
+/* ----- ancient Near Eastern gods (Film 1, "Gods of the tribes"); see the decision board ----- */
+const BRONZE='#b07a34';
+function baalStorm(S,x,y,s,fl=1){const T=p=>tf(p,x,y,s,fl);S.g();S.S(T(rect(-56,-14,112,14)),{tone:[.95,.5],dir:1.5,col:'#cdbb98',lw:1.6});
+  S.S(T([[-10,-122],[-34,-14],[-20,-14],[4,-104]]),{tone:[.95,.4],dir:0,col:BRONZE,lw:1.6});S.S(T([[6,-122],[30,-14],[44,-14],[20,-112]]),{tone:[.9,.35],dir:0,col:BRONZE,lw:1.6});
+  S.S(T([[-26,-152],[26,-152],[32,-112],[-32,-112]]),{tone:[1,.5],dir:0,col:'#e6c46a',lw:1.6});S.L(T([[-26,-146],[26,-146]]),{lw:2.2,col:'#7a4a1a'});
+  S.S(T([[-22,-212],[22,-212],[24,-150],[-24,-150]]),{tone:[1,.4],dir:0,col:BRONZE,lw:1.8});S.S(T([[20,-206],[54,-268],[64,-262],[30,-196]]),{tone:[1,.4],dir:0,col:BRONZE,lw:1.4});
+  S.S(T([[-20,-202],[-62,-176],[-58,-166],[-18,-188]]),{tone:[1,.4],dir:0,col:BRONZE,lw:1.4});S.S(T(ell(0,-230,16,18,16)),{rad:1,tone:[1,.45],col:BRONZE,lw:1.6});S.L(T([[6,-232],[8,-231]]),{lw:2.4});
+  S.S(T([[-14,-244],[14,-244],[5,-304],[-5,-304]]),{tone:[1,.6],dir:0,col:'#f2e6c8',lw:1.6});[-1,1].forEach(d=>S.S(T([[d*12,-246],[d*36,-262],[d*34,-270],[d*10,-254]]),{tone:[1,.5],col:'#e0b04a',lw:1.2}));
+  S.L(T([[58,-266],[66,-326]]),{lw:3.2,col:'#6a4a2a'});S.S(T(ell(66,-330,10,12,12)),{rad:1,tone:[1,.4],col:'#8a8a92',lw:1.4});
+  const zz=T([[-60,-166],[-74,-200],[-58,-214],[-78,-252],[-62,-262],[-84,-318]]);S.L(zz,{lw:4,col:MYEL,any:1});S.L(zz,{lw:1.4,col:'#b07a1a',any:1});S.G(x-74*s*fl,y-250*s,70*s,'rgba(255,220,90,.95)',{a:.55});}
+function highPlace(S,x,y,s){const T=p=>tf(p,x,y,s);S.g();S.S(T([[-130,0],[130,0],[100,-40],[-100,-40]]),{tone:[.95,.45],dir:0,col:'#cdb48a',lw:1.8});for(let k=-3;k<=3;k++)S.L(T([[k*30,-2],[k*26,-38]]),{lw:.9,col:'#8a6a4a'});
+  S.S(T([[-80,-40],[-80,-190]].concat(ell(-56,-190,24,22,14,Math.PI,Math.PI*2)).concat([[-32,-190],[-32,-40]])),{tone:[.9,.35],dir:0,col:'#9a968e',lw:1.8});
+  S.S(T(rect(0,-100,70,60)),{tone:[.95,.45],dir:0,col:'#d8c0a0',lw:1.6});[0,70].forEach(cx=>S.S(T([[cx-8,-100],[cx,-118],[cx+8,-100]]),{tone:[.9,.4],col:'#c8a880',lw:1.2}));fire(S,x+35*s,y-102*s,.6*s);
+  S.L(T([[96,-40],[96,-210]]),{lw:5*s,col:'#7a4a22'});S.S(T([[96,-210],[80,-236],[96,-228],[112,-236]]),{tone:[.9,.4],col:'#6a8a3a',lw:1.2});}
+function moloch(S,x,y,s){const T=p=>tf(p,x,y,s);S.g();S.S(T(rect(-90,-18,180,18)),{tone:[.95,.45],dir:1.5,col:'#8a7a6a',lw:1.6});const BZ='#7a5226';
+  S.S(T([[-62,-18],[62,-18],[48,-200],[-48,-200]]),{tone:[.85,.25],dir:0,col:BZ,lw:2});S.S(T(ell(0,-80,30,40,18,Math.PI,Math.PI*2).concat([[30,-40],[-30,-40]])),{tone:[.3,.1],col:'#2a1a10',lw:1.6});fire(S,x,y-44*s,.5*s);
+  [-1,1].forEach(d=>S.S(T([[d*40,-190],[d*132,-168],[d*132,-150],[d*44,-160]]),{tone:[.85,.3],dir:0,col:BZ,lw:1.6}));
+  S.S(T(ell(0,-240,42,38,20)),{rad:1,tone:[.9,.3],col:BZ,lw:1.8});S.S(T(ell(0,-214,26,16,16)),{rad:1,tone:[.9,.4],col:'#9a6a36',lw:1.4});[-1,1].forEach(d=>{S.S(T(bz([d*36,-258],[d*80,-270],[d*88,-310],[d*70,-330],10).concat(bz([d*64,-322],[d*70,-296],[d*58,-276],[d*30,-270],10))),{tone:[1,.5],col:'#e8d8b8',lw:1.4});bead(S,x+d*16*s,y-246*s,4*s,MRED);});
+  S.G(x,y-60*s,120*s,'rgba(255,120,40,.9)',{a:.5});}
+function mushhushshu(S,x,y,s){const T=p=>tf(p,x,y,s);S.g();S.S(T(rect(-190,-260,380,260)),{tone:[1,.6],dir:1.5,col:'#2f62b8',lw:2});for(let r=1;r<9;r++)S.L(T([[-190,-r*29],[190,-r*29]]),{lw:.8,col:'#1d3f80'});
+  S.g();for(let k=0;k<9;k++){const cx=-170+k*42.5;S.S(T(ell(cx,-14,11,11,12)),{rad:1,tone:[1,.7],col:'#f4f0e0',lw:.8});bead(S,x+cx*s,y-14*s,4*s,TURM);}
+  const C='#efe2b4';S.g();S.S(T(bz([-120,-100],[-150,-130],[-150,-190],[-118,-206],10).concat([[-110,-196],[-132,-180],[-128,-136],[-100,-112]])),{tone:[1,.55],col:C,lw:1.4});S.S(T([[-118,-206],[-104,-214],[-108,-198]]),{tone:[.9,.4],col:'#c89a3a',lw:1});
+  S.S(T(ell(-10,-110,110,30,28)),{rad:1,tone:[1,.55],col:C,lw:1.8});S.S(T([[70,-122],[104,-200],[124,-196],[96,-108]]),{tone:[1,.55],col:C,lw:1.6});S.S(T([[100,-200],[150,-204],[160,-192],[110,-184]]),{tone:[1,.55],col:C,lw:1.6});
+  S.L(T(bz([110,-200],[96,-222],[80,-230],[70,-226],8)),{lw:3,col:'#c89a3a'});S.L(T([[160,-194],[176,-198],[170,-190],[178,-186]]),{lw:1.4,col:MRED});S.L(T([[136,-198],[138,-197]]),{lw:2.4});
+  [[40,1],[66,1]].forEach(([lx])=>S.S(T([[lx-8,-92],[lx-10,-34],[lx+6,-34],[lx+8,-92]]),{tone:[1,.5],dir:0,col:C,lw:1.4}));[[-80],[-54]].forEach(([lx])=>{S.S(T([[lx-8,-92],[lx-12,-40],[lx+4,-40],[lx+8,-92]]),{tone:[1,.5],dir:0,col:C,lw:1.4});S.L(T([[lx-12,-40],[lx-20,-32]]),{lw:1.6}).L(T([[lx-4,-40],[lx-4,-30]]),{lw:1.6}).L(T([[lx+4,-40],[lx+12,-32]]),{lw:1.6});});
+  S.g();for(let k=0;k<10;k++)S.L(T(ell(-90+k*18,-110,7,6,8,Math.PI*.1,Math.PI*.9)),{lw:1,col:'#a8884a',any:1});}
+function ziggurat(S,x,y,s){const T=p=>tf(p,x,y,s);S.g();for(let k=0;k<5;k++){const w=280-k*52,h=34;S.S(T(rect(-w/2,-(k+1)*h,w,h)),{tone:[.97,.45],dir:0,col:k%2?'#d8b080':'#e2bd8e',lw:1.6});}
+  S.S(T([[-14,0],[14,0],[8,-170],[-8,-170]]),{tone:[.9,.45],dir:0,col:'#c89a6a',lw:1.2});S.S(T(rect(-24,-200,48,30)),{tone:[1,.5],col:'#2f62b8',lw:1.4});S.L(T([[0,-200],[0,-236]]),{lw:2.4});S.S(T([[-10,-236],[10,-236],[0,-258]]),{tone:[1,.5],col:TURM,lw:1.2});}
+function ark(S,x,y,s){const T=p=>tf(p,x,y,s);S.g();const G='#e0b13a';S.L(T([[-150,-50],[150,-50]]),{lw:6*s,col:'#8a5a2a'});
+  S.S(T(rect(-100,-110,200,90)),{tone:[1,.45],dir:0,col:G,lw:2});S.L(T(rect(-90,-100,180,70)),{closed:1,lw:1.4,col:'#9a6a1a'});S.S(T(rect(-108,-122,216,14)),{tone:[1,.5],col:G,lw:1.6});
+  [-1,1].forEach(d=>{S.S(T([[d*30,-122],[d*80,-122],[d*70,-150],[d*40,-150]]),{tone:[1,.5],dir:0,col:G,lw:1.4});S.S(T(bz([d*70,-150],[d*40,-220],[d*10,-200],[d*6,-160],10).concat([[d*40,-150]])),{tone:[1,.6],dir:0,col:'#f2d36a',lw:1.4});});
+  [-70,70].forEach(cx=>S.S(T(ell(cx,-50,10,10,10)),{tone:[1,.5],col:G,lw:1.2}));S.G(x,y-150*s,160*s,'rgba(255,230,140,.95)',{a:.55});}
+function tablets(S,x,y,s){const T=p=>tf(p,x,y,s);S.g();[-1,1].forEach(d=>{const cx=d*58;S.S(T([[cx-50,0],[cx-50,-150]].concat(ell(cx,-150,50,46,18,Math.PI,Math.PI*2)).concat([[cx+50,-150],[cx+50,0]])),{tone:[.98,.5],dir:0,col:'#b8b4ac',lw:1.8});for(let k=0;k<5;k++)S.L(T([[cx-34,-150+k*28],[cx+34,-150+k*28]]),{lw:1.2,col:'#6a6660'});});}
+function burningBush(S,x,y,s){const T=p=>tf(p,x,y,s);S.g();S.S(T(ell(0,-50,90,50,24)),{rad:1,tone:[.95,.4],col:'#4a8a3a',lw:1.6});for(let k=-2;k<=2;k++)fire(S,x+k*34*s,y-70*s-Math.abs(k)*-10*s,(.9-Math.abs(k)*.12)*s);S.G(x,y-90*s,160*s,'rgba(255,170,60,.9)',{a:.5});}

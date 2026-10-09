@@ -1,0 +1,3270 @@
+{
+ "call-baal": {
+  "sec": "call",
+  "ord": 0,
+  "film": 1,
+  "chapter": "tribes",
+  "status": "proposed",
+  "title": "How to show Baal",
+  "body": "Narration: \"Allied Babylonian tribes called their gods Baal.\" Two hilltop gods carry this name in the chapter.",
+  "opts": [
+   {
+    "k": "storm",
+    "label": "Striding storm god",
+    "pv": "baalStorm",
+    "rec": true,
+    "now": true,
+    "note": "A bronze statuette with a horned crown, a raised mace and a lightning spear, after the Baal stele from Ugarit."
+   },
+   {
+    "k": "high",
+    "label": "High-place altar",
+    "pv": "highPlace",
+    "note": "A standing stone, a four-horned altar with fire and a sacred pole. No figure at all."
+   }
+  ],
+  "chapterName": "Gods of the tribes"
+ },
+ "call-moloch": {
+  "sec": "call",
+  "ord": 1,
+  "film": 1,
+  "chapter": "tribes",
+  "status": "proposed",
+  "title": "The Jewish tribes’ god, narrated as “Moloch”",
+  "body": "Vivekananda follows a 19th-century theory that linked Moloch and Yahveh. Israelite worship had no cult image, so a bull idol here would misrepresent it and could offend.",
+  "opts": [
+   {
+    "k": "ark",
+    "label": "Ark of the Covenant",
+    "pv": "ark",
+    "rec": true,
+    "now": true,
+    "note": "Aniconic and historically grounded; the Ark went out with the tribes to battle."
+   },
+   {
+    "k": "bull",
+    "label": "Victorian bull-headed idol",
+    "pv": "moloch",
+    "note": "How 1890s readers pictured Moloch (Flaubert’s Salammbô). Dramatic, but historically doubtful."
+   },
+   {
+    "k": "tablets",
+    "label": "Two stone tablets",
+    "pv": "tablets",
+    "note": "Clear and respectful, but it says law more than tribal war-god."
+   }
+  ],
+  "chapterName": "Gods of the tribes"
+ },
+ "call-merodach": {
+  "sec": "call",
+  "ord": 2,
+  "film": 1,
+  "chapter": "tribes",
+  "status": "proposed",
+  "title": "Baal-Merodach (Marduk of Babylon)",
+  "body": "Narration: \"Baal-Merodach, said the Babylonians, was the greatest.\"",
+  "opts": [
+   {
+    "k": "dragon",
+    "label": "Marduk’s dragon on blue glazed brick",
+    "pv": "mushhushshu",
+    "rec": true,
+    "now": true,
+    "note": "The mušḫuššu dragon from the Ishtar Gate: the best-known image tied to Marduk."
+   },
+   {
+    "k": "ziggurat",
+    "label": "The ziggurat of Babylon",
+    "pv": "ziggurat",
+    "note": "Etemenanki, Marduk’s temple tower. Reads as Babylon more than as a god."
+   }
+  ],
+  "chapterName": "Gods of the tribes"
+ },
+ "call-yahveh": {
+  "sec": "call",
+  "ord": 3,
+  "film": 1,
+  "chapter": "tribes",
+  "status": "proposed",
+  "title": "“Moloch-Yahveh”, over all the other Molochs",
+  "body": "The lecture’s own name for the god who won out among the Jewish tribes. We keep his words in the lettering and keep the image aniconic.",
+  "opts": [
+   {
+    "k": "ark",
+    "label": "The Ark, crowned",
+    "pv": "ark",
+    "rec": true,
+    "now": true,
+    "note": "Matches the earlier hilltop, so the viewer sees the same tribe rise."
+   },
+   {
+    "k": "bush",
+    "label": "The burning bush",
+    "pv": "burningBush",
+    "note": "Strong image, but it belongs to Moses’ call, not to tribal rivalry."
+   },
+   {
+    "k": "tablets",
+    "label": "Two stone tablets",
+    "pv": "tablets",
+    "note": ""
+   }
+  ],
+  "chapterName": "Gods of the tribes"
+ },
+ "call-swastika": {
+  "sec": "call",
+  "ord": 4,
+  "status": "open",
+  "title": "The swastika as an auspicious mark",
+  "body": "It is an everyday Hindu sign of good fortune, drawn on doorways, account books and the kalash. Viewers outside India often read it through its Nazi misuse. Right now the films leave it out.",
+  "opts": [
+   {
+    "k": "out",
+    "label": "Leave it out",
+    "now": true,
+    "note": "No risk of misreading. The kalash and doorways stay without it."
+   },
+   {
+    "k": "india",
+    "label": "Use it in India scenes only",
+    "pv": "kalash",
+    "note": "On the kalash, thresholds and rangoli, small and in vermilion, as it actually appears."
+   }
+  ],
+  "film": 0
+ },
+ "call-deities": {
+  "sec": "call",
+  "ord": 5,
+  "status": "open",
+  "title": "How to show Hindu deities and avatars",
+  "body": "Film 1 shows gods only through their emblems. Later films need Rama, Sita, Krishna and the Gopis, Shiva in the poor, Dhruva and Prahlada, Radha and Krishna (Films 4, 13, 21, 23).",
+  "opts": [
+   {
+    "k": "symbols",
+    "label": "Emblems and attributes only",
+    "pv": "trident",
+    "now": true,
+    "note": "Trident and Nandi, conch and chakra, bow and arrow, flute and peacock feather. Never wrong, sometimes abstract."
+   },
+   {
+    "k": "folk",
+    "label": "Painted figures in an Indian folk manner",
+    "note": "Original drawings in the spirit of Kalighat pat and Pattachitra, painted in the same watercolour."
+   },
+   {
+    "k": "oleo",
+    "label": "Traced 1890s oleographs",
+    "note": "Raja Ravi Varma Press prints, which are public domain and period-correct. Each one needs a download you approve."
+   }
+  ],
+  "film": 0
+ },
+ "call-saints": {
+  "sec": "call",
+  "ord": 6,
+  "status": "open",
+  "title": "Saints and teachers on screen",
+  "body": "Shankara, Ramanuja, Chaitanya, Nanak, Kabir, Dadu, Buddha, Guru Govind Singh, Ramakrishna (Films 11, 13, 17, 22). Sikh practice is wary of painted likenesses of the Gurus.",
+  "opts": [
+   {
+    "k": "trace",
+    "label": "Trace real photographs where they exist",
+    "note": "Ramakrishna (1881, 1884) and other 19th-century figures. Each photo needs your yes to download."
+   },
+   {
+    "k": "emblem",
+    "label": "Emblems for the rest",
+    "pv": "palmleaf",
+    "note": "Bodhi tree for the Buddha, a manuscript and staff for Shankara, the Khanda for Guru Govind Singh."
+   },
+   {
+    "k": "paint",
+    "label": "Painted portraits for everyone",
+    "note": "Consistent look, but invented faces for people we have no picture of."
+   }
+  ],
+  "film": 0
+ },
+ "call-science": {
+  "sec": "call",
+  "ord": 7,
+  "status": "open",
+  "title": "The science parallels",
+  "body": "Several chapters set a lecture idea beside a discovery: Lavoisier 1789, Ritter 1801, Helmholtz 1847, Maxwell 1865, Mendeleev 1869, Koch 1882, Copernicus 1543, Newton 1687 (Films 2, 3, 7, 9, 12, 18, 24, 25, 29).",
+  "opts": [
+   {
+    "k": "sepia",
+    "label": "A sepia engraving inset",
+    "note": "A small framed plate, like a 19th-century textbook figure, sits in the mural. The style change signals the change of subject."
+   },
+   {
+    "k": "water",
+    "label": "Same watercolour as everything else",
+    "pv": "dynamo",
+    "now": true,
+    "note": "The apparatus is painted like any other object, as with the dynamo in Film 1."
+   }
+  ],
+  "film": 0
+ },
+ "call-photos": {
+  "sec": "call",
+  "ord": 8,
+  "status": "open",
+  "title": "More period photographs to trace",
+  "body": "Candidates: Sri Ramakrishna; Raja Bhaskara Sethupathi of Ramnad; Raja Ajit Singh of Khetri; Sister Nivedita; Belur Math in 1899; Castle Kernan, Madras.",
+  "opts": [
+   {
+    "k": "each",
+    "label": "Ask me before each download",
+    "now": true,
+    "note": "Name, source and size for every file, one at a time."
+   },
+   {
+    "k": "list",
+    "label": "Approve this list from Wikimedia Commons",
+    "note": "Public-domain files only. I still show you each one before using it."
+   }
+  ],
+  "film": 0
+ },
+ "style-voice": {
+  "sec": "style",
+  "ord": 0,
+  "status": "settled",
+  "title": "One narrator",
+  "choice": "A single voice (Kokoro af_heart, speed 0.92). Quoted lines use the same voice and show as italic captions.",
+  "why": "You asked for one voice, not two.",
+  "film": 0
+ },
+ "style-length": {
+  "sec": "style",
+  "ord": 1,
+  "status": "settled",
+  "title": "No time cap",
+  "choice": "Each lecture gets the length its content needs.",
+  "why": "Your brief at the start.",
+  "film": 0
+ },
+ "style-mural": {
+  "sec": "style",
+  "ord": 2,
+  "status": "settled",
+  "title": "One mural per chapter",
+  "choice": "Drawings build left to right; the camera pans panel to panel and pulls back to show the whole mural, then the board wipes clean.",
+  "why": "The After Skool study.",
+  "film": 0
+ },
+ "style-paint": {
+  "sec": "style",
+  "ord": 3,
+  "status": "settled",
+  "title": "Watercolour",
+  "choice": "Layered translucent washes on a paper texture, with a light ink line. No cross-hatching.",
+  "why": "You chose watercolour over gouache and flat marker.",
+  "film": 0
+ },
+ "style-reveal": {
+  "sec": "style",
+  "ord": 4,
+  "status": "settled",
+  "title": "Outline, then colour",
+  "choice": "Each object sketches its outline quickly and floods with colour by sweep, bloom or drop, chosen per object.",
+  "why": "Hatching was slow and repetitive.",
+  "film": 0
+ },
+ "style-density": {
+  "sec": "style",
+  "ord": 5,
+  "status": "settled",
+  "title": "Dense scenes",
+  "choice": "20 to 50 things from the narration in each panel: places, people, tools, plants, animals, symbols.",
+  "why": "You asked for even denser.",
+  "film": 0
+ },
+ "style-hand": {
+  "sec": "style",
+  "ord": 6,
+  "status": "settled",
+  "title": "No hand in shot",
+  "choice": "Drawings appear by themselves.",
+  "why": "Your choice in the mural study.",
+  "film": 0
+ },
+ "style-letter": {
+  "sec": "style",
+  "ord": 7,
+  "status": "settled",
+  "title": "Lettering on the board",
+  "choice": "Hand-lettered capitals (Patrick Hand SC) placed in clear space, key words in colour.",
+  "why": "Your choice in the mural study.",
+  "film": 0
+ },
+ "style-quote": {
+  "sec": "style",
+  "ord": 8,
+  "status": "settled",
+  "title": "The quote card",
+  "choice": "Closing quotation in italic serif beside the traced portrait on a sky wash.",
+  "why": "",
+  "film": 0
+ },
+ "style-portraits": {
+  "sec": "style",
+  "ord": 9,
+  "status": "settled",
+  "title": "Traced portraits",
+  "choice": "People are traced from public-domain photographs of the 1890s and painted from their own colour regions.",
+  "why": "You approved the two 1893 Chicago photographs.",
+  "film": 0
+ },
+ "style-sanskrit": {
+  "sec": "style",
+  "ord": 10,
+  "status": "settled",
+  "title": "Sanskrit in Devanagari",
+  "choice": "Sanskrit terms and verses are lettered in Devanagari (Tiro Devanagari Sanskrit), with English beside them.",
+  "why": "",
+  "film": 0
+ },
+ "style-band": {
+  "sec": "style",
+  "ord": 11,
+  "status": "settled",
+  "title": "Temple border in India scenes",
+  "choice": "A red-and-gold temple-tower band runs along the top of every India scene. It appears at once, without animating, and joins up from panel to panel like a sari border.",
+  "why": "You asked for it drawn instantly.",
+  "film": 0
+ },
+ "style-hindu": {
+  "sec": "style",
+  "ord": 12,
+  "status": "settled",
+  "title": "Hindu motifs where India is the subject",
+  "choice": "Kalash, toran, lamps, bells, rangoli, temple elephants, peacocks, Om, yantra and the rest appear only in India scenes. Greek, Roman, Western and world scenes stay without them.",
+  "why": "Your note on making India scenes stylistically Hindu.",
+  "film": 0
+ },
+ "style-maps": {
+  "sec": "style",
+  "ord": 13,
+  "status": "settled",
+  "title": "Maps for places",
+  "choice": "A chapter that opens on a place starts with a watercolour map and the route.",
+  "why": "",
+  "film": 0
+ },
+ "style-aniconic": {
+  "sec": "style",
+  "ord": 14,
+  "status": "settled",
+  "title": "Aniconic faiths stay aniconic",
+  "choice": "Where a tradition forbids images of God, we show its sacred objects (the Ark, the Kaaba), never a figure.",
+  "why": "Set with the Gods of the tribes chapter.",
+  "film": 0
+ },
+ "sym-1-00": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "arrive",
+  "chapterName": "Landfall at Colombo",
+  "ord": 0,
+  "status": "settled",
+  "title": "Colombo harbour",
+  "pv": "lighthouse",
+  "choice": "Lighthouse, steamship, outrigger canoes, harbour buildings, palms"
+ },
+ "sym-1-01": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "arrive",
+  "chapterName": "Landfall at Colombo",
+  "ord": 1,
+  "status": "settled",
+  "title": "The welcome",
+  "pv": "kalash",
+  "choice": "Welcome arch with toran and marigolds, a kalash on each side, a temple elephant, a cheering crowd"
+ },
+ "sym-1-02": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "arrive",
+  "chapterName": "Landfall at Colombo",
+  "ord": 2,
+  "status": "settled",
+  "title": "The road north",
+  "pv": "indiaMap",
+  "choice": "Map of India with the tour route, temple icons at Madura, Madras and Calcutta"
+ },
+ "sym-1-03": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "welcome",
+  "chapterName": "The welcome",
+  "ord": 3,
+  "status": "settled",
+  "title": "Address of welcome",
+  "pv": "scroll",
+  "choice": "A scroll under a toran, brass lamps, garlands, two rows of people"
+ },
+ "sym-1-04": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "welcome",
+  "chapterName": "The welcome",
+  "ord": 4,
+  "status": "settled",
+  "title": "Not a politician, soldier or millionaire",
+  "pv": "tophat",
+  "choice": "Top hat, cannon, money bag and crown, each struck through in red"
+ },
+ "sym-1-05": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "welcome",
+  "chapterName": "The welcome",
+  "ord": 5,
+  "status": "settled",
+  "title": "A begging Sannyasin",
+  "pv": "kamandalu",
+  "choice": "Begging bowl, kamandalu, staff and rudraksha mala"
+ },
+ "sym-1-06": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "welcome",
+  "chapterName": "The welcome",
+  "ord": 6,
+  "status": "settled",
+  "title": "Religion, the backbone",
+  "pv": "spine",
+  "choice": "A spine of stacked vertebrae beside Om"
+ },
+ "sym-1-07": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "welcome",
+  "chapterName": "The welcome",
+  "ord": 7,
+  "status": "settled",
+  "title": "Floral Hall",
+  "pv": "building",
+  "choice": "Pillared hall with a toran and brass lamps at the door"
+ },
+ "sym-1-08": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "punya",
+  "chapterName": "Punya Bhumi",
+  "ord": 8,
+  "status": "settled",
+  "title": "Blessings from the West",
+  "pv": "steamship",
+  "choice": "The 1893 portrait, a glowing path from India to Western buildings"
+ },
+ "sym-1-09": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "punya",
+  "chapterName": "Punya Bhumi",
+  "ord": 9,
+  "status": "settled",
+  "title": "Punya Bhumi",
+  "pv": "rangoli",
+  "choice": "The word in Devanagari over temple towns, temple bells, rangoli and lamps"
+ },
+ "sym-1-10": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "punya",
+  "chapterName": "Punya Bhumi",
+  "ord": 10,
+  "status": "settled",
+  "title": "Every soul wending Godward",
+  "pv": "shikhara",
+  "choice": "Pilgrims climbing a path to a shikhara temple, saffron flags"
+ },
+ "sym-1-11": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "punya",
+  "chapterName": "Punya Bhumi",
+  "ord": 11,
+  "status": "settled",
+  "title": "Tidal waves of philosophy",
+  "pv": "globe",
+  "choice": "Globe with rings of waves, ships and books at the edges"
+ },
+ "sym-1-12": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "sword",
+  "chapterName": "Blood or blessing",
+  "ord": 12,
+  "status": "settled",
+  "title": "Greek battalions, war trumpets",
+  "pv": "hoplite",
+  "choice": "Hoplites in dust, trumpets, the eagle standard, a temple"
+ },
+ "sym-1-13": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "sword",
+  "chapterName": "Blood or blessing",
+  "ord": 13,
+  "status": "settled",
+  "title": "A deluge of blood",
+  "pv": "helmetX",
+  "choice": "Red sea, fallen helmets and swords, blood rain, widows’ tears"
+ },
+ "sym-1-14": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "sword",
+  "chapterName": "Blood or blessing",
+  "ord": 14,
+  "status": "settled",
+  "title": "A blessing behind it",
+  "pv": "kalash",
+  "choice": "A large kalash, doves, sages, a tulsi planter, a peacock, a banyan"
+ },
+ "sym-1-15": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "capitol",
+  "chapterName": "A spider's web on the Capitol",
+  "ord": 15,
+  "status": "settled",
+  "title": "The Roman eagle",
+  "pv": "eagleStandard",
+  "choice": "The aquila standard over a temple, coins and a crown"
+ },
+ "sym-1-16": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "capitol",
+  "chapterName": "A spider's web on the Capitol",
+  "ord": 16,
+  "status": "settled",
+  "title": "The spider’s web on the Capitol",
+  "pv": "web",
+  "choice": "Broken columns with a spider web, a fallen helmet, ripples"
+ },
+ "sym-1-17": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "capitol",
+  "chapterName": "A spider's web on the Capitol",
+  "ord": 17,
+  "status": "settled",
+  "title": "Manu",
+  "pv": "havan",
+  "choice": "A seated lawgiver, palm-leaf laws, books, a havan fire, a heart"
+ },
+ "sym-1-18": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "plough",
+  "chapterName": "The ploughman's mark",
+  "ord": 18,
+  "status": "settled",
+  "title": "Religion, the one occupation",
+  "pv": "bell",
+  "choice": "A saffron panel lettered RELIGION with a toran, bells and a temple town"
+ },
+ "sym-1-19": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "plough",
+  "chapterName": "The ploughman's mark",
+  "ord": 19,
+  "status": "settled",
+  "title": "The Sino-Japanese War",
+  "pv": "newspaper",
+  "choice": "Newspaper front pages and a cannon"
+ },
+ "sym-1-20": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "plough",
+  "chapterName": "The ploughman's mark",
+  "ord": 20,
+  "status": "settled",
+  "title": "The Western labourer",
+  "pv": "tophat",
+  "choice": "Man in a hat at the plough, a vote box, a silver dollar, a church"
+ },
+ "sym-1-21": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "plough",
+  "chapterName": "The ploughman's mark",
+  "ord": 21,
+  "status": "settled",
+  "title": "The ploughman’s mark",
+  "pv": "ox",
+  "choice": "Oxen, plough, the farmer with a mark on his forehead, rice fields, tulsi, rangoli, a well, women with water pots"
+ },
+ "sym-1-22": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "dynamo",
+  "chapterName": "Storing the light",
+  "ord": 22,
+  "status": "settled",
+  "title": "Political greatness is not our mission",
+  "pv": "crownX",
+  "choice": "Crown and cannon, struck through"
+ },
+ "sym-1-23": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "dynamo",
+  "chapterName": "Storing the light",
+  "ord": 23,
+  "status": "settled",
+  "title": "A dynamo of spiritual energy",
+  "pv": "dynamo",
+  "choice": "A dynamo inside a halo of rays, lamps and a brass samai"
+ },
+ "sym-1-24": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "dynamo",
+  "chapterName": "Storing the light",
+  "ord": 24,
+  "status": "settled",
+  "title": "The light spiritual",
+  "pv": "om",
+  "choice": "Globe with India glowing and Om at its heart; Persian, Greek, Roman, Arab and English ships"
+ },
+ "sym-1-25": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "dew",
+  "chapterName": "Like the gentle dew",
+  "ord": 25,
+  "status": "settled",
+  "title": "Indian ideas flooding the world",
+  "pv": "indiaMap",
+  "choice": "Map of India with Om and arrows outward to mosque, church and stupa"
+ },
+ "sym-1-26": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "dew",
+  "chapterName": "Like the gentle dew",
+  "ord": 26,
+  "status": "settled",
+  "title": "Schopenhauer and the Upanishads",
+  "pv": "book",
+  "choice": "The philosopher, and the Upanishads in Sanskrit, Persian and Latin"
+ },
+ "sym-1-27": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "dew",
+  "chapterName": "Like the gentle dew",
+  "ord": 27,
+  "status": "settled",
+  "title": "Never by fire and sword",
+  "pv": "sword",
+  "choice": "Sword and fire inside a red no-sign; FASCINATION in a flower of life"
+ },
+ "sym-1-28": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "dew",
+  "chapterName": "Like the gentle dew",
+  "ord": 28,
+  "status": "settled",
+  "title": "Like the gentle dew",
+  "pv": "lotus",
+  "choice": "Dewdrops falling on a lotus pond and roses"
+ },
+ "sym-1-29": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "porcelain",
+  "chapterName": "Porcelain cracks",
+  "ord": 29,
+  "status": "settled",
+  "title": "History repeating",
+  "pv": "wheel",
+  "choice": "A turning wheel under the light of science and books"
+ },
+ "sym-1-30": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "porcelain",
+  "chapterName": "Porcelain cracks",
+  "ord": 30,
+  "status": "settled",
+  "title": "Pulverised like porcelain",
+  "pv": "vase",
+  "choice": "Cracked vases, shards and a hammer"
+ },
+ "sym-1-31": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "porcelain",
+  "chapterName": "Porcelain cracks",
+  "ord": 31,
+  "status": "settled",
+  "title": "The world a mud-puddle",
+  "pv": "clock",
+  "choice": "A puddle, a clock, figures evolving, the conservation of energy"
+ },
+ "sym-1-32": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "porcelain",
+  "chapterName": "Porcelain cracks",
+  "ord": 32,
+  "status": "settled",
+  "title": "Vedanta",
+  "pv": "sriYantra",
+  "choice": "The Sri Yantra inside rings of colour"
+ },
+ "sym-1-33": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "yugas",
+  "chapterName": "Shruti and Smriti",
+  "ord": 33,
+  "status": "settled",
+  "title": "Shruti and Smriti",
+  "pv": "palmleaf",
+  "choice": "Two palm-leaf manuscripts in Devanagari, a temple town and a village"
+ },
+ "sym-1-34": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "yugas",
+  "chapterName": "Shruti and Smriti",
+  "ord": 34,
+  "status": "settled",
+  "title": "Yugas and Rishis",
+  "pv": "wheel",
+  "choice": "The wheel of the four Yugas; Rishis with kamandalus and a havan"
+ },
+ "sym-1-35": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "tribes",
+  "chapterName": "Gods of the tribes",
+  "ord": 35,
+  "status": "settled",
+  "title": "Baal and Moloch",
+  "pv": "baalStorm",
+  "choice": "See Your call: the storm god for Baal, the Ark for the tribe narrated as Moloch"
+ },
+ "sym-1-36": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "tribes",
+  "chapterName": "Gods of the tribes",
+  "ord": 36,
+  "status": "settled",
+  "title": "Baal-Merodach and Moloch-Yahveh",
+  "pv": "mushhushshu",
+  "choice": "See Your call: Marduk’s dragon against the crowned Ark, swords crossed"
+ },
+ "sym-1-37": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "tribes",
+  "chapterName": "Gods of the tribes",
+  "ord": 37,
+  "status": "settled",
+  "title": "Shiva and Vishnu",
+  "pv": "nandi",
+  "choice": "Trident, lingam and Nandi; conch, chakra and peacock; a temple bell"
+ },
+ "sym-1-38": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "ekam",
+  "chapterName": "Ekam sat",
+  "ord": 38,
+  "status": "settled",
+  "title": "Ekam sat",
+  "pv": "om",
+  "choice": "The Rig Veda line on a palm leaf with Om, sages, lamps and a havan"
+ },
+ "sym-1-39": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "ekam",
+  "chapterName": "Ekam sat",
+  "ord": 39,
+  "status": "settled",
+  "title": "The same One by many names",
+  "pv": "trident",
+  "choice": "Trident = conch inside one circle, a rudraksha mala"
+ },
+ "sym-1-40": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "ekam",
+  "chapterName": "Ekam sat",
+  "ord": 40,
+  "status": "settled",
+  "title": "Dualist and Advaitist",
+  "pv": "seated",
+  "choice": "Two seated sages either side of a banyan, a kamandalu and tulsi"
+ },
+ "sym-1-41": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "rivers",
+  "chapterName": "Rivers to one ocean",
+  "ord": 41,
+  "status": "settled",
+  "title": "Temples for Mohammedans and Christians",
+  "pv": "mosque",
+  "choice": "Hindu builders carrying bricks between a mosque and a church"
+ },
+ "sym-1-42": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "rivers",
+  "chapterName": "Rivers to one ocean",
+  "ord": 42,
+  "status": "settled",
+  "title": "Different rivers, one ocean",
+  "pv": "waves",
+  "choice": "Mountain streams converging into the sea, shikharas on the banks"
+ },
+ "sym-1-43": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "rivers",
+  "chapterName": "Rivers to one ocean",
+  "ord": 43,
+  "status": "settled",
+  "title": "The Caaba, the church, the stupa",
+  "pv": "lingam",
+  "choice": "Kaaba, church and stupa with arrows to a garlanded lingam"
+ },
+ "sym-1-44": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "mission",
+  "chapterName": "Not toleration, sympathy",
+  "ord": 44,
+  "status": "settled",
+  "title": "Not toleration but sympathy",
+  "pv": "dove",
+  "choice": "Doves and flowers under the lettering"
+ },
+ "sym-1-45": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "mission",
+  "chapterName": "Not toleration, sympathy",
+  "ord": 45,
+  "status": "settled",
+  "title": "Man, woman and child",
+  "pv": "rangoli",
+  "choice": "Three figures, a village, a rangoli, six virtues lettered above"
+ },
+ "sym-1-46": {
+  "sec": "symbol",
+  "film": 1,
+  "chapter": "mission",
+  "chapterName": "Not toleration, sympathy",
+  "ord": 46,
+  "status": "settled",
+  "title": "Next: Jaffna",
+  "pv": "gopuram",
+  "choice": "Map from Colombo to Jaffna with a gopuram and a kalash"
+ },
+ "motif-om": {
+  "sec": "motif",
+  "ord": 0,
+  "status": "settled",
+  "title": "Om",
+  "pv": "om",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "The welcome",
+   "Punya Bhumi",
+   "Storing the light",
+   "Like the gentle dew",
+   "Ekam sat"
+  ],
+  "film": 0
+ },
+ "motif-kalash": {
+  "sec": "motif",
+  "ord": 1,
+  "status": "settled",
+  "title": "Kalash (purna kumbha)",
+  "pv": "kalash",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Landfall at Colombo",
+   "Blood or blessing",
+   "Not toleration, sympathy"
+  ],
+  "film": 0
+ },
+ "motif-toran": {
+  "sec": "motif",
+  "ord": 2,
+  "status": "settled",
+  "title": "Toran of mango leaves",
+  "pv": "toran",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Landfall at Colombo",
+   "The welcome",
+   "The ploughman's mark"
+  ],
+  "film": 0
+ },
+ "motif-marigolds": {
+  "sec": "motif",
+  "ord": 3,
+  "status": "settled",
+  "title": "Marigold strings",
+  "pv": "marigolds",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Landfall at Colombo"
+  ],
+  "film": 0
+ },
+ "motif-rangoli": {
+  "sec": "motif",
+  "ord": 4,
+  "status": "settled",
+  "title": "Rangoli",
+  "pv": "rangoli",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Punya Bhumi",
+   "The ploughman's mark",
+   "Not toleration, sympathy"
+  ],
+  "film": 0
+ },
+ "motif-bell": {
+  "sec": "motif",
+  "ord": 5,
+  "status": "settled",
+  "title": "Temple bell",
+  "pv": "bell",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Punya Bhumi",
+   "The ploughman's mark",
+   "Gods of the tribes"
+  ],
+  "film": 0
+ },
+ "motif-samai": {
+  "sec": "motif",
+  "ord": 6,
+  "status": "settled",
+  "title": "Brass lamp (samai)",
+  "pv": "samai",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "The welcome",
+   "Punya Bhumi",
+   "Storing the light",
+   "Shruti and Smriti"
+  ],
+  "film": 0
+ },
+ "motif-diya": {
+  "sec": "motif",
+  "ord": 7,
+  "status": "settled",
+  "title": "Diya",
+  "pv": "diya",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "The welcome",
+   "Punya Bhumi",
+   "The ploughman's mark",
+   "Storing the light",
+   "Like the gentle dew",
+   "Ekam sat"
+  ],
+  "film": 0
+ },
+ "motif-lotus": {
+  "sec": "motif",
+  "ord": 8,
+  "status": "settled",
+  "title": "Lotus",
+  "pv": "lotus",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Punya Bhumi",
+   "Like the gentle dew",
+   "Gods of the tribes",
+   "Ekam sat"
+  ],
+  "film": 0
+ },
+ "motif-peacock": {
+  "sec": "motif",
+  "ord": 9,
+  "status": "settled",
+  "title": "Peacock",
+  "pv": "peacock",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Blood or blessing",
+   "Gods of the tribes"
+  ],
+  "film": 0
+ },
+ "motif-elephant": {
+  "sec": "motif",
+  "ord": 10,
+  "status": "settled",
+  "title": "Temple elephant",
+  "pv": "elephant",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Landfall at Colombo"
+  ],
+  "film": 0
+ },
+ "motif-nandi": {
+  "sec": "motif",
+  "ord": 11,
+  "status": "settled",
+  "title": "Nandi",
+  "pv": "nandi",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Gods of the tribes"
+  ],
+  "film": 0
+ },
+ "motif-tulsi": {
+  "sec": "motif",
+  "ord": 12,
+  "status": "settled",
+  "title": "Tulsi planter",
+  "pv": "tulsi",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Blood or blessing",
+   "The ploughman's mark",
+   "Ekam sat"
+  ],
+  "film": 0
+ },
+ "motif-chakra": {
+  "sec": "motif",
+  "ord": 13,
+  "status": "settled",
+  "title": "Chakra",
+  "pv": "chakra",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Gods of the tribes"
+  ],
+  "film": 0
+ },
+ "motif-sriYantra": {
+  "sec": "motif",
+  "ord": 14,
+  "status": "settled",
+  "title": "Sri Yantra",
+  "pv": "sriYantra",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Porcelain cracks"
+  ],
+  "film": 0
+ },
+ "motif-kamandalu": {
+  "sec": "motif",
+  "ord": 15,
+  "status": "settled",
+  "title": "Kamandalu",
+  "pv": "kamandalu",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "The welcome",
+   "Shruti and Smriti",
+   "Ekam sat"
+  ],
+  "film": 0
+ },
+ "motif-mala": {
+  "sec": "motif",
+  "ord": 16,
+  "status": "settled",
+  "title": "Rudraksha mala",
+  "pv": "mala",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "The welcome",
+   "Ekam sat"
+  ],
+  "film": 0
+ },
+ "motif-shikhara": {
+  "sec": "motif",
+  "ord": 17,
+  "status": "settled",
+  "title": "Shikhara temple",
+  "pv": "shikhara",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Landfall at Colombo",
+   "Punya Bhumi",
+   "Rivers to one ocean"
+  ],
+  "film": 0
+ },
+ "motif-gopuram": {
+  "sec": "motif",
+  "ord": 18,
+  "status": "settled",
+  "title": "Gopuram",
+  "pv": "gopuram",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Landfall at Colombo",
+   "The ploughman's mark",
+   "Not toleration, sympathy"
+  ],
+  "film": 0
+ },
+ "motif-templeTown": {
+  "sec": "motif",
+  "ord": 19,
+  "status": "settled",
+  "title": "Temple town",
+  "pv": "templeTown",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Punya Bhumi",
+   "The ploughman's mark",
+   "Shruti and Smriti"
+  ],
+  "film": 0
+ },
+ "motif-ghat": {
+  "sec": "motif",
+  "ord": 20,
+  "status": "settled",
+  "title": "River ghat",
+  "pv": "ghat",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [],
+  "film": 0
+ },
+ "motif-dhwaja": {
+  "sec": "motif",
+  "ord": 21,
+  "status": "settled",
+  "title": "Temple flag",
+  "pv": "dhwaja",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Punya Bhumi"
+  ],
+  "film": 0
+ },
+ "motif-parasol": {
+  "sec": "motif",
+  "ord": 22,
+  "status": "settled",
+  "title": "Ceremonial parasol",
+  "pv": "parasol",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [],
+  "film": 0
+ },
+ "motif-veena": {
+  "sec": "motif",
+  "ord": 23,
+  "status": "settled",
+  "title": "Veena",
+  "pv": "veena",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [],
+  "film": 0
+ },
+ "motif-havan": {
+  "sec": "motif",
+  "ord": 24,
+  "status": "settled",
+  "title": "Havan fire",
+  "pv": "havan",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "A spider's web on the Capitol",
+   "Shruti and Smriti",
+   "Ekam sat"
+  ],
+  "film": 0
+ },
+ "motif-lingam": {
+  "sec": "motif",
+  "ord": 25,
+  "status": "settled",
+  "title": "Lingam",
+  "pv": "lingam",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Gods of the tribes",
+   "Rivers to one ocean"
+  ],
+  "film": 0
+ },
+ "motif-trident": {
+  "sec": "motif",
+  "ord": 26,
+  "status": "settled",
+  "title": "Trident",
+  "pv": "trident",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Gods of the tribes",
+   "Ekam sat"
+  ],
+  "film": 0
+ },
+ "motif-conch": {
+  "sec": "motif",
+  "ord": 27,
+  "status": "settled",
+  "title": "Conch",
+  "pv": "conch",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Gods of the tribes",
+   "Ekam sat"
+  ],
+  "film": 0
+ },
+ "motif-palmleaf": {
+  "sec": "motif",
+  "ord": 28,
+  "status": "settled",
+  "title": "Palm-leaf manuscript",
+  "pv": "palmleaf",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "A spider's web on the Capitol",
+   "Shruti and Smriti",
+   "Ekam sat"
+  ],
+  "film": 0
+ },
+ "motif-banyan": {
+  "sec": "motif",
+  "ord": 29,
+  "status": "settled",
+  "title": "Banyan",
+  "pv": "banyan",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Blood or blessing",
+   "Ekam sat"
+  ],
+  "film": 0
+ },
+ "motif-kumbamBand": {
+  "sec": "motif",
+  "ord": 30,
+  "status": "settled",
+  "title": "Temple border band",
+  "pv": "kumbamBand",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [],
+  "film": 0
+ },
+ "motif-indiaMap": {
+  "sec": "motif",
+  "ord": 31,
+  "status": "settled",
+  "title": "Map of India",
+  "pv": "indiaMap",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Landfall at Colombo",
+   "Punya Bhumi",
+   "Like the gentle dew",
+   "Gods of the tribes",
+   "Not toleration, sympathy"
+  ],
+  "film": 0
+ },
+ "motif-paddy": {
+  "sec": "motif",
+  "ord": 32,
+  "status": "settled",
+  "title": "Rice fields",
+  "pv": "paddy",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "The ploughman's mark"
+  ],
+  "film": 0
+ },
+ "motif-hut": {
+  "sec": "motif",
+  "ord": 33,
+  "status": "settled",
+  "title": "Village hut",
+  "pv": "hut",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "The ploughman's mark"
+  ],
+  "film": 0
+ },
+ "motif-well": {
+  "sec": "motif",
+  "ord": 34,
+  "status": "settled",
+  "title": "Village well",
+  "pv": "well",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "The ploughman's mark"
+  ],
+  "film": 0
+ },
+ "motif-ox": {
+  "sec": "motif",
+  "ord": 35,
+  "status": "settled",
+  "title": "Ox",
+  "pv": "ox",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "The ploughman's mark"
+  ],
+  "film": 0
+ },
+ "motif-plough": {
+  "sec": "motif",
+  "ord": 36,
+  "status": "settled",
+  "title": "Plough",
+  "pv": "plough",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "The ploughman's mark"
+  ],
+  "film": 0
+ },
+ "motif-pot": {
+  "sec": "motif",
+  "ord": 37,
+  "status": "settled",
+  "title": "Water pot",
+  "pv": "pot",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "The ploughman's mark"
+  ],
+  "film": 0
+ },
+ "motif-wheel": {
+  "sec": "motif",
+  "ord": 38,
+  "status": "settled",
+  "title": "Wheel of the Yugas",
+  "pv": "wheel",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Porcelain cracks",
+   "Shruti and Smriti"
+  ],
+  "film": 0
+ },
+ "motif-garland": {
+  "sec": "motif",
+  "ord": 39,
+  "status": "settled",
+  "title": "Garland",
+  "pv": "garland",
+  "group": "india",
+  "groupName": "Hindu and Indian",
+  "used": [
+   "Landfall at Colombo",
+   "The welcome",
+   "Rivers to one ocean"
+  ],
+  "film": 0
+ },
+ "motif-hoplite": {
+  "sec": "motif",
+  "ord": 40,
+  "status": "settled",
+  "title": "Greek hoplite",
+  "pv": "hoplite",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "A spider's web on the Capitol",
+   "Storing the light"
+  ],
+  "film": 0
+ },
+ "motif-temple": {
+  "sec": "motif",
+  "ord": 41,
+  "status": "settled",
+  "title": "Greek temple",
+  "pv": "temple",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "Blood or blessing",
+   "A spider's web on the Capitol"
+  ],
+  "film": 0
+ },
+ "motif-column": {
+  "sec": "motif",
+  "ord": 42,
+  "status": "settled",
+  "title": "Column",
+  "pv": "column",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "A spider's web on the Capitol"
+  ],
+  "film": 0
+ },
+ "motif-eagleStandard": {
+  "sec": "motif",
+  "ord": 43,
+  "status": "settled",
+  "title": "Roman eagle standard",
+  "pv": "eagleStandard",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "Blood or blessing",
+   "A spider's web on the Capitol"
+  ],
+  "film": 0
+ },
+ "motif-trumpet": {
+  "sec": "motif",
+  "ord": 44,
+  "status": "settled",
+  "title": "War trumpet",
+  "pv": "trumpet",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "Blood or blessing"
+  ],
+  "film": 0
+ },
+ "motif-helmetX": {
+  "sec": "motif",
+  "ord": 45,
+  "status": "settled",
+  "title": "Fallen helmet",
+  "pv": "helmetX",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "Blood or blessing",
+   "A spider's web on the Capitol"
+  ],
+  "film": 0
+ },
+ "motif-sword": {
+  "sec": "motif",
+  "ord": 46,
+  "status": "settled",
+  "title": "Sword",
+  "pv": "sword",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "The welcome",
+   "Blood or blessing",
+   "A spider's web on the Capitol",
+   "Like the gentle dew",
+   "Gods of the tribes"
+  ],
+  "film": 0
+ },
+ "motif-web": {
+  "sec": "motif",
+  "ord": 47,
+  "status": "settled",
+  "title": "Spider web",
+  "pv": "web",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "A spider's web on the Capitol"
+  ],
+  "film": 0
+ },
+ "motif-baalStorm": {
+  "sec": "motif",
+  "ord": 48,
+  "status": "settled",
+  "title": "Baal, storm god",
+  "pv": "baalStorm",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "Gods of the tribes"
+  ],
+  "film": 0
+ },
+ "motif-highPlace": {
+  "sec": "motif",
+  "ord": 49,
+  "status": "settled",
+  "title": "High-place altar",
+  "pv": "highPlace",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [],
+  "film": 0
+ },
+ "motif-moloch": {
+  "sec": "motif",
+  "ord": 50,
+  "status": "settled",
+  "title": "Moloch, Victorian idol",
+  "pv": "moloch",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [],
+  "film": 0
+ },
+ "motif-mushhushshu": {
+  "sec": "motif",
+  "ord": 51,
+  "status": "settled",
+  "title": "Marduk’s dragon",
+  "pv": "mushhushshu",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "Gods of the tribes"
+  ],
+  "film": 0
+ },
+ "motif-ziggurat": {
+  "sec": "motif",
+  "ord": 52,
+  "status": "settled",
+  "title": "Ziggurat",
+  "pv": "ziggurat",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [],
+  "film": 0
+ },
+ "motif-ark": {
+  "sec": "motif",
+  "ord": 53,
+  "status": "settled",
+  "title": "Ark of the Covenant",
+  "pv": "ark",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "Gods of the tribes"
+  ],
+  "film": 0
+ },
+ "motif-tablets": {
+  "sec": "motif",
+  "ord": 54,
+  "status": "settled",
+  "title": "Stone tablets",
+  "pv": "tablets",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [],
+  "film": 0
+ },
+ "motif-burningBush": {
+  "sec": "motif",
+  "ord": 55,
+  "status": "settled",
+  "title": "Burning bush",
+  "pv": "burningBush",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [],
+  "film": 0
+ },
+ "motif-church": {
+  "sec": "motif",
+  "ord": 56,
+  "status": "settled",
+  "title": "Church",
+  "pv": "church",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "Punya Bhumi",
+   "The ploughman's mark",
+   "Like the gentle dew",
+   "Rivers to one ocean"
+  ],
+  "film": 0
+ },
+ "motif-mosque": {
+  "sec": "motif",
+  "ord": 57,
+  "status": "settled",
+  "title": "Mosque",
+  "pv": "mosque",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "Like the gentle dew",
+   "Rivers to one ocean"
+  ],
+  "film": 0
+ },
+ "motif-caaba": {
+  "sec": "motif",
+  "ord": 58,
+  "status": "settled",
+  "title": "Kaaba",
+  "pv": "caaba",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "Rivers to one ocean"
+  ],
+  "film": 0
+ },
+ "motif-stupa": {
+  "sec": "motif",
+  "ord": 59,
+  "status": "settled",
+  "title": "Stupa",
+  "pv": "stupa",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "Like the gentle dew",
+   "Rivers to one ocean"
+  ],
+  "film": 0
+ },
+ "motif-crownX": {
+  "sec": "motif",
+  "ord": 60,
+  "status": "settled",
+  "title": "Crown",
+  "pv": "crownX",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "The welcome",
+   "A spider's web on the Capitol",
+   "Storing the light",
+   "Gods of the tribes"
+  ],
+  "film": 0
+ },
+ "motif-scroll": {
+  "sec": "motif",
+  "ord": 61,
+  "status": "settled",
+  "title": "Scroll",
+  "pv": "scroll",
+  "group": "ancient",
+  "groupName": "Ancient and Western",
+  "used": [
+   "The welcome"
+  ],
+  "film": 0
+ },
+ "motif-skyset": {
+  "sec": "motif",
+  "ord": 62,
+  "status": "settled",
+  "title": "Sky with sun, clouds, birds",
+  "pv": "skyset",
+  "group": "world",
+  "groupName": "Land, sea and sky",
+  "used": [
+   "Landfall at Colombo",
+   "The welcome",
+   "Blood or blessing",
+   "A spider's web on the Capitol",
+   "The ploughman's mark",
+   "Gods of the tribes",
+   "Rivers to one ocean",
+   "Not toleration, sympathy"
+  ],
+  "film": 0
+ },
+ "motif-mountains": {
+  "sec": "motif",
+  "ord": 63,
+  "status": "settled",
+  "title": "Mountains",
+  "pv": "mountains",
+  "group": "world",
+  "groupName": "Land, sea and sky",
+  "used": [
+   "Landfall at Colombo",
+   "Punya Bhumi",
+   "Blood or blessing",
+   "The ploughman's mark",
+   "Like the gentle dew"
+  ],
+  "film": 0
+ },
+ "motif-waves": {
+  "sec": "motif",
+  "ord": 64,
+  "status": "settled",
+  "title": "Sea",
+  "pv": "waves",
+  "group": "world",
+  "groupName": "Land, sea and sky",
+  "used": [
+   "Landfall at Colombo",
+   "Blood or blessing",
+   "Storing the light",
+   "Rivers to one ocean",
+   "Not toleration, sympathy"
+  ],
+  "film": 0
+ },
+ "motif-palm": {
+  "sec": "motif",
+  "ord": 65,
+  "status": "settled",
+  "title": "Palm",
+  "pv": "palm",
+  "group": "world",
+  "groupName": "Land, sea and sky",
+  "used": [
+   "Landfall at Colombo",
+   "The welcome",
+   "The ploughman's mark",
+   "Rivers to one ocean",
+   "Not toleration, sympathy"
+  ],
+  "film": 0
+ },
+ "motif-cloud": {
+  "sec": "motif",
+  "ord": 66,
+  "status": "settled",
+  "title": "Cloud",
+  "pv": "cloud",
+  "group": "world",
+  "groupName": "Land, sea and sky",
+  "used": [
+   "Punya Bhumi"
+  ],
+  "film": 0
+ },
+ "motif-sun": {
+  "sec": "motif",
+  "ord": 67,
+  "status": "settled",
+  "title": "Sun",
+  "pv": "sun",
+  "group": "world",
+  "groupName": "Land, sea and sky",
+  "used": [
+   "Like the gentle dew",
+   "Shruti and Smriti"
+  ],
+  "film": 0
+ },
+ "motif-bird": {
+  "sec": "motif",
+  "ord": 68,
+  "status": "settled",
+  "title": "Bird",
+  "pv": "bird",
+  "group": "world",
+  "groupName": "Land, sea and sky",
+  "used": [
+   "Rivers to one ocean"
+  ],
+  "film": 0
+ },
+ "motif-dove": {
+  "sec": "motif",
+  "ord": 69,
+  "status": "settled",
+  "title": "Dove",
+  "pv": "dove",
+  "group": "world",
+  "groupName": "Land, sea and sky",
+  "used": [
+   "Punya Bhumi",
+   "Blood or blessing",
+   "Like the gentle dew",
+   "Not toleration, sympathy"
+  ],
+  "film": 0
+ },
+ "motif-rose": {
+  "sec": "motif",
+  "ord": 70,
+  "status": "settled",
+  "title": "Rose",
+  "pv": "rose",
+  "group": "world",
+  "groupName": "Land, sea and sky",
+  "used": [
+   "The ploughman's mark",
+   "Like the gentle dew"
+  ],
+  "film": 0
+ },
+ "motif-flowers": {
+  "sec": "motif",
+  "ord": 71,
+  "status": "settled",
+  "title": "Flower bed",
+  "pv": "flowers",
+  "group": "world",
+  "groupName": "Land, sea and sky",
+  "used": [
+   "Punya Bhumi",
+   "Blood or blessing",
+   "Like the gentle dew",
+   "Shruti and Smriti",
+   "Rivers to one ocean",
+   "Not toleration, sympathy"
+  ],
+  "film": 0
+ },
+ "motif-fire": {
+  "sec": "motif",
+  "ord": 72,
+  "status": "settled",
+  "title": "Fire",
+  "pv": "fire",
+  "group": "world",
+  "groupName": "Land, sea and sky",
+  "used": [
+   "Blood or blessing",
+   "Like the gentle dew",
+   "Gods of the tribes"
+  ],
+  "film": 0
+ },
+ "motif-hill": {
+  "sec": "motif",
+  "ord": 73,
+  "status": "settled",
+  "title": "Hill",
+  "pv": "hill",
+  "group": "world",
+  "groupName": "Land, sea and sky",
+  "used": [
+   "Punya Bhumi",
+   "Blood or blessing",
+   "A spider's web on the Capitol",
+   "Gods of the tribes"
+  ],
+  "film": 0
+ },
+ "motif-globe": {
+  "sec": "motif",
+  "ord": 74,
+  "status": "settled",
+  "title": "Globe",
+  "pv": "globe",
+  "group": "world",
+  "groupName": "Land, sea and sky",
+  "used": [
+   "Punya Bhumi",
+   "Storing the light"
+  ],
+  "film": 0
+ },
+ "motif-rainbow": {
+  "sec": "motif",
+  "ord": 75,
+  "status": "settled",
+  "title": "Rainbow",
+  "pv": "rainbow",
+  "group": "world",
+  "groupName": "Land, sea and sky",
+  "used": [
+   "Punya Bhumi",
+   "Storing the light",
+   "Like the gentle dew",
+   "Porcelain cracks"
+  ],
+  "film": 0
+ },
+ "motif-village": {
+  "sec": "motif",
+  "ord": 76,
+  "status": "settled",
+  "title": "Village",
+  "pv": "village",
+  "group": "world",
+  "groupName": "Land, sea and sky",
+  "used": [
+   "Shruti and Smriti",
+   "Not toleration, sympathy"
+  ],
+  "film": 0
+ },
+ "motif-person": {
+  "sec": "motif",
+  "ord": 77,
+  "status": "settled",
+  "title": "Person",
+  "pv": "person",
+  "group": "people",
+  "groupName": "People and crowds",
+  "used": [
+   "The welcome",
+   "Punya Bhumi",
+   "Blood or blessing",
+   "The ploughman's mark",
+   "Storing the light",
+   "Like the gentle dew",
+   "Porcelain cracks",
+   "Not toleration, sympathy"
+  ],
+  "film": 0
+ },
+ "motif-crowd": {
+  "sec": "motif",
+  "ord": 78,
+  "status": "settled",
+  "title": "Crowd",
+  "pv": "crowd",
+  "group": "people",
+  "groupName": "People and crowds",
+  "used": [
+   "Landfall at Colombo",
+   "The ploughman's mark",
+   "Gods of the tribes",
+   "Rivers to one ocean"
+  ],
+  "film": 0
+ },
+ "motif-crowdRows": {
+  "sec": "motif",
+  "ord": 79,
+  "status": "settled",
+  "title": "Two-row crowd",
+  "pv": "crowdRows",
+  "group": "people",
+  "groupName": "People and crowds",
+  "used": [
+   "The welcome",
+   "Not toleration, sympathy"
+  ],
+  "film": 0
+ },
+ "motif-seated": {
+  "sec": "motif",
+  "ord": 80,
+  "status": "settled",
+  "title": "Seated figure",
+  "pv": "seated",
+  "group": "people",
+  "groupName": "People and crowds",
+  "used": [
+   "A spider's web on the Capitol",
+   "Ekam sat"
+  ],
+  "film": 0
+ },
+ "motif-sage": {
+  "sec": "motif",
+  "ord": 81,
+  "status": "settled",
+  "title": "Sage",
+  "pv": "sage",
+  "group": "people",
+  "groupName": "People and crowds",
+  "used": [
+   "Blood or blessing",
+   "Shruti and Smriti",
+   "Ekam sat"
+  ],
+  "film": 0
+ },
+ "motif-battlefield": {
+  "sec": "motif",
+  "ord": 82,
+  "status": "settled",
+  "title": "Battlefield",
+  "pv": "battlefield",
+  "group": "people",
+  "groupName": "People and crowds",
+  "used": [
+   "Blood or blessing",
+   "A spider's web on the Capitol",
+   "Gods of the tribes"
+  ],
+  "film": 0
+ },
+ "motif-canoe": {
+  "sec": "motif",
+  "ord": 83,
+  "status": "settled",
+  "title": "Outrigger canoe",
+  "pv": "canoe",
+  "group": "people",
+  "groupName": "People and crowds",
+  "used": [
+   "Landfall at Colombo",
+   "Punya Bhumi",
+   "Storing the light",
+   "Rivers to one ocean",
+   "Not toleration, sympathy"
+  ],
+  "film": 0
+ },
+ "motif-portrait": {
+  "sec": "motif",
+  "ord": 84,
+  "status": "settled",
+  "title": "Traced portrait (1893)",
+  "pv": "portrait",
+  "group": "people",
+  "groupName": "People and crowds",
+  "used": [
+   "Punya Bhumi",
+   "The welcome",
+   "Not toleration, sympathy"
+  ],
+  "film": 0
+ },
+ "motif-steamship": {
+  "sec": "motif",
+  "ord": 85,
+  "status": "settled",
+  "title": "Steamship",
+  "pv": "steamship",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "Landfall at Colombo",
+   "Punya Bhumi",
+   "Like the gentle dew",
+   "Not toleration, sympathy"
+  ],
+  "film": 0
+ },
+ "motif-lighthouse": {
+  "sec": "motif",
+  "ord": 86,
+  "status": "settled",
+  "title": "Lighthouse",
+  "pv": "lighthouse",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "Landfall at Colombo"
+  ],
+  "film": 0
+ },
+ "motif-colonial": {
+  "sec": "motif",
+  "ord": 87,
+  "status": "settled",
+  "title": "Colonial building",
+  "pv": "colonial",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "The welcome",
+   "Punya Bhumi",
+   "The ploughman's mark",
+   "Like the gentle dew"
+  ],
+  "film": 0
+ },
+ "motif-harbour": {
+  "sec": "motif",
+  "ord": 88,
+  "status": "settled",
+  "title": "Harbour front",
+  "pv": "harbour",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "Landfall at Colombo"
+  ],
+  "film": 0
+ },
+ "motif-building": {
+  "sec": "motif",
+  "ord": 89,
+  "status": "settled",
+  "title": "Pillared hall",
+  "pv": "building",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "The welcome"
+  ],
+  "film": 0
+ },
+ "motif-dynamo": {
+  "sec": "motif",
+  "ord": 90,
+  "status": "settled",
+  "title": "Dynamo",
+  "pv": "dynamo",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "Storing the light",
+   "Porcelain cracks"
+  ],
+  "film": 0
+ },
+ "motif-bulb": {
+  "sec": "motif",
+  "ord": 91,
+  "status": "settled",
+  "title": "Light bulb",
+  "pv": "bulb",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "Blood or blessing"
+  ],
+  "film": 0
+ },
+ "motif-newspaper": {
+  "sec": "motif",
+  "ord": 92,
+  "status": "settled",
+  "title": "Newspaper",
+  "pv": "newspaper",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "The ploughman's mark"
+  ],
+  "film": 0
+ },
+ "motif-cannon": {
+  "sec": "motif",
+  "ord": 93,
+  "status": "settled",
+  "title": "Cannon",
+  "pv": "cannon",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "The welcome",
+   "The ploughman's mark",
+   "Storing the light"
+  ],
+  "film": 0
+ },
+ "motif-tophat": {
+  "sec": "motif",
+  "ord": 94,
+  "status": "settled",
+  "title": "Top hat",
+  "pv": "tophat",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "The welcome"
+  ],
+  "film": 0
+ },
+ "motif-moneybag": {
+  "sec": "motif",
+  "ord": 95,
+  "status": "settled",
+  "title": "Money bag",
+  "pv": "moneybag",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "The welcome"
+  ],
+  "film": 0
+ },
+ "motif-clock": {
+  "sec": "motif",
+  "ord": 96,
+  "status": "settled",
+  "title": "Clock",
+  "pv": "clock",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "Porcelain cracks",
+   "Shruti and Smriti"
+  ],
+  "film": 0
+ },
+ "motif-vase": {
+  "sec": "motif",
+  "ord": 97,
+  "status": "settled",
+  "title": "Porcelain vase",
+  "pv": "vase",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "Porcelain cracks"
+  ],
+  "film": 0
+ },
+ "motif-hammer": {
+  "sec": "motif",
+  "ord": 98,
+  "status": "settled",
+  "title": "Hammer",
+  "pv": "hammer",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "Porcelain cracks"
+  ],
+  "film": 0
+ },
+ "motif-book": {
+  "sec": "motif",
+  "ord": 99,
+  "status": "settled",
+  "title": "Book",
+  "pv": "book",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "Punya Bhumi",
+   "A spider's web on the Capitol",
+   "Like the gentle dew",
+   "Porcelain cracks"
+  ],
+  "film": 0
+ },
+ "motif-coin": {
+  "sec": "motif",
+  "ord": 100,
+  "status": "settled",
+  "title": "Coin",
+  "pv": "coin",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "The welcome",
+   "A spider's web on the Capitol",
+   "The ploughman's mark"
+  ],
+  "film": 0
+ },
+ "motif-arch": {
+  "sec": "motif",
+  "ord": 101,
+  "status": "settled",
+  "title": "Welcome arch",
+  "pv": "arch",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "Landfall at Colombo"
+  ],
+  "film": 0
+ },
+ "motif-bunting": {
+  "sec": "motif",
+  "ord": 102,
+  "status": "settled",
+  "title": "Bunting",
+  "pv": "bunting",
+  "group": "modern",
+  "groupName": "Modern and science",
+  "used": [
+   "Landfall at Colombo"
+  ],
+  "film": 0
+ },
+ "motif-spine": {
+  "sec": "motif",
+  "ord": 103,
+  "status": "settled",
+  "title": "Spine",
+  "pv": "spine",
+  "group": "sign",
+  "groupName": "Signs and marks",
+  "used": [
+   "The welcome"
+  ],
+  "film": 0
+ },
+ "motif-rays": {
+  "sec": "motif",
+  "ord": 104,
+  "status": "settled",
+  "title": "Rays",
+  "pv": "rays",
+  "group": "sign",
+  "groupName": "Signs and marks",
+  "used": [
+   "Punya Bhumi",
+   "Storing the light",
+   "Porcelain cracks",
+   "Ekam sat"
+  ],
+  "film": 0
+ },
+ "motif-flowerOfLife": {
+  "sec": "motif",
+  "ord": 105,
+  "status": "settled",
+  "title": "Flower of life",
+  "pv": "flowerOfLife",
+  "group": "sign",
+  "groupName": "Signs and marks",
+  "used": [
+   "Like the gentle dew"
+  ],
+  "film": 0
+ },
+ "motif-tears": {
+  "sec": "motif",
+  "ord": 106,
+  "status": "settled",
+  "title": "Tears",
+  "pv": "tears",
+  "group": "sign",
+  "groupName": "Signs and marks",
+  "used": [
+   "Blood or blessing"
+  ],
+  "film": 0
+ },
+ "motif-star": {
+  "sec": "motif",
+  "ord": 107,
+  "status": "settled",
+  "title": "Star",
+  "pv": "star",
+  "group": "sign",
+  "groupName": "Signs and marks",
+  "used": [
+   "Punya Bhumi",
+   "Storing the light",
+   "Like the gentle dew",
+   "Porcelain cracks",
+   "Shruti and Smriti",
+   "Ekam sat"
+  ],
+  "film": 0
+ },
+ "motif-flag": {
+  "sec": "motif",
+  "ord": 108,
+  "status": "settled",
+  "title": "Flag",
+  "pv": "flag",
+  "group": "sign",
+  "groupName": "Signs and marks",
+  "used": [
+   "A spider's web on the Capitol",
+   "The ploughman's mark",
+   "Storing the light",
+   "Gods of the tribes"
+  ],
+  "film": 0
+ },
+ "motif-arrowL": {
+  "sec": "motif",
+  "ord": 109,
+  "status": "settled",
+  "title": "Arrow",
+  "pv": "arrowL",
+  "group": "sign",
+  "groupName": "Signs and marks",
+  "used": [
+   "Storing the light",
+   "Like the gentle dew",
+   "Porcelain cracks",
+   "Rivers to one ocean"
+  ],
+  "film": 0
+ },
+ "motif-strikeL": {
+  "sec": "motif",
+  "ord": 110,
+  "status": "settled",
+  "title": "Strike-through",
+  "pv": "strikeL",
+  "group": "sign",
+  "groupName": "Signs and marks",
+  "used": [
+   "The welcome",
+   "Storing the light"
+  ],
+  "film": 0
+ },
+ "film-01": {
+  "sec": "film",
+  "film": 1,
+  "ord": 1,
+  "status": "review",
+  "title": "The Land of the Light Spiritual",
+  "lecture": "First Public Lecture in the East (Colombo)",
+  "where": "Floral Hall, Colombo · 16 Jan 1897",
+  "chapters": [
+   "Landfall at Colombo",
+   "The welcome",
+   "Punya Bhumi",
+   "Blood or blessing",
+   "A spider's web on the Capitol",
+   "The ploughman's mark",
+   "Storing the light",
+   "Like the gentle dew",
+   "Porcelain cracks",
+   "Shruti and Smriti",
+   "Gods of the tribes",
+   "Ekam sat",
+   "Rivers to one ocean",
+   "Not toleration, sympathy"
+  ],
+  "design": [],
+  "url": "https://claude.ai/artifact/XGGbzoBgwE9bjCqLAbArwb"
+ },
+ "film-02": {
+  "sec": "film",
+  "film": 2,
+  "ord": 2,
+  "status": "next",
+  "title": "Vaidika: The Common Ground",
+  "lecture": "Vedantism",
+  "where": "Jaffna, Ceylon",
+  "chapters": [
+   "Jaffna",
+   "A name that lost its meaning",
+   "Seers, not authors",
+   "Two parts of the Veda",
+   "Smritis, Puranas, Tantras",
+   "Creation as projection",
+   "Rain on every field",
+   "We and none else",
+   "The Atman behind the mind",
+   "Heavens that end",
+   "Personal and Impersonal",
+   "Whatever you think",
+   "Variety is the soul of life",
+   "Let customs fade",
+   "Learn to obey"
+  ],
+  "design": [
+   "Nallur temple, Jaffna",
+   "Sindhu river becoming \"Hindu\"",
+   "Rishi seeing a mantra",
+   "Four Vedas",
+   "Lavoisier’s balance",
+   "Rain on every field",
+   "Nahusha falling from Indra’s throne"
+  ]
+ },
+ "film-03": {
+  "sec": "film",
+  "film": 3,
+  "ord": 3,
+  "status": "next",
+  "title": "Never Passive",
+  "lecture": "Reply to the Address of Welcome at Pamban",
+  "where": "Pamban",
+  "chapters": [
+   "The wharf at Pamban",
+   "Land of religion",
+   "Never passive",
+   "The shoemaker's eye",
+   "Light too fine to see",
+   "Barons and Rishis",
+   "Lord of all religions",
+   "The bondage of matter",
+   "We can become great"
+  ],
+  "design": [
+   "Pamban wharf and the Raja’s pandal",
+   "Raja of Ramnad (portrait)",
+   "Shoemaker and bricklayer",
+   "Ritter’s prism and ultraviolet",
+   "Robber-baron castle and Rishi cave",
+   "Krishna’s chariot"
+  ]
+ },
+ "film-04": {
+  "sec": "film",
+  "film": 4,
+  "ord": 4,
+  "status": "next",
+  "title": "Real Worship",
+  "lecture": "Address at the Rameswaram Temple on Real Worship",
+  "where": "Rameswaram Temple",
+  "chapters": [
+   "At Rameswaram",
+   "Love, not ceremony",
+   "What makes a tirtha",
+   "Shiva in the poor",
+   "The two gardeners",
+   "Dust on the mirror",
+   "I will be last"
+  ],
+  "design": [
+   "Rameswaram temple corridor",
+   "Shiva in the poor and the sick",
+   "Two gardeners and the master’s garden",
+   "A dusty mirror"
+  ]
+ },
+ "film-05": {
+  "sec": "film",
+  "film": 5,
+  "ord": 5,
+  "status": "planned",
+  "title": "The Giant Rising",
+  "lecture": "Reply to the Address of Welcome at Ramnad",
+  "where": "Ramnad · 25 Jan 1897",
+  "chapters": [
+   "Ramnad",
+   "The infinite giant",
+   "The Raja's part",
+   "Religion at the core",
+   "Give up!",
+   "Water from the ditch",
+   "Hands off!",
+   "Stand on your own feet",
+   "The only sin",
+   "Theme and variations",
+   "Three generations",
+   "The idea of God",
+   "No time for sleep"
+  ],
+  "design": [
+   "Ramnad palace",
+   "The giant rising",
+   "A ditch beside a fountain",
+   "Mushroom nations",
+   "Pravritti and Nivritti"
+  ]
+ },
+ "film-06": {
+  "sec": "film",
+  "film": 6,
+  "ord": 6,
+  "status": "planned",
+  "title": "Strength Is Goodness",
+  "lecture": "Reply to the Address of Welcome at Paramakudi",
+  "where": "Paramakudi",
+  "chapters": [
+   "Paramakudi",
+   "Love that asks nothing",
+   "Spiritual and material tides",
+   "Under the Shylocks",
+   "Each checks the other",
+   "Fifty years",
+   "Only ignorance",
+   "The religion of fearlessness",
+   "Only a play",
+   "What I have done, I can undo",
+   "For every temperament"
+  ],
+  "design": [
+   "Spiritual and material tides",
+   "Shylock moneylenders",
+   "The world as a stage play",
+   "Heir to the Emperor of emperors"
+  ]
+ },
+ "film-07": {
+  "sec": "film",
+  "film": 7,
+  "ord": 7,
+  "status": "planned",
+  "title": "Bring It Out",
+  "lecture": "Reply to the Address of Welcome at Shivaganga and Manamadura",
+  "where": "Manamadura",
+  "chapters": [
+   "Shivaganga and Manamadura",
+   "The body tires",
+   "An empire of the mind",
+   "Injured only by ourselves",
+   "We did not help them",
+   "The cooking-pot",
+   "Vyasa's order of gifts",
+   "Distribute it broadcast"
+  ],
+  "design": [
+   "The mountain and Mohammed",
+   "An empire where the sun never sets",
+   "Koch’s microscope",
+   "The cooking-pot \"don’t touch me\""
+  ]
+ },
+ "film-08": {
+  "sec": "film",
+  "film": 8,
+  "ord": 8,
+  "status": "planned",
+  "title": "Essentials and Non-essentials",
+  "lecture": "Reply to the Address of Welcome at Madura",
+  "where": "Madura",
+  "chapters": [
+   "Madura",
+   "Credit to the Raja",
+   "The exchange of nations",
+   "Scylla and Charybdis",
+   "Local custom",
+   "What is eternal",
+   "Revile none",
+   "See it face to face"
+  ],
+  "design": [
+   "Madura: Meenakshi-Sundareshwara gopurams",
+   "Scylla and Charybdis",
+   "Southern and Northern customs",
+   "Rishi with a heart like the ocean"
+  ]
+ },
+ "film-09": {
+  "sec": "film",
+  "film": 9,
+  "ord": 9,
+  "status": "planned",
+  "title": "The Mission of the Vedanta",
+  "lecture": "The Mission of the Vedanta",
+  "where": "Kumbakonam",
+  "chapters": [
+   "Kumbakonam",
+   "The one and sole interest",
+   "The river's channel",
+   "A Japanese vase",
+   "Vitality, not muscle",
+   "Fit for the world",
+   "Principles, not persons",
+   "Two roads, one end",
+   "Tribal gods",
+   "One Soul",
+   "Faith, faith, faith",
+   "Hard truths",
+   "Not denunciation",
+   "The ideal Brahmin",
+   "Uttishthata"
+  ],
+  "design": [
+   "Ganga from the glacier",
+   "A great tree that cannot be moved",
+   "A Japanese vase as ornament",
+   "Helmholtz and energy"
+  ]
+ },
+ "film-10": {
+  "sec": "film",
+  "film": 10,
+  "ord": 10,
+  "status": "planned",
+  "title": "From the Carriage Box",
+  "lecture": "Reply to the Address of Welcome at Madras",
+  "where": "Madras",
+  "chapters": [
+   "Madras",
+   "Two addresses",
+   "An open-air speech",
+   "The backbone",
+   "What the villagers knew",
+   "Which will survive",
+   "Checking competition",
+   "Let not the fire die"
+  ],
+  "design": [
+   "Castle Kernan, Madras",
+   "Speaking from a carriage box",
+   "A crowd that breaks the hall",
+   "The fire kept burning"
+  ]
+ },
+ "film-11": {
+  "sec": "film",
+  "film": 11,
+  "ord": 11,
+  "status": "planned",
+  "title": "My Plan of Campaign",
+  "lecture": "My Plan of Campaign",
+  "where": "Victoria Hall, Madras",
+  "chapters": [
+   "Victoria Hall",
+   "Breaking silence",
+   "The Theosophists",
+   "Starved out",
+   "Shudra?",
+   "Growth, not reform",
+   "Chronic rheumatism",
+   "Pull me out first",
+   "Public opinion",
+   "Blessing, not cursing",
+   "Deluge the land",
+   "Spiritual charity",
+   "The plan",
+   "Rama's bridge",
+   "Plug the leaks"
+  ],
+  "design": [
+   "Victoria Hall, Madras",
+   "The drowning boy",
+   "Chronic rheumatism",
+   "Six reformers on a map"
+  ]
+ },
+ "film-12": {
+  "sec": "film",
+  "film": 12,
+  "ord": 12,
+  "status": "planned",
+  "title": "Strength from Every Page",
+  "lecture": "Vedanta in its Application to Indian Life",
+  "where": "Madras",
+  "chapters": [
+   "From Sindhu to Hindu",
+   "Shruti and custom",
+   "Twisting texts",
+   "Stages, not rivals",
+   "Beyond the senses",
+   "Two birds",
+   "Alexander on the Indus",
+   "Madalasa's lullaby",
+   "The hole in the screen",
+   "The solidarity of the universe",
+   "Be strong",
+   "Privilege must go",
+   "Only serve"
+  ],
+  "design": [
+   "She-goat or the Unborn (Ajā)",
+   "Two birds on one tree",
+   "Alexander and the sannyasin",
+   "Madalasa’s cradle",
+   "Maxwell’s field lines"
+  ]
+ },
+ "film-13": {
+  "sec": "film",
+  "film": 13,
+  "ord": 13,
+  "status": "planned",
+  "title": "The Sages of India",
+  "lecture": "The Sages of India",
+  "where": "Madras",
+  "chapters": [
+   "Epoch-makers",
+   "The order of books",
+   "No founder",
+   "Like this table",
+   "Being and becoming",
+   "Rama",
+   "Sita",
+   "Krishna and the Gopis",
+   "Pearls on a thread",
+   "Buddha",
+   "Shankara, Ramanuja, Chaitanya",
+   "Ramakrishna"
+  ],
+  "design": [
+   "Rama, Sita, Krishna and the Gopis",
+   "The Gita as pearls on a thread",
+   "Buddha and the Jagannath temple",
+   "Shankara, Ramanuja, Chaitanya",
+   "Ramakrishna (portrait)"
+  ]
+ },
+ "film-14": {
+  "sec": "film",
+  "film": 14,
+  "ord": 14,
+  "status": "planned",
+  "title": "The Work Before Us",
+  "lecture": "The Work Before Us",
+  "where": "Triplicane Literary Society, Madras",
+  "chapters": [
+   "Young men of Madras",
+   "All life is linked",
+   "Inward and outward",
+   "Decline",
+   "Mohammedan and British rule",
+   "Expand to live",
+   "The silent influence",
+   "Roads of thought",
+   "Atheists, not fools",
+   "Allegiance to principles",
+   "\"I am Thyself\"",
+   "All power is there"
+  ],
+  "design": [
+   "Greek and Indian minds",
+   "Roman and English roads",
+   "The Sufi at the closed door"
+  ]
+ },
+ "film-15": {
+  "sec": "film",
+  "film": 15,
+  "ord": 15,
+  "status": "planned",
+  "title": "The Future of India",
+  "lecture": "The Future of India",
+  "where": "Madras",
+  "chapters": [
+   "The ancient land",
+   "Out of the past",
+   "India's knot",
+   "Common ground",
+   "Somnath",
+   "In every tongue",
+   "North and South",
+   "Raise, don't lower",
+   "Sandalwood",
+   "Co-ordination of wills",
+   "Be of one mind",
+   "The Virat",
+   "A temple of Om",
+   "Not negative education",
+   "Young men"
+  ],
+  "design": [
+   "Somnath destroyed and rebuilt",
+   "The cobra drawing out its poison",
+   "The ass carrying sandalwood",
+   "The Virat, the cosmic form"
+  ]
+ },
+ "film-16": {
+  "sec": "film",
+  "film": 16,
+  "ord": 16,
+  "status": "planned",
+  "title": "On Charity",
+  "lecture": "On Charity",
+  "where": "Annadana Samajam, Madras",
+  "chapters": [
+   "The Annadana Samajam",
+   "The nation's thinkers",
+   "Poor-house and jail",
+   "A disease called civilisation"
+  ],
+  "design": [
+   "Feeding the hungry (annadana)",
+   "Poor-house and jail"
+  ]
+ },
+ "film-17": {
+  "sec": "film",
+  "film": 17,
+  "ord": 17,
+  "status": "planned",
+  "title": "I Am Your Brother",
+  "lecture": "Address of Welcome Presented at Calcutta and Reply",
+  "where": "Sobha Bazar, Calcutta",
+  "chapters": [
+   "Calcutta",
+   "The address",
+   "A Calcutta boy",
+   "A horse to ride",
+   "America and England",
+   "Poverty is not sin",
+   "My Master",
+   "Whenever Dharma declines",
+   "Theme and variations",
+   "Expand or die",
+   "Out of the shell",
+   "Nachiketa",
+   "Arise, awake"
+  ],
+  "design": [
+   "Sobhabazar Rajbari, Calcutta",
+   "The oyster in its shell",
+   "Nachiketa at the house of Death"
+  ]
+ },
+ "film-18": {
+  "sec": "film",
+  "film": 18,
+  "ord": 18,
+  "status": "planned",
+  "title": "The Vedanta in All Its Phases",
+  "lecture": "The Vedanta in all its phases",
+  "where": "Calcutta",
+  "chapters": [
+   "We breathe the Vedanta",
+   "Waves westward",
+   "All are Vedantists",
+   "Ramanuja and Shankara",
+   "An Allopanishad",
+   "Inward infinity",
+   "Custom in Bengal",
+   "Breaching the wall",
+   "Neti, neti",
+   "Contraction and expansion",
+   "Religion in the kitchen",
+   "Maya and Kant",
+   "The banner of India",
+   "The true Guru",
+   "Earth or sun at the centre",
+   "That which exists is One"
+  ],
+  "design": [
+   "Athens, Alexandria, Antioch",
+   "The farmer breaching the mud wall",
+   "Neti, neti",
+   "Kant: time, space, causation",
+   "Copernicus’ sky",
+   "The saffron banner of renunciation"
+  ]
+ },
+ "film-19": {
+  "sec": "film",
+  "film": 19,
+  "ord": 19,
+  "status": "planned",
+  "title": "Father of Mountains",
+  "lecture": "Address of Welcome at Almora and Reply",
+  "where": "Almora",
+  "chapters": [
+   "Up to Almora",
+   "The moon among stars",
+   "Land of my forefathers",
+   "Renunciation alone",
+   "A centre in the hills"
+  ],
+  "design": [
+   "The road to Almora",
+   "Himalayan peaks",
+   "The moon among stars",
+   "A Math in the hills"
+  ]
+ },
+ "film-20": {
+  "sec": "film",
+  "film": 20,
+  "ord": 20,
+  "status": "planned",
+  "title": "Theory and Practice",
+  "lecture": "Vedic Teaching in Theory and Practice",
+  "where": "English Club, Almora",
+  "chapters": [
+   "Two lectures at Almora",
+   "The tribal god",
+   "The inquiry turns within",
+   "Names and forms disappear"
+  ],
+  "design": [
+   "A tribal god conquering others",
+   "The hall dissolving into Spirit"
+  ]
+ },
+ "film-21": {
+  "sec": "film",
+  "film": 21,
+  "ord": 21,
+  "status": "planned",
+  "title": "Bhakti at Sialkot",
+  "lecture": "Bhakti (Sialkot)",
+  "where": "Sialkot, Punjab",
+  "chapters": [
+   "Kashmir to Sialkot",
+   "One love in all",
+   "What Bhakti is",
+   "A river divided",
+   "Morality first",
+   "Inner purity",
+   "From form to the formless",
+   "Not fear, not greed",
+   "Father, Mother, Beloved",
+   "The propeller is love"
+  ],
+  "design": [
+   "Kashmir, Murree, Jammu, Sialkot",
+   "A river divided",
+   "The sadhu who makes gold",
+   "Radha and Krishna",
+   "The tigress and her cubs"
+  ]
+ },
+ "film-22": {
+  "sec": "film",
+  "film": 22,
+  "ord": 22,
+  "status": "planned",
+  "title": "The Common Bases of Hinduism",
+  "lecture": "The Common Bases of Hinduism",
+  "where": "Lahore",
+  "chapters": [
+   "Lahore",
+   "Where we agree",
+   "Hindu, with pride",
+   "The serpent's jewel",
+   "The eternal over the changing",
+   "Sects, not sectarianism",
+   "The common bases",
+   "The soul's purity",
+   "Nothing he becomes",
+   "Not like a parrot",
+   "Guru Govind Singh",
+   "Imitation is not civilisation",
+   "Free as God's air"
+  ],
+  "design": [
+   "Lahore and the five rivers",
+   "The giant whose life is in a bird",
+   "The ass in a lion’s skin",
+   "Guru Govind Singh (emblem)"
+  ]
+ },
+ "film-23": {
+  "sec": "film",
+  "film": 23,
+  "ord": 23,
+  "status": "planned",
+  "title": "Bhakti at Lahore",
+  "lecture": "Bhakti (Lahore)",
+  "where": "Lahore · 9 Nov 1897",
+  "chapters": [
+   "Roots of Bhakti",
+   "Dhruva and Prahlada",
+   "A gentler path",
+   "A personal God",
+   "Through matter",
+   "The Ishta Devata",
+   "Not a trade",
+   "Eating rules",
+   "Feed Narayana",
+   "The triangle of love"
+  ],
+  "design": [
+   "Dhruva and Prahlada",
+   "The mother facing the lion",
+   "The triangle of love"
+  ]
+ },
+ "film-24": {
+  "sec": "film",
+  "film": 24,
+  "ord": 24,
+  "status": "planned",
+  "title": "The Vedanta",
+  "lecture": "The Vedanta",
+  "where": "Lahore · 12 Nov 1897",
+  "chapters": [
+   "Two worlds",
+   "Three Prasthanas",
+   "Arundhati Nyaya",
+   "Prana and Akasha",
+   "A stone in the lake",
+   "The pearl",
+   "The witness",
+   "Infinite power within",
+   "Contracted or never changed",
+   "The Buddhist challenge",
+   "Individual in being universal",
+   "Rope and snake",
+   "The mirror",
+   "Whom you hurt",
+   "First bread",
+   "Believe in yourselves"
+  ],
+  "design": [
+   "The Arundhati star",
+   "A stone in the lake",
+   "The pearl in the oyster",
+   "Rope and snake",
+   "The potter and the pot"
+  ]
+ },
+ "film-25": {
+  "sec": "film",
+  "film": 25,
+  "ord": 25,
+  "status": "planned",
+  "title": "Vedantism at Khetri",
+  "lecture": "Vedantism (Khetri)",
+  "where": "Khetri · 20 Dec 1897",
+  "chapters": [
+   "Khetri",
+   "Greek and Aryan",
+   "Into Europe",
+   "How the Vedas grew",
+   "The double and the laughing gods",
+   "Nasadiya",
+   "What am I?",
+   "The Bible of India",
+   "The kitchen as temple",
+   "Unity in diversity"
+  ],
+  "design": [
+   "Khetri palace and Raja Ajit Singh",
+   "Dara Shukoh’s Persian Upanishads",
+   "The Egyptian double",
+   "Mendeleev’s table"
+  ]
+ },
+ "film-26": {
+  "sec": "film",
+  "film": 26,
+  "ord": 26,
+  "status": "planned",
+  "title": "Teachers, Not Beggars",
+  "lecture": "The Influence of Indian Spiritual Thought in England",
+  "where": "Star Theatre, Calcutta · 11 Mar 1898",
+  "chapters": [
+   "Mantras on far walls",
+   "Introducing Nivedita",
+   "Faith in oneself",
+   "As equals",
+   "Shraddha",
+   "Bubble and wave",
+   "India dies not",
+   "Poor men of Bengal"
+  ],
+  "design": [
+   "Star Theatre, Calcutta",
+   "Bengali script on Chinese temple walls",
+   "Sister Nivedita (portrait)",
+   "Bubble, wave and ocean"
+  ]
+ },
+ "film-27": {
+  "sec": "film",
+  "film": 27,
+  "ord": 27,
+  "status": "planned",
+  "title": "The Sannyasin Loves Death",
+  "lecture": "Sannyasa: Its Ideal and Practice",
+  "where": "Belur Math · 19 Jun 1899",
+  "chapters": [
+   "Belur, 1899",
+   "A gradual death",
+   "Hands and feet everywhere",
+   "Too high, too low",
+   "To make men",
+   "Free as air"
+  ],
+  "design": [
+   "Belur Math, 1899",
+   "Catching the crocodile",
+   "The plant and the dog"
+  ]
+ },
+ "film-28": {
+  "sec": "film",
+  "film": 28,
+  "ord": 28,
+  "status": "planned",
+  "title": "What Have I Learnt?",
+  "lecture": "What have I learnt?",
+  "where": "Dacca · 30 Mar 1901",
+  "chapters": [
+   "Rivers of Eastern Bengal",
+   "Back to the old faith",
+   "Two kinds of critics",
+   "Rama or Kama",
+   "Three rare things",
+   "Parrots, not Pandits",
+   "The Guru",
+   "Practice"
+  ],
+  "design": [
+   "Rivers and boats of Eastern Bengal",
+   "An amalaka fruit in the palm",
+   "Parrots reciting"
+  ]
+ },
+ "film-29": {
+  "sec": "film",
+  "film": 29,
+  "ord": 29,
+  "status": "planned",
+  "title": "The Religion We Are Born In",
+  "lecture": "The Religion we are born in",
+  "where": "Dacca · 31 Mar 1901",
+  "chapters": [
+   "The whole road",
+   "The seed",
+   "Common ground",
+   "Religions with books",
+   "Eternal laws",
+   "Open to all",
+   "Ishvara, Atman, Jagat",
+   "Through Man",
+   "Repair, don't demolish",
+   "Hearts' blood"
+  ],
+  "design": [
+   "The seed that seems to rot",
+   "Repairing the old house",
+   "The leaking ship",
+   "Newton’s gravitation"
+  ]
+ }
+}
