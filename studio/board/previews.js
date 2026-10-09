@@ -122,6 +122,8 @@ const PV={
  innerLamp:S=>innerLamp(S,480,500,2),
  ladder:S=>ladder(S,420,530,1.2),
  seedling:S=>seedling(S,480,420,2),
+ vyasa:S=>S.A('vyasa1940',230,-10,.98),
+ vyasaGanesha:S=>S.A('vyasa_ganesha1940',10,-10,.98),
  /* the header strip: the tour from Colombo to Almora, read left to right */
  _header:S=>{S.g();S.S([[0,250],[960,250],[960,540],[0,540]],{tone:[1,.7],col:'#9cd2ee',noline:1,cA:.45});waves(S,0,330,250,6,1,'#6cbfe8');steamship(S,120,250,.62);lighthouse(S,300,254,.42);
    gopuram(S,420,262,.42);kalash(S,505,262,.38);elephant(S,585,262,.3,{umbrella:1});peacock(S,665,262,.5);mountains(S,730,960,262,170,9,'#b6c8d8');shikhara(S,860,262,.5);dhwaja(S,760,262,.5);
