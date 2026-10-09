@@ -111,6 +111,17 @@ const PV={
  flag:S=>{flag(S,360,460,2.6,MSAF);flag(S,600,460,2.2,MGRN);},
  arrowL:S=>{arrowL(S,[160,380],[780,180],{lift:80,lw:5,col:MSAF});},
  strikeL:S=>{S.T([['A GREAT SOLDIER',MINK]],480,290,64,{al:'center'});strikeL(S,180,270,600);},
+ swastika:S=>{kalash(S,300,500,1.9);swastika(S,680,260,110);},
+ hand:S=>handScene(S,300,40,.95),
+ heartGlow:S=>{heartGlow(S,330,300,1.3);arrowL(S,[520,300],[680,300],{lift:10,lw:4,col:MRED});column(S,800,520,300,1.3,0);},
+ thought:S=>{thought(S,520,190,320,200);book(S,520,230,1.1,MPUR);person(S,300,520,1,{head:'turban',col:MSAF});},
+ knot:S=>knot(S,480,280,160,MRED),
+ chainsBroken:S=>chainsBroken(S,480,280,2),
+ releaseBirds:S=>releaseBirds(S,480,470,1.6),
+ fearShadow:S=>fearShadow(S,480,520,1.3),
+ innerLamp:S=>innerLamp(S,480,500,2),
+ ladder:S=>ladder(S,420,530,1.2),
+ seedling:S=>seedling(S,480,420,2),
  /* the header strip: the tour from Colombo to Almora, read left to right */
  _header:S=>{S.g();S.S([[0,250],[960,250],[960,540],[0,540]],{tone:[1,.7],col:'#9cd2ee',noline:1,cA:.45});waves(S,0,330,250,6,1,'#6cbfe8');steamship(S,120,250,.62);lighthouse(S,300,254,.42);
    gopuram(S,420,262,.42);kalash(S,505,262,.38);elephant(S,585,262,.3,{umbrella:1});peacock(S,665,262,.5);mountains(S,730,960,262,170,9,'#b6c8d8');shikhara(S,860,262,.5);dhwaja(S,760,262,.5);

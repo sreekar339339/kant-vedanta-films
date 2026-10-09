@@ -40,7 +40,7 @@ MURAL.welcome=[
 MURAL.punya=[
  pn(0,S=>{IN(S);wash(S,170,330,200,'rgba(150,210,120,.9)',.3);const pj=indiaMap(S,20,140,300,{hills:false});om(S,120,128,52);lotus(S,250,500,.5);diya(S,70,500,.4);S.A('sv1893_chicago',330,60,.5);const a=pj(80,22);const pts=bz(a,[420,40],[700,20],[900,110],24);S.L(pts,{lw:2.4,any:1});for(let k=1;k<10;k++){const p=pts[Math.round(k/10*24)];S.G(p[0],p[1],20,'rgba(255,190,60,.95)',{a:.75});}
    S.g();colonial(S,800,190,90,70,'#e8dcc8');church(S,900,190,.4);steamship(S,700,250,.28);cloud(S,860,60,120,5);for(let k=0;k<4;k++)star(S,560+k*80,140+(k%2)*30,10);
-   TXT(S,[['the blessings that followed my path in the West',26,{BLESSINGS:MSAF}],['emotion becomes conviction',30,{CONVICTION:MRED}]],610,300,310);}),
+   TXT(S,[['the blessings that followed my path in the West',26,{BLESSINGS:MSAF}],['emotion becomes conviction',30,{CONVICTION:MRED}]],610,300,310);heartGlow(S,640,500,.3);arrowL(S,[690,495],[780,495],{lift:6,lw:2.4,col:MRED});column(S,840,532,96,.55,0);}),
  pn(2,S=>{IN(S);bell(S,70,170,.62);bell(S,890,170,.62);wash(S,480,190,330,'rgba(255,200,90,.9)',.38);S.g();S.T([['पुण्यभूमि',MINK]],480,220,130,{al:'center',font:DEVF});rays(S,480,180,170,320,22,{a0:-Math.PI*.95,a1:-Math.PI*.05,lw:1.6});
    templeTown(S,40,300,520,3);templeTown(S,660,920,520,5);rangoli(S,480,500,100,7);[330,390,570,630].forEach(x=>diya(S,x,460,.32));samai(S,330,530,.38);samai(S,630,530,.38);lotus(S,140,530,.5);lotus(S,820,530,.5);
    TXT(S,[['Punya Bhumi · the land of Karma',32,{KARMA:MSAF}],['“Today I stand here and say, with the conviction of truth, that it is so.”',26,{TRUTH:MRED,SO:MRED}]],150,262,660);}),
@@ -104,8 +104,8 @@ MURAL.plough=[
 ];
 
 MURAL.dynamo=[
- pn(0,S=>{wash(S,250,300,220,'rgba(238,122,28,.9)',.25);const r=rng(8);for(let k=0;k<6;k++){const x=50+k*72;person(S,x,510,.72,{col:[MBLU,MRED,MGRN,MPUR,MSAF,MPNK][k],head:['turban','hair','veil','hair','turban','veil'][k]});const a=-Math.PI/2+(r()-.5)*1.6;arrowL(S,[x,320],[x+Math.cos(a)*70,320+Math.sin(a)*70],{lift:6,lw:2.6,col:MSAF});}
-   ground(S,510,'#c9b48a',8);TXT(S,[['each man a bent · each race a mission',26,{MISSION:MSAF}]],30,18,420);crownX(S,600,190,1.3);cannon(S,780,240,1.0);for(let k=0;k<3;k++)hoplite(S,880,540-k*0,.3+k*.0);flag(S,880,240,.6,MRED);strikeL(S,540,140,370);
+ pn(0,S=>{wash(S,250,300,220,'rgba(238,122,28,.9)',.25);const r=rng(8);for(let k=0;k<6;k++){const x=50+k*72;person(S,x,510,.72,{col:[MBLU,MRED,MGRN,MPUR,MSAF,MPNK][k],head:['turban','hair','veil','hair','turban','veil'][k]});}
+   [[86,'book'],[230,'plough'],[374,'flag']].forEach(([bx,ic])=>{thought(S,bx,250,92,64);if(ic==='book')book(S,bx,268,.45,MPUR);else if(ic==='plough')plough(S,bx+10,262,.35);else flag(S,bx-6,276,.3,MSAF);});ground(S,510,'#c9b48a',8);TXT(S,[['each man a bent · each race a mission',26,{MISSION:MSAF}]],30,18,420);crownX(S,600,190,1.3);cannon(S,780,240,1.0);for(let k=0;k<3;k++)hoplite(S,880,540-k*0,.3+k*.0);flag(S,880,240,.6,MRED);strikeL(S,540,140,370);
    TXT(S,[['“Political greatness or military power is never the mission of our race”',24,{NEVER:MRED}]],500,300,420);}),
  pn(2,S=>{IN(S);wash(S,330,300,300,'rgba(255,210,90,.95)',.5);rays(S,330,300,140,270,22,{lw:1.6,a0:-Math.PI*1.05,a1:Math.PI*.05});dynamo(S,380,470,1.6);rainbow(S,330,300,330,.2);
    S.g();for(let k=0;k<8;k++)star(S,100+k*60,90+(k%2)*30,9);for(let k=0;k<3;k++)diya(S,640+k*80,520,.4);samai(S,890,530,.5);
@@ -153,8 +153,8 @@ MURAL.yugas=[
 
 MURAL.tribes=[
  pn(0,S=>{skyset(S,30,{sx:880,sy:60,clouds:2,cx0:520,cx1:720,cy:70,birds:4,bx:600,by:120});hill(S,0,340,500,140,'#d9c08a');hill(S,300,660,500,180,'#d9c08a');hill(S,620,960,500,140,'#d9c08a');
-   baalStorm(S,170,360,.62);baalStorm(S,480,320,.66,-1);ark(S,790,356,.5);
-   [[170,360,'BAAL',MRED],[480,320,'BAAL',MBLU],[790,360,'MOLOCH',MGRN]].forEach(([x,y,n,fc])=>{S.T([[n,MINK]],x,y-(n==='MOLOCH'?122:218),22,{al:'center'});flag(S,x+76,y,.5,fc);crowd(S,x-110,x+110,y+150,.5,x|0,{n:5});fire(S,x-70,y+10,.35);});
+   baalStorm(S,170,360,.62);baalStorm(S,480,320,.66,-1);moloch(S,790,360,.5);
+   [[170,360,'BAAL',MRED],[480,320,'BAAL',MBLU],[790,360,'MOLOCH',MGRN]].forEach(([x,y,n,fc])=>{S.T([[n,MINK]],x,y-(n==='MOLOCH'?180:218),22,{al:'center'});flag(S,x+76,y,.5,fc);crowd(S,x-110,x+110,y+150,.5,x|0,{n:5});fire(S,x-70,y+10,.35);});
    TXT(S,[['each tribe, a god of its own',32]],30,18,460);}),
  pn(2,S=>{wash(S,300,250,200,'rgba(211,162,74,.9)',.3);crownX(S,250,196,.8);mushhushshu(S,250,410,.62);S.T([['BAAL-MERODACH',MINK]],250,444,24,{al:'center'});
    crownX(S,690,196,.8);ark(S,690,400,.78);S.T([['MOLOCH-YAHVEH',MINK]],690,440,24,{al:'center'});sword(S,410,300,130,-.6,1.3);sword(S,550,300,130,Math.PI+.6,1.3);
@@ -170,7 +170,7 @@ MURAL.ekam=[
  pn(2,S=>{IN(S);wash(S,480,300,320,'rgba(238,122,28,.9)',.25);trident(S,230,440,1.2);mala(S,110,210,26);conch(S,700,290,1.3);S.g();S.L(ell(470,290,330,150,40),{closed:1,lw:3.4,col:MSAF,any:1});S.T([['=',MINK]],470,320,90,{al:'center'});
    S.g();for(let k=0;k<10;k++){const a=k/10*Math.PI*2;star(S,470+Math.cos(a)*380,290+Math.sin(a)*190,8,[MSAF,MBLU][k%2]);}
    TXT(S,[['the same One, called by a hundred names',28,{ONE:MSAF}]],240,28,480);TXT(S,[['“The whole history of India you may read in these few words.”',26,{HISTORY:MRED}]],100,462,760);}),
- pn(4,S=>{IN(S);wash(S,470,300,300,'rgba(255,210,100,.9)',.4);seated(S,270,510,1.05,MSAF);seated(S,680,510,1.05,'#e8e2d6');kamandalu(S,395,530,.38);tulsi(S,570,530,.3);S.g();for(let k=0;k<3;k++)S.L(ell(475,240,40+k*20,40+k*20,30,Math.PI*1.1,Math.PI*1.9),{lw:2,col:MSAF,any:1});
+ pn(4,S=>{IN(S);wash(S,470,300,300,'rgba(255,210,100,.9)',.4);seated(S,270,510,1.05,MSAF);innerLamp(S,680,510,1.05,'#e8e2d6');kamandalu(S,395,530,.38);tulsi(S,570,530,.3);S.g();for(let k=0;k<3;k++)S.L(ell(475,240,40+k*20,40+k*20,30,Math.PI*1.1,Math.PI*1.9),{lw:2,col:MSAF,any:1});
    banyan(S,475,540,.5);diya(S,120,530,.4);diya(S,830,530,.4);lotus(S,475,540,.45);
    TXT(S,[['the eternal servant of God',24]],40,30,300);TXT(S,[['one with God Himself',24]],620,30,300);TXT(S,[['both good Hindus',32,{GOOD:MGRN}]],340,110,300);}),
 ];
@@ -190,9 +190,9 @@ MURAL.rivers=[
 
 MURAL.mission=[
  pn(0,S=>{wash(S,480,350,400,'rgba(150,200,255,.9)',.25,1.8);skyset(S,50,{sx:880,sy:70,clouds:2,cx0:640,cx1:760,cy:150,birds:5,bx:600,by:200});crowdRows(S,10,950,530,1.05,12);
-   TXT(S,[['without variation life must cease',30],['but we need not hate each other',30,{HATE:MRED}]],30,18,600);}),
+   TXT(S,[['without variation life must cease',30],['but we need not hate each other',30,{HATE:MRED}]],30,18,600);knot(S,500,200,40,MRED);strikeL(S,452,200,96);}),
  pn(1,S=>{IN(S);wash(S,480,280,380,'rgba(255,200,120,.9)',.4,1.6);S.g();for(let k=0;k<8;k++)dove(S,90+k*110,470+(k%2)*24,.7,k%2?-1:1);flowers(S,30,930,540,10,41);
-   TXT(S,[['“The one great lesson that the world wants most…',30],['not only toleration,',52],['but sympathy.”',68,{SYMPATHY:MRED}]],90,60,780);}),
+   TXT(S,[['“The one great lesson that the world wants most…',30],['not only toleration,',52],['but sympathy.”',68,{SYMPATHY:MRED}]],90,60,780);heartGlow(S,440,380,.42,MPNK);heartGlow(S,530,390,.42);}),
  pn(2,S=>{IN(S);wash(S,470,360,300,'rgba(255,200,120,.9)',.3);person(S,300,510,1.4,{head:'turban',col:MBLU});person(S,470,510,1.35,{head:'veil',col:MPNK,tcol:MPNK});person(S,620,510,.9,{head:'hair',col:MSAF});ground(S,510,'#b9d98a',7);
    rangoli(S,800,528,56,11);village(S,700,940,500,51);palm(S,90,500,.6,.1);flowers(S,30,260,540,4,43);
    ['mildness','gentleness','forbearance','toleration','sympathy','brotherhood'].forEach((w,k)=>TXT(S,[[w,28,{SYMPATHY:MRED}]],40+(k%3)*300,28+Math.floor(k/3)*46,280));TXT(S,[['man · woman · child, without respect of race, caste, or creed',20]],680,200,250);}),
