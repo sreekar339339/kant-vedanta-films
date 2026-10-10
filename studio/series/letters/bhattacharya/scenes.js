@@ -259,4 +259,6 @@ MURAL.public=[
    S.T([['Yours faithfully, Vivekananda',MSAF]],62,440,24,{font:QF,style:'italic',rot:0});}),
 ];
 
+/* emotion corrections where the narration's words mislead the reader (a negation, a pun, a place name) */
+Object.entries({annisquam:{4:'desire'},village:{0:'neutral'},father:{2:'peace'},beauty:{2:'wonder'},slowly:{0:'peace',2:'neutral'},expand:{4:'courage'},public:{0:'neutral'}}).forEach(([id,m])=>Object.entries(m).forEach(([i,e])=>{MURAL[id][+i].emo=e;}));
 Object.keys(MURAL).forEach(id=>{SC[id]=muralScene(id);});

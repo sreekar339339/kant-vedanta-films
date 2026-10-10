@@ -108,3 +108,13 @@ SC.open=(c,t,B)=>{ paper(c); /* t = seconds since chapter start; B[i] = start of
 - Before scripting or building any film: read `decisions` (ArtifactData list), apply picks and notes, then update statuses. When a film is scripted, add its `symbol` records and new `motif` records, and add a `PV` preview for every new motif key.
 - Objects drawn at once (never animated) use `S.gi()` instead of `S.g()`; the temple band (`IN(S)`) does.
 - Board answers of 9 Oct 2026, now in the engine: `HAND=true` (a brush hand sweeps each panel in, drawn by `drawHand`/`handPath` in `muralScene`); `SWASTIKA=true` (upright vermilion swastika on kalash, welcome arch, hut doors, every other rangoli; India scenes only); the "Feelings and ideas" motifs (`heartGlow`, `thought`, `knot`, `chainsBroken`, `releaseBirds`, `fearShadow`, `innerLamp`, `ladder`, `seedling`) for abstract lines; Moloch drawn as the Victorian bull idol; deities by emblem only; saints traced from photographs (ask before each download); science parallels as a sepia inset.
+
+## 13. Feelings on faces (emotion layer)
+
+`common.js` reads the feeling of each panel from its narration (`EMO_LEX` → `textEmotion` → `panelEmotion`) and passes it to every figure drawn in that panel (`S.emo`):
+faces change brows, eyes and mouth (`faceFx`), arms take a posture (`EMO_POSE`), and comic signs float above heads (`emanata`). Where a line names a feeling strongly,
+`emoAccent` puts a close-up face (`emoFace`) on a disc in its Natyashastra rasa colour in the clearest patch of the panel (`freeSpot`), lettered with the rasa in India scenes.
+Metaphors for states of mind: `stormHead`, `cage`, `mask`, `magnet`, `burden`.
+
+The keyword reader misfires on negations ("hasn't any romantic feeling"), puns ("best blood") and words like "rest". Check the contact sheet and correct a panel at the end
+of its `scenes.js`: `Object.entries({chapter:{panel:'emotion'}})…` sets `MURAL[id][i].emo` (use `'neutral'` to suppress the close-up). Set `EMO_ON=false` to turn the layer off.

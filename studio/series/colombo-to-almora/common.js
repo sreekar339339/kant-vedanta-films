@@ -106,7 +106,7 @@ function boardBG(c){if(typeof MSTYLE!=='undefined'&&MSTYLE==='water'){c.drawImag
 /* ---------- the mural: chapters of panels on one board ---------- */
 const MURAL={},MPANELS=new Map(),PW=960;
 const fontsOK=()=>!document.fonts||document.fonts.status==='loaded'||document.fonts.check('20px "Patrick Hand SC"');
-function mpanel(id,i){const key=id+'#'+i;if(!MPANELS.has(key)){const S=new Scene();MURAL[id][i].draw(S);const P=MSTYLE==='hatch'?compileScene(S,(id.length*131+i*17)|0):compilePaint(S,(id.length*131+i*17)|0);if(!fontsOK())return P;MPANELS.set(key,P);}return MPANELS.get(key);}
+function mpanel(id,i){const key=id+'#'+i;if(!MPANELS.has(key)){const S=new Scene();const pe=EMO_ON?panelEmotion(id,i):null;if(pe){S.emo=pe.emo;S.fx=true;}MURAL[id][i].draw(S);if(pe)emoAccent(S,pe,id,i);const P=MSTYLE==='hatch'?compileScene(S,(id.length*131+i*17)|0):compilePaint(S,(id.length*131+i*17)|0);if(!fontsOK())return P;MPANELS.set(key,P);}return MPANELS.get(key);}
 function chapterInfo(id){const k=CH.findIndex(c=>c.id===id),ch=CH[k];const end=k+1<CH.length?CH[k+1].start:DUR;return{len:end-ch.start};}
 function muralScene(id){return(c,t,B)=>{const ps=MURAL[id],n=ps.length,len=chapterInfo(id).len;boardBG(c);
   const st=ps.map(p=>B[Math.min(p.at,B.length-1)]+.1),en=st.map((s,i)=>i+1<n?st[i+1]:len-2.4);
@@ -146,15 +146,17 @@ function seated(S,x,y,s,robe=MSAF){const T=p=>tf(p,x,y,s);S.g();
   S.S(T(ell(-20,-62,22,12,16)),{tone:[.95,.6],col:MSKIN}).S(T(ell(16,-62,22,12,16)),{tone:[.92,.55],col:MSKIN});
   S.S(T([[-14,-186],[-12,-206],[12,-206],[14,-186]]),{tone:[.85,.45],dir:0,col:MSKIN});
   S.S(T(ell(0,-232,30,36,30)),{tone:[.97,.6],dir:.35,col:MSKIN,lw:2.6});
-  S.L(T(ell(-12,-232,9,4,10,Math.PI*.05,Math.PI*.95)),{lw:2}).L(T(ell(12,-232,9,4,10,Math.PI*.05,Math.PI*.95)),{lw:2}).L(T([[-22,-242],[-14,-245],[-4,-243]]),{lw:2.6}).L(T([[22,-242],[14,-245],[4,-243]]),{lw:2.6});
-  S.L(T([[1,-238],[-3,-218],[5,-216]]),{lw:1.8}).L(T(bz([-10,-206],[-4,-203],[4,-203],[10,-206],6)),{lw:2});
+  const se=S.emo&&!['peace','neutral','devotion','courage','pride','desire','jealousy','disgust','anger'].includes(S.emo)?S.emo:null;
+  if(se){faceFx(S,(u,v)=>T([[u*1.7,-228+v*1.6]])[0],se,s*1.7);S.L(T([[1,-238],[-3,-220],[5,-218]]),{lw:1.8});}
+  else{S.L(T(ell(-12,-232,9,4,10,Math.PI*.05,Math.PI*.95)),{lw:2}).L(T(ell(12,-232,9,4,10,Math.PI*.05,Math.PI*.95)),{lw:2}).L(T([[-22,-242],[-14,-245],[-4,-243]]),{lw:2.6}).L(T([[22,-242],[14,-245],[4,-243]]),{lw:2.6});
+  S.L(T([[1,-238],[-3,-218],[5,-216]]),{lw:1.8}).L(T(bz([-10,-206],[-4,-203],[4,-203],[10,-206],6)),{lw:2});}
   S.S(T(ell(0,-262,38,22,24,Math.PI*.95,Math.PI*2.05).concat([[34,-250],[-34,-250]])),{tone:[.95,.5],dir:.4,col:robe,lw:2.6});for(let k=0;k<3;k++)S.L(T(bz([-34,-256-k*5],[-10,-270-k*4],[14,-268-k*5],[34,-258-k*4],8)),{lw:1.3});}
 /* standing person: o.head 'turban'|'hat'|'hair'|'veil'|'helmet'|'beard', o.arms 'up'|'down'|'out'|'hold', o.mark (tilak) */
-function person(S,x,y,s,o={}){const T=p=>tf(p,x,y,s);S.g();const robe=o.col||MBLU;
+function person(S,x,y,s,o={}){const T=p=>tf(p,x,y,s);S.g();const robe=o.col||MBLU;const emo=o.emo||S.emo||'neutral';
   S.S(T([[-26,0],[-22,-110],[-30,-150],[-16,-176],[16,-176],[30,-150],[22,-110],[26,0]]),{tone:[.93,.4],dir:.2,col:robe,lw:2.2});S.L(T(bz([-4,-170],[0,-120],[-6,-60],[0,-6],8)),{lw:1.2});
-  const arm=o.arms||'down';const A=arm==='up'?[[[-18,-166],[-44,-210],[-50,-246]],[[18,-166],[44,-210],[50,-246]]]:arm==='out'?[[[-18,-160],[-60,-150],[-86,-160]],[[18,-160],[60,-150],[86,-160]]]:arm==='hold'?[[[-18,-160],[-30,-120],[-6,-104]],[[18,-160],[30,-120],[6,-104]]]:[[[-20,-162],[-30,-110],[-28,-70]],[[20,-162],[30,-110],[28,-70]]];
-  A.forEach(a=>S.L(T(a),{lw:Math.max(2,9*s)}));
-  S.S(T(ell(0,-194,17,21,20)),{tone:[.96,.55],dir:.3,col:o.skin||MSKIN,lw:2});S.L(T([[-7,-198],[-3,-198]]),{lw:2}).L(T([[3,-198],[7,-198]]),{lw:2}).L(T([[-5,-184],[5,-184]]),{lw:1.6});
+  const arm=o.arms||EMO_POSE[emo]||'down';const A=arm==='head'?[[[-18,-166],[-40,-196],[-20,-214]],[[18,-166],[40,-196],[20,-214]]]:arm==='cover'?[[[-18,-166],[-28,-176],[-8,-190]],[[18,-166],[28,-176],[8,-190]]]:arm==='namaste'?[[[-18,-162],[-24,-132],[0,-146]],[[18,-162],[24,-132],[0,-146]]]:arm==='fist'?[[[-20,-162],[-30,-110],[-28,-70]],[[18,-166],[34,-206],[30,-240]]]:arm==='up'?[[[-18,-166],[-44,-210],[-50,-246]],[[18,-166],[44,-210],[50,-246]]]:arm==='out'?[[[-18,-160],[-60,-150],[-86,-160]],[[18,-160],[60,-150],[86,-160]]]:arm==='hold'?[[[-18,-160],[-30,-120],[-6,-104]],[[18,-160],[30,-120],[6,-104]]]:[[[-20,-162],[-30,-110],[-28,-70]],[[20,-162],[30,-110],[28,-70]]];
+  if(arm!=='cover')A.forEach(a=>S.L(T(a),{lw:Math.max(2,9*s)}));if(arm==='fist')S.S(T(ell(30,-246,7,7,8)),{rad:1,tone:[1,.6],col:o.skin||MSKIN,lw:1});
+  S.S(T(ell(0,-194,17,21,20)),{tone:[.96,.55],dir:.3,col:o.skin||MSKIN,lw:2});faceFx(S,(u,v)=>T([[u,v-194]])[0],emo,s);if(arm==='cover')A.forEach(a=>S.L(T(a),{lw:Math.max(2,9*s)}));
   const hd=o.head||'hair';
   if(hd==='turban'){S.S(T(ell(0,-212,22,14,18,Math.PI*.95,Math.PI*2.05).concat([[20,-204],[-20,-204]])),{tone:[.95,.5],col:o.tcol||MSAF,lw:2});}
   else if(hd==='hat'){S.S(T([[-14,-210],[-14,-236],[14,-236],[14,-210]]),{tone:[.6,.25],col:'#3a3a40'});S.S(T([[-26,-208],[26,-208],[26,-213],[-26,-213]]),{tone:[.55,.25]});}
@@ -162,9 +164,10 @@ function person(S,x,y,s,o={}){const T=p=>tf(p,x,y,s);S.g();const robe=o.col||MBL
   else if(hd==='helmet'){S.S(T([[-20,-196],[-20,-220],[0,-228],[20,-220],[20,-196]]),{tone:[.75,.25],col:'#7a7a80'});}
   else if(hd==='beard'){S.S(T([[-14,-186],[0,-160],[14,-186],[8,-180],[0,-176],[-8,-180]]),{tone:[.9,.6],col:'#eeeeee',lw:1.6});S.S(T(ell(0,-212,18,8,14,Math.PI,Math.PI*2)),{tone:[.95,.6],col:'#eeeeee'});}
   else S.S(T(ell(0,-208,18,9,14,Math.PI,Math.PI*2)),{tone:[.5,.2],col:'#2a1d14'});
-  if(o.mark){S.S(T([[-2,-212],[2,-212],[2,-202],[-2,-202]]),{tone:[.3,.2],col:MRED});}}
+  if(o.mark){S.S(T([[-2,-212],[2,-212],[2,-202],[-2,-202]]),{tone:[.3,.2],col:MRED});}
+  if(emo!=='neutral'&&(o.fx??S.fx))emanata(S,x,y-200*s,s,emo);}
 function crowd(S,x0,x1,y,s,seed,o={}){const r=rng(seed);const cols=[MBLU,MRED,MGRN,MPUR,MSAF,'#2f6a6a','#8a5a2c',MPNK];const heads=o.heads||['turban','hair','veil','turban','hair'];const n=o.n||Math.round((x1-x0)/(60*s));
-  for(let k=0;k<n;k++){const x=lerp(x0,x1,(k+.5)/n)+(r()-.5)*20*s,sc=s*(.85+r()*.3);person(S,x,y+(r()-.5)*10*s,sc,{col:cols[(k+seed)%cols.length],head:heads[k%heads.length],arms:o.arms||(r()<.3?'up':'down'),mark:o.mark});}}
+  for(let k=0;k<n;k++){const x=lerp(x0,x1,(k+.5)/n)+(r()-.5)*20*s,sc=s*(.85+r()*.3);const ep=S.emo&&EMO_POSE[S.emo],rr=r();person(S,x,y+(r()-.5)*10*s,sc,{col:cols[(k+seed)%cols.length],head:heads[k%heads.length],arms:o.arms||(ep&&rr<.6?ep:(rr<.3?'up':'down')),mark:o.mark,fx:S.fx&&k%3===1});}}
 function banyan(S,x,y,s){const T=p=>tf(p,x,y,s);S.g();const r=rng(3);
   S.S(T([[-44,0],[-30,-150],[-74,-216],[-24,-204],[0,-250],[18,-204],[70,-222],[30,-150],[48,0]]),{tone:[.82,.28],dir:0,col:MBROWN});for(let k=0;k<7;k++){const xx=-26+k*9;S.L(T(bz([xx,-4],[xx-6,-60],[xx+6,-110],[xx-2,-160],10)),{lw:1.1});}
   for(let k=0;k<22;k++){const a=Math.PI*(1.02+r()*.96),d=60+r()*150,cx=Math.cos(a)*d*1.25,cy=-250+Math.sin(a)*d*.55+20;S.S(T(ell(cx,cy,40+r()*24,26+r()*14,22)),{tone:[.95,.42],dir:2.1,col:k%3?'#4aa64a':'#6bc04a',cA:.85,lw:1.8});}
@@ -524,13 +527,13 @@ function lady(S,x,y,s,col=MPUR,o={}){const T=p=>tf(p,x,y,s,o.fl||1);S.g();
   S.S(T([[-16,-150],[16,-150],[12,-108],[-12,-108]]),{tone:[1,.5],dir:0,col,lw:1.8});
   if(o.lowcut)S.S(T([[-14,-150],[14,-150],[0,-132]]),{tone:[1,.6],col:MSKIN,lw:1});else S.S(T(rect(-6,-162,12,14)),{tone:[1,.6],col,lw:1});
   [-1,1].forEach(d=>{S.S(T([[d*14,-148],[d*26,-146],[d*30,-110],[d*20,-110]]),{tone:[1,.5],col:o.puff||shade(col,.15),lw:1.4});S.L(T([[d*28,-112],[d*30,-84]]),{lw:5,col:MSKIN,any:1});});
-  S.S(T(ell(0,-178,14,16,14)),{rad:1,tone:[1,.55],col:MSKIN,lw:1.6});S.S(T(bz([-16,-180],[-18,-206],[18,-206],[16,-180],10).concat([[10,-196],[-10,-196]])),{tone:[1,.5],col:o.hair||'#6a4426',lw:1.4});S.S(T(ell(0,-200,10,7,10)),{rad:1,tone:[1,.5],col:o.hair||'#6a4426',lw:1.2});
+  S.S(T(ell(0,-178,14,16,14)),{rad:1,tone:[1,.55],col:MSKIN,lw:1.6});faceFx(S,(u,v)=>T([[u*.82,-178+v*.76]])[0],o.emo||S.emo||'neutral',s*.8);S.S(T(bz([-16,-180],[-18,-206],[18,-206],[16,-180],10).concat([[10,-196],[-10,-196]])),{tone:[1,.5],col:o.hair||'#6a4426',lw:1.4});S.S(T(ell(0,-200,10,7,10)),{rad:1,tone:[1,.5],col:o.hair||'#6a4426',lw:1.2});
   if(o.hat){S.S(T(ell(4,-204,30,6,16)),{tone:[1,.5],col:o.hat,lw:1.4});S.S(T(ell(4,-212,14,10,12)),{tone:[1,.5],col:o.hat,lw:1.2});S.S(T(ell(16,-216,6,8,8)),{tone:[1,.6],col:MPNK,lw:.8});}
   if(o.parasol){S.L(T([[30,-84],[40,-210]]),{lw:2});S.S(T(ell(40,-210,44,20,18,Math.PI,Math.PI*2).concat([[84,-210],[-4,-210]])),{tone:[1,.6],col:o.parasol,lw:1.4});}}
 function gent(S,x,y,s,col='#3a3a46',o={}){const T=p=>tf(p,x,y,s,o.fl||1);S.g();[-1,1].forEach(d=>S.S(T([[d*4,-70],[d*16,-70],[d*14,0],[d*4,0]]),{tone:[1,.4],dir:0,col:'#5a5a62',lw:1.4}));
   S.S(T([[-22,-150],[22,-150],[26,-90],[20,-50],[-20,-50],[-26,-90]]),{tone:[1,.4],dir:0,col,lw:1.8});S.S(T([[-6,-150],[6,-150],[0,-120]]),{tone:[1,.8],col:'#f4f0e6',lw:1});S.S(T(rect(-4,-152,8,6)),{tone:[1,.5],col:MRED,lw:.8});
   [-1,1].forEach(d=>S.L(T(o.arms==='out'&&d>0?[[d*22,-146],[d*56,-120]]:o.arms==='up'?[[d*22,-146],[d*40,-196]]:[[d*22,-146],[d*28,-90]]),{lw:7,col,any:1}));
-  S.S(T(ell(0,-170,14,16,14)),{rad:1,tone:[1,.55],col:MSKIN,lw:1.6});S.L(T([[-8,-160],[8,-160]]),{lw:2.4,col:o.must||'#5a3a1a'});
+  S.S(T(ell(0,-170,14,16,14)),{rad:1,tone:[1,.55],col:MSKIN,lw:1.6});faceFx(S,(u,v)=>T([[u*.82,-171+v*.76]])[0],o.emo||S.emo||'neutral',s*.8);S.L(T([[-8,-163],[8,-163]]),{lw:2.4,col:o.must||'#5a3a1a'});
   if(o.hat!==false){S.S(T(rect(-12,-212,24,30)),{tone:[1,.4],col:'#2a2a30',lw:1.4});S.S(T(ell(0,-182,22,4,12)),{tone:[1,.4],col:'#2a2a30',lw:1.2});}}
 function cottage(S,x,y,s,col='#e8e0d0',roof='#7a8a9a'){const T=p=>tf(p,x,y,s);S.g();S.S(T(rect(-70,-90,140,90)),{tone:[1,.55],dir:0,col,lw:1.8});for(let k=1;k<8;k++)S.L(T([[-70,-k*11],[70,-k*11]]),{lw:.7,col:shade(col,-.25)});
   S.S(T([[-82,-88],[0,-150],[82,-88]]),{tone:[1,.45],dir:1,col:roof,lw:1.8});S.S(T(rect(30,-170,14,40)),{tone:[1,.5],col:'#9a5a3a',lw:1.2});[[-44,-70],[22,-70]].forEach(([wx,wy])=>S.S(T(rect(wx,wy,22,26)),{tone:[.8,.4],col:'#7a9ab8',lw:1.2}));S.S(T(rect(-12,-44,22,44)),{tone:[.8,.4],col:'#5a3a2a',lw:1.2});}
@@ -567,3 +570,134 @@ function owl(S,x,y,s,col='#2a2a30'){const T=p=>tf(p,x,y,s);S.g();S.S(T(ell(0,-60
 function driedFruit(S,x,y,s){const T=p=>tf(p,x,y,s);S.g();const r=rng(4);const pts=[];for(let k=0;k<=40;k++){const a=k/40*Math.PI*2;const rr=42*(1+.12*Math.sin(a*7)+.06*(r()-.5));pts.push([Math.cos(a)*rr,Math.sin(a)*rr*.92-44]);}S.S(T(pts),{rad:1,tone:[1,.4],col:'#9a6a3a',lw:1.6});
   for(let k=0;k<6;k++)S.L(T(bz([-30+k*10,-70],[-20+k*12,-50],[-34+k*10,-30],[-24+k*10,-14],6)),{lw:1,col:'#5a3a1a'});S.L(T([[0,-86],[6,-104]]),{lw:2.4,col:'#5a3a1a'});}
 function cradle(S,x,y,s){const T=p=>tf(p,x,y,s);S.g();S.S(T(bz([-60,-50],[-50,0],[50,0],[60,-50],12).concat([[-60,-50]])),{tone:[1,.5],col:'#c8a46a',lw:1.6});S.L(T(bz([-70,6],[-30,24],[30,24],[70,6],10)),{lw:3,col:'#8a5a2a'});S.S(T(ell(-20,-52,14,12,12)),{rad:1,tone:[1,.6],col:'#f4d8c4',lw:1});S.S(T(ell(14,-46,30,10,12)),{tone:[1,.7],col:'#f4f0e6',lw:1});}
+
+/* ===== Emotions: faces, posture, emanata, close-ups, and reading feelings from the narration =====
+   Grounded in: facial action (brows, eyes, mouth carry most emotion), comic symbolia (Mort Walker's
+   Lexicon of Comicana: emanata, plewds, squeans), and the Natyashastra's nine rasas with their colours. */
+const EMO={ /* brow: [inner,outer] raise (+ up), eye, mouth, extras */
+ neutral:{b:[0,0],e:'dot',m:'soft'},
+ joy:{b:[2,1],e:'happy',m:'grin',blush:1},
+ sorrow:{b:[4,-2],e:'down',m:'frown',tear:1},
+ fear:{b:[5,2],e:'wide',m:'open',sweat:1},
+ anger:{b:[-4,2],e:'narrow',m:'teeth',red:1},
+ disgust:{b:[-3,0],e:'narrow',m:'sneer',nose:1},
+ wonder:{b:[5,4],e:'wide',m:'o'},
+ love:{b:[2,1],e:'happy',m:'soft',blush:1},
+ peace:{b:[1,0],e:'closed',m:'soft'},
+ courage:{b:[-2,1],e:'dot',m:'firm'},
+ weak:{b:[4,-1],e:'down',m:'small',sweat:1},
+ pride:{b:[1,3],e:'lid',m:'smirk'},
+ shame:{b:[3,-1],e:'side',m:'wavy',blush:2},
+ desire:{b:[3,2],e:'star',m:'grin'},
+ jealousy:{b:[-3,1],e:'side',m:'firm',green:1},
+ confusion:{b:[4,-3],e:'dot',m:'wavy'},
+ devotion:{b:[3,1],e:'up',m:'soft'},
+};
+/* the Natyashastra's rasa for each state, with its colour */
+const RASA={joy:['हास्य','HASYA','#f4f0e6'],love:['शृङ्गार','SHRINGARA','#6ab04c'],sorrow:['करुण','KARUNA','#9a9aa4'],anger:['रौद्र','RAUDRA','#d4232b'],courage:['वीर','VEERA','#f2b51c'],
+ fear:['भयानक','BHAYANAKA','#2a2a30'],disgust:['बीभत्स','BIBHATSA','#2c5aa0'],wonder:['अद्भुत','ADBHUTA','#ffd21a'],peace:['शान्त','SHANTA','#f4f0e6'],devotion:['भक्ति','BHAKTI','#ee7a1c']};
+const EMO_POSE={joy:'up',sorrow:'cover',fear:'head',anger:'fist',courage:'fist',devotion:'namaste',peace:'namaste',shame:'cover',confusion:'head',weak:'down',love:'out',wonder:'out',desire:'out'};
+/* features in face space: head ≈ 17 wide x 21 tall, centre (0,0); P maps (u,v) to the page */
+function faceFx(S,P,emo,k=1){const f=EMO[emo]||EMO.neutral;const lw=Math.max(1.2,1.9*Math.min(1.6,k));const L=(pts,o={})=>S.L(pts.map(([u,v])=>P(u,v)),Object.assign({lw,any:1},o));
+  [-1,1].forEach(d=>{const bi=f.b[0],bo=f.b[1];L([[d*3,-9-bi],[d*10,-9-bo]],{lw:lw*1.15});
+    const ex=d*6.5,ey=-3;switch(f.e){
+     case'happy':L([[ex-3,ey+1],[ex,ey-2],[ex+3,ey+1]]);break;
+     case'closed':L([[ex-3,ey-1],[ex,ey+1.5],[ex+3,ey-1]]);break;
+     case'down':L([[ex-3,ey],[ex+3,ey]]);L([[ex-1,ey+1],[ex+1,ey+1]],{lw:lw*1.4});break;
+     case'wide':S.S(ell(...P(ex,ey),3.2*k,3.6*k,10),{tone:[1,1],col:'#ffffff',lw:lw*.6});L([[ex,ey],[ex+.4,ey]],{lw:lw*1.6});break;
+     case'narrow':L([[ex-3,ey-.5],[ex+3,ey+.5*d*-1]],{lw:lw*1.2});break;
+     case'lid':L([[ex-3,ey-1],[ex+3,ey-1]]);L([[ex-1,ey+.5],[ex+1,ey+.5]],{lw:lw*1.3});break;
+     case'side':L([[ex-3,ey],[ex+3,ey]]);L([[ex+1.5,ey+.6],[ex+2.6,ey+.6]],{lw:lw*1.5});break;
+     case'star':{const c=P(ex,ey);star(S,c[0],c[1],3.6*k,MYEL);break;}
+     case'up':L([[ex-3,ey+.5],[ex+3,ey+.5]]);L([[ex-.5,ey-1],[ex+.6,ey-1]],{lw:lw*1.5});break;
+     default:L([[ex-1.2,ey],[ex+1.2,ey]],{lw:lw*1.3});}});
+  const my=9;switch(f.m){
+   case'grin':S.S([P(-6,my-1),P(6,my-1),P(3,my+4),P(-3,my+4)],{tone:[1,1],col:'#7a2a2a',lw:lw*.7});break;
+   case'frown':L([[-5,my+2],[-2,my-.5],[2,my-.5],[5,my+2]]);break;
+   case'open':S.S(ell(...P(0,my+1),3.4*k,4.4*k,10),{tone:[1,1],col:'#5a1a1a',lw:lw*.7});break;
+   case'o':S.S(ell(...P(0,my+1),2.6*k,3.2*k,10),{tone:[1,1],col:'#5a1a1a',lw:lw*.7});break;
+   case'teeth':S.S([P(-5,my-1),P(5,my-1),P(5,my+2.5),P(-5,my+2.5)],{tone:[1,1],col:'#ffffff',lw:lw*.8});L([[-5,my+.8],[5,my+.8]],{lw:lw*.6});break;
+   case'sneer':L([[-5,my+1],[-1,my],[3,my-1.5],[5,my-.5]]);break;
+   case'firm':L([[-4.5,my],[4.5,my]],{lw:lw*1.2});break;
+   case'small':L([[-2.5,my+1],[0,my],[2.5,my+1]]);break;
+   case'smirk':L([[-4,my],[2,my],[5,my-2.5]]);break;
+   case'wavy':L([[-5,my],[-2.5,my-1.2],[0,my],[2.5,my-1.2],[5,my]]);break;
+   default:L([[-4,my-.5],[0,my+1.2],[4,my-.5]]);}
+  if(f.blush)[-1,1].forEach(d=>S.S(ell(...P(d*9,4),2.8*k,1.6*k,8),{tone:[1,1],col:'#ff8a9a',noline:1,cA:f.blush>1?.95:.6}));
+  if(f.nose)L([[-2,1],[0,-.5],[2,1]],{lw:lw*.8});
+  if(f.tear){const c=P(-8,2);S.S(bz([c[0],c[1]],[c[0]-2*k,c[1]+4*k],[c[0]+2*k,c[1]+4*k],[c[0],c[1]],6),{tone:[1,1],col:'#7ac8f0',lw:.6});}
+  if(f.red)S.S(ell(...P(0,2),14*k,16*k,16),{tone:[1,1],col:'#ff6050',noline:1,cA:.25});
+  if(f.green)S.S(ell(...P(0,2),14*k,16*k,16),{tone:[1,1],col:'#7ac84a',noline:1,cA:.25});}
+/* symbols around a head (emanata, plewds, squeans and their cousins) */
+function emanata(S,x,y,s,emo){S.g();const k=s;const drop=(dx,dy,col)=>S.S(bz([x+dx*k,y+dy*k],[x+(dx-4)*k,y+(dy+8)*k],[x+(dx+4)*k,y+(dy+8)*k],[x+dx*k,y+dy*k],6),{tone:[1,1],col,lw:.6});
+  switch(emo){
+   case'joy':for(let i=0;i<3;i++)star(S,x+(-26+i*26)*k,y-(30+(i%2)*10)*k,5*k,MYEL);break;
+   case'love':[[-22,-30],[20,-36]].forEach(([dx,dy])=>S.S(HEART(x+dx*k,y+dy*k,.1*k),{tone:[1,1],col:MPNK,lw:.8}));break;
+   case'sorrow':drop(-20,-6,'#7ac8f0');drop(22,-2,'#7ac8f0');S.S(ell(x,y-44*k,22*k,9*k,14),{tone:[1,.7],col:'#9aa4b4',lw:.8});for(let i=-1;i<=1;i++)S.L([[x+i*10*k,y-34*k],[x+(i*10-2)*k,y-26*k]],{lw:1,col:'#7ac8f0',any:1});break;
+   case'fear':case'weak':drop(-22,-14,'#9ad8f8');drop(24,-18,'#9ad8f8');drop(18,-30,'#9ad8f8');for(let i=0;i<3;i++)S.L([[x+(30+i*3)*k,y+(-6+i*8)*k],[x+(34+i*3)*k,y+(-2+i*8)*k]],{lw:1,col:MINK,any:1});break;
+   case'anger':{const cx=x+18*k,cy=y-28*k;[[-1,-1],[1,-1],[-1,1],[1,1]].forEach(([a,b])=>S.L([[cx+a*2*k,cy+b*2*k],[cx+a*7*k,cy+b*7*k]],{lw:2,col:MRED,any:1}));
+     for(let i=0;i<2;i++)S.S(ell(x+(-20+i*8)*k,y-(40+i*8)*k,6*k,4*k,10),{tone:[1,.8],col:'#e8e8ee',lw:.6});break;}
+   case'disgust':for(let i=0;i<3;i++)S.L([[x+(-8+i*8)*k,y-24*k],[x+(-12+i*8)*k,y-32*k],[x+(-6+i*8)*k,y-40*k],[x+(-10+i*8)*k,y-48*k]],{lw:1.2,col:MGRN,any:1});break;
+   case'wonder':for(let i=0;i<7;i++){const a=-Math.PI*.95+i/6*Math.PI*.9;S.L([[x+Math.cos(a)*26*k,y-6*k+Math.sin(a)*28*k],[x+Math.cos(a)*36*k,y-6*k+Math.sin(a)*38*k]],{lw:1.4,col:MINK,any:1});}break;
+   case'peace':case'devotion':S.G(x,y-6*k,40*k,'rgba(255,214,120,.95)',{a:.55});S.L(ell(x,y-30*k,16*k,4*k,16),{closed:1,lw:1.4,col:MYEL,any:1});break;
+   case'courage':for(let i=0;i<5;i++){const a=-Math.PI*.8+i/4*Math.PI*.6;S.L([[x+Math.cos(a)*28*k,y-6*k+Math.sin(a)*28*k],[x+Math.cos(a)*40*k,y-6*k+Math.sin(a)*40*k]],{lw:2,col:MSAF,any:1});}break;
+   case'pride':star(S,x+24*k,y-12*k,4*k,MYEL);break;
+   case'shame':for(let i=0;i<3;i++)S.L([[x+(-8+i*6)*k,y+2*k],[x+(-10+i*6)*k,y+6*k]],{lw:1,col:MRED,any:1});drop(24,-10,'#9ad8f8');break;
+   case'desire':[[-20,-30],[22,-28]].forEach(([dx,dy])=>coin(S,x+dx*k,y+dy*k,4*k));break;
+   case'jealousy':S.L(bz([x-24*k,y-30*k],[x-10*k,y-44*k],[x+10*k,y-24*k],[x+24*k,y-38*k],10),{lw:1.4,col:MGRN,any:1});break;
+   case'confusion':S.T([['?',MINK]],x+22*k,y-24*k,16*k,{al:'center',rot:.2});S.T([['?',MINK]],x-20*k,y-30*k,12*k,{al:'center',rot:-.2});
+     {const p=[];for(let i=0;i<30;i++){const a=i/30*Math.PI*4,r=(1+i*.3)*k;p.push([x+Math.cos(a)*r,y-40*k+Math.sin(a)*r]);}S.L(p,{lw:1.2,any:1});}break;}}
+/* a close-up face, used as an inset where a line names a feeling */
+function emoFace(S,x,y,r,emo,o={}){const k=r/21;const P=(u,v)=>[x+u*k,y+v*k];S.g();const R=RASA[emo];
+  if(R)S.S(ell(x,y,r*1.55,r*1.55,30),{rad:1,tone:[1,.85],col:R[2],noline:1,cA:.32});
+  S.S(ell(x,y+r*1.25,r*.55,r*.35,14),{tone:[1,.5],col:o.skin||MSKIN,lw:1.2});S.S(ell(x,y+r*1.7,r*1.15,r*.55,18,Math.PI,Math.PI*2).concat([[x+r*1.15,y+r*1.9],[x-r*1.15,y+r*1.9]]),{tone:[1,.5],col:o.col||MSAF,lw:1.6});
+  S.S(ell(x,y,r*.82,r,24),{rad:1,tone:[1,.55],col:o.skin||MSKIN,lw:2});[-1,1].forEach(d=>S.S(ell(x+d*r*.82,y,r*.12,r*.2,8),{tone:[1,.55],col:o.skin||MSKIN,lw:1}));
+  const hd=o.head||'hair';if(hd==='turban')S.S(ell(x,y-r*.55,r*.95,r*.6,20,Math.PI*.95,Math.PI*2.05).concat([[x+r*.86,y-r*.28],[x-r*.86,y-r*.28]]),{tone:[1,.5],col:o.tcol||MSAF,lw:1.6});
+  else if(hd==='veil')S.S([[x-r*1.05,y+r*.8],[x-r,y-r*.7],[x,y-r*1.25],[x+r,y-r*.7],[x+r*1.05,y+r*.8],[x+r*.7,y-r*.2],[x,y-r*.9],[x-r*.7,y-r*.2]],{tone:[1,.5],col:o.tcol||MPNK,lw:1.6});
+  else S.S(ell(x,y-r*.5,r*.86,r*.55,20,Math.PI,Math.PI*2).concat([[x+r*.86,y-r*.35],[x-r*.86,y-r*.35]]),{tone:[.6,.3],col:'#2a1d14',lw:1.4});
+  if(o.mark)S.S([[x-r*.06,y-r*.62],[x+r*.06,y-r*.62],[x+r*.06,y-r*.42],[x-r*.06,y-r*.42]],{tone:[1,1],col:MRED,lw:.6});
+  S.L([P(0,-1),P(-1.5,4),P(1,4.6)],{lw:1.4,any:1});faceFx(S,P,emo,k);emanata(S,x,y-r*.35,k*.9,emo);
+  if(o.label&&R){S.T([[R[0],MINK]],x,y+r*2.35,Math.max(14,r*.45),{al:'center',font:DEVF,rot:0});S.T([[R[1],MINK]],x,y+r*2.35+Math.max(14,r*.45)*.95,Math.max(10,r*.28),{al:'center',rot:0});}}
+/* a head-sized storm, cage, mask and other metaphors for states of mind */
+function stormHead(S,x,y,s){cloud(S,x,y,120*s,7,'#8a92a4');S.g();S.L([[x-6*s,y+18*s],[x+6*s,y+34*s],[x-2*s,y+38*s],[x+10*s,y+58*s]],{lw:3,col:MYEL,any:1});}
+function cage(S,x,y,s){const T=p=>tf(p,x,y,s);S.g();S.L(T(ell(0,-140,70,26,20,Math.PI,Math.PI*2)),{lw:3,col:'#6a6a72'});for(let k=0;k<8;k++)S.L(T([[-70+k*20,-140],[-70+k*20,0]]),{lw:2.4,col:'#6a6a72'});S.L(T([[-74,0],[74,0]]),{lw:4,col:'#5a5a62'});}
+function mask(S,x,y,s,col='#f4f0e6'){const T=p=>tf(p,x,y,s);S.g();S.S(T(bz([-40,-20],[-44,40],[44,40],[40,-20],12).concat(bz([40,-20],[30,-50],[-30,-50],[-40,-20],10))),{tone:[1,.6],col,lw:1.8});[-16,16].forEach(ex=>S.S(T(ell(ex,-12,8,5,10)),{tone:[.3,.1],col:'#1a1a22',lw:1}));S.L(T(bz([-14,14],[-4,22],[4,22],[14,14],8)),{lw:2});S.L(T([[40,-20],[64,-30]]),{lw:1.4});}
+function magnet(S,x,y,s){const T=p=>tf(p,x,y,s);S.g();S.S(T(bz([-40,0],[-40,-80],[40,-80],[40,0],14).concat([[24,0]]).concat(bz([24,0],[24,-58],[-24,-58],[-24,0],14))),{tone:[1,.5],col:MRED,lw:1.8});[-32,32].forEach(px=>S.S(T(rect(px-8,-2,16,14)),{tone:[1,.6],col:'#c8c8d0',lw:1}));for(let k=0;k<3;k++)S.L(T(bz([-30+k*30,24],[-34+k*30,40],[-26+k*30,52],[-30+k*30,66],6)),{lw:1.2,col:MINK});}
+function burden(S,x,y,s,label){person(S,x,y,s,{arms:'up',head:'hair',col:'#7a7a82',emo:'weak'});const T=p=>tf(p,x,y,s);S.S(T(ell(0,-290,70,50,20)),{rad:1,tone:[1,.4],col:'#8a7a6a',lw:2});if(label)S.T([[label,MINK]],x,y-290*s+6,16*s+6,{al:'center',rot:0});}
+
+/* reading feelings from the narration: words that name a state of mind, mapped to a face */
+const EMO_LEX=[
+ ['sorrow',/\b(sorrow|grief|griev|weep|wept|tears?|misery|miserable|suffer\w*|unhappy|wail\w*|widows?|orphans?|pain|sad|mourn\w*|lament)/g],
+ ['fear',/\b(fear\w*|afraid|terror|terrif\w*|dread|horror|frighten\w*|danger|tremble\w*)/g],
+ ['anger',/\b(anger|angry|hatred|hate|wrath|rage|fury|abus\w*|howl|cruel\w*|fight\w*|battle\w*|blood)/g],
+ ['disgust',/\b(disgust\w*|pigs?|filth\w*|shameful|uncivilised|spit|nonsense|horrible|repuls\w*|dung)/g],
+ ['wonder',/\b(wonder\w*|marvel\w*|astonish\w*|amaz\w*|surpris\w*|fascinat\w*|charm)/g],
+ ['love',/\b(love\w*|sympath\w*|affection\w*|compassion\w*|kindness|kind|romance|romantic|heart|blessing\w*|brotherhood)/g],
+ ['peace',/\b(peace\w*|calm|serene|silent|silence|quiet|meditat\w*|tranquil|mild|gentle|rest\w*|dew)/g],
+ ['courage',/\b(strength|strong|courage\w*|brave\w*|fearless\w*|hero\w*|power\w*|arise|great deeds|conviction|will)/g],
+ ['weak',/\b(weak\w*|despair\w*|helpless\w*|degraded|fallen|fell|slaves?|death|dies?|died|suicide|downfall|crumble)/g],
+ ['pride',/\b(pride|proud|glory|precedence|greatness|honour\w*|command)/g],
+ ['shame',/\b(shame|ashamed|sin|sins|sinful|guilt\w*|fault)/g],
+ ['desire',/\b(desire\w*|greed\w*|wealth\w*|gold|money|crav\w*|lust|luxur\w*|riches|richest|enjoy\w*|capture)/g],
+ ['jealousy',/\b(jealous\w*|envy|quarrel\w*|rival\w*|compet\w*)/g],
+ ['confusion',/\b(confusion|confus\w*|doubt\w*|din|giddy|puzzl\w*|ignorance|mystery|delusion)/g],
+ ['devotion',/\b(worship\w*|pray\w*|devot\w*|bhakti|god|lord|holy|sacred|temple)/g],
+ ['joy',/\b(happy|happiness|joy\w*|delight\w*|cheer\w*|glad|bliss|rejoic\w*|laugh\w*|smil\w*|celebrat\w*|welcome)/g],
+];
+function textEmotion(txt){const t=' '+txt.toLowerCase()+' ';let best=null,bs=0;const pos=['joy','love','peace','courage','devotion','wonder','pride','desire'];
+  EMO_LEX.forEach(([e,re])=>{const m=t.match(re);const n=m?m.length:0;if(n>bs){bs=n;best=e;}});return bs?{emo:best,score:bs}:null;}
+/* the lines a panel covers, and the feeling they name */
+function panelEmotion(id,i){if(typeof CH==='undefined')return null;const ch=CH.find(c=>c.id===id);if(!ch)return null;const ps=MURAL[id];if(ps[i].emo)return{emo:ps[i].emo,score:3};
+  const a=ps[i].at,b=i+1<ps.length?ps[i+1].at:ch.lines.length;const txt=ch.lines.slice(a,Math.max(a+1,b)).map(l=>l.text).join(' ');return textEmotion(txt);}
+/* an empty patch of the panel, from the bounding boxes of what is already drawn */
+function freeSpot(S,w,h){const boxes=[];S.items.forEach(it=>{if(it.k==='S'||it.k==='A'){const pts=it.k==='A'?null:it.pts;if(!pts)return;const b=bbox(pts);if((b[2]-b[0])*(b[3]-b[1])>W*H*.25||it.noline&&(b[2]-b[0])>W*.6)return;boxes.push(b);}
+  else if(it.k==='T'){const len=it.segs.reduce((a,q)=>a+q[0].length,0)*it.size*.55;const x0=it.al==='center'?it.x-len/2:it.x;boxes.push([x0,it.y-it.size,x0+len,it.y+it.size*.3]);}
+  else if(it.k==='L'&&it.pts.length){const b=bbox(it.pts);if((b[2]-b[0])*(b[3]-b[1])<W*H*.25)boxes.push(b);}});
+  S.items.filter(it=>it.k==='A').forEach(it=>{const a=it.a;boxes.push([it.x,it.y,it.x+a.w*it.s,it.y+a.h*it.s]);});
+  let best=null;for(let y=40;y+h<=530;y+=16)for(let x=20;x+w<=940;x+=16){let hit=0;for(const b of boxes){if(b[0]<x+w&&b[2]>x&&b[1]<y+h&&b[3]>y){hit=1;break;}}if(!hit){const c=Math.abs(x+w/2-W*.62)+Math.abs(y+h/2-H*.45)*.6;if(!best||c<best.c)best={x,y,c};}}return best;}
+let EMO_ON=true;
+
+/* a close-up face in clear space for a panel whose lines name a feeling (at most every other panel) */
+function emoAccent(S,pe,id,i){if(pe.emo==='neutral'||(i%2===1&&pe.score<2))return;const sp=freeSpot(S,150,170);if(!sp)return;
+  const india=!!(S.inst&&S.inst.size);const r=40;S.emo=null;const hd=india?['turban','veil','hair'][(id.length+i)%3]:'hair';
+  emoFace(S,sp.x+75,sp.y+62,r,pe.emo,{head:hd,label:india,col:india?[MSAF,MRED,MGRN][i%3]:[MBLU,MPUR,'#3a3a46'][i%3],mark:india&&hd==='turban'});}

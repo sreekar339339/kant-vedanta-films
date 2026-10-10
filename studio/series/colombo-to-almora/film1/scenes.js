@@ -203,4 +203,6 @@ MURAL.mission=[
    TXT(S,[['next: Jaffna',36,{JAFFNA:MRED}],['Vaidika: the common ground',26]],30,30);}),
 ];
 
+/* emotion corrections where the narration's words mislead the reader (a negation, a pun, a place name) */
+Object.entries({tribes:{0:'neutral'}}).forEach(([id,m])=>Object.entries(m).forEach(([i,e])=>{MURAL[id][+i].emo=e;}));
 Object.keys(MURAL).forEach(id=>{SC[id]=muralScene(id);});

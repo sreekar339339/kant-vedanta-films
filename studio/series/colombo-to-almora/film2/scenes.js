@@ -252,4 +252,6 @@ const ENR={
 };
 Object.entries(ENR).forEach(([id,m])=>Object.entries(m).forEach(([i,[bg,fg]])=>{const p=MURAL[id][+i],d=p.draw;p.draw=S=>{if(bg)bg(S);d(S);if(fg)fg(S);};}));
 
+/* emotion corrections where the narration's words mislead the reader (a negation, a pun, a place name) */
+Object.entries({jaffna:{2:'sorrow'},name:{0:'neutral'},vedas:{0:'wonder'},obey:{0:'jealousy'}}).forEach(([id,m])=>Object.entries(m).forEach(([i,e])=>{MURAL[id][+i].emo=e;}));
 Object.keys(MURAL).forEach(id=>{SC[id]=muralScene(id);});
