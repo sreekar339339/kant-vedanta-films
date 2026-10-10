@@ -701,3 +701,51 @@ let EMO_ON=true;
 function emoAccent(S,pe,id,i){if(pe.emo==='neutral'||(i%2===1&&pe.score<2))return;const sp=freeSpot(S,150,170);if(!sp)return;
   const india=!!(S.inst&&S.inst.size);const r=40;S.emo=null;const hd=india?['turban','veil','hair'][(id.length+i)%3]:'hair';
   emoFace(S,sp.x+75,sp.y+62,r,pe.emo,{head:hd,label:india,col:india?[MSAF,MRED,MGRN][i%3]:[MBLU,MPUR,'#3a3a46'][i%3],mark:india&&hd==='turban'});}
+
+/* ===== Motifs for psychology and method (first used in the AP Framework film) ===== */
+/* a paper tag tied to a person: "I AM X" */
+function tag(S,x,y,label,col=MINK){S.g();const w=label.length*8.6+22;S.S([[x,y-12],[x+w,y-12],[x+w,y+12],[x,y+12],[x-12,y]],{tone:[1,.85],dir:0,col:'#f6eccf',lw:1.4});S.S(ell(x-3,y,3,3,8),{tone:[1,1],col:MINK,noline:1});S.T([[label,col]],x+w/2-4,y+6,15,{al:'center',rot:0});}
+/* the ego as a balloon on a string: size is its weight */
+function egoBalloon(S,x,y,r,col=MRED,label='I'){S.g();S.L(bz([x,y],[x+10,y-30],[x-10,y-60],[x,y-90],10),{lw:1.2,col:MINK,any:1});S.S(ell(x,y-90-r,r*.86,r,26),{rad:1,tone:[1,.55],col,lw:1.8});S.S([[x-5,y-90],[x+5,y-90],[x,y-84]],{tone:[1,1],col,lw:1});
+  S.L(ell(x-r*.35,y-90-r*1.35,r*.18,r*.3,10,Math.PI*1.1,Math.PI*1.6),{lw:2.4,col:'#ffffff',any:1});if(label)S.T([[label,'#fbf6ea']],x,y-90-r+r*.28,Math.max(12,r*.75),{al:'center',rot:0});}
+/* a person with a dashed line at the skin: where "I" begins */
+function skinSelf(S,x,y,s,col=MSAF,o={}){person(S,x,y,s,Object.assign({head:'hair',col,arms:'out'},o));S.g();const n=44;for(let k=0;k<n;k+=2){const a0=k/n*Math.PI*2,a1=(k+1)/n*Math.PI*2;S.L(ell(x,y-112*s,92*s,132*s,3,a0,a1),{lw:2.4,col:MRED,any:1});}}
+/* the flat sheet (XZ plane), drawn in perspective; returns its corners */
+function plane(S,x,y,w,h,col='#e9e2cf'){S.g();const P=[[x,y],[x+w,y],[x+w*.84,y-h],[x+w*.16,y-h]];S.S(P,{tone:[1,.7],dir:0,col,lw:1.8});
+  for(let k=1;k<6;k++){const f=k/6;S.L([[x+w*f,y],[x+w*.16+w*.68*f,y-h]],{lw:.7,col:'#b8ae96',any:1});const g=k/6;S.L([[x+w*.16*g,y-h*g],[x+w-w*.16*g,y-h*g]],{lw:.7,col:'#b8ae96',any:1});}return P;}
+/* the ego as an internal-combustion engine: desire is the fuel */
+function engine(S,x,y,s,full=true){const T=p=>tf(p,x,y,s);S.g();S.S(T(rect(-90,-120,150,120)),{tone:[1,.5],dir:0,col:'#8a8f9a',lw:2});for(let k=0;k<4;k++)S.L(T([[-80+k*36,-110],[-80+k*36,-10]]),{lw:1,col:'#5a5f6a',any:1});
+  S.S(T(rect(-70,-180,70,60)),{tone:[1,.5],col:'#a8aeb8',lw:1.8});S.L(T([[-35,-180],[-35,-216]]),{lw:5,col:'#5a5f6a'});S.S(T(ell(-35,-222,16,9,12)),{tone:[1,.6],col:'#5a5f6a',lw:1.2});
+  S.S(T(ell(110,-60,52,52,30)),{rad:1,tone:[.9,.4],col:'#6a6f7a',lw:2});S.S(T(ell(110,-60,12,12,12)),{tone:[1,1],col:'#3a3f4a',lw:1});S.L(T([[60,-60],[110,-60]]),{lw:4,col:'#3a3f4a'});
+  if(full){S.g();for(let k=0;k<3;k++)S.S(T(ell(20+k*34,-200-k*40,18+k*9,13+k*7,14)),{rad:1,tone:[1,.35],col:'#9a9aa4',lw:1});S.S(T([[-20,-60],[-6,-90],[4,-66],[14,-96],[24,-60]]),{tone:[1,1],col:MSAF,lw:1});}
+  S.g();S.S(T(rect(-230,-96,74,96)),{tone:[1,.6],dir:0,col:MRED,lw:1.8});S.S(T([[-222,-96],[-204,-120],[-182,-120],[-182,-96]]),{tone:[1,.6],col:MRED,lw:1.4});S.L(T([[-156,-50],[-90,-50]]),{lw:4,col:'#3a3f4a'});
+  S.T([['DESIRE','#fbf6ea']],x-193*s,y-44*s,Math.max(11,15*s),{al:'center',rot:0});
+  S.g();S.S(T(ell(-193,30,30,30,24,Math.PI,Math.PI*2)),{tone:[1,.8],col:'#f6eccf',lw:1.4});S.L(T([[-193,30],full?[-170,8]:[-216,8]]),{lw:2.4,col:full?MGRN:MRED});S.T([[full?'FULL':'EMPTY',full?MGRN:MRED]],x-193*s,y+48*s,Math.max(11,14*s),{al:'center',rot:0});}
+/* a ledger: the ego's account of what it is owed */
+function ledger(S,x,y,s,rows=[['GIFTS GIVEN','40'],['HURTS SUFFERED','112'],['SACRIFICES','70']]){const T=p=>tf(p,x,y,s);S.g();S.S(T([[-170,0],[0,-14],[170,0],[170,-230],[0,-244],[-170,-230]]),{tone:[.98,.75],dir:0,col:'#f2e6c8',lw:1.8});S.L(T([[0,-14],[0,-244]]),{lw:1.4});
+  S.S(T([[-176,6],[0,-8],[176,6],[176,16],[0,2],[-176,16]]),{tone:[.85,.5],col:'#6a3a1a',lw:1.2});
+  for(let k=1;k<8;k++){S.L(T([[-158,-228+k*27],[-10,-240+k*27]]),{lw:.7,col:'#9ab0c8',any:1});S.L(T([[10,-240+k*27],[158,-228+k*27]]),{lw:.7,col:'#9ab0c8',any:1});}
+  S.L(T([[-40,-226],[-40,-30]]),{lw:.8,col:MRED,any:1});S.L(T([[120,-226],[120,-30]]),{lw:.8,col:MRED,any:1});
+  rows.forEach(([a,b],i)=>{S.T([[a,MINK]],x-150*s,y+(-178+i*54)*s,14*s+2,{rot:-.05});S.T([[b,MRED]],x+90*s,y+(-178+i*54)*s,20*s+2,{al:'center',rot:.05});});
+  S.T([['OWED TO ME',MRED]],x+80*s,y-30*s,16*s+2,{al:'center',rot:.05});}
+/* a standing looking-glass */
+function mirror(S,x,y,s,reflect=null){const T=p=>tf(p,x,y,s);S.g();S.L(T([[-56,0],[-22,-118]]),{lw:5,col:'#8a5a2a',any:1});S.L(T([[56,0],[22,-118]]),{lw:5,col:'#8a5a2a',any:1});
+  S.S(T(ell(0,-214,82,112,32)),{rad:1,tone:[1,.55],col:'#a8743a',lw:2});S.S(T(ell(0,-214,68,98,32)),{rad:1,tone:[1,.55],col:'#d6e8f2',lw:1.4});
+  if(reflect)reflect(x,y-214*s);S.g();S.L(T([[-34,-268],[-12,-292]]),{lw:3,col:'#ffffff',any:1});S.L(T([[-42,-240],[-6,-280]]),{lw:3,col:'#ffffff',any:1});}
+/* a magnifying glass: examining */
+function lens(S,x,y,s,a=-.7){S.g();const c=Math.cos(a),n=Math.sin(a);S.L([[x,y],[x-c*90*s,y-n*90*s]],{lw:9*s,col:'#5a3a1a'});S.S(ell(x+c*44*s,y+n*44*s,44*s,44*s,28),{rad:1,tone:[1,.35],col:'#cfe6f2',lw:3});}
+/* a painter's easel with a canvas */
+function easel(S,x,y,s,paint=true){const T=p=>tf(p,x,y,s);S.g();S.L(T([[-60,0],[0,-260]]),{lw:5,col:'#8a5a2a',any:1});S.L(T([[60,0],[0,-260]]),{lw:5,col:'#8a5a2a',any:1});S.L(T([[0,-230],[30,0]]),{lw:4,col:'#7a4a1a',any:1});
+  S.S(T(rect(-80,-240,160,130)),{tone:[1,.85],dir:0,col:'#fbf8f1',lw:2});S.L(T([[-80,-108],[80,-108]]),{lw:5,col:'#8a5a2a'});
+  if(paint){S.g();S.S(T(ell(-20,-190,40,26,18)),{rad:1,tone:[1,.4],col:'#f2b51c',noline:1});S.S(T([[-70,-120],[-30,-170],[10,-140],[40,-180],[70,-120]]),{tone:[1,.5],col:'#7ab06a',noline:1});}}
+/* a clinic with a red cross */
+function clinic(S,x,y,s){const T=p=>tf(p,x,y,s);S.g();S.S(T(rect(-110,-160,220,160)),{tone:[1,.6],dir:0,col:'#eef0f2',lw:1.8});S.S(T([[-124,-160],[0,-214],[124,-160]]),{tone:[1,.6],col:'#9ab0c8',lw:1.6});
+  S.S(T([[-12,-140],[12,-140],[12,-122],[30,-122],[30,-98],[12,-98],[12,-80],[-12,-80],[-12,-98],[-30,-98],[-30,-122],[-12,-122]]),{tone:[1,1],col:MRED,lw:1});S.S(T(rect(-24,-56,48,56)),{tone:[1,.5],col:'#8a6a4a',lw:1.4});}
+/* musical notes */
+function musicNotes(S,x,y,s,col=MINK){S.g();[[0,0],[44,-34],[88,-12]].forEach(([dx,dy])=>{const X=x+dx*s,Y=y+dy*s;S.S(ell(X,Y,9*s,6.5*s,12),{tone:[1,1],col,lw:1});S.L([[X+8*s,Y],[X+8*s,Y-44*s]],{lw:2,col});S.L([[X+8*s,Y-44*s],[X+22*s,Y-30*s]],{lw:2,col});});}
+/* a placard with a name */
+function plaque(S,x,y,w,name,col=MINK,sub){S.g();S.S(rect(x-w/2,y-30,w,sub?62:42),{tone:[1,.85],dir:0,col:'#f6eccf',lw:1.6});S.T([[name,col]],x,y-2,20,{al:'center',rot:0});if(sub)S.T([[sub,MINK]],x,y+22,13,{al:'center',rot:0});}
+/* a road to the horizon with no end */
+function road(S,x0,x1,y,hy=250){S.g();S.S([[x0,y],[x1,y],[480+12,hy],[480-12,hy]],{tone:[1,.6],dir:0,col:'#d8c8a4',lw:1.6});for(let k=0;k<6;k++){const f=k/6,g=(k+.5)/6;const yy=lerp(y,hy,f),y2=lerp(y,hy,g);S.L([[480,yy-4],[480,y2+2]],{lw:Math.max(1,5*(1-f)),col:'#fbf6ea',any:1});}}
+/* Zzz of sleep */
+function zzz(S,x,y,s){S.g();[[0,0,26],[30,-34,20],[54,-62,15]].forEach(([dx,dy,z])=>S.T([['Z',MBLU]],x+dx*s,y+dy*s,z*s,{al:'center',rot:-.15}));}

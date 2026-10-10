@@ -9,6 +9,7 @@ TTS = os.environ.get('TTS_DIR', '/tmp/tts')
 SR = 24000
 VOCAB = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'kokoro_config.json')))['vocab']
 IPA = {  # names espeak gets wrong
+ 'acharya':'ˈɑːtʃɑːɹjə','prashant':'pɹəʃˈɑːnt','satyam':'sˈʌtjəm','shivam':'ʃˈɪvəm','sundaram':'sˈʊndəɹəm','sakshi':'sˈɑːkʃi','nagarjuna':'nɑːɡˈɑːɹdʒʊnə','krishnamurti':'kɹˌɪʃnəmˈʊɹti','jung':'jˈʊŋ','jung’s':'jˈʊŋz','neo':'nˈiːoʊ','schopenhauer':'ʃˈoʊpənhaʊɚ',
  'naren':'nəɹˈeɪn','arjuna':'ˈɑːɹdʒʊnə','gita':'ɡˈiːtɑː','brajendranath':'bɹədʒˈeɪndɹənɑːt','dakshineswar':'dˌʌkʃɪnˈeɪʃwəɹ',
  'baranagore':'bˈɑːɹənəɡˌɔːɹ','dara':'dˈɑːɹɑː','shikoh':'ʃˈɪkoʊ','kanyakumari':'kˌʌnjɑːkʊmˈɑːɹi','varanasi':'vɑːɹˈɑːnəsi',
  'vrindavan':'vɹˈɪndɑːvən','deussen':'dˈɔɪsən','nivedita':'nɪvˈeɪdɪtɑː','hegel':'hˈeɪɡəl','fichte':'fˈɪktə','descartes':'deɪkˈɑːɹt',

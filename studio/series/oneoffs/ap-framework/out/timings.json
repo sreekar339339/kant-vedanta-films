@@ -1,0 +1,527 @@
+{
+ "duration": 459.783,
+ "voice": "af_heart",
+ "speed": 0.92,
+ "quote_voice": "af_heart",
+ "chapters": [
+  {
+   "id": "map",
+   "start": 0.6,
+   "end": 30.814,
+   "lines": [
+    {
+     "text": "The AP Framework is a summary of the philosophy of Acharya Prashant, an Indian teacher of Vedanta.",
+     "start": 0.6,
+     "end": 7.71,
+     "ph": "ðɪ ˌeɪpˈiː fɹˈeɪmwɜːk ɪz ɐ sˈʌmɚɹi ʌvðə fɪlˈɑːsəfi ʌv ˈɑːtʃɑːɹjə pɹəʃˈɑːnt, ɐn ˈɪndiən tˈiːtʃɚɹ ʌv veɪdˈɑːntə."
+    },
+    {
+     "text": "It covers seven questions: what is real, how we know, what liberation is, what has value, what the mind is, what a human being is, and what art is.",
+     "start": 8.13,
+     "end": 17.779,
+     "ph": "ɪt kˈʌvɚz sˈɛvən kwˈɛstʃənz: wˌʌt ɪz ɹˈiːəl, hˌaʊ wiː nˈoʊ, wˌʌt lˌɪbɚɹˈeɪʃən ɪz, wˌʌt hɐz vˈæljuː, wˌʌt ðə mˈaɪnd ɪz, wˌʌt ɐ hjˈuːmən bˈiːɪŋ ɪz, ænd wʌt ˈɑːɹt ɪz."
+    },
+    {
+     "text": "But it does not ask you to believe anything.",
+     "start": 18.2,
+     "end": 20.286,
+     "ph": "bˌʌt ɪt dʌznˌɑːt ˈæsk juː tə bᵻlˈiːv ˈɛnɪθˌɪŋ."
+    },
+    {
+     "text": "It calls itself a set of diagnostic tools: ways of catching a mistake while you are making it.",
+     "start": 20.706,
+     "end": 26.583,
+     "ph": "ɪt kˈɔːlz ɪtsˈɛlf ɐ sˈɛt ʌv dˌaɪəɡnˈɑːstɪk tˈuːlz: wˈeɪz ʌv kˈætʃɪŋ ɐ mɪstˈeɪk wˌaɪl juː ɑːɹ mˈeɪkɪŋ ɪt."
+    },
+    {
+     "text": "And the mistake it is looking for has a name: the ego.",
+     "start": 27.003,
+     "end": 30.114,
+     "ph": "ænd ðə mɪstˈeɪk ɪɾ ɪz lˈʊkɪŋ fɔːɹ hɐz ɐ nˈeɪm: ðɪ ˈiːɡoʊ."
+    }
+   ]
+  },
+  {
+   "id": "ache",
+   "start": 31.914,
+   "end": 55.185,
+   "lines": [
+    {
+     "text": "Start with something everyone knows: dissatisfaction.",
+     "start": 31.914,
+     "end": 34.977,
+     "ph": "stˈɑːɹt wɪð sˈʌmθɪŋ ˈɛvɹɪwˌʌn nˈoʊz: dɪsˌæɾɪsfˈækʃən."
+    },
+    {
+     "text": "We change jobs, cities, partners and plans, and after a while the old ache comes back.",
+     "start": 35.397,
+     "end": 41.001,
+     "ph": "wiː tʃˈeɪndʒ dʒˈɑːbz, sˈɪɾiz, pˈɑːɹtnɚz ænd plˈænz, ænd ˈæftɚɹ ɐ wˈaɪl ðɪ ˈoʊld ˈeɪk kˈʌmz bˈæk."
+    },
+    {
+     "text": "The framework says this ache is structural, not circumstantial. It is not about where you are.",
+     "start": 41.421,
+     "end": 47.108,
+     "ph": "ðə fɹˈeɪmwɜːk sˈɛz ðɪs ˈeɪk ɪz stɹˈʌktʃɚɹəl, nˌɑːt sˈɜːkəmstˌænʃəl. ɪɾ ɪz nˌɑːt ɐbˌaʊt wˈɛɹ juː ɑːɹ."
+    },
+    {
+     "text": "So the real question is not whether we are trying hard enough.",
+     "start": 47.528,
+     "end": 51.128,
+     "ph": "sˌoʊ ðə ɹˈiːəl kwˈɛstʃən ɪz nˌɑːt wˈɛðɚ wiː ɑːɹ tɹˈaɪɪŋ hˈɑːɹd ɪnˈʌf."
+    },
+    {
+     "text": "It is whether the whole direction of our effort is wrong.",
+     "start": 51.548,
+     "end": 54.485,
+     "ph": "ɪɾ ɪz wˈɛðɚ ðə hˈoʊl dᵻɹˈɛkʃən ʌv ˌaʊɚɹ ˈɛfɚt ɪz ɹˈɔŋ."
+    }
+   ]
+  },
+  {
+   "id": "skin",
+   "start": 56.285,
+   "end": 96.348,
+   "lines": [
+    {
+     "text": "The ego, in this framework, is simply the felt sense of I am X.",
+     "start": 56.285,
+     "end": 60.155,
+     "ph": "ðɪ ˈiːɡoʊ, ɪn ðɪs fɹˈeɪmwɜːk, ɪz sˈɪmpli ðə fˈɛlt sˈɛns ʌv aɪɐm ˈɛks."
+    },
+    {
+     "text": "Its roots are physical. The skin marks where the body ends and the world begins, and a separate, bounded self grows from that line.",
+     "start": 60.575,
+     "end": 68.554,
+     "ph": "ɪts ɹˈuːts ɑːɹ fˈɪzɪkəl. ðə skˈɪn mˈɑːɹks wˌɛɹ ðə bˈɑːdi ˈɛndz ænd ðə wˈɜːld bɪɡˈɪnz, ænd ɐ sˈɛpɹət, bˈaʊndᵻd sˈɛlf ɡɹˈoʊz fɹʌm ðæt lˈaɪn."
+    },
+    {
+     "text": "A bounded self feels incomplete, so it reaches out and takes things in: my house, my country, my degrees, even my wounds.",
+     "start": 68.974,
+     "end": 76.922,
+     "ph": "ɐ bˈaʊndᵻd sˈɛlf fˈiːlz ɪŋkəmplˈiːt, sˌoʊ ɪt ɹˈiːtʃᵻz ˈaʊt ænd tˈeɪks θˈɪŋz ˈɪn: maɪ hˈaʊs, maɪ kˈʌntɹi, maɪ dᵻɡɹˈiːz, ˈiːvən maɪ wˈuːndz."
+    },
+    {
+     "text": "Every possession, title and grievance makes it heavier. The framework calls this ego fattening.",
+     "start": 77.342,
+     "end": 83.135,
+     "ph": "ˈɛvɹi pəzˈɛʃən, tˈaɪɾəl ænd ɡɹˈiːvəns mˌeɪks ɪt hˈɛviɚ. ðə fɹˈeɪmwɜːk kˈɔːlz ðɪs ˈiːɡoʊ fˈæʔn̩ɪŋ."
+    },
+    {
+     "text": "The opposite, ego thinning, is a slow loss of that weight and self-concern.",
+     "start": 83.555,
+     "end": 88.133,
+     "ph": "ðɪ ˈɑːpəzˌɪt, ˈiːɡoʊ θˈɪnɪŋ, ɪz ɐ slˈoʊ lˈɔs ʌv ðæt wˈeɪt ænd sˈɛlfkənsˈɜːn."
+    },
+    {
+     "text": "It never reaches zero while the body lives. Some ego always remains; the framework calls it the ego floor.",
+     "start": 88.553,
+     "end": 95.648,
+     "ph": "ɪt nˈɛvɚ ɹˈiːtʃᵻz zˈiəɹoʊ wˌaɪl ðə bˈɑːdi lˈaɪvz. sˌʌm ˈiːɡoʊ ˈɔːlweɪz ɹᵻmˈeɪnz; ðə fɹˈeɪmwɜːk kˈɔːlz ɪt ðɪ ˈiːɡoʊ flˈoːɹ."
+    }
+   ]
+  },
+  {
+   "id": "mind",
+   "start": 97.448,
+   "end": 128.663,
+   "lines": [
+    {
+     "text": "The ego also uses the body. Try reading a difficult book that threatens your opinions, and notice how quickly you feel sleepy.",
+     "start": 97.448,
+     "end": 105.513,
+     "ph": "ðɪ ˈiːɡoʊ ˈɔːlsoʊ jˈuːsᵻz ðə bˈɑːdi. tɹˈaɪ ɹˈiːdɪŋ ɐ dˈɪfɪkəlt bˈʊk ðæt θɹˈɛʔn̩z jʊɹ əpˈɪniənz, ænd nˈoʊɾɪs hˌaʊ kwˈɪkli juː fˈiːl slˈiːpi."
+    },
+    {
+     "text": "That drowsiness is not just tiredness. The ego is using the body to escape.",
+     "start": 105.933,
+     "end": 110.882,
+     "ph": "ðæt dɹˈaʊsinəs ɪz nˌɑːt dʒˈʌst tˈaɪɚdnəs. ðɪ ˈiːɡoʊ ɪz jˈuːzɪŋ ðə bˈɑːdi tʊ ɛskˈeɪp."
+    },
+    {
+     "text": "The mind, memory and intellect, is called an innocent machine. It does what it is told.",
+     "start": 111.302,
+     "end": 116.683,
+     "ph": "ðə mˈaɪnd, mˈɛmɚɹi ænd ˈɪntəlˌɛkt, ɪz kˈɔːld ɐn ˈɪnəsənt məʃˈiːn. ɪt dˈʌz wʌt ɪɾ ɪz tˈoʊld."
+    },
+    {
+     "text": "Only the ego has agency. It is the senior partner.",
+     "start": 117.103,
+     "end": 120.552,
+     "ph": "ˈoʊnli ðɪ ˈiːɡoʊ hɐz ˈeɪdʒənsi. ɪɾ ɪz ðə sˈiːnjɚ pˈɑːɹtnɚ."
+    },
+    {
+     "text": "So when there is suffering, the framework says, blame the right party: not the mind, but the ego that is driving it.",
+     "start": 120.972,
+     "end": 127.963,
+     "ph": "sˌoʊ wɛn ðɛɹ ɪz sˈʌfɚɹɪŋ, ðə fɹˈeɪmwɜːk sˈɛz, blˈeɪm ðə ɹˈaɪt pˈɑːɹɾi: nˌɑːt ðə mˈaɪnd, bˌʌt ðɪ ˈiːɡoʊ ðæt ɪz dɹˈaɪvɪŋ ɪt."
+    }
+   ]
+  },
+  {
+   "id": "axes",
+   "start": 129.763,
+   "end": 164.987,
+   "lines": [
+    {
+     "text": "All movement, the framework says, goes in one of two directions.",
+     "start": 129.763,
+     "end": 133.277,
+     "ph": "ˈɔːl mˈuːvmənt, ðə fɹˈeɪmwɜːk sˈɛz, ɡoʊz ɪn wˈʌn ʌv tˈuː dᵻɹˈɛkʃənz."
+    },
+    {
+     "text": "The horizontal is change: gaining, achieving, collecting. A shopkeeper expands his business. A student collects degrees. A pilgrim multiplies his penances.",
+     "start": 133.697,
+     "end": 144.703,
+     "ph": "ðə hˌɔːɹɪzˈɔntəl ɪz tʃˈeɪndʒ: ɡˈeɪnɪŋ, ɐtʃˈiːvɪŋ, kəlˈɛktɪŋ. ɐ ʃˈɑːpkiːpɚɹ ɛkspˈændz hɪz bˈɪznəs. ɐ stˈuːdənt kəlˈɛkts dᵻɡɹˈiːz. ɐ pˈɪlɡɹɪm mˌʌltɪplˈaɪz hɪz pˈɛnənsᵻz."
+    },
+    {
+     "text": "Energy is spent and things change, but no height is gained. Everyone is moving on the same flat sheet.",
+     "start": 145.123,
+     "end": 151.675,
+     "ph": "ˈɛnɚdʒi ɪz spˈɛnt ænd θˈɪŋz tʃˈeɪndʒ, bˌʌt nˈoʊ hˈaɪt ɪz ɡˈeɪnd. ˈɛvɹɪwˌʌn ɪz mˈuːvɪŋ ɔnðə sˈeɪm flˈæt ʃˈiːt."
+    },
+    {
+     "text": "The vertical is freedom. It is not about having more, but about the centre you act from becoming thinner.",
+     "start": 152.095,
+     "end": 158.16,
+     "ph": "ðə vˈɜːɾɪkəl ɪz fɹˈiːdəm. ɪɾ ɪz nˌɑːt ɐbˌaʊt hˌævɪŋ mˈoːɹ, bˌʌt ɐbˌaʊt ðə sˈɛntɚ juː ˈækt fɹʌm bᵻkˈʌmɪŋ θˈɪnɚ."
+    },
+    {
+     "text": "The belief that enough horizontal effort will lift you vertically, the framework calls the biggest lie.",
+     "start": 158.58,
+     "end": 164.287,
+     "ph": "ðə bᵻlˈiːf ðæt ɪnˈʌf hˌɔːɹɪzˈɔntəl ˈɛfɚt wɪl lˈɪft juː vˈɜːɾɪkli, ðə fɹˈeɪmwɜːk kˈɔːlz ðə bˈɪɡɪst lˈaɪ."
+    }
+   ]
+  },
+  {
+   "id": "engine",
+   "start": 166.087,
+   "end": 192.344,
+   "lines": [
+    {
+     "text": "Picture the ego as an engine. Desire is the fuel; action is the combustion.",
+     "start": 166.087,
+     "end": 171.199,
+     "ph": "pˈɪktʃɚ ðɪ ˈiːɡoʊ æz ɐn ˈɛndʒɪn. dɪzˈaɪɚɹ ɪz ðə fjˈuːəl; ˈækʃən ɪz ðə kəmbˈʌstʃən."
+    },
+    {
+     "text": "The achiever's engine roars. He is always going somewhere.",
+     "start": 171.619,
+     "end": 175.108,
+     "ph": "ðɪ ɐtʃˈiːvɚz ˈɛndʒɪn ɹˈoːɹz. hiː ɪz ˈɔːlweɪz ɡˌoʊɪŋ sˈʌmwɛɹ."
+    },
+    {
+     "text": "The dropout has given up. His stillness looks like peace, but the tank has simply run out.",
+     "start": 175.528,
+     "end": 180.893,
+     "ph": "ðə dɹˈɑːpaʊt hɐz ɡˈɪvən ˈʌp. hɪz stˈɪlnəs lˈʊks lˈaɪk pˈiːs, bˌʌt ðə tˈæŋk hɐz sˈɪmpli ɹˈʌn ˈaʊt."
+    },
+    {
+     "text": "Refuel him with a new hope, and the old engine roars back.",
+     "start": 181.313,
+     "end": 184.81,
+     "ph": "ɹᵻfjˈuːl hˌɪm wɪð ɐ nˈuː hˈoʊp, ænd ðɪ ˈoʊld ˈɛndʒɪn ɹˈoːɹz bˈæk."
+    },
+    {
+     "text": "Achiever and dropout stand on the same flat sheet. Losing desire is not the same as being free.",
+     "start": 185.23,
+     "end": 191.644,
+     "ph": "ɐtʃˈiːvɚɹ ænd dɹˈɑːpaʊt stˈænd ɔnðə sˈeɪm flˈæt ʃˈiːt. lˈuːzɪŋ dɪzˈaɪɚɹ ɪz nˌɑːt ðə sˈeɪm æz bˌiːɪŋ fɹˈiː."
+    }
+   ]
+  },
+  {
+   "id": "formula",
+   "start": 193.444,
+   "end": 233.622,
+   "lines": [
+    {
+     "text": "So what does change? The framework gives a formula.",
+     "start": 193.444,
+     "end": 196.587,
+     "ph": "sˌoʊ wʌt dˈʌz tʃˈeɪndʒ? ðə fɹˈeɪmwɜːk ɡˈɪvz ɐ fˈɔːɹmjʊlə."
+    },
+    {
+     "text": "Change equals seeing plus intent.",
+     "start": 197.187,
+     "end": 199.221,
+     "ph": "tʃˈeɪndʒ ˈiːkwəlz sˈiːɪŋ plˈʌs ɪntˈɛnt.",
+     "q": true
+    },
+    {
+     "text": "Seeing is honest observation of what is happening, before the ego adds its commentary and excuses.",
+     "start": 199.641,
+     "end": 205.963,
+     "ph": "sˈiːɪŋ ɪz ˈɑːnɪst ɑːbzɚvˈeɪʃən ʌv wʌt ɪz hˈæpənɪŋ, bᵻfˌoːɹ ðɪ ˈiːɡoʊ ˈædz ɪts kˈɑːməntˌɛɹi ænd ɛkskjˈuːsᵻz."
+    },
+    {
+     "text": "Intent is the continuing choice to let the ego dissolve rather than protect it.",
+     "start": 206.383,
+     "end": 211.555,
+     "ph": "ɪntˈɛnt ɪz ðə kəntˈɪnjuːɪŋ tʃˈɔɪs tə lˈɛt ðɪ ˈiːɡoʊ dɪsˈɑːlv ɹˈæðɚ ðɐn pɹətˈɛkt ɪt."
+    },
+    {
+     "text": "Neither works alone. Seeing without intent, it argues against Krishnamurti, changes nothing.",
+     "start": 211.975,
+     "end": 217.788,
+     "ph": "nˈiːðɚ wˈɜːks ɐlˈoʊn. sˈiːɪŋ wɪðˌaʊt ɪntˈɛnt, ɪɾ ˈɑːɹɡjuːz ɐɡˈɛnst kɹˌɪʃnəmˈʊɹti, tʃˈeɪndʒᵻz nˈʌθɪŋ."
+    },
+    {
+     "text": "And intent is not willpower. Willpower fights an outside enemy, a habit or a craving, and leaves the ego in charge.",
+     "start": 218.208,
+     "end": 226.234,
+     "ph": "ænd ɪntˈɛnt ɪz nˌɑːt wˈɪlpaʊɚ. wˈɪlpaʊɚ fˈaɪts ɐn aʊtsˈaɪd ˈɛnəmi, ɐ hˈæbɪt ɔːɹ ɐ kɹˈeɪvɪŋ, ænd lˈiːvz ðɪ ˈiːɡoʊ ɪn tʃˈɑːɹdʒ."
+    },
+    {
+     "text": "Intent turns against the ego's own wish to survive. That, the framework says, is the real battle.",
+     "start": 226.654,
+     "end": 232.922,
+     "ph": "ɪntˈɛnt tˈɜːnz ɐɡˈɛnst ðɪ ˈiːɡoʊz ˈoʊn wˈɪʃ tə sɚvˈaɪv. ðˈæt, ðə fɹˈeɪmwɜːk sˈɛz, ɪz ðə ɹˈiːəl bˈæɾəl."
+    }
+   ]
+  },
+  {
+   "id": "ledger",
+   "start": 234.722,
+   "end": 268.189,
+   "lines": [
+    {
+     "text": "The ego also keeps a ledger: a running account of what it is owed. The gifts it gave, the hurts it suffered, the sacrifices it made.",
+     "start": 234.722,
+     "end": 243.411,
+     "ph": "ðɪ ˈiːɡoʊ ˈɔːlsoʊ kˈiːps ɐ lˈɛdʒɚ: ɐ ɹˈʌnɪŋ ɐkˈaʊnt ʌv wʌt ɪɾ ɪz ˈoʊd. ðə ɡˈɪfts ɪt ɡˈeɪv, ðə hˈɜːts ɪt sˈʌfɚd, ðə sˈækɹᵻfˌaɪsᵻz ɪt mˈeɪd."
+    },
+    {
+     "text": "While the ledger stays open, resentment has a purpose. The suffering is kept as proof of a claim.",
+     "start": 243.831,
+     "end": 249.728,
+     "ph": "wˌaɪl ðə lˈɛdʒɚ stˈeɪz ˈoʊpən, ɹᵻzˈɛntmənt hɐz ɐ pˈɜːpəs. ðə sˈʌfɚɹɪŋ ɪz kˈɛpt æz pɹˈuːf əvə klˈeɪm."
+    },
+    {
+     "text": "Take a frozen shoulder. In one case the arm could move, but does not; the stiffness is a strategy, and the ledger stays open.",
+     "start": 250.148,
+     "end": 258.15,
+     "ph": "tˈeɪk ɐ fɹˈoʊzən ʃˈoʊldɚ. ɪn wˈʌn kˈeɪs ðɪ ˈɑːɹm kʊd mˈuːv, bˌʌt dʌznˈɑːt; ðə stˈɪfnəs ɪz ɐ stɹˈæɾədʒi, ænd ðə lˈɛdʒɚ stˈeɪz ˈoʊpən."
+    },
+    {
+     "text": "In the other, the joint is truly damaged, and exercise alone will not help.",
+     "start": 258.57,
+     "end": 263.416,
+     "ph": "ɪnðɪ ˈʌðɚ, ðə dʒˈɔɪnt ɪz tɹˈuːli dˈæmɪdʒd, ænd ˈɛksɚsˌaɪz ɐlˈoʊn wɪl nˌɑːt hˈɛlp."
+    },
+    {
+     "text": "Even then, one choice remains: to go and find a surgeon.",
+     "start": 263.836,
+     "end": 267.489,
+     "ph": "ˈiːvən ðˈɛn, wˈʌn tʃˈɔɪs ɹᵻmˈeɪnz: tə ɡˌoʊ ænd fˈaɪnd ɐ sˈɜːdʒən."
+    }
+   ]
+  },
+  {
+   "id": "feel",
+   "start": 269.289,
+   "end": 305.619,
+   "lines": [
+    {
+     "text": "Two people weep at the same piece of music. From outside, they look the same.",
+     "start": 269.289,
+     "end": 273.83,
+     "ph": "tˈuː pˈiːpəl wˈiːp æt ðə sˈeɪm pˈiːs ʌv mjˈuːzɪk. fɹʌm aʊtsˈaɪd, ðeɪ lˈʊk ðə sˈeɪm."
+    },
+    {
+     "text": "But for one, the ego is being confirmed and enlarged. For the other, it is being loosened. The direction is opposite.",
+     "start": 274.25,
+     "end": 281.948,
+     "ph": "bˌʌt fɔːɹwˈʌn, ðɪ ˈiːɡoʊ ɪz bˌiːɪŋ kənfˈɜːmd ænd ɛnlˈɑːɹdʒd. fɚðɪ ˈʌðɚ, ɪɾ ɪz bˌiːɪŋ lˈuːsənd. ðə dᵻɹˈɛkʃən ɪz ˈɑːpəzˌɪt."
+    },
+    {
+     "text": "Grief is like that too. Egoic grief mourns a lost possession; tenderness honours what helped dissolve the ego.",
+     "start": 282.368,
+     "end": 289.468,
+     "ph": "ɡɹˈiːf ɪz lˈaɪk ðæt tˈuː. iːɡˈoʊɪk ɡɹˈiːf mˈoːɹnz ɐ lˈɔst pəzˈɛʃən; tˈɛndɚnəs ˈɑːnɚz wʌt hˈɛlpt dɪsˈɑːlv ðɪ ˈiːɡoʊ."
+    },
+    {
+     "text": "And joy, it says, can sit beside physical pain.",
+     "start": 289.888,
+     "end": 293.055,
+     "ph": "ænd dʒˈɔɪ, ɪt sˈɛz, kæn sˈɪt bᵻsˌaɪd fˈɪzɪkəl pˈeɪn."
+    },
+    {
+     "text": "In ethics, mercy treats the symptom; compassion goes to the root.",
+     "start": 293.475,
+     "end": 297.391,
+     "ph": "ɪn ˈɛθɪks, mˈɜːsi tɹˈiːts ðə sˈɪmptəm; kəmpˈæʃən ɡoʊz tə ðə ɹˈuːt."
+    },
+    {
+     "text": "The line of moral concern is sentience. An animal's suffering counts as much as a human's bodily pain.",
+     "start": 297.811,
+     "end": 304.919,
+     "ph": "ðə lˈaɪn ʌv mˈɔːɹəl kənsˈɜːn ɪz sˈɛnʃəns. ɐn ˈænɪməlz sˈʌfɚɹɪŋ kˈaʊnts æz mˈʌtʃ æz ɐ hjˈuːmənz bˈɑːdili pˈeɪn."
+    }
+   ]
+  },
+  {
+   "id": "shivam",
+   "start": 306.719,
+   "end": 335.011,
+   "lines": [
+    {
+     "text": "The framework defines its highest values by what they are not.",
+     "start": 306.719,
+     "end": 310.525,
+     "ph": "ðə fɹˈeɪmwɜːk dᵻfˈaɪnz ɪts hˈaɪɪst vˈæljuːz baɪ wʌt ðeɪ ɑːɹ nˈɑːt."
+    },
+    {
+     "text": "Truth is what is not false. Beauty is what is not ugly. And Shiva, the auspicious, is whatever serves the ego's dissolution.",
+     "start": 310.945,
+     "end": 319.208,
+     "ph": "tɹˈuːθ ɪz wʌt ɪz nˌɑːt fˈɔls. bjˈuːɾi ɪz wʌt ɪz nˌɑːt ˈʌɡli. ˈænd ʃˈɪvə, ðɪ ɔːspˈɪʃəs, ɪz wʌtˈɛvɚ sˈɜːvz ðɪ ˈiːɡoʊz dˌɪsəlˈuːʃən."
+    },
+    {
+     "text": "Satyam, Shivam, Sundaram: three names for one principle.",
+     "start": 319.628,
+     "end": 323.367,
+     "ph": "sˈʌtjəm, ʃˈɪvəm, sˈʊndəɹəm: θɹˈiː nˈeɪmz fɔːɹ wˈʌn pɹˈɪnsɪpəl."
+    },
+    {
+     "text": "Great art, too, is made in the ego's absence. The artist disappears, and returns, and disappears again.",
+     "start": 323.787,
+     "end": 330.649,
+     "ph": "ɡɹˈeɪt ˈɑːɹt, tˈuː, ɪz mˌeɪd ɪnðɪ ˈiːɡoʊz ˈæbsəns. ðɪ ˈɑːɹɾɪst dˌɪsɐpˈɪɹz, ænd ɹᵻtˈɜːnz, ænd dˌɪsɐpˈɪɹz ɐɡˈɛn."
+    },
+    {
+     "text": "Creativity, it says, is creating without a creator.",
+     "start": 331.069,
+     "end": 334.311,
+     "ph": "kɹiːˌeɪtˈɪvᵻɾi, ɪt sˈɛz, ɪz kɹiːˈeɪɾɪŋ wɪðˌaʊt ɐ kɹiːˈeɪɾɚ."
+    }
+   ]
+  },
+  {
+   "id": "teacher",
+   "start": 336.111,
+   "end": 373.424,
+   "lines": [
+    {
+     "text": "Because the ego is both contestant and referee, it cannot judge its own progress. An outside reference is needed: a teacher, a text, a tradition.",
+     "start": 336.111,
+     "end": 346.287,
+     "ph": "bɪkˈʌz ðɪ ˈiːɡoʊ ɪz bˈoʊθ kəntˈɛstənt ænd ɹˌɛfɚɹˈiː, ɪt kænˈɑːt dʒˈʌdʒ ɪts ˈoʊn pɹˈɑːɡɹɛs. ɐn aʊtsˈaɪd ɹˈɛfɹəns ɪz nˈiːdᵻd: ɐ tˈiːtʃɚ, ɐ tˈɛkst, ɐ tɹɐdˈɪʃən."
+    },
+    {
+     "text": "The teacher is like the sun, shining on everyone without bias. Who responds depends on who is ready to be disturbed.",
+     "start": 346.707,
+     "end": 354.266,
+     "ph": "ðə tˈiːtʃɚɹ ɪz lˈaɪk ðə sˈʌn, ʃˈaɪnɪŋ ˌɔn ˈɛvɹɪwˌʌn wɪðˌaʊt bˈaɪəs. hˌuː ɹᵻspˈɑːndz dᵻpˈɛndz ˌɔn hˌuː ɪz ɹˈɛdi təbi dɪstˈɜːbd."
+    },
+    {
+     "text": "The teacher is a mirror and a catalyst. He does not hand out liberation; he helps you see yourself more honestly.",
+     "start": 354.686,
+     "end": 361.278,
+     "ph": "ðə tˈiːtʃɚɹ ɪz ɐ mˈɪɹɚ ænd ɐ kˈæɾɐlˌɪst. hiː dʌznˌɑːt hˈænd ˈaʊt lˌɪbɚɹˈeɪʃən; hiː hˈɛlps juː sˈiː joːɹsˈɛlf mˈoːɹ ˈɑːnɪstli."
+    },
+    {
+     "text": "Trust is given a little at a time, and withdrawn if it is not helping.",
+     "start": 361.698,
+     "end": 365.867,
+     "ph": "tɹˈʌst ɪz ɡˈɪvən ɐ lˈɪɾəl æɾə tˈaɪm, ænd wɪθdɹˈɔːn ɪf ɪɾ ɪz nˌɑːt hˈɛlpɪŋ."
+    },
+    {
+     "text": "The relationship is complete when it is no longer needed, as with Krishna and Arjuna in the Gita.",
+     "start": 366.287,
+     "end": 372.724,
+     "ph": "ðə ɹᵻlˈeɪʃənʃˌɪp ɪz kəmplˈiːt wɛn ɪɾ ɪz nˌoʊ lˈɑːŋɡɚ nˈiːdᵻd, æz wˈɪð kɹˈɪʃnə ˈænd ˈɑːɹdʒʊnə ɪnðˈə ɡˈiːtɑː."
+    }
+   ]
+  },
+  {
+   "id": "others",
+   "start": 374.524,
+   "end": 422.563,
+   "lines": [
+    {
+     "text": "The framework sets itself against many traditions.",
+     "start": 374.524,
+     "end": 377.384,
+     "ph": "ðə fɹˈeɪmwɜːk sˈɛts ɪtsˈɛlf ɐɡˈɛnst mˈɛni tɹɐdˈɪʃənz."
+    },
+    {
+     "text": "With Shankara's Advaita it shares the method of negation, but it rejects the witness, the sakshi, as the ego's last refuge.",
+     "start": 377.804,
+     "end": 386.177,
+     "ph": "wˈɪð ʃˈʌŋkəɹəz ədvˈaɪtə ɪt ʃˈɛɹz ðə mˈɛθəd ʌv nᵻɡˈeɪʃən, bˌʌt ɪt ɹᵻdʒˈɛkts ðə wˈɪtnəs, ðˈə sˈɑːkʃi, æz ðɪ ˈiːɡoʊz lˈæst ɹˈɛfjuːdʒ."
+    },
+    {
+     "text": "With Nagarjuna it shares the method of negation, but it places the root of the problem in the body, not in thought.",
+     "start": 386.597,
+     "end": 393.929,
+     "ph": "wˈɪð nɑːɡˈɑːɹdʒʊnə ɪt ʃˈɛɹz ðə mˈɛθəd ʌv nᵻɡˈeɪʃən, bˌʌt ɪt plˈeɪsᵻz ðə ɹˈuːt ʌvðə pɹˈɑːbləm ɪnðə bˈɑːdi, nˌɑːt ɪn θˈɔːt."
+    },
+    {
+     "text": "Schopenhauer is its closest Western parallel. But Jung's individuation, it says, is the most sophisticated form of ego fattening, and the Stoic sage is an ego polished, not dissolved.",
+     "start": 394.349,
+     "end": 407.355,
+     "ph": "ʃˈoʊpənhaʊɚ ɪz ɪts klˈoʊsɪst wˈɛstɚn pˈæɹəlˌɛl. bˈʌt jˈʊŋz ˌɪndᵻvˌɪdʒuːˈeɪʃən, ɪt sˈɛz, ɪz ðə mˈoʊst səfˈɪstᵻkˌeɪɾᵻd fˈɔːɹm ʌv ˈiːɡoʊ fˈæʔn̩ɪŋ, ænd ðə stˈoʊɪk sˈeɪdʒ ɪz ɐn ˈiːɡoʊ pˈɑːlɪʃt, nˌɑːt dɪsˈɑːlvd."
+    },
+    {
+     "text": "Neo-Advaita's claim that we are already enlightened is called the ego's cleverest evasion.",
+     "start": 407.775,
+     "end": 413.153,
+     "ph": "nˈiːoʊɐdvˈeɪɾəz klˈeɪm ðæt wiː ɑːɹ ɔːlɹˌɛdi ɛnlˈaɪʔn̩d ɪz kˈɔːld ðɪ ˈiːɡoʊz klˈɛvɚɹɪst ɪvˈeɪʒən."
+    },
+    {
+     "text": "For the framework, enlightenment as a final state is impossible. Liberation is a direction: a journey without a destination.",
+     "start": 413.573,
+     "end": 421.863,
+     "ph": "fɚðə fɹˈeɪmwɜːk, ɛnlˈaɪʔn̩mənt æz ɐ fˈaɪnəl stˈeɪt ɪz ɪmpˈɑːsᵻbəl. lˌɪbɚɹˈeɪʃən ɪz ɐ dᵻɹˈɛkʃən: ɐ dʒˈɜːni wɪðˌaʊt ɐ dˌɛstɪnˈeɪʃən."
+    }
+   ]
+  },
+  {
+   "id": "first",
+   "start": 423.663,
+   "end": 458.283,
+   "lines": [
+    {
+     "text": "Last, a warning for the rationalist, who questions religion, tradition and authority.",
+     "start": 423.663,
+     "end": 428.993,
+     "ph": "lˈæst, ɐ wˈɔːɹnɪŋ fɚðə ɹˈæʃənəlˌɪst, hˌuː kwˈɛstʃənz ɹᵻlˈɪdʒən, tɹɐdˈɪʃən ænd ɐθˈɔːɹɪɾi."
+    },
+    {
+     "text": "He questions everything, except the one who is questioning.",
+     "start": 429.413,
+     "end": 432.763,
+     "ph": "hiː kwˈɛstʃənz ˈɛvɹɪθˌɪŋ, ɛksˈɛpt ðə wˈʌn hˌuː ɪz kwˈɛstʃənɪŋ."
+    },
+    {
+     "text": "The ego is the first superstition. It challenges everything, except itself.",
+     "start": 433.363,
+     "end": 438.416,
+     "ph": "ðɪ ˈiːɡoʊ ɪz ðə fˈɜːst sˈuːpɚstˈɪʃən. ɪt tʃˈælɪndʒᵻz ˈɛvɹɪθˌɪŋ, ɛksˈɛpt ɪtsˈɛlf.",
+     "q": true
+    },
+    {
+     "text": "The framework's promise is modest. No faith, no technique, no renunciation; only honest self-observation.",
+     "start": 438.836,
+     "end": 446.498,
+     "ph": "ðə fɹˈeɪmwɜːks pɹˈɑːmɪs ɪz mˈɑːdɪst. nˈoʊ fˈeɪθ, nˈoʊ tɛknˈiːk, nˈoʊ ɹᵻnˌʌnsɪˈeɪʃən; ˈoʊnli ˈɑːnɪst sˈɛlfɑːbzɚvˈeɪʃən."
+    },
+    {
+     "text": "Each time you catch the ego at work, it weakens, by a fraction.",
+     "start": 446.918,
+     "end": 450.798,
+     "ph": "ˈiːtʃ tˈaɪm juː kˈætʃ ðɪ ˈiːɡoʊ æt wˈɜːk, ɪt wˈiːkənz, baɪ ɐ fɹˈækʃən."
+    },
+    {
+     "text": "And in that moment of catching, the one who was imprisoned is briefly absent. That, it says, is enough.",
+     "start": 451.218,
+     "end": 457.583,
+     "ph": "ænd ɪn ðæt mˈoʊmənt ʌv kˈætʃɪŋ, ðə wˈʌn hˌuː wʌz ɪmpɹˈɪzənd ɪz bɹˈiːfli ˈæbsənt. ðˈæt, ɪt sˈɛz, ɪz ɪnˈʌf."
+    }
+   ]
+  }
+ ]
+}

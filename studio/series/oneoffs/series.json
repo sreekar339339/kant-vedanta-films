@@ -1,0 +1,14 @@
+{
+ "title": "One-off films",
+ "site_path": "oneoffs",
+ "films": [
+  {
+   "dir": "ap-framework",
+   "title": "The First Superstition",
+   "poster": 20,
+   "desc": "An animated summary of 'The AP Framework: A Comprehensive Account of the Philosophy of Acharya Prashant', paraphrased for personal study.",
+   "source": "https://acharyaprashant.org/en/ap-framework",
+   "artifact": "https://claude.ai/artifact/62u2wcDfs2wzfcsLLjqy1w"
+  }
+ ]
+}
